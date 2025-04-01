@@ -117,11 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="RELACION MISION VISION" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RELACION MISION VISION.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Todas las actividades de una empresa forman la cadena de valor. 
+
+La Cadena de Valor es un herramienta que permite a la empresa indentificar aquellas actividades o fases que pueden aportarle un mayor valor añadido al producto final. Intenta buscar fuentes de ventaja competitiva.
+
+La empresa está formada por una secuencia de actividades diseñadas para añadir valor al producto o servicio según las distintas fases, hasta que se llega al cliente final.
+
+Una cadena de valor genérica está constituida por tres elementos básicos:
+</value>
   </data>
-  <data name="cadenadevalor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadenadevalor.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Logística de entrada (recepción, almacenamiento, manipulación de materiales, inspección interna, devoluciones, inventarios,…)
+
+Operaciones (proceso de fabricación, ensamblaje, mantenimiento de equipos, mecanización, embalaje…)
+
+Logística de salida (gestión de pedidos, honorarios, almacenamiento de producto terminado, transporte…)
+
+Marketing y ventas (comercialización, selección del canal de distribución, publicidad, promoción, política de precio…)
+
+Servicios (reparaciones de productos, instalación, mantenimiento, servicios post - venta, reclamaciones, reajustes del producto…)</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Infraestructura empresarial (administración, finanzas, contabilidad, calidad, relaciones públicas, asesoría legal, gerencia…)
+
+Gestión de los recursos humanos (selección, contratación, formación, incentivos…)
+
+Desarrollo tecnológico (telecomunicaciones, automatización, desarrollo de procesos e ingeniería, diseño, saber hacer, procedimientos, I+D…)
+
+Abastecimiento (compras de materias primas, consumibles, equipamientos, servicios…)</value>
   </data>
 </root>

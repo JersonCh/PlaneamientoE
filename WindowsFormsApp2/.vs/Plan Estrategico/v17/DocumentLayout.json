@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\jerson\\3d objects\\planeamiento estrategico\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmvision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmvision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\jerson\\3d objects\\planeamiento estrategico\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frminformacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frminformacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\jerson\\3d objects\\planeamiento estrategico\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmcadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmcadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\jerson\\3d objects\\planeamiento estrategico\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmcadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmcadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmCadenaValor.cs",
+              "DocumentMoniker": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmCadenaValor.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmCadenaValor.cs",
+              "ToolTip": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmCadenaValor.cs",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmCadenaValor.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:00:10.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmCadenaValor.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmCadenaValor.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmCadenaValor.cs",
+              "ToolTip": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmCadenaValor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmCadenaValor.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T17:07:05.335Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmVision.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmVision.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmVision.cs",
+              "ToolTip": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmVision.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmVision.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T16:18:52.222Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmInformacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmInformacion.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmInformacion.cs",
+              "ToolTip": "C:\\Users\\Jerson\\3D Objects\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmInformacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmInformacion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:04:50.542Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
