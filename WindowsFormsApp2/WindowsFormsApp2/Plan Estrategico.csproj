@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAutoCadenaValor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutoCadenaValor.Designer.cs">
+      <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCadenaValor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAutoCadenaValor.resx">
+      <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCadenaValor.resx">
       <DependentUpon>FrmCadenaValor.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +112,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cadenadevalor.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RIGHT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RIGHT24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RIGHT32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LEFT32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafico2cadenadevalor.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
