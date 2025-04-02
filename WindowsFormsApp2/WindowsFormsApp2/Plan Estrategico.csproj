@@ -82,11 +82,29 @@
     <Compile Include="FrmMatrizCame.Designer.cs">
       <DependentUpon>FrmMatrizCame.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMatrizDePorter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatrizDePorter.Designer.cs">
+      <DependentUpon>FrmMatrizDePorter.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMatrizParticipacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMatrizParticipacion.Designer.cs">
       <DependentUpon>FrmMatrizParticipacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmObjetivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmObjetivos.Designer.cs">
+      <DependentUpon>FrmObjetivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResumen.Designer.cs">
+      <DependentUpon>FrmResumen.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmValores.cs">
       <SubType>Form</SubType>
@@ -120,8 +138,17 @@
     <EmbeddedResource Include="FrmMatrizCame.resx">
       <DependentUpon>FrmMatrizCame.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatrizDePorter.resx">
+      <DependentUpon>FrmMatrizDePorter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMatrizParticipacion.resx">
       <DependentUpon>FrmMatrizParticipacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmObjetivos.resx">
+      <DependentUpon>FrmObjetivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResumen.resx">
+      <DependentUpon>FrmResumen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmValores.resx">
       <DependentUpon>FrmValores.cs</DependentUpon>
