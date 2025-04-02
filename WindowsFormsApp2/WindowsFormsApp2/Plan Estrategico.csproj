@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAnalisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalisis.Designer.cs">
+      <DependentUpon>FrmAnalisis.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAutoCadenaValor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     <Compile Include="FrmInformacion.Designer.cs">
       <DependentUpon>FrmInformacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMatrizCame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
     </Compile>
     <Compile Include="FrmMatrizParticipacion.Designer.cs">
       <DependentUpon>FrmMatrizParticipacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMision.Designer.cs">
+      <DependentUpon>FrmMision.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmObjetivos.cs">
       <SubType>Form</SubType>
@@ -120,6 +138,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnalisis.resx">
+      <DependentUpon>FrmAnalisis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAutoCadenaValor.resx">
       <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +156,9 @@
     <EmbeddedResource Include="FrmInformacion.resx">
       <DependentUpon>FrmInformacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMatrizCame.resx">
       <DependentUpon>FrmMatrizCame.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMatrizParticipacion.resx">
       <DependentUpon>FrmMatrizParticipacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMision.resx">
+      <DependentUpon>FrmMision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmObjetivos.resx">
       <DependentUpon>FrmObjetivos.cs</DependentUpon>

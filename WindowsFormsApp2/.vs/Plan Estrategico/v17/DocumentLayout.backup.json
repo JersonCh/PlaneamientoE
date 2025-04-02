@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\",
+  "WorkspaceRootPath": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\andre\\desktop\\ti\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\elvis\\videos\\proyectodeveras\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmmision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmmision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\elvis\\videos\\proyectodeveras\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmanalisis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmanalisis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\elvis\\videos\\proyectodeveras\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\elvis\\videos\\proyectodeveras\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmvalores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmvalores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\andre\\desktop\\ti\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmmatrizdeporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmmatrizdeporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|c:\\users\\andre\\desktop\\ti\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmobjetivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmobjetivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,51 +35,61 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmResumen.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmResumen.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
+              "Title": "FrmMision.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmMision.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmMision.cs",
+              "ToolTip": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmMision.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmMision.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T16:06:28.103Z",
+              "WhenOpened": "2025-04-02T19:02:52.089Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmAnalisis.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAnalisis.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmAnalisis.cs",
+              "ToolTip": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAnalisis.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmAnalisis.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:00:27.401Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmObjetivos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmObjetivos.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmObjetivos.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmObjetivos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp2\\FrmObjetivos.cs [Dise\u00F1o]",
+              "Title": "FrmInicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmInicio.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmInicio.cs",
+              "ToolTip": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmInicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T12:37:33.841Z",
+              "WhenOpened": "2025-04-02T18:59:16.579Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\Program.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp2\\Program.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\Program.cs",
-              "RelativeToolTip": "WindowsFormsApp2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Title": "FrmValores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmValores.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmValores.cs",
+              "ToolTip": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmValores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmValores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T05:15:00.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T18:50:42.609Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmMatrizDePorter.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmMatrizDePorter.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmMatrizDePorter.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TI\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmMatrizDePorter.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp2\\FrmMatrizDePorter.cs [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "FrmResumen.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmResumen.cs",
+              "ToolTip": "C:\\Users\\ELVIS\\Videos\\ProyectoDeveras\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T14:34:59.137Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-02T18:50:42.021Z"
             }
           ]
         }
