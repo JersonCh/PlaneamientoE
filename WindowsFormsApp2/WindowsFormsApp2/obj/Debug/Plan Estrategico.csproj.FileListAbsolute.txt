@@ -34,3 +34,21 @@ C:\Users\HP\3D Objects\JCC\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\D
 C:\Users\HP\3D Objects\JCC\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\HP\3D Objects\JCC\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\HP\3D Objects\JCC\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.AssemblyReference.cache
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCadenaValor.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmInformacion.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizParticipacion.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmValores.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmVision.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.GenerateResource.cache
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.panel.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
+C:\Users\Jaimeelias\Videos\Planeamiento\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizCame.resources

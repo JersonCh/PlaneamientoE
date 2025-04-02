@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmAutoCadenaValor : Form
+    public partial class FrmMatrizParticipacion : Form
     {
-        public FrmAutoCadenaValor()
+        public FrmMatrizParticipacion()
         {
             InitializeComponent();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
     }

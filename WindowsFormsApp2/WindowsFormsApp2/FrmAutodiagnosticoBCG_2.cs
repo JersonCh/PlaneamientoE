@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmAutoCadenaValor : Form
+    public partial class FrmAutodiagnosticoBCG_2 : Form
     {
-        public FrmAutoCadenaValor()
+        public FrmAutodiagnosticoBCG_2()
         {
             InitializeComponent();
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
     }
 }

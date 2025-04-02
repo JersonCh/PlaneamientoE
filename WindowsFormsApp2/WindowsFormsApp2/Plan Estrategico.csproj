@@ -52,6 +52,18 @@
     <Compile Include="FrmAutoCadenaValor.Designer.cs">
       <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAutodiagnosticoBCG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutodiagnosticoBCG.Designer.cs">
+      <DependentUpon>FrmAutodiagnosticoBCG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutodiagnosticoBCG_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutodiagnosticoBCG_2.Designer.cs">
+      <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCadenaValor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,18 @@
     </Compile>
     <Compile Include="FrmInformacion.Designer.cs">
       <DependentUpon>FrmInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMatrizCame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatrizCame.Designer.cs">
+      <DependentUpon>FrmMatrizCame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMatrizParticipacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatrizParticipacion.Designer.cs">
+      <DependentUpon>FrmMatrizParticipacion.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmValores.cs">
       <SubType>Form</SubType>
@@ -81,11 +105,23 @@
     <EmbeddedResource Include="FrmAutoCadenaValor.resx">
       <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutodiagnosticoBCG.resx">
+      <DependentUpon>FrmAutodiagnosticoBCG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutodiagnosticoBCG_2.resx">
+      <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCadenaValor.resx">
       <DependentUpon>FrmCadenaValor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInformacion.resx">
       <DependentUpon>FrmInformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatrizCame.resx">
+      <DependentUpon>FrmMatrizCame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatrizParticipacion.resx">
+      <DependentUpon>FrmMatrizParticipacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmValores.resx">
       <DependentUpon>FrmValores.cs</DependentUpon>
