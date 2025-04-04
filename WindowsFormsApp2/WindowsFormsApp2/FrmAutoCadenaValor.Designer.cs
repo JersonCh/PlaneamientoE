@@ -219,6 +219,10 @@
             this.p10_0 = new System.Windows.Forms.RadioButton();
             this.label30 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.p25.SuspendLayout();
             this.p24.SuspendLayout();
@@ -2365,11 +2369,59 @@
             this.textBox1.Size = new System.Drawing.Size(1179, 67);
             this.textBox1.TabIndex = 33;
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(741, 972);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(150, 57);
+            this.button5.TabIndex = 41;
+            this.button5.Text = "7. BCG";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(574, 972);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(150, 57);
+            this.button4.TabIndex = 40;
+            this.button4.Text = "6. CADENA DE VALOR";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Transparent;
+            this.button3.Image = global::WindowsFormsApp2.Properties.Resources.RIGHT32;
+            this.button3.Location = new System.Drawing.Point(909, 976);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(43, 48);
+            this.button3.TabIndex = 39;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::WindowsFormsApp2.Properties.Resources.LEFT32;
+            this.button2.Location = new System.Drawing.Point(508, 976);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(43, 48);
+            this.button2.TabIndex = 38;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // FrmAutoCadenaValor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1428, 1061);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -2628,5 +2680,9 @@
         private System.Windows.Forms.RadioButton p10_0;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }

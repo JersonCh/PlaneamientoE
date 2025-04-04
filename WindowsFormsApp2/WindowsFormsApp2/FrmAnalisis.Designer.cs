@@ -62,10 +62,9 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(220, 981);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(165, 797);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(501, 32);
+            this.label17.Size = new System.Drawing.Size(392, 26);
             this.label17.TabIndex = 98;
             this.label17.Text = "Para elaborar el análisis FODA de su empresa, le proponemos que utilice distintos" +
     " \r\ninstrumentos para el análisis tanto interno como externo. \t\t\t\t\t";
@@ -74,10 +73,9 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(218, 924);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(164, 751);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(583, 48);
+            this.label14.Size = new System.Drawing.Size(459, 39);
             this.label14.TabIndex = 97;
             this.label14.Text = resources.GetString("label14.Text");
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -85,10 +83,9 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(218, 884);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(164, 718);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(573, 32);
+            this.label15.Size = new System.Drawing.Size(451, 26);
             this.label15.TabIndex = 96;
             this.label15.Text = "Son todos aquellos aspectos que limitan o reducen la capacidad de desarrollo de l" +
     "a empresa. \r\nConstituyen disficultades para la organización y deben, por tanto, " +
@@ -99,19 +96,19 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(215, 858);
+            this.label16.Location = new System.Drawing.Point(161, 697);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(94, 16);
+            this.label16.Size = new System.Drawing.Size(74, 14);
             this.label16.TabIndex = 95;
             this.label16.Text = "Debilidades:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(218, 797);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(164, 648);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(512, 48);
+            this.label10.Size = new System.Drawing.Size(406, 39);
             this.label10.TabIndex = 94;
             this.label10.Text = resources.GetString("label10.Text");
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -119,10 +116,9 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(218, 757);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(164, 615);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(538, 32);
+            this.label11.Size = new System.Drawing.Size(424, 26);
             this.label11.TabIndex = 93;
             this.label11.Text = "Son capacidades, recursos, posiciones alcanzadas, ventajas competitivas que posee" +
     " la \r\nempresa y que le ayudarán a aprovechar las oportunidades del mercado.";
@@ -132,19 +128,19 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(215, 731);
+            this.label13.Location = new System.Drawing.Point(161, 594);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 16);
+            this.label13.Size = new System.Drawing.Size(67, 14);
             this.label13.TabIndex = 92;
             this.label13.Text = "Fortalezas:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(218, 674);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(164, 548);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(563, 48);
+            this.label7.Size = new System.Drawing.Size(442, 39);
             this.label7.TabIndex = 91;
             this.label7.Text = resources.GetString("label7.Text");
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -152,10 +148,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(218, 617);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(164, 501);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(588, 48);
+            this.label8.Size = new System.Drawing.Size(465, 39);
             this.label8.TabIndex = 90;
             this.label8.Text = resources.GetString("label8.Text");
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,19 +159,19 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(215, 591);
+            this.label9.Location = new System.Drawing.Point(161, 480);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 16);
+            this.label9.Size = new System.Drawing.Size(68, 14);
             this.label9.TabIndex = 89;
             this.label9.Text = "Amenazas:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(218, 548);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(164, 445);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(574, 32);
+            this.label6.Size = new System.Drawing.Size(454, 26);
             this.label6.TabIndex = 88;
             this.label6.Text = "Ejemplos: Fuerte crecimiento, desarrollo de la externalización, nuevas tecnlogías" +
     ", seguridad \r\nde la distribución, atender a grupos adiconales de clientes, creci" +
@@ -186,10 +181,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(218, 506);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(164, 411);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(553, 32);
+            this.label4.Size = new System.Drawing.Size(431, 26);
             this.label4.TabIndex = 87;
             this.label4.Text = "Aquellos aspectos que pueden presentar una posibilidad para mejorar la rentabilid" +
     "ad de la \r\nempresa, aumentar la cifra de negocio y fortalecer la ventaja competi" +
@@ -199,10 +193,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(214, 244);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(160, 198);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(571, 32);
+            this.label3.Size = new System.Drawing.Size(451, 26);
             this.label3.TabIndex = 85;
             this.label3.Text = "Este análisis le permitirá detectar por un lado los factores de éxito (fortalezas" +
     " y oportunidades), \r\ny por otro lado, las debilidades y amenazas que una empresa" +
@@ -213,19 +206,19 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(215, 480);
+            this.label12.Location = new System.Drawing.Point(161, 390);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(116, 16);
+            this.label12.Size = new System.Drawing.Size(92, 14);
             this.label12.TabIndex = 84;
             this.label12.Text = "Oportunidades:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 159);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(161, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(524, 80);
+            this.label2.Size = new System.Drawing.Size(420, 65);
             this.label2.TabIndex = 83;
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -235,10 +228,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(75, 21);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(56, 17);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 42);
+            this.button1.Size = new System.Drawing.Size(85, 34);
             this.button1.TabIndex = 81;
             this.button1.Text = "INDICE";
             this.button1.UseVisualStyleBackColor = false;
@@ -247,27 +239,28 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(214, 239);
+            this.label5.Location = new System.Drawing.Point(160, 194);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 17);
+            this.label5.Size = new System.Drawing.Size(0, 15);
             this.label5.TabIndex = 80;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(214, 105);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(160, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 48);
+            this.label1.Size = new System.Drawing.Size(444, 39);
             this.label1.TabIndex = 79;
             this.label1.Text = resources.GetString("label1.Text");
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(292, 289);
+            this.pictureBox1.Location = new System.Drawing.Point(219, 235);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(383, 184);
+            this.pictureBox1.Size = new System.Drawing.Size(287, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
@@ -275,9 +268,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(221, 50);
+            this.pictureBox2.Location = new System.Drawing.Point(166, 41);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(495, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(371, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 82;
             this.pictureBox2.TabStop = false;
@@ -285,10 +279,9 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(505, 1320);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(379, 1072);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 59);
+            this.button5.Size = new System.Drawing.Size(97, 48);
             this.button5.TabIndex = 103;
             this.button5.Text = "6. CADENA DE VALOR";
             this.button5.UseVisualStyleBackColor = true;
@@ -296,9 +289,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(240, 1031);
+            this.pictureBox3.Location = new System.Drawing.Point(180, 838);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(473, 261);
+            this.pictureBox3.Size = new System.Drawing.Size(355, 212);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 102;
             this.pictureBox3.TabStop = false;
@@ -306,39 +300,36 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(332, 1320);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(249, 1072);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 59);
+            this.button4.Size = new System.Drawing.Size(97, 48);
             this.button4.TabIndex = 101;
             this.button4.Text = "4. OBJETIVOS ESTRATÉGICOS";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(677, 1343);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(508, 1091);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 28);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 100;
             this.button3.Text = ">";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(173, 1343);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(130, 1091);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 99;
             this.button2.Text = "<";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // FrmAnalisis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 1405);
+            this.ClientSize = new System.Drawing.Size(691, 862);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button4);
@@ -364,8 +355,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmAnalisis";
             this.Text = "FrmAnalisis";
+            this.Load += new System.EventHandler(this.FrmAnalisis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
