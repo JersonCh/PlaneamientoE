@@ -138,6 +138,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SOFTPETIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAnalisis.resx">
       <DependentUpon>FrmAnalisis.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +207,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SOFTPETIDataSet.xsc">
+      <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SOFTPETIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SOFTPETIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SOFTPETIDataSet.xss">
+      <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
