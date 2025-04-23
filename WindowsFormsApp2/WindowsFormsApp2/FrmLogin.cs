@@ -24,31 +24,53 @@ namespace WindowsFormsApp2
             string email = txtCorreo.Text.Trim();
             string password = txtPass.Text.Trim();
 
-
-            // Crear una instancia de la clase clsUsuario
-            clsUsuario usuario = new clsUsuario();
-
-            // Intentar autenticar al usuario
-            if (usuario.Autenticar(email, password))
+            if (ValidarUsuario(email, password))
             {
-                // Si la autenticación es exitosa
                 MessageBox.Show("Inicio de sesión exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 this.Hide();
-
-                // Crear una nueva instancia del formulario al que quieres redirigir
                 Form objFrmInicio = new FrmInicio();
-
-                // Mostrar el otro formulario
                 objFrmInicio.Show();
-
             }
             else
             {
-                // Si la autenticación falla
                 MessageBox.Show("Correo o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private bool ValidarUsuario(string usuario, string password)
+        {
+            // Crear una instancia de tu clase de usuario
+            clsUsuario user = new clsUsuario();
+
+            // Usar el método Autenticar que ya tienes en tu clase
+            //return user.Autenticar(usuario, password);
+
+            // O si prefieres hacer la consulta directamente aquí:
+            
+            try
+            {
+                using (var dc = new SOFTPETIDataSet())
+                {
+                    var consulta = dc.SP_Autenticar(usuario, password).SingleOrDefault();
+                    
+                    if (consulta != null)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al autenticar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+        }
+
 
     }
 }

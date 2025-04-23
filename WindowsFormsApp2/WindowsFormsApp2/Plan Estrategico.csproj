@@ -35,6 +35,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -150,6 +155,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SOFTPETIDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SOFTPETIDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAnalisis.resx">
       <DependentUpon>FrmAnalisis.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +218,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -227,6 +238,17 @@
     </None>
     <None Include="SOFTPETIDataSet.xss">
       <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SOFTPETIDataSet1.xsc">
+      <DependentUpon>SOFTPETIDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SOFTPETIDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SOFTPETIDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SOFTPETIDataSet1.xss">
+      <DependentUpon>SOFTPETIDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -252,6 +274,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\grafico2cadenadevalor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modelos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

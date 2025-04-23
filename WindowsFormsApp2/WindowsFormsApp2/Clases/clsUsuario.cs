@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
-
+using System.Data;
+using System.Data.SqlClient;
 namespace WindowsFormsApp2.Clases
 {
     internal class clsUsuario
@@ -73,5 +74,6 @@ namespace WindowsFormsApp2.Clases
                 return builder.ToString();
             }
         }
+
     }
 }
