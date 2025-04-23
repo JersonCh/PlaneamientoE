@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp2.Clases;
+using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2
 {
@@ -40,7 +41,7 @@ namespace WindowsFormsApp2
         private bool ValidarUsuario(string usuario, string password)
         {
             // Crear una instancia de tu clase de usuario
-            clsUsuario user = new clsUsuario();
+            DataClasses3DataContext user = new DataClasses3DataContext();
 
             // Usar el método Autenticar que ya tienes en tu clase
             //return user.Autenticar(usuario, password);
@@ -49,9 +50,9 @@ namespace WindowsFormsApp2
             
             try
             {
-                using (var dc = new SOFTPETIDataSet())
+                using (var dc = new DataClasses3DataContext())
                 {
-                    var consulta = dc.SP_Autenticar(usuario, password).SingleOrDefault();
+                    var consulta = dc.SP_Autenticar(usuario, password);
                     
                     if (consulta != null)
                     {

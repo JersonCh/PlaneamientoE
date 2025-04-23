@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
       <Private>True</Private>
@@ -148,17 +149,17 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\DataClasses3.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses3.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SOFTPETIDataSet.Designer.cs">
+    <Compile Include="SOFTPETIDataSet_3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SOFTPETIDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SOFTPETIDataSet1.xsd</DependentUpon>
+      <DependentUpon>SOFTPETIDataSet_3.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmAnalisis.resx">
       <DependentUpon>FrmAnalisis.cs</DependentUpon>
@@ -218,6 +219,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Modelos\DataClasses3.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses3.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Modelos\DataClasses3.dbml.layout">
+      <DependentUpon>DataClasses3.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -228,27 +237,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="SOFTPETIDataSet.xsc">
-      <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
+    <None Include="SOFTPETIDataSet_3.xsc">
+      <DependentUpon>SOFTPETIDataSet_3.xsd</DependentUpon>
     </None>
-    <None Include="SOFTPETIDataSet.xsd">
+    <None Include="SOFTPETIDataSet_3.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SOFTPETIDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>SOFTPETIDataSet_3.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="SOFTPETIDataSet.xss">
-      <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SOFTPETIDataSet1.xsc">
-      <DependentUpon>SOFTPETIDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="SOFTPETIDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SOFTPETIDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SOFTPETIDataSet1.xss">
-      <DependentUpon>SOFTPETIDataSet1.xsd</DependentUpon>
+    <None Include="SOFTPETIDataSet_3.xss">
+      <DependentUpon>SOFTPETIDataSet_3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -275,8 +273,9 @@
   <ItemGroup>
     <None Include="Resources\grafico2cadenadevalor.PNG" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Modelos\" />
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
