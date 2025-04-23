@@ -43,7 +43,7 @@ namespace WindowsFormsApp2
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(194, 565);
+            this.btnAgregar.Location = new System.Drawing.Point(142, 562);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(109, 33);
             this.btnAgregar.TabIndex = 87;
@@ -53,7 +53,7 @@ namespace WindowsFormsApp2
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(456, 565);
+            this.btnEliminar.Location = new System.Drawing.Point(404, 562);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(109, 33);
             this.btnEliminar.TabIndex = 86;
@@ -63,7 +63,7 @@ namespace WindowsFormsApp2
             // btnActualizar
             // 
             this.btnActualizar.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(325, 565);
+            this.btnActualizar.Location = new System.Drawing.Point(273, 562);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(109, 33);
             this.btnActualizar.TabIndex = 85;
@@ -73,9 +73,9 @@ namespace WindowsFormsApp2
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(87, 162);
+            this.dataGridView1.Location = new System.Drawing.Point(49, 160);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(478, 381);
+            this.dataGridView1.Size = new System.Drawing.Size(553, 381);
             this.dataGridView1.TabIndex = 84;
             // 
             // btnBuscar
