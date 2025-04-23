@@ -83,6 +83,12 @@
     <Compile Include="FrmCadenaValor.Designer.cs">
       <DependentUpon>FrmCadenaValor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpresas.Designer.cs">
+      <DependentUpon>FrmEmpresas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInformacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadenaValor.resx">
       <DependentUpon>FrmCadenaValor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpresas.resx">
+      <DependentUpon>FrmEmpresas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInformacion.resx">
       <DependentUpon>FrmInformacion.cs</DependentUpon>
