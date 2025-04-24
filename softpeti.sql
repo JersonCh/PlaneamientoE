@@ -134,19 +134,21 @@ BEGIN
 END;
 GO
 
--- SP: Listar Misión por Usuario
+
+-- SP: Listar Misión por Usuario y Empresa
 IF OBJECT_ID('SP_ListarMisionPorUsuario') IS NOT NULL
     DROP PROCEDURE SP_ListarMisionPorUsuario;
 GO
-CREATE PROCEDURE SP_ListarMisionPorUsuario
-    @usuario_id INT
+CREATE PROCEDURE SP_ListarMisionPorUsuarioYEmpresa
+    @UsuarioId INT,
+    @EmpresaId INT
 AS
 BEGIN
-    SELECT id, descripcion, fecha_registro
-    FROM Mision
-    WHERE usuario_id = @usuario_id;
-END;
-GO
+    SELECT *
+    FROM MISION
+    WHERE usuario_id = @UsuarioId AND id = @EmpresaId
+END
+
 
 -- SP: Registrar Visión
 IF OBJECT_ID('SP_RegistrarVision') IS NOT NULL
@@ -162,19 +164,19 @@ BEGIN
 END;
 GO
 
--- SP: Listar Visión por Usuario
+-- SP: Listar Visión por Usuario y Empresa
 IF OBJECT_ID('SP_ListarVisionPorUsuario') IS NOT NULL
     DROP PROCEDURE SP_ListarVisionPorUsuario;
 GO
-CREATE PROCEDURE SP_ListarVisionPorUsuario
-    @usuario_id INT
+CREATE PROCEDURE SP_ListarVisionPorUsuarioYEmpresa
+    @UsuarioId INT,
+    @EmpresaId INT
 AS
 BEGIN
-    SELECT id, descripcion, fecha_registro
-    FROM Vision
-    WHERE usuario_id = @usuario_id;
-END;
-GO
+    SELECT *
+    FROM VISION
+    WHERE usuario_id = @UsuarioId AND id = @EmpresaId
+END
 
 
 CREATE PROCEDURE SP_Autenticar

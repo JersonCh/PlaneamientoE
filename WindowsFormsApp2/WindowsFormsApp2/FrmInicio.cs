@@ -24,6 +24,43 @@ namespace WindowsFormsApp2
             frmResumen.Show();
             this.Close();
         }
-    
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnminimisar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMision_Click(object sender, EventArgs e)
+        {
+            FrmMision frmMision = new FrmMision();
+            frmMision.Show();
+            this.Hide();
+        }
+
+        private void btnVision_Click(object sender, EventArgs e)
+        {
+            FrmVision frmVision = new FrmVision();
+            frmVision.Show();
+            this.Hide();
+        }
+
+        private void btnInformacionEmpresa_Click(object sender, EventArgs e)
+        {
+            FrmInformacion frmInformacion = new FrmInformacion();
+            frmInformacion.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmValores frmValores = new FrmValores();
+            frmValores.Show();
+            this.Hide();
+        }
     }
 }

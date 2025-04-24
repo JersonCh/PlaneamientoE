@@ -17,5 +17,21 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.Show();
+            this.Hide();
+        }
+
+        private void btnminimisar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

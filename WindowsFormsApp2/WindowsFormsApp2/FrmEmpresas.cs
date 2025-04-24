@@ -21,6 +21,7 @@ namespace WindowsFormsApp2
         }
         private void CargarEmpresas()
         {
+
             try
             {
                 using (var dc = new DataClasses3DataContext())
@@ -36,12 +37,23 @@ namespace WindowsFormsApp2
                     // Habilitar la selección de filas
                     dgvEmpresas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                     dgvEmpresas.MultiSelect = false;  // Solo permitir seleccionar una fila a la vez
+
+                    // Ajustar columnas
+                    if (dgvEmpresas.Columns.Count >= 2)
+                    {
+                        dgvEmpresas.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        dgvEmpresas.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                        dgvEmpresas.Columns[0].FillWeight = 50; 
+                        dgvEmpresas.Columns[1].FillWeight = 50; 
+                    }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar empresas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -109,6 +121,14 @@ namespace WindowsFormsApp2
             }
         }
 
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
+        private void btnminimisar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -53,5 +53,37 @@ namespace WindowsFormsApp2
             frmVision.Show();
             this.Close();
         }
+
+        private void btnminimisar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        //Indice
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmInicio frmInicio = new FrmInicio(); 
+            frmInicio.Show();                      
+            this.Hide();                           
+        }
+
+        private void btnIndice_Click(object sender, EventArgs e)
+        {
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.Show();
+            this.Hide();
+        }
+
+        private void btnVision_Click_1(object sender, EventArgs e)
+        {
+            FrmVision frmVision = new FrmVision();
+            frmVision.Show();
+            this.Hide();
+        }
     }
 }
