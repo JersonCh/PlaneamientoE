@@ -421,6 +421,7 @@
             this.btnResumen.TabIndex = 153;
             this.btnResumen.Text = "RESUMEN DEL PLAN EJECUTIVO";
             this.btnResumen.UseVisualStyleBackColor = false;
+            this.btnResumen.Click += new System.EventHandler(this.btnResumen_Click);
             // 
             // FrmInicio
             // 

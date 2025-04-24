@@ -1,4 +1,4 @@
-	-- Crear la base de datos SOFTPETI si no existe
+-- Crear la base de datos SOFTPETI si no existe
 	IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'SOFTPETI')
 	BEGIN
 		CREATE DATABASE SOFTPETI;
@@ -70,27 +70,6 @@
 	END
 	GO
 
-	IF NOT EXISTS (SELECT * FROM Empresa WHERE nombre = 'SOFTPETI')
-	BEGIN
-		INSERT INTO Empresa (nombre, usuario_id)
-		VALUES ('SOFTPETI', 1);
-	END
-	GO
-
-	IF NOT EXISTS (SELECT * FROM Mision WHERE descripcion = 'Nuestra misión es proporcionar soluciones tecnológicas innovadoras que mejoren la calidad de vida de las personas.')
-	BEGIN
-		INSERT INTO Mision (descripcion, usuario_id)
-		VALUES ('Nuestra misión es proporcionar soluciones tecnológicas innovadoras que mejoren la calidad de vida de las personas.', 1);
-	END
-	GO
-
-	-- Insertar datos en la tabla Vision si no existe
-	IF NOT EXISTS (SELECT * FROM Vision WHERE descripcion = 'Ser líderes en la creación de software empresarial a nivel global, fomentando el desarrollo y crecimiento continuo.')
-	BEGIN
-		INSERT INTO Vision (descripcion, usuario_id)
-		VALUES ('Ser líderes en la creación de software empresarial a nivel global, fomentando el desarrollo y crecimiento continuo.', 1);
-	END
-	GO
 
 
 -- SP: Registrar Empresa

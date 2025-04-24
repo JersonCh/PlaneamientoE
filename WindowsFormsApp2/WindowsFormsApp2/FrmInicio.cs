@@ -20,9 +20,7 @@ namespace WindowsFormsApp2
 
         private void ptbResumen_Click(object sender, EventArgs e)
         {
-            FrmResumen frmResumen = new FrmResumen(Sesion.UsuarioId);
-            frmResumen.Show();
-            this.Close();
+            
         }
 
         private void btncerrar_Click(object sender, EventArgs e)
@@ -61,6 +59,13 @@ namespace WindowsFormsApp2
             FrmValores frmValores = new FrmValores();
             frmValores.Show();
             this.Hide();
+        }
+
+        private void btnResumen_Click(object sender, EventArgs e)
+        {
+            FrmResumen frmResumen = new FrmResumen(Sesion.UsuarioId);
+            frmResumen.Show();
+            this.Close();
         }
     }
 }
