@@ -30,22 +30,22 @@ namespace WindowsFormsApp2.Modelos
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnCreated();
-    partial void InsertEmpresa(Empresa instance);
-    partial void UpdateEmpresa(Empresa instance);
-    partial void DeleteEmpresa(Empresa instance);
-    partial void InsertMision(Mision instance);
-    partial void UpdateMision(Mision instance);
-    partial void DeleteMision(Mision instance);
-    partial void InsertUSUARIO(USUARIO instance);
-    partial void UpdateUSUARIO(USUARIO instance);
-    partial void DeleteUSUARIO(USUARIO instance);
     partial void InsertVision(Vision instance);
     partial void UpdateVision(Vision instance);
     partial void DeleteVision(Vision instance);
+    partial void InsertUSUARIO(USUARIO instance);
+    partial void UpdateUSUARIO(USUARIO instance);
+    partial void DeleteUSUARIO(USUARIO instance);
+    partial void InsertMision(Mision instance);
+    partial void UpdateMision(Mision instance);
+    partial void DeleteMision(Mision instance);
+    partial void InsertEmpresa(Empresa instance);
+    partial void UpdateEmpresa(Empresa instance);
+    partial void DeleteEmpresa(Empresa instance);
     #endregion
 		
 		public DataClasses3DataContext() : 
-				base(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString2, mappingSource)
+				base(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString3, mappingSource)
 		{
 			OnCreated();
 		}
@@ -74,19 +74,11 @@ namespace WindowsFormsApp2.Modelos
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Empresa> Empresa
+		public System.Data.Linq.Table<Vision> Vision
 		{
 			get
 			{
-				return this.GetTable<Empresa>();
-			}
-		}
-		
-		public System.Data.Linq.Table<Mision> Mision
-		{
-			get
-			{
-				return this.GetTable<Mision>();
+				return this.GetTable<Vision>();
 			}
 		}
 		
@@ -98,11 +90,19 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
-		public System.Data.Linq.Table<Vision> Vision
+		public System.Data.Linq.Table<Mision> Mision
 		{
 			get
 			{
-				return this.GetTable<Vision>();
+				return this.GetTable<Mision>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Empresa> Empresa
+		{
+			get
+			{
+				return this.GetTable<Empresa>();
 			}
 		}
 		
@@ -118,20 +118,6 @@ namespace WindowsFormsApp2.Modelos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuario_id);
 			return ((ISingleResult<SP_ListarEmpresasPorUsuarioResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarMisionPorUsuario")]
-		public ISingleResult<SP_ListarMisionPorUsuarioResult> SP_ListarMisionPorUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuario_id);
-			return ((ISingleResult<SP_ListarMisionPorUsuarioResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarVisionPorUsuario")]
-		public ISingleResult<SP_ListarVisionPorUsuarioResult> SP_ListarVisionPorUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuario_id);
-			return ((ISingleResult<SP_ListarVisionPorUsuarioResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarEmpresa")]
@@ -154,573 +140,19 @@ namespace WindowsFormsApp2.Modelos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, usuario_id);
 			return ((int)(result.ReturnValue));
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Empresa")]
-	public partial class Empresa : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _nombre;
-		
-		private System.Nullable<int> _usuario_id;
-		
-		private EntityRef<USUARIO> _USUARIO;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OnnombreChanging(string value);
-    partial void OnnombreChanged();
-    partial void Onusuario_idChanging(System.Nullable<int> value);
-    partial void Onusuario_idChanged();
-    #endregion
-		
-		public Empresa()
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarMisionPorUsuarioYEmpresa")]
+		public ISingleResult<SP_ListarMisionPorUsuarioYEmpresaResult> SP_ListarMisionPorUsuarioYEmpresa([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioId", DbType="Int")] System.Nullable<int> usuarioId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpresaId", DbType="Int")] System.Nullable<int> empresaId)
 		{
-			this._USUARIO = default(EntityRef<USUARIO>);
-			OnCreated();
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioId, empresaId);
+			return ((ISingleResult<SP_ListarMisionPorUsuarioYEmpresaResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarVisionPorUsuarioYEmpresa")]
+		public ISingleResult<SP_ListarVisionPorUsuarioYEmpresaResult> SP_ListarVisionPorUsuarioYEmpresa([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioId", DbType="Int")] System.Nullable<int> usuarioId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpresaId", DbType="Int")] System.Nullable<int> empresaId)
 		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(200)")]
-		public string nombre
-		{
-			get
-			{
-				return this._nombre;
-			}
-			set
-			{
-				if ((this._nombre != value))
-				{
-					this.OnnombreChanging(value);
-					this.SendPropertyChanging();
-					this._nombre = value;
-					this.SendPropertyChanged("nombre");
-					this.OnnombreChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
-		public System.Nullable<int> usuario_id
-		{
-			get
-			{
-				return this._usuario_id;
-			}
-			set
-			{
-				if ((this._usuario_id != value))
-				{
-					if (this._USUARIO.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onusuario_idChanging(value);
-					this.SendPropertyChanging();
-					this._usuario_id = value;
-					this.SendPropertyChanged("usuario_id");
-					this.Onusuario_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
-		public USUARIO USUARIO
-		{
-			get
-			{
-				return this._USUARIO.Entity;
-			}
-			set
-			{
-				USUARIO previousValue = this._USUARIO.Entity;
-				if (((previousValue != value) 
-							|| (this._USUARIO.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._USUARIO.Entity = null;
-						previousValue.Empresa.Remove(this);
-					}
-					this._USUARIO.Entity = value;
-					if ((value != null))
-					{
-						value.Empresa.Add(this);
-						this._usuario_id = value.id;
-					}
-					else
-					{
-						this._usuario_id = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("USUARIO");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Mision")]
-	public partial class Mision : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _descripcion;
-		
-		private System.Nullable<System.DateTime> _fecha_registro;
-		
-		private System.Nullable<int> _usuario_id;
-		
-		private EntityRef<USUARIO> _USUARIO;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
-    partial void Onfecha_registroChanged();
-    partial void Onusuario_idChanging(System.Nullable<int> value);
-    partial void Onusuario_idChanged();
-    #endregion
-		
-		public Mision()
-		{
-			this._USUARIO = default(EntityRef<USUARIO>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
-		public System.Nullable<System.DateTime> fecha_registro
-		{
-			get
-			{
-				return this._fecha_registro;
-			}
-			set
-			{
-				if ((this._fecha_registro != value))
-				{
-					this.Onfecha_registroChanging(value);
-					this.SendPropertyChanging();
-					this._fecha_registro = value;
-					this.SendPropertyChanged("fecha_registro");
-					this.Onfecha_registroChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
-		public System.Nullable<int> usuario_id
-		{
-			get
-			{
-				return this._usuario_id;
-			}
-			set
-			{
-				if ((this._usuario_id != value))
-				{
-					if (this._USUARIO.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onusuario_idChanging(value);
-					this.SendPropertyChanging();
-					this._usuario_id = value;
-					this.SendPropertyChanged("usuario_id");
-					this.Onusuario_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Mision", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
-		public USUARIO USUARIO
-		{
-			get
-			{
-				return this._USUARIO.Entity;
-			}
-			set
-			{
-				USUARIO previousValue = this._USUARIO.Entity;
-				if (((previousValue != value) 
-							|| (this._USUARIO.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._USUARIO.Entity = null;
-						previousValue.Mision.Remove(this);
-					}
-					this._USUARIO.Entity = value;
-					if ((value != null))
-					{
-						value.Mision.Add(this);
-						this._usuario_id = value.id;
-					}
-					else
-					{
-						this._usuario_id = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("USUARIO");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USUARIO")]
-	public partial class USUARIO : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _nombre;
-		
-		private string _apellido;
-		
-		private string _email;
-		
-		private string _password_hash;
-		
-		private EntitySet<Empresa> _Empresa;
-		
-		private EntitySet<Mision> _Mision;
-		
-		private EntitySet<Vision> _Vision;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OnnombreChanging(string value);
-    partial void OnnombreChanged();
-    partial void OnapellidoChanging(string value);
-    partial void OnapellidoChanged();
-    partial void OnemailChanging(string value);
-    partial void OnemailChanged();
-    partial void Onpassword_hashChanging(string value);
-    partial void Onpassword_hashChanged();
-    #endregion
-		
-		public USUARIO()
-		{
-			this._Empresa = new EntitySet<Empresa>(new Action<Empresa>(this.attach_Empresa), new Action<Empresa>(this.detach_Empresa));
-			this._Mision = new EntitySet<Mision>(new Action<Mision>(this.attach_Mision), new Action<Mision>(this.detach_Mision));
-			this._Vision = new EntitySet<Vision>(new Action<Vision>(this.attach_Vision), new Action<Vision>(this.detach_Vision));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string nombre
-		{
-			get
-			{
-				return this._nombre;
-			}
-			set
-			{
-				if ((this._nombre != value))
-				{
-					this.OnnombreChanging(value);
-					this.SendPropertyChanging();
-					this._nombre = value;
-					this.SendPropertyChanged("nombre");
-					this.OnnombreChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellido", DbType="VarChar(120) NOT NULL", CanBeNull=false)]
-		public string apellido
-		{
-			get
-			{
-				return this._apellido;
-			}
-			set
-			{
-				if ((this._apellido != value))
-				{
-					this.OnapellidoChanging(value);
-					this.SendPropertyChanging();
-					this._apellido = value;
-					this.SendPropertyChanged("apellido");
-					this.OnapellidoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_email", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string email
-		{
-			get
-			{
-				return this._email;
-			}
-			set
-			{
-				if ((this._email != value))
-				{
-					this.OnemailChanging(value);
-					this.SendPropertyChanging();
-					this._email = value;
-					this.SendPropertyChanged("email");
-					this.OnemailChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password_hash", DbType="VarChar(64) NOT NULL", CanBeNull=false)]
-		public string password_hash
-		{
-			get
-			{
-				return this._password_hash;
-			}
-			set
-			{
-				if ((this._password_hash != value))
-				{
-					this.Onpassword_hashChanging(value);
-					this.SendPropertyChanging();
-					this._password_hash = value;
-					this.SendPropertyChanged("password_hash");
-					this.Onpassword_hashChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_Empresa", ThisKey="id", OtherKey="usuario_id")]
-		public EntitySet<Empresa> Empresa
-		{
-			get
-			{
-				return this._Empresa;
-			}
-			set
-			{
-				this._Empresa.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Mision", Storage="_Mision", ThisKey="id", OtherKey="usuario_id")]
-		public EntitySet<Mision> Mision
-		{
-			get
-			{
-				return this._Mision;
-			}
-			set
-			{
-				this._Mision.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Vision", Storage="_Vision", ThisKey="id", OtherKey="usuario_id")]
-		public EntitySet<Vision> Vision
-		{
-			get
-			{
-				return this._Vision;
-			}
-			set
-			{
-				this._Vision.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Empresa(Empresa entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = this;
-		}
-		
-		private void detach_Empresa(Empresa entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = null;
-		}
-		
-		private void attach_Mision(Mision entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = this;
-		}
-		
-		private void detach_Mision(Mision entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = null;
-		}
-		
-		private void attach_Vision(Vision entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = this;
-		}
-		
-		private void detach_Vision(Vision entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = null;
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioId, empresaId);
+			return ((ISingleResult<SP_ListarVisionPorUsuarioYEmpresaResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -899,6 +331,574 @@ namespace WindowsFormsApp2.Modelos
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USUARIO")]
+	public partial class USUARIO : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _nombre;
+		
+		private string _apellido;
+		
+		private string _email;
+		
+		private string _password_hash;
+		
+		private EntitySet<Vision> _Vision;
+		
+		private EntitySet<Mision> _Mision;
+		
+		private EntitySet<Empresa> _Empresa;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void OnapellidoChanging(string value);
+    partial void OnapellidoChanged();
+    partial void OnemailChanging(string value);
+    partial void OnemailChanged();
+    partial void Onpassword_hashChanging(string value);
+    partial void Onpassword_hashChanged();
+    #endregion
+		
+		public USUARIO()
+		{
+			this._Vision = new EntitySet<Vision>(new Action<Vision>(this.attach_Vision), new Action<Vision>(this.detach_Vision));
+			this._Mision = new EntitySet<Mision>(new Action<Mision>(this.attach_Mision), new Action<Mision>(this.detach_Mision));
+			this._Empresa = new EntitySet<Empresa>(new Action<Empresa>(this.attach_Empresa), new Action<Empresa>(this.detach_Empresa));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellido", DbType="VarChar(120) NOT NULL", CanBeNull=false)]
+		public string apellido
+		{
+			get
+			{
+				return this._apellido;
+			}
+			set
+			{
+				if ((this._apellido != value))
+				{
+					this.OnapellidoChanging(value);
+					this.SendPropertyChanging();
+					this._apellido = value;
+					this.SendPropertyChanged("apellido");
+					this.OnapellidoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_email", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string email
+		{
+			get
+			{
+				return this._email;
+			}
+			set
+			{
+				if ((this._email != value))
+				{
+					this.OnemailChanging(value);
+					this.SendPropertyChanging();
+					this._email = value;
+					this.SendPropertyChanged("email");
+					this.OnemailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password_hash", DbType="VarChar(64) NOT NULL", CanBeNull=false)]
+		public string password_hash
+		{
+			get
+			{
+				return this._password_hash;
+			}
+			set
+			{
+				if ((this._password_hash != value))
+				{
+					this.Onpassword_hashChanging(value);
+					this.SendPropertyChanging();
+					this._password_hash = value;
+					this.SendPropertyChanged("password_hash");
+					this.Onpassword_hashChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Vision", Storage="_Vision", ThisKey="id", OtherKey="usuario_id")]
+		public EntitySet<Vision> Vision
+		{
+			get
+			{
+				return this._Vision;
+			}
+			set
+			{
+				this._Vision.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Mision", Storage="_Mision", ThisKey="id", OtherKey="usuario_id")]
+		public EntitySet<Mision> Mision
+		{
+			get
+			{
+				return this._Mision;
+			}
+			set
+			{
+				this._Mision.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_Empresa", ThisKey="id", OtherKey="usuario_id")]
+		public EntitySet<Empresa> Empresa
+		{
+			get
+			{
+				return this._Empresa;
+			}
+			set
+			{
+				this._Empresa.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Vision(Vision entity)
+		{
+			this.SendPropertyChanging();
+			entity.USUARIO = this;
+		}
+		
+		private void detach_Vision(Vision entity)
+		{
+			this.SendPropertyChanging();
+			entity.USUARIO = null;
+		}
+		
+		private void attach_Mision(Mision entity)
+		{
+			this.SendPropertyChanging();
+			entity.USUARIO = this;
+		}
+		
+		private void detach_Mision(Mision entity)
+		{
+			this.SendPropertyChanging();
+			entity.USUARIO = null;
+		}
+		
+		private void attach_Empresa(Empresa entity)
+		{
+			this.SendPropertyChanging();
+			entity.USUARIO = this;
+		}
+		
+		private void detach_Empresa(Empresa entity)
+		{
+			this.SendPropertyChanging();
+			entity.USUARIO = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Mision")]
+	public partial class Mision : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _usuario_id;
+		
+		private EntityRef<USUARIO> _USUARIO;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
+    partial void Onfecha_registroChanged();
+    partial void Onusuario_idChanging(System.Nullable<int> value);
+    partial void Onusuario_idChanged();
+    #endregion
+		
+		public Mision()
+		{
+			this._USUARIO = default(EntityRef<USUARIO>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this.Onfecha_registroChanging(value);
+					this.SendPropertyChanging();
+					this._fecha_registro = value;
+					this.SendPropertyChanged("fecha_registro");
+					this.Onfecha_registroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
+		public System.Nullable<int> usuario_id
+		{
+			get
+			{
+				return this._usuario_id;
+			}
+			set
+			{
+				if ((this._usuario_id != value))
+				{
+					if (this._USUARIO.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onusuario_idChanging(value);
+					this.SendPropertyChanging();
+					this._usuario_id = value;
+					this.SendPropertyChanged("usuario_id");
+					this.Onusuario_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Mision", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
+		public USUARIO USUARIO
+		{
+			get
+			{
+				return this._USUARIO.Entity;
+			}
+			set
+			{
+				USUARIO previousValue = this._USUARIO.Entity;
+				if (((previousValue != value) 
+							|| (this._USUARIO.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._USUARIO.Entity = null;
+						previousValue.Mision.Remove(this);
+					}
+					this._USUARIO.Entity = value;
+					if ((value != null))
+					{
+						value.Mision.Add(this);
+						this._usuario_id = value.id;
+					}
+					else
+					{
+						this._usuario_id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("USUARIO");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Empresa")]
+	public partial class Empresa : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _nombre;
+		
+		private System.Nullable<int> _usuario_id;
+		
+		private EntityRef<USUARIO> _USUARIO;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void Onusuario_idChanging(System.Nullable<int> value);
+    partial void Onusuario_idChanged();
+    #endregion
+		
+		public Empresa()
+		{
+			this._USUARIO = default(EntityRef<USUARIO>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(200)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
+		public System.Nullable<int> usuario_id
+		{
+			get
+			{
+				return this._usuario_id;
+			}
+			set
+			{
+				if ((this._usuario_id != value))
+				{
+					if (this._USUARIO.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onusuario_idChanging(value);
+					this.SendPropertyChanging();
+					this._usuario_id = value;
+					this.SendPropertyChanged("usuario_id");
+					this.Onusuario_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
+		public USUARIO USUARIO
+		{
+			get
+			{
+				return this._USUARIO.Entity;
+			}
+			set
+			{
+				USUARIO previousValue = this._USUARIO.Entity;
+				if (((previousValue != value) 
+							|| (this._USUARIO.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._USUARIO.Entity = null;
+						previousValue.Empresa.Remove(this);
+					}
+					this._USUARIO.Entity = value;
+					if ((value != null))
+					{
+						value.Empresa.Add(this);
+						this._usuario_id = value.id;
+					}
+					else
+					{
+						this._usuario_id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("USUARIO");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	public partial class SP_AutenticarResult
 	{
 		
@@ -1023,7 +1023,7 @@ namespace WindowsFormsApp2.Modelos
 		}
 	}
 	
-	public partial class SP_ListarMisionPorUsuarioResult
+	public partial class SP_ListarMisionPorUsuarioYEmpresaResult
 	{
 		
 		private int _id;
@@ -1032,7 +1032,9 @@ namespace WindowsFormsApp2.Modelos
 		
 		private System.Nullable<System.DateTime> _fecha_registro;
 		
-		public SP_ListarMisionPorUsuarioResult()
+		private System.Nullable<int> _usuario_id;
+		
+		public SP_ListarMisionPorUsuarioYEmpresaResult()
 		{
 		}
 		
@@ -1080,12 +1082,28 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._fecha_registro != value))
 				{
 					this._fecha_registro = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
+		public System.Nullable<int> usuario_id
+		{
+			get
+			{
+				return this._usuario_id;
+			}
+			set
+			{
+				if ((this._usuario_id != value))
+				{
+					this._usuario_id = value;
 				}
 			}
 		}
 	}
 	
-	public partial class SP_ListarVisionPorUsuarioResult
+	public partial class SP_ListarVisionPorUsuarioYEmpresaResult
 	{
 		
 		private int _id;
@@ -1094,7 +1112,9 @@ namespace WindowsFormsApp2.Modelos
 		
 		private System.Nullable<System.DateTime> _fecha_registro;
 		
-		public SP_ListarVisionPorUsuarioResult()
+		private System.Nullable<int> _usuario_id;
+		
+		public SP_ListarVisionPorUsuarioYEmpresaResult()
 		{
 		}
 		
@@ -1142,6 +1162,22 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._fecha_registro != value))
 				{
 					this._fecha_registro = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
+		public System.Nullable<int> usuario_id
+		{
+			get
+			{
+				return this._usuario_id;
+			}
+			set
+			{
+				if ((this._usuario_id != value))
+				{
+					this._usuario_id = value;
 				}
 			}
 		}

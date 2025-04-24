@@ -180,6 +180,7 @@
             this.txtMision.Name = "txtMision";
             this.txtMision.Size = new System.Drawing.Size(413, 190);
             this.txtMision.TabIndex = 76;
+            this.txtMision.TextChanged += new System.EventHandler(this.txtMision_TextChanged);
             // 
             // txtVision
             // 

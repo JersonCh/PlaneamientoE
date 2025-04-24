@@ -28,14 +28,14 @@ namespace WindowsFormsApp2
                 using (var dc = new DataClasses3DataContext())
                 {
                     // Obtener Misión del usuario
-                    var mision = dc.SP_ListarMisionPorUsuario(usuarioId).FirstOrDefault();
+                    var mision = dc.SP_ListarMisionPorUsuarioYEmpresa(usuarioId, _empresaId).FirstOrDefault();
                     if (mision != null)
                     {
                         txtMision.Text = mision.descripcion;
                     }
 
                     // Obtener Visión del usuario
-                    var vision = dc.SP_ListarVisionPorUsuario(usuarioId).FirstOrDefault();
+                    var vision = dc.SP_ListarVisionPorUsuarioYEmpresa(usuarioId, _empresaId).FirstOrDefault();
                     if (vision != null)
                     {
                         txtVision.Text = vision.descripcion;
@@ -72,6 +72,11 @@ namespace WindowsFormsApp2
         private void button3_Click(object sender, EventArgs e)
         {
             // Lógica para el botón, si es necesario
+        }
+
+        private void txtMision_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

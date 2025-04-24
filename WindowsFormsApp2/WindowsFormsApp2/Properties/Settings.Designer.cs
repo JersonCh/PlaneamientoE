@@ -53,5 +53,16 @@ namespace WindowsFormsApp2.Properties {
                 return ((string)(this["SOFTPETIConnectionString2"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ANDREE;Initial Catalog=SOFTPETI;Integrated Security=True;Connect Time" +
+            "out=30;Encrypt=True;TrustServerCertificate=True")]
+        public string SOFTPETIConnectionString3 {
+            get {
+                return ((string)(this["SOFTPETIConnectionString3"]));
+            }
+        }
     }
 }

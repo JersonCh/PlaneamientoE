@@ -159,11 +159,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(53, 674);
+            this.textBox1.Location = new System.Drawing.Point(53, 675);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(520, 74);
+            this.textBox1.Size = new System.Drawing.Size(605, 74);
             this.textBox1.TabIndex = 10;
             // 
             // label11
@@ -254,7 +254,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(520, 74);
+            this.textBox2.Size = new System.Drawing.Size(604, 74);
             this.textBox2.TabIndex = 20;
             // 
             // label1

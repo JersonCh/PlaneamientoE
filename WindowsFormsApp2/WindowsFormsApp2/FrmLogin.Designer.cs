@@ -50,20 +50,21 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.txtCorreo);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btnIngresar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtPass);
-            this.panel1.Location = new System.Drawing.Point(0, 272);
+            this.panel1.Location = new System.Drawing.Point(296, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(387, 280);
+            this.panel1.Size = new System.Drawing.Size(344, 547);
             this.panel1.TabIndex = 71;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(41, 142);
+            this.pictureBox3.Location = new System.Drawing.Point(28, 364);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(27, 25);
@@ -75,7 +76,7 @@
             // 
             this.txtCorreo.BackColor = System.Drawing.Color.AliceBlue;
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(74, 56);
+            this.txtCorreo.Location = new System.Drawing.Point(61, 278);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
@@ -85,7 +86,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(41, 59);
+            this.pictureBox2.Location = new System.Drawing.Point(28, 281);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(27, 25);
@@ -98,7 +99,7 @@
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(29, 30);
+            this.label9.Location = new System.Drawing.Point(16, 252);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 23);
             this.label9.TabIndex = 69;
@@ -110,7 +111,7 @@
             this.btnIngresar.BackColor = System.Drawing.Color.Teal;
             this.btnIngresar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnIngresar.Location = new System.Drawing.Point(126, 206);
+            this.btnIngresar.Location = new System.Drawing.Point(113, 468);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(121, 34);
             this.btnIngresar.TabIndex = 73;
@@ -122,7 +123,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(32, 111);
+            this.label1.Location = new System.Drawing.Point(19, 333);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 25);
             this.label1.TabIndex = 70;
@@ -133,7 +134,7 @@
             // 
             this.txtPass.BackColor = System.Drawing.Color.AliceBlue;
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(73, 139);
+            this.txtPass.Location = new System.Drawing.Point(60, 361);
             this.txtPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
@@ -144,7 +145,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(108, 207);
+            this.label2.Location = new System.Drawing.Point(78, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 43);
             this.label2.TabIndex = 70;
@@ -154,7 +155,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(61, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(51, 41);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(233, 191);
@@ -162,16 +163,15 @@
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
             // 
-            // Login
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(379, 546);
+            this.ClientSize = new System.Drawing.Size(635, 546);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Login";
+            this.Name = "FrmLogin";
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
