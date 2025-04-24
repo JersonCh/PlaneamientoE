@@ -154,6 +154,13 @@ namespace WindowsFormsApp2.Modelos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioId, empresaId);
 			return ((ISingleResult<SP_ListarVisionPorUsuarioYEmpresaResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarValores")]
+		public int SP_RegistrarValores([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, usuario_id);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Vision")]
@@ -503,7 +510,7 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa1", Storage="_Empresa", ThisKey="id", OtherKey="usuario_id")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_Empresa", ThisKey="id", OtherKey="usuario_id")]
 		public EntitySet<Empresa> Empresa
 		{
 			get
@@ -868,7 +875,7 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa1", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
 		public USUARIO USUARIO
 		{
 			get

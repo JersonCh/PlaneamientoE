@@ -57,6 +57,19 @@
 	END
 	GO
 
+-- Crear la tabla Valores si no existe
+	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Valores')
+	BEGIN
+		CREATE TABLE Valores (
+			id INT PRIMARY KEY IDENTITY,
+			descripcion NVARCHAR(MAX),
+			fecha_registro DATETIME DEFAULT GETDATE(),
+			usuario_id INT, 
+			FOREIGN KEY (usuario_id) REFERENCES USUARIO(id) 
+		);
+	END
+	GO
+
 	-- Crear la tabla Empresa si no existe
 	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Empresa')
 	BEGIN
@@ -145,6 +158,20 @@ BEGIN
 END;
 GO
 
+IF OBJECT_ID('SP_RegistrarValores') IS NOT NULL
+    DROP PROCEDURE SP_RegistrarValores;
+GO
+
+CREATE PROCEDURE SP_RegistrarValores
+    @descripcion NVARCHAR(MAX),
+    @usuario_id INT
+AS
+BEGIN
+    INSERT INTO Valores (descripcion, usuario_id)
+    VALUES (@descripcion, @usuario_id);
+END;
+GO
+
 -- SP: Listar Visión por Usuario y Empresa
 IF OBJECT_ID('SP_ListarVisionPorUsuario') IS NOT NULL
     DROP PROCEDURE SP_ListarVisionPorUsuario;
@@ -182,3 +209,21 @@ BEGIN
         AND password_hash = @PasswordHash;
 END
 GO
+
+-- SP: Listar Visión por Usuario y Empresa
+IF OBJECT_ID('SP_ListarValoresPorUsuarioYEmpresa') IS NOT NULL
+    DROP PROCEDURE SP_ListarValoresPorUsuarioYEmpresa;
+GO
+
+CREATE PROCEDURE SP_ListarValoresPorUsuarioYEmpresa
+    @UsuarioId INT,
+    @EmpresaId INT
+AS
+BEGIN
+    SELECT *
+    FROM Valores
+    WHERE usuario_id = @UsuarioId AND id = @EmpresaId
+END
+
+GO
+
