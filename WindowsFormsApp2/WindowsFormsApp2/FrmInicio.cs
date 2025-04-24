@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.Clases;
 
 namespace WindowsFormsApp2
 {
@@ -16,5 +17,13 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void ptbResumen_Click(object sender, EventArgs e)
+        {
+            FrmResumen frmResumen = new FrmResumen(Sesion.UsuarioId);
+            frmResumen.Show();
+            this.Close();
+        }
+    
     }
 }

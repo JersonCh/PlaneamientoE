@@ -45,7 +45,7 @@ namespace WindowsFormsApp2.Modelos
     #endregion
 		
 		public DataClasses3DataContext() : 
-				base(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString1, mappingSource)
+				base(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}

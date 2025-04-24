@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SOFTPETI" Class="DataClasses3DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-2E7VMP1;Initial Catalog=SOFTPETI;Integrated Security=True" SettingsObjectName="WindowsFormsApp2.Properties.Settings" SettingsPropertyName="SOFTPETIConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-9K8EBMA;Initial Catalog=SOFTPETI;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="WindowsFormsApp2.Properties.Settings" SettingsPropertyName="SOFTPETIConnectionString2" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Empresa" Member="Empresa">
     <Type Name="Empresa">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

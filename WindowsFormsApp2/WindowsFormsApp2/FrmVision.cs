@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.Clases;
+using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2
 {
@@ -17,24 +19,44 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
 
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            string descripcion = txtVision.Text.Trim(); 
+
+            if (string.IsNullOrWhiteSpace(descripcion))
+            {
+                MessageBox.Show("Ingrese una descripción para la visión.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            using (DataClasses3DataContext dc = new DataClasses3DataContext())
+            {
+                dc.SP_RegistrarVision(descripcion, Sesion.UsuarioId);
+                MessageBox.Show("Visión registrada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnValores_Click(object sender, EventArgs e)
         {
-
+            FrmValores frmValores = new FrmValores();
+            frmValores.Show();
+            this.Close();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnSiguiente_Click(object sender, EventArgs e)
         {
-
+            FrmValores frmValores = new FrmValores();
+            frmValores.Show();
+            this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnIndice_Click(object sender, EventArgs e)
         {
-
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.Show();
+            this.Close();
         }
     }
 }

@@ -30,14 +30,14 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmprendedor = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtMision = new System.Windows.Forms.TextBox();
+            this.txtVision = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -109,14 +109,14 @@
             this.label9.Text = "Nombre de la empresa / proyecto:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox10
+            // txtEmpresa
             // 
-            this.textBox10.Location = new System.Drawing.Point(224, 96);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(261, 58);
-            this.textBox10.TabIndex = 70;
+            this.txtEmpresa.Location = new System.Drawing.Point(224, 96);
+            this.txtEmpresa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmpresa.Multiline = true;
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(261, 58);
+            this.txtEmpresa.TabIndex = 70;
             // 
             // label1
             // 
@@ -129,14 +129,14 @@
             this.label1.Text = "Fecha de elaboración:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // txtFecha
             // 
-            this.textBox1.Location = new System.Drawing.Point(689, 96);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 58);
-            this.textBox1.TabIndex = 72;
+            this.txtFecha.Location = new System.Drawing.Point(689, 96);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFecha.Multiline = true;
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(232, 58);
+            this.txtFecha.TabIndex = 72;
             // 
             // label3
             // 
@@ -149,14 +149,14 @@
             this.label3.Text = "Emprendedores / promotores:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox2
+            // txtEmprendedor
             // 
-            this.textBox2.Location = new System.Drawing.Point(1089, 96);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(272, 58);
-            this.textBox2.TabIndex = 74;
+            this.txtEmprendedor.Location = new System.Drawing.Point(1089, 96);
+            this.txtEmprendedor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmprendedor.Multiline = true;
+            this.txtEmprendedor.Name = "txtEmprendedor";
+            this.txtEmprendedor.Size = new System.Drawing.Size(272, 58);
+            this.txtEmprendedor.TabIndex = 74;
             // 
             // textBox3
             // 
@@ -172,23 +172,23 @@
             this.textBox3.Text = "MISION";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // txtMision
             // 
-            this.textBox4.Location = new System.Drawing.Point(27, 205);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(413, 190);
-            this.textBox4.TabIndex = 76;
+            this.txtMision.Location = new System.Drawing.Point(27, 205);
+            this.txtMision.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMision.Multiline = true;
+            this.txtMision.Name = "txtMision";
+            this.txtMision.Size = new System.Drawing.Size(413, 190);
+            this.txtMision.TabIndex = 76;
             // 
-            // textBox5
+            // txtVision
             // 
-            this.textBox5.Location = new System.Drawing.Point(27, 454);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(413, 190);
-            this.textBox5.TabIndex = 78;
+            this.txtVision.Location = new System.Drawing.Point(27, 454);
+            this.txtVision.Margin = new System.Windows.Forms.Padding(2);
+            this.txtVision.Multiline = true;
+            this.txtVision.Name = "txtVision";
+            this.txtVision.Size = new System.Drawing.Size(413, 190);
+            this.txtVision.TabIndex = 78;
             // 
             // textBox6
             // 
@@ -677,6 +677,7 @@
             this.button3.Size = new System.Drawing.Size(50, 47);
             this.button3.TabIndex = 126;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FrmResumen
             // 
@@ -728,15 +729,15 @@
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtVision);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtMision);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtEmprendedor);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Name = "FrmResumen";
@@ -750,14 +751,14 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtEmpresa;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmprendedor;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtMision;
+        private System.Windows.Forms.TextBox txtVision;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;

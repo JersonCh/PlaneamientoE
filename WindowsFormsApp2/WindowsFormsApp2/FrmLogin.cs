@@ -14,23 +14,30 @@ namespace WindowsFormsApp2
 {
     public partial class FrmLogin : Form
     {
+        
         public FrmLogin()
         {
             InitializeComponent();
+            //Instancia de dataset con objeto user
+            DataClasses3DataContext user = new DataClasses3DataContext();
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-
             string email = txtCorreo.Text.Trim();
             string password = txtPass.Text.Trim();
 
-            if (ValidarUsuario(email, password))
+            clsUsuario usuario = new clsUsuario();
+
+            if (usuario.Autenticar(email, password))
             {
+                // Guardamos el ID del usuario en la clase estática Sesion
+                Sesion.UsuarioId = usuario.id;
+
                 MessageBox.Show("Inicio de sesión exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Form objFrmInicio = new FrmInicio();
-                objFrmInicio.Show();
+                Form objFrmEmpresas = new FrmEmpresas();
+                objFrmEmpresas.Show();
             }
             else
             {
@@ -38,39 +45,6 @@ namespace WindowsFormsApp2
             }
         }
 
-        private bool ValidarUsuario(string usuario, string password)
-        {
-            // Crear una instancia de tu clase de usuario
-            DataClasses3DataContext user = new DataClasses3DataContext();
-
-            // Usar el método Autenticar que ya tienes en tu clase
-            //return user.Autenticar(usuario, password);
-
-            // O si prefieres hacer la consulta directamente aquí:
-            
-            try
-            {
-                using (var dc = new DataClasses3DataContext())
-                {
-                    var consulta = dc.SP_Autenticar(usuario, password);
-                    
-                    if (consulta != null)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al autenticar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-
-        }
 
 
     }
