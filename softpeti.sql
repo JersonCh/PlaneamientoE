@@ -96,6 +96,7 @@
 IF OBJECT_ID('SP_RegistrarEmpresa') IS NOT NULL
     DROP PROCEDURE SP_RegistrarEmpresa;
 GO
+
 CREATE PROCEDURE SP_RegistrarEmpresa
     @nombre NVARCHAR(200),
     @usuario_id INT
@@ -124,6 +125,7 @@ GO
 IF OBJECT_ID('SP_RegistrarMision') IS NOT NULL
     DROP PROCEDURE SP_RegistrarMision;
 GO
+
 CREATE PROCEDURE SP_RegistrarMision
     @descripcion NVARCHAR(MAX),
     @usuario_id INT
@@ -136,9 +138,6 @@ GO
 
 
 -- SP: Listar Misión por Usuario y Empresa
-IF OBJECT_ID('SP_ListarMisionPorUsuario') IS NOT NULL
-    DROP PROCEDURE SP_ListarMisionPorUsuario;
-GO
 CREATE PROCEDURE SP_ListarMisionPorUsuarioYEmpresa
     @UsuarioId INT,
     @EmpresaId INT
@@ -148,12 +147,13 @@ BEGIN
     FROM MISION
     WHERE usuario_id = @UsuarioId AND id = @EmpresaId
 END
-
+GO
 
 -- SP: Registrar Visión
 IF OBJECT_ID('SP_RegistrarVision') IS NOT NULL
     DROP PROCEDURE SP_RegistrarVision;
 GO
+
 CREATE PROCEDURE SP_RegistrarVision
     @descripcion NVARCHAR(MAX),
     @usuario_id INT
@@ -168,6 +168,7 @@ GO
 IF OBJECT_ID('SP_ListarVisionPorUsuario') IS NOT NULL
     DROP PROCEDURE SP_ListarVisionPorUsuario;
 GO
+
 CREATE PROCEDURE SP_ListarVisionPorUsuarioYEmpresa
     @UsuarioId INT,
     @EmpresaId INT
@@ -177,6 +178,8 @@ BEGIN
     FROM VISION
     WHERE usuario_id = @UsuarioId AND id = @EmpresaId
 END
+
+GO
 
 
 CREATE PROCEDURE SP_Autenticar
@@ -197,3 +200,4 @@ BEGIN
         email = @Email 
         AND password_hash = @PasswordHash;
 END
+GO
