@@ -503,7 +503,7 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_Empresa", ThisKey="id", OtherKey="usuario_id")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa1", Storage="_Empresa", ThisKey="id", OtherKey="usuario_id")]
 		public EntitySet<Empresa> Empresa
 		{
 			get
@@ -760,6 +760,8 @@ namespace WindowsFormsApp2.Modelos
 		
 		private System.Nullable<int> _usuario_id;
 		
+		private string _descripcion;
+		
 		private EntityRef<USUARIO> _USUARIO;
 		
     #region Definiciones de métodos de extensibilidad
@@ -772,6 +774,8 @@ namespace WindowsFormsApp2.Modelos
     partial void OnnombreChanged();
     partial void Onusuario_idChanging(System.Nullable<int> value);
     partial void Onusuario_idChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
     #endregion
 		
 		public Empresa()
@@ -844,7 +848,27 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa1", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
 		public USUARIO USUARIO
 		{
 			get

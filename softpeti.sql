@@ -63,7 +63,8 @@
 		CREATE TABLE Empresa (
 			id INT PRIMARY KEY IDENTITY,
 			nombre NVARCHAR(200),
-			usuario_id INT, 
+			usuario_id INT,
+			descripcion Text
 			FOREIGN KEY (usuario_id) REFERENCES USUARIO(id)  
 		);
 	END
@@ -97,13 +98,14 @@ IF OBJECT_ID('SP_RegistrarEmpresa') IS NOT NULL
     DROP PROCEDURE SP_RegistrarEmpresa;
 GO
 
-CREATE PROCEDURE SP_RegistrarEmpresa
+CREATE OR ALTER PROCEDURE SP_RegistrarEmpresa
     @nombre NVARCHAR(200),
-    @usuario_id INT
+    @usuario_id INT,
+	@descripcion text
 AS
 BEGIN
-    INSERT INTO Empresa (nombre, usuario_id)
-    VALUES (@nombre, @usuario_id);
+    INSERT INTO Empresa (nombre, usuario_id,descripcion)
+    VALUES (@nombre, @usuario_id,@descripcion);
 END;
 GO
 

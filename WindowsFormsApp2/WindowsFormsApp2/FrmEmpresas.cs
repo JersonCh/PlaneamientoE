@@ -62,39 +62,43 @@ namespace WindowsFormsApp2
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Mostrar MessageBox para ingresar el nombre de la empresa
-                string nombreEmpresa = Microsoft.VisualBasic.Interaction.InputBox("Por favor ingrese el nombre de la empresa:", "Registrar Empresa", "");
 
-                // Verificar si se ingresó un nombre
-                if (string.IsNullOrEmpty(nombreEmpresa))
-                {
-                    MessageBox.Show("Debe ingresar un nombre para la empresa.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return; // Salir si no se ingresó nombre
-                }
+            FrmInformacion frminfo = new FrmInformacion();
+            frminfo.Show();
 
-                // Registrar la empresa en la base de datos
-                using (var db = new DataClasses3DataContext())
-                {
-                    var nuevaEmpresa = new Empresa
-                    {
-                        nombre = nombreEmpresa,  // Usar el nombre ingresado
-                        usuario_id = Sesion.UsuarioId
-                    };
+            //try
+            //{
+            //    // Mostrar MessageBox para ingresar el nombre de la empresa
+            //    string nombreEmpresa = Microsoft.VisualBasic.Interaction.InputBox("Por favor ingrese el nombre de la empresa:", "Registrar Empresa", "");
 
-                    db.Empresa.InsertOnSubmit(nuevaEmpresa);
-                    db.SubmitChanges();
-                }
+            //    // Verificar si se ingresó un nombre
+            //    if (string.IsNullOrEmpty(nombreEmpresa))
+            //    {
+            //        MessageBox.Show("Debe ingresar un nombre para la empresa.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //        return; // Salir si no se ingresó nombre
+            //    }
 
-                // Redirigir a FrmMision
-                this.Hide();
-                new FrmMision().Show();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al registrar empresa: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //    // Registrar la empresa en la base de datos
+            //    using (var db = new DataClasses3DataContext())
+            //    {
+            //        var nuevaEmpresa = new Empresa
+            //        {
+            //            nombre = nombreEmpresa,  // Usar el nombre ingresado
+            //            usuario_id = Sesion.UsuarioId
+            //        };
+
+            //        db.Empresa.InsertOnSubmit(nuevaEmpresa);
+            //        db.SubmitChanges();
+            //    }
+
+            //    // Redirigir a FrmMision
+            //    this.Hide();
+            //    new FrmMision().Show();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Error al registrar empresa: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
 
         private void dgvEmpresas_CellContentClick(object sender, DataGridViewCellEventArgs e)
