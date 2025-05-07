@@ -158,19 +158,6 @@ BEGIN
 END;
 GO
 
-
--- SP: Listar Misión por Usuario y Empresa
-CREATE PROCEDURE SP_ListarMisionPorUsuarioYEmpresa
-    @UsuarioId INT,
-    @EmpresaId INT
-AS
-BEGIN
-    SELECT *
-    FROM MISION
-    WHERE usuario_id = @UsuarioId AND id = @EmpresaId
-END
-GO
-
 -- SP: Registrar Visión
 IF OBJECT_ID('SP_RegistrarVision') IS NOT NULL
     DROP PROCEDURE SP_RegistrarVision;
