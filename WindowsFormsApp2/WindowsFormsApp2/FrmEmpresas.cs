@@ -117,7 +117,7 @@ namespace WindowsFormsApp2
                     int empresaId = empresaSeleccionada.id;  
 
                     
-                    FrmResumen frmResumen = new FrmResumen(empresaId);
+                    FrmResumen frmResumen = new FrmResumen();
                     frmResumen.Show();
 
                     this.Hide();

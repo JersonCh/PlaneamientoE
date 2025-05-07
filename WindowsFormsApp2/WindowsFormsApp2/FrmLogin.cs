@@ -37,8 +37,8 @@ namespace WindowsFormsApp2
 
                 MessageBox.Show("Inicio de sesión exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Form objFrmEmpresas = new FrmEmpresas();
-                objFrmEmpresas.Show();
+                Form objFrmDashBoard = new FrmDashBoard();
+                objFrmDashBoard.Show();
             }
             else
             {

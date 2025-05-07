@@ -9,13 +9,13 @@ namespace WindowsFormsApp2
 {
     public partial class FrmResumen : Form
     {
-        private int _empresaId;
-
-        public FrmResumen(int empresaId)
+       
+        
+        public FrmResumen()
         {
             InitializeComponent();
-            _empresaId = empresaId;  // Guardar el ID de la empresa
             CargarDatos();  // Llamar al método para cargar los datos
+           
         }
 
         private void CargarDatos()
@@ -24,25 +24,34 @@ namespace WindowsFormsApp2
             {
                 // Asumiendo que tienes un usuario logueado y su ID se obtiene de la sesión
                 int usuarioId = Sesion.UsuarioId;
-
+                int empresaId = Sesion.EmpresaId;
+                MessageBox.Show("ID de empresa registrado: " + empresaId, "ID Generado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 using (var dc = new DataClasses3DataContext())
                 {
                     // Obtener Misión del usuario
-                    var mision = dc.SP_ListarMisionPorUsuarioYEmpresa(usuarioId, _empresaId).FirstOrDefault();
+                    var mision = dc.SP_ListarMisionPorUsuario(empresaId).FirstOrDefault();
                     if (mision != null)
                     {
                         txtMision.Text = mision.descripcion;
                     }
 
                     // Obtener Visión del usuario
-                    var vision = dc.SP_ListarVisionPorUsuarioYEmpresa(usuarioId, _empresaId).FirstOrDefault();
+                    var vision = dc.SP_ListarVisionPorUsuario(empresaId).FirstOrDefault();
                     if (vision != null)
                     {
                         txtVision.Text = vision.descripcion;
                     }
 
+                    // Obtener valores del usuario
+                    var valores = dc.SP_ListarValores(empresaId).FirstOrDefault();
+                    if (valores != null)
+                    {
+                        txtValores.Text = valores.descripcion;
+                    }
+
+
                     // Obtener Empresa seleccionada por el usuario
-                    var empresa = dc.Empresa.FirstOrDefault(e => e.id == _empresaId);  // Usar _empresaId para obtener la empresa seleccionada
+                    var empresa = dc.Empresa.FirstOrDefault(e => e.id == empresaId);  // Usar _empresaId para obtener la empresa seleccionada
                     if (empresa != null)
                     {
                         txtEmpresa.Text = empresa.nombre;  // Asignar el nombre de la empresa al TextBox

@@ -86,41 +86,6 @@
       <Column Name="nombre" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.SP_RegistrarEmpresa" Method="SP_RegistrarEmpresa">
-    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(200)" />
-    <Parameter Name="usuario_id" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.SP_RegistrarMision" Method="SP_RegistrarMision">
-    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="usuario_id" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.SP_RegistrarVision" Method="SP_RegistrarVision">
-    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="usuario_id" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.SP_ListarMisionPorUsuarioYEmpresa" Method="SP_ListarMisionPorUsuarioYEmpresa">
-    <Parameter Name="UsuarioId" Parameter="usuarioId" Type="System.Int32" DbType="Int" />
-    <Parameter Name="EmpresaId" Parameter="empresaId" Type="System.Int32" DbType="Int" />
-    <ElementType Name="SP_ListarMisionPorUsuarioYEmpresaResult">
-      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="usuario_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.SP_ListarVisionPorUsuarioYEmpresa" Method="SP_ListarVisionPorUsuarioYEmpresa">
-    <Parameter Name="UsuarioId" Parameter="usuarioId" Type="System.Int32" DbType="Int" />
-    <Parameter Name="EmpresaId" Parameter="empresaId" Type="System.Int32" DbType="Int" />
-    <ElementType Name="SP_ListarVisionPorUsuarioYEmpresaResult">
-      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="usuario_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.SP_RegistrarValores" Method="SP_RegistrarValores">
     <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
     <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
@@ -129,6 +94,41 @@
   <Function Name="dbo.SP_ListarValores" Method="SP_ListarValores">
     <Parameter Name="EmpresaId" Parameter="empresaId" Type="System.Int32" DbType="Int" />
     <ElementType Name="SP_ListarValoresResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_RegistrarEmpresa" Method="SP_RegistrarEmpresa">
+    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="usuario_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="nuevaEmpresaId" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ListarMisionPorUsuario" Method="SP_ListarMisionPorUsuario">
+    <Parameter Name="EmpresaId" Parameter="empresaId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarMisionPorUsuarioResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_RegistrarMision" Method="SP_RegistrarMision">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_RegistrarVision" Method="SP_RegistrarVision">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ListarVisionPorUsuario" Method="SP_ListarVisionPorUsuario">
+    <Parameter Name="EmpresaId" Parameter="empresaId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarVisionPorUsuarioResult">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />

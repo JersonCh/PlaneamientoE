@@ -2659,6 +2659,8 @@ namespace WindowsFormsApp2 {
             
             private global::System.Data.DataColumn columnfecha_registro;
             
+            private global::System.Data.DataColumn columnempresa_id;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SP_ListarVisionPorUsuarioDataTable() {
@@ -2718,6 +2720,14 @@ namespace WindowsFormsApp2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn empresa_idColumn {
+                get {
+                    return this.columnempresa_id;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2753,12 +2763,13 @@ namespace WindowsFormsApp2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SP_ListarVisionPorUsuarioRow AddSP_ListarVisionPorUsuarioRow(string descripcion, System.DateTime fecha_registro) {
+            public SP_ListarVisionPorUsuarioRow AddSP_ListarVisionPorUsuarioRow(string descripcion, System.DateTime fecha_registro, int empresa_id) {
                 SP_ListarVisionPorUsuarioRow rowSP_ListarVisionPorUsuarioRow = ((SP_ListarVisionPorUsuarioRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         descripcion,
-                        fecha_registro};
+                        fecha_registro,
+                        empresa_id};
                 rowSP_ListarVisionPorUsuarioRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSP_ListarVisionPorUsuarioRow);
                 return rowSP_ListarVisionPorUsuarioRow;
@@ -2791,6 +2802,7 @@ namespace WindowsFormsApp2 {
                 this.columnid = base.Columns["id"];
                 this.columndescripcion = base.Columns["descripcion"];
                 this.columnfecha_registro = base.Columns["fecha_registro"];
+                this.columnempresa_id = base.Columns["empresa_id"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2802,6 +2814,8 @@ namespace WindowsFormsApp2 {
                 base.Columns.Add(this.columndescripcion);
                 this.columnfecha_registro = new global::System.Data.DataColumn("fecha_registro", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnfecha_registro);
+                this.columnempresa_id = new global::System.Data.DataColumn("empresa_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnempresa_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
                 this.columnid.AutoIncrement = true;
@@ -3632,6 +3646,23 @@ namespace WindowsFormsApp2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int empresa_id {
+                get {
+                    try {
+                        return ((int)(this[this.tableSP_ListarVisionPorUsuario.empresa_idColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'empresa_id\' de la tabla \'SP_ListarVisionPorUsuario\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableSP_ListarVisionPorUsuario.empresa_idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsdescripcionNull() {
                 return this.IsNull(this.tableSP_ListarVisionPorUsuario.descripcionColumn);
             }
@@ -3652,6 +3683,18 @@ namespace WindowsFormsApp2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void Setfecha_registroNull() {
                 this[this.tableSP_ListarVisionPorUsuario.fecha_registroColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isempresa_idNull() {
+                return this.IsNull(this.tableSP_ListarVisionPorUsuario.empresa_idColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setempresa_idNull() {
+                this[this.tableSP_ListarVisionPorUsuario.empresa_idColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -6128,6 +6171,7 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("descripcion", "descripcion");
             tableMapping.ColumnMappings.Add("fecha_registro", "fecha_registro");
+            tableMapping.ColumnMappings.Add("empresa_id", "empresa_id");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -6135,7 +6179,7 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString;
+            this._connection.ConnectionString = global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6147,17 +6191,17 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
             this._commandCollection[0].CommandText = "dbo.SP_ListarVisionPorUsuario";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@usuario_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmpresaId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(SOFTPETIDataSet_3.SP_ListarVisionPorUsuarioDataTable dataTable, global::System.Nullable<int> usuario_id) {
+        public virtual int Fill(SOFTPETIDataSet_3.SP_ListarVisionPorUsuarioDataTable dataTable, global::System.Nullable<int> EmpresaId) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((usuario_id.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(usuario_id.Value));
+            if ((EmpresaId.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(EmpresaId.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -6173,10 +6217,10 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual SOFTPETIDataSet_3.SP_ListarVisionPorUsuarioDataTable GetData(global::System.Nullable<int> usuario_id) {
+        public virtual SOFTPETIDataSet_3.SP_ListarVisionPorUsuarioDataTable GetData(global::System.Nullable<int> EmpresaId) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((usuario_id.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(usuario_id.Value));
+            if ((EmpresaId.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(EmpresaId.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -6216,32 +6260,34 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
         private void InitCommandCollection() {
             this._commandCollection = new global::System.Data.IDbCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString1);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandText = "dbo.SP_RegistrarEmpresa";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.NVarChar, 200, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@usuario_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@descripcion", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nuevaEmpresaId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.InputOutput, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString1);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).CommandText = "dbo.SP_RegistrarMision";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@descripcion", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@usuario_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@empresa_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString1);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandText = "dbo.SP_RegistrarVision";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@descripcion", global::System.Data.SqlDbType.NVarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@usuario_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@empresa_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int SP_RegistrarEmpresa(string nombre, global::System.Nullable<int> usuario_id) {
+        public virtual int SP_RegistrarEmpresa(string nombre, global::System.Nullable<int> usuario_id, string descripcion, ref global::System.Nullable<int> nuevaEmpresaId) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[0]));
             if ((nombre == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -6255,6 +6301,18 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
             else {
                 command.Parameters[2].Value = global::System.DBNull.Value;
             }
+            if ((descripcion == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(descripcion));
+            }
+            if ((nuevaEmpresaId.HasValue == true)) {
+                command.Parameters[4].Value = ((int)(nuevaEmpresaId.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6269,13 +6327,20 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
                     command.Connection.Close();
                 }
             }
+            if (((command.Parameters[4].Value == null) 
+                        || (command.Parameters[4].Value.GetType() == typeof(global::System.DBNull)))) {
+                nuevaEmpresaId = new global::System.Nullable<int>();
+            }
+            else {
+                nuevaEmpresaId = new global::System.Nullable<int>(((int)(command.Parameters[4].Value)));
+            }
             return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int SP_RegistrarMision(string descripcion, global::System.Nullable<int> usuario_id) {
+        public virtual int SP_RegistrarMision(string descripcion, global::System.Nullable<int> empresa_id) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[1]));
             if ((descripcion == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -6283,8 +6348,8 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
             else {
                 command.Parameters[1].Value = ((string)(descripcion));
             }
-            if ((usuario_id.HasValue == true)) {
-                command.Parameters[2].Value = ((int)(usuario_id.Value));
+            if ((empresa_id.HasValue == true)) {
+                command.Parameters[2].Value = ((int)(empresa_id.Value));
             }
             else {
                 command.Parameters[2].Value = global::System.DBNull.Value;
@@ -6309,7 +6374,7 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int SP_RegistrarVision(string descripcion, global::System.Nullable<int> usuario_id) {
+        public virtual int SP_RegistrarVision(string descripcion, global::System.Nullable<int> empresa_id) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[2]));
             if ((descripcion == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -6317,8 +6382,8 @@ SELECT id, descripcion, fecha_registro, usuario_id FROM Vision WHERE (id = @id)"
             else {
                 command.Parameters[1].Value = ((string)(descripcion));
             }
-            if ((usuario_id.HasValue == true)) {
-                command.Parameters[2].Value = ((int)(usuario_id.Value));
+            if ((empresa_id.HasValue == true)) {
+                command.Parameters[2].Value = ((int)(empresa_id.Value));
             }
             else {
                 command.Parameters[2].Value = global::System.DBNull.Value;

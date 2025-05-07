@@ -33,7 +33,7 @@ namespace WindowsFormsApp2
 
             using (DataClasses3DataContext dc = new DataClasses3DataContext())
             {
-                dc.SP_RegistrarVision(descripcion, Sesion.UsuarioId);
+                dc.SP_RegistrarVision(descripcion, Sesion.EmpresaId);
                 MessageBox.Show("Visión registrada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -69,9 +69,9 @@ namespace WindowsFormsApp2
 
         private void btnMision_Click(object sender, EventArgs e)
         {
-            FrmMision frmMision = new FrmMision();
-            frmMision.Show();
-            this.Hide();
+            //FrmMision frmMision = new FrmMision();
+            //frmMision.Show();
+            //this.Hide();
         }
 
         private void btnValores_Click_1(object sender, EventArgs e)

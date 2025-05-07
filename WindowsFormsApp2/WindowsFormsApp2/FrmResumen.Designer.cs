@@ -40,7 +40,7 @@
             this.txtMision = new System.Windows.Forms.TextBox();
             this.txtVision = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtValores = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -207,14 +207,14 @@
             this.textBox6.Text = "VISION";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // txtValores
             // 
-            this.textBox7.Location = new System.Drawing.Point(484, 200);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(413, 123);
-            this.textBox7.TabIndex = 80;
+            this.txtValores.Location = new System.Drawing.Point(484, 200);
+            this.txtValores.Margin = new System.Windows.Forms.Padding(2);
+            this.txtValores.Multiline = true;
+            this.txtValores.Name = "txtValores";
+            this.txtValores.Size = new System.Drawing.Size(413, 123);
+            this.txtValores.TabIndex = 80;
             // 
             // textBox8
             // 
@@ -750,7 +750,7 @@
             this.Controls.Add(this.textBox24);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtValores);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.txtVision);
             this.Controls.Add(this.textBox6);
@@ -783,7 +783,7 @@
         private System.Windows.Forms.TextBox txtMision;
         private System.Windows.Forms.TextBox txtVision;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtValores;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox11;

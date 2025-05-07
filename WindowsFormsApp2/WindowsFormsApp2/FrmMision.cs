@@ -28,7 +28,7 @@ namespace WindowsFormsApp2
             {
                 using (DataClasses3DataContext dc = new DataClasses3DataContext())
                 {
-                    dc.SP_RegistrarMision(descripcion, Sesion.UsuarioId);
+                    dc.SP_RegistrarMision(descripcion, Sesion.EmpresaId);
                 }
 
                 MessageBox.Show("Misión registrada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);

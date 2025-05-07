@@ -17,6 +17,7 @@ namespace WindowsFormsApp2
         public FrmInformacion()
         {
             InitializeComponent();
+            DataClasses3DataContext user = new DataClasses3DataContext();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -51,42 +52,48 @@ namespace WindowsFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //int usuarioid = Sesion.UsuarioId;
             try
             {
                 // Obtener el ID del usuario de la sesión
                 string nombreEmpresa = txtNombre.Text;
                 string descripcion = txtDescripcion.Text;
-                // Verificar si se ingresó un nombre y descripcion
+
+                // Verificar si se ingresó un nombre y descripción
                 if (string.IsNullOrEmpty(nombreEmpresa) || string.IsNullOrEmpty(descripcion))
                 {
                     MessageBox.Show("Debe ingresar un nombre y descripción para la empresa.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return; // Salir si no se ingresó nombre
                 }
 
-                // Registrar la empresa en la base de datos
+                int? nuevoIdEmpresa = 0; // Declarar como nullable int
                 using (var db = new DataClasses3DataContext())
                 {
-                    var nuevaEmpresa = new Empresa
-                    {
-                        nombre = nombreEmpresa,  // Usar el nombre ingresado
-                        usuario_id = Sesion.UsuarioId,
-                        descripcion= descripcion
-                    };
-
-                    db.Empresa.InsertOnSubmit(nuevaEmpresa);
-                    db.SubmitChanges();
+                    db.SP_RegistrarEmpresa(nombreEmpresa, Sesion.UsuarioId, descripcion, ref nuevoIdEmpresa);
                 }
 
-                // Redirigir a FrmMision
-                this.Hide();
-                new FrmMision().Show();
+                if (nuevoIdEmpresa.HasValue)
+                {
+                    int empresaId = nuevoIdEmpresa.Value;
+                    Sesion.EmpresaId = empresaId;
+                    // Mostrar el ID generado
+                    MessageBox.Show("ID de empresa registrado: " + empresaId, "ID Generado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Hide();
+
+                    Form objFrmMision = new FrmMision();
+                    objFrmMision.Show();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo obtener el ID de la empresa.");
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al registrar empresa: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al registrar la empresa: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void button9_Click(object sender, EventArgs e)
         {

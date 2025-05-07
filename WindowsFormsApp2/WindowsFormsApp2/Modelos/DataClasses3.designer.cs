@@ -153,41 +153,6 @@ namespace WindowsFormsApp2.Modelos
 			return ((ISingleResult<SP_ListarEmpresasPorUsuarioResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarEmpresa")]
-		public int SP_RegistrarEmpresa([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(200)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, usuario_id);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarMision")]
-		public int SP_RegistrarMision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, usuario_id);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarVision")]
-		public int SP_RegistrarVision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, usuario_id);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarMisionPorUsuarioYEmpresa")]
-		public ISingleResult<SP_ListarMisionPorUsuarioYEmpresaResult> SP_ListarMisionPorUsuarioYEmpresa([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioId", DbType="Int")] System.Nullable<int> usuarioId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpresaId", DbType="Int")] System.Nullable<int> empresaId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioId, empresaId);
-			return ((ISingleResult<SP_ListarMisionPorUsuarioYEmpresaResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarVisionPorUsuarioYEmpresa")]
-		public ISingleResult<SP_ListarVisionPorUsuarioYEmpresaResult> SP_ListarVisionPorUsuarioYEmpresa([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UsuarioId", DbType="Int")] System.Nullable<int> usuarioId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpresaId", DbType="Int")] System.Nullable<int> empresaId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuarioId, empresaId);
-			return ((ISingleResult<SP_ListarVisionPorUsuarioYEmpresaResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarValores")]
 		public int SP_RegistrarValores([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
 		{
@@ -200,6 +165,42 @@ namespace WindowsFormsApp2.Modelos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresaId);
 			return ((ISingleResult<SP_ListarValoresResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarEmpresa")]
+		public int SP_RegistrarEmpresa([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] ref System.Nullable<int> nuevaEmpresaId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, usuario_id, descripcion, nuevaEmpresaId);
+			nuevaEmpresaId = ((System.Nullable<int>)(result.GetParameterValue(3)));
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarMisionPorUsuario")]
+		public ISingleResult<SP_ListarMisionPorUsuarioResult> SP_ListarMisionPorUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpresaId", DbType="Int")] System.Nullable<int> empresaId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresaId);
+			return ((ISingleResult<SP_ListarMisionPorUsuarioResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarMision")]
+		public int SP_RegistrarMision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarVision")]
+		public int SP_RegistrarVision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarVisionPorUsuario")]
+		public ISingleResult<SP_ListarVisionPorUsuarioResult> SP_ListarVisionPorUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpresaId", DbType="Int")] System.Nullable<int> empresaId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresaId);
+			return ((ISingleResult<SP_ListarVisionPorUsuarioResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -1703,166 +1704,6 @@ namespace WindowsFormsApp2.Modelos
 		}
 	}
 	
-	public partial class SP_ListarMisionPorUsuarioYEmpresaResult
-	{
-		
-		private int _id;
-		
-		private string _descripcion;
-		
-		private System.Nullable<System.DateTime> _fecha_registro;
-		
-		private System.Nullable<int> _usuario_id;
-		
-		public SP_ListarMisionPorUsuarioYEmpresaResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this._id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this._descripcion = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
-		public System.Nullable<System.DateTime> fecha_registro
-		{
-			get
-			{
-				return this._fecha_registro;
-			}
-			set
-			{
-				if ((this._fecha_registro != value))
-				{
-					this._fecha_registro = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
-		public System.Nullable<int> usuario_id
-		{
-			get
-			{
-				return this._usuario_id;
-			}
-			set
-			{
-				if ((this._usuario_id != value))
-				{
-					this._usuario_id = value;
-				}
-			}
-		}
-	}
-	
-	public partial class SP_ListarVisionPorUsuarioYEmpresaResult
-	{
-		
-		private int _id;
-		
-		private string _descripcion;
-		
-		private System.Nullable<System.DateTime> _fecha_registro;
-		
-		private System.Nullable<int> _usuario_id;
-		
-		public SP_ListarVisionPorUsuarioYEmpresaResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this._id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this._descripcion = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
-		public System.Nullable<System.DateTime> fecha_registro
-		{
-			get
-			{
-				return this._fecha_registro;
-			}
-			set
-			{
-				if ((this._fecha_registro != value))
-				{
-					this._fecha_registro = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
-		public System.Nullable<int> usuario_id
-		{
-			get
-			{
-				return this._usuario_id;
-			}
-			set
-			{
-				if ((this._usuario_id != value))
-				{
-					this._usuario_id = value;
-				}
-			}
-		}
-	}
-	
 	public partial class SP_ListarValoresResult
 	{
 		
@@ -1875,6 +1716,166 @@ namespace WindowsFormsApp2.Modelos
 		private System.Nullable<int> _empresa_id;
 		
 		public SP_ListarValoresResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this._id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this._fecha_registro = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int")]
+		public System.Nullable<int> empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					this._empresa_id = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarMisionPorUsuarioResult
+	{
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _empresa_id;
+		
+		public SP_ListarMisionPorUsuarioResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this._id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this._fecha_registro = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int")]
+		public System.Nullable<int> empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					this._empresa_id = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarVisionPorUsuarioResult
+	{
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _empresa_id;
+		
+		public SP_ListarVisionPorUsuarioResult()
 		{
 		}
 		

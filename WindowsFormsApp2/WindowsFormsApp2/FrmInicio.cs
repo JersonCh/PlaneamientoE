@@ -35,9 +35,9 @@ namespace WindowsFormsApp2
 
         private void btnMision_Click(object sender, EventArgs e)
         {
-            FrmMision frmMision = new FrmMision();
-            frmMision.Show();
-            this.Hide();
+            //FrmMision frmMision = new FrmMision();
+            //frmMision.Show();
+            //this.Hide();
         }
 
         private void btnVision_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace WindowsFormsApp2
 
         private void btnResumen_Click(object sender, EventArgs e)
         {
-            FrmResumen frmResumen = new FrmResumen(Sesion.UsuarioId);
+            FrmResumen frmResumen = new FrmResumen();
             frmResumen.Show();
             this.Close();
         }

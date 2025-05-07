@@ -175,6 +175,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SOFTPETIDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SOFTPETIDataSet_3.cs">
+      <DependentUpon>SOFTPETIDataSet_3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SOFTPETIDataSet_3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

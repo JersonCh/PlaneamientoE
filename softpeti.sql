@@ -116,15 +116,18 @@ IF OBJECT_ID('SP_RegistrarEmpresa') IS NOT NULL
 GO
 
 CREATE OR ALTER PROCEDURE SP_RegistrarEmpresa
-    @nombre NVARCHAR(200),
+    @nombre NVARCHAR(100),
     @usuario_id INT,
-	@descripcion text
+    @descripcion NVARCHAR(MAX),
+    @nuevaEmpresaId INT OUTPUT
 AS
 BEGIN
-    INSERT INTO Empresa (nombre, usuario_id,descripcion)
-    VALUES (@nombre, @usuario_id,@descripcion);
-END;
-GO
+    INSERT INTO Empresa (nombre, usuario_id, descripcion)
+    VALUES (@nombre, @usuario_id, @descripcion)
+
+    SET @nuevaEmpresaId = SCOPE_IDENTITY()
+END
+go
 
 -- SP: Listar Empresas por Usuario
 IF OBJECT_ID('SP_ListarEmpresasPorUsuario') IS NOT NULL
@@ -147,11 +150,11 @@ GO
 
 CREATE PROCEDURE SP_RegistrarMision
     @descripcion NVARCHAR(MAX),
-    @usuario_id INT
+    @empresa_id INT
 AS
 BEGIN
-    INSERT INTO Mision (descripcion, usuario_id)
-    VALUES (@descripcion, @usuario_id);
+    INSERT INTO Mision (descripcion, empresa_id)
+    VALUES (@descripcion, @empresa_id);
 END;
 GO
 
@@ -175,11 +178,11 @@ GO
 
 CREATE PROCEDURE SP_RegistrarVision
     @descripcion NVARCHAR(MAX),
-    @usuario_id INT
+    @empresa_id INT
 AS
 BEGIN
-    INSERT INTO Vision (descripcion, usuario_id)
-    VALUES (@descripcion, @usuario_id);
+    INSERT INTO Vision (descripcion, empresa_id)
+    VALUES (@descripcion, @empresa_id);
 END;
 GO
 
@@ -202,18 +205,32 @@ IF OBJECT_ID('SP_ListarVisionPorUsuario') IS NOT NULL
     DROP PROCEDURE SP_ListarVisionPorUsuario;
 GO
 
-CREATE PROCEDURE SP_ListarVisionPorUsuarioYEmpresa
-    @UsuarioId INT,
+CREATE PROCEDURE SP_ListarVisionPorUsuario
     @EmpresaId INT
 AS
 BEGIN
     SELECT *
     FROM VISION
-    WHERE usuario_id = @UsuarioId AND id = @EmpresaId
+    WHERE empresa_id = @EmpresaId
 END
 
 GO
 
+
+IF OBJECT_ID('SP_ListarMisionPorUsuario') IS NOT NULL
+    DROP PROCEDURE SP_ListarMisionPorUsuario;
+GO
+
+CREATE PROCEDURE SP_ListarMisionPorUsuario
+    @EmpresaId INT
+AS
+BEGIN
+    SELECT *
+    FROM Mision
+    WHERE empresa_id = @EmpresaId
+END
+
+GO
 
 CREATE PROCEDURE SP_Autenticar
     @Email VARCHAR(100),

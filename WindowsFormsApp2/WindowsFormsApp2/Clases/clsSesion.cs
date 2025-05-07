@@ -9,5 +9,6 @@ namespace WindowsFormsApp2.Clases
     public static class Sesion
     {
         public static int UsuarioId { get; set; }
+        public static int EmpresaId { get; set; } //ID DE NUEVA EMPRESA QUE SE REGISTRA
     }
 }
