@@ -30,46 +30,6 @@
 	('blast', 'flores', 'af@gmail.com', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3');
 	
 	GO
-
-	-- Crear la tabla Mision si no existe
-	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Mision')
-	BEGIN
-		CREATE TABLE Mision (
-			id INT PRIMARY KEY IDENTITY,
-			descripcion NVARCHAR(MAX),
-			fecha_registro DATETIME DEFAULT GETDATE(),
-			usuario_id INT,  
-			FOREIGN KEY (usuario_id) REFERENCES USUARIO(id)  
-		);
-	END
-	GO
-
-	-- Crear la tabla Vision si no existe
-	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Vision')
-	BEGIN
-		CREATE TABLE Vision (
-			id INT PRIMARY KEY IDENTITY,
-			descripcion NVARCHAR(MAX),
-			fecha_registro DATETIME DEFAULT GETDATE(),
-			usuario_id INT, 
-			FOREIGN KEY (usuario_id) REFERENCES USUARIO(id) 
-		);
-	END
-	GO
-
--- Crear la tabla Valores si no existe
-	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Valores')
-	BEGIN
-		CREATE TABLE Valores (
-			id INT PRIMARY KEY IDENTITY,
-			descripcion NVARCHAR(MAX),
-			fecha_registro DATETIME DEFAULT GETDATE(),
-			usuario_id INT, 
-			FOREIGN KEY (usuario_id) REFERENCES USUARIO(id) 
-		);
-	END
-	GO
-
 	-- Crear la tabla Empresa si no existe
 	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Empresa')
 	BEGIN
@@ -82,6 +42,71 @@
 		);
 	END
 	GO
+
+	-- Crear la tabla Mision si no existe
+	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Mision')
+	BEGIN
+		CREATE TABLE Mision (
+			id INT PRIMARY KEY IDENTITY,
+			descripcion NVARCHAR(MAX),
+			fecha_registro DATETIME DEFAULT GETDATE(),
+			empresa_id INT,  
+			FOREIGN KEY (empresa_id) REFERENCES EMPRESA(id)  
+		);
+	END
+	GO
+
+	-- Crear la tabla Vision si no existe
+	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Vision')
+	BEGIN
+		CREATE TABLE Vision (
+			id INT PRIMARY KEY IDENTITY,
+			descripcion NVARCHAR(MAX),
+			fecha_registro DATETIME DEFAULT GETDATE(),
+			empresa_id INT, 
+			FOREIGN KEY (empresa_id) REFERENCES EMPRESA(id) 
+		);
+	END
+	GO
+
+-- Crear la tabla Valores si no existe
+	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Valores')
+	BEGIN
+		CREATE TABLE Valores (
+			id INT PRIMARY KEY IDENTITY,
+			descripcion NVARCHAR(MAX),
+			fecha_registro DATETIME DEFAULT GETDATE(),
+			empresa_id INT, 
+			FOREIGN KEY (empresa_id) REFERENCES EMPRESA(id) 
+		);
+	END
+	GO
+
+	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ObjetivoG')
+	BEGIN
+		CREATE TABLE ObjetivoG (
+			id INT PRIMARY KEY IDENTITY,
+			descripcion NVARCHAR(MAX),
+			fecha_registro DATETIME DEFAULT GETDATE(),
+			empresa_id INT, 
+			FOREIGN KEY (empresa_id) REFERENCES EMPRESA(id) 
+		);
+	END
+	GO
+
+	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ObjetivoE')
+	BEGIN
+		CREATE TABLE ObjetivoE (
+			id INT PRIMARY KEY IDENTITY,
+			descripcion NVARCHAR(MAX),
+			fecha_registro DATETIME DEFAULT GETDATE(),
+			objetivo_id INT, 
+			FOREIGN KEY (objetivo_id) REFERENCES OBJETIVOG(id) 
+		);
+	END
+	GO
+
+	
 
 
 
