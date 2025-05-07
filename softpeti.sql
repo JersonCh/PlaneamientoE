@@ -189,11 +189,11 @@ GO
 
 CREATE PROCEDURE SP_RegistrarValores
     @descripcion NVARCHAR(MAX),
-    @usuario_id INT
+    @empresa_id INT
 AS
 BEGIN
-    INSERT INTO Valores (descripcion, usuario_id)
-    VALUES (@descripcion, @usuario_id);
+    INSERT INTO Valores (descripcion, empresa_id)
+    VALUES (@descripcion, @empresa_id);
 END;
 GO
 
@@ -236,19 +236,17 @@ END
 GO
 
 -- SP: Listar Visión por Usuario y Empresa
-IF OBJECT_ID('SP_ListarValoresPorUsuarioYEmpresa') IS NOT NULL
-    DROP PROCEDURE SP_ListarValoresPorUsuarioYEmpresa;
+IF OBJECT_ID('SP_ListarValores') IS NOT NULL
+    DROP PROCEDURE SP_ListarValores;
 GO
 
-CREATE PROCEDURE SP_ListarValoresPorUsuarioYEmpresa
-    @UsuarioId INT,
+CREATE PROCEDURE SP_ListarValores
     @EmpresaId INT
 AS
 BEGIN
-    SELECT *
+    SELECT id, descripcion, fecha_registro, empresa_id
     FROM Valores
-    WHERE usuario_id = @UsuarioId AND id = @EmpresaId
+    WHERE empresa_id = @EmpresaId
+    ORDER BY fecha_registro DESC;
 END
-
 GO
-

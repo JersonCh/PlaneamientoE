@@ -1,14 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SOFTPETI" Class="DataClasses3DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=SOFTPETI;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="WindowsFormsApp2.Properties.Settings" SettingsPropertyName="SOFTPETIConnectionString3" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Vision" Member="Vision">
-    <Type Name="Vision">
-      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="usuario_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="USUARIO_Vision" Member="USUARIO" ThisKey="usuario_id" OtherKey="id" Type="USUARIO" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.USUARIO" Member="USUARIO">
     <Type Name="USUARIO">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -16,18 +7,7 @@
       <Column Name="apellido" Type="System.String" DbType="VarChar(120) NOT NULL" CanBeNull="false" />
       <Column Name="email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="password_hash" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
-      <Association Name="USUARIO_Vision" Member="Vision" ThisKey="id" OtherKey="usuario_id" Type="Vision" />
-      <Association Name="USUARIO_Mision" Member="Mision" ThisKey="id" OtherKey="usuario_id" Type="Mision" />
       <Association Name="USUARIO_Empresa" Member="Empresa" ThisKey="id" OtherKey="usuario_id" Type="Empresa" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Mision" Member="Mision">
-    <Type Name="Mision">
-      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="usuario_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="USUARIO_Mision" Member="USUARIO" ThisKey="usuario_id" OtherKey="id" Type="USUARIO" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Empresa" Member="Empresa">
@@ -36,7 +16,57 @@
       <Column Name="nombre" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="usuario_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="descripcion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Empresa_Mision" Member="Mision" ThisKey="id" OtherKey="empresa_id" Type="Mision" />
+      <Association Name="Empresa_Vision" Member="Vision" ThisKey="id" OtherKey="empresa_id" Type="Vision" />
+      <Association Name="Empresa_Valores" Member="Valores" ThisKey="id" OtherKey="empresa_id" Type="Valores" />
+      <Association Name="Empresa_ObjetivoG" Member="ObjetivoG" ThisKey="id" OtherKey="empresa_id" Type="ObjetivoG" />
       <Association Name="USUARIO_Empresa" Member="USUARIO" ThisKey="usuario_id" OtherKey="id" Type="USUARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Mision" Member="Mision">
+    <Type Name="Mision">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Empresa_Mision" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vision" Member="Vision">
+    <Type Name="Vision">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Empresa_Vision" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Valores" Member="Valores">
+    <Type Name="Valores">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Empresa_Valores" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ObjetivoG" Member="ObjetivoG">
+    <Type Name="ObjetivoG">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ObjetivoG_ObjetivoE" Member="ObjetivoE" ThisKey="id" OtherKey="objetivo_id" Type="ObjetivoE" />
+      <Association Name="Empresa_ObjetivoG" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ObjetivoE" Member="ObjetivoE">
+    <Type Name="ObjetivoE">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="objetivo_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ObjetivoG_ObjetivoE" Member="ObjetivoG" ThisKey="objetivo_id" OtherKey="id" Type="ObjetivoG" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.SP_Autenticar" Method="SP_Autenticar">
@@ -93,7 +123,16 @@
   </Function>
   <Function Name="dbo.SP_RegistrarValores" Method="SP_RegistrarValores">
     <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="usuario_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ListarValores" Method="SP_ListarValores">
+    <Parameter Name="EmpresaId" Parameter="empresaId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarValoresResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

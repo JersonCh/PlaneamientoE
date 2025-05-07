@@ -18,6 +18,14 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+        private int ObtenerEmpresaIdDeUsuario(int usuarioId)
+        {
+            using (DataClasses3DataContext dc = new DataClasses3DataContext())
+            {
+                var empresa = dc.Empresa.FirstOrDefault(e => e.usuario_id == usuarioId);
+                return empresa?.id ?? 0;
+            }
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -42,13 +50,21 @@ namespace WindowsFormsApp2
 
             if (string.IsNullOrWhiteSpace(descripcion))
             {
-                MessageBox.Show("Ingrese una descripción para la visión.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ingrese una descripción para los valores.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int empresaId = ObtenerEmpresaIdDeUsuario(Sesion.UsuarioId);
+
+            if (empresaId == 0)
+            {
+                MessageBox.Show("No se encontró una empresa asociada a este usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             using (DataClasses3DataContext dc = new DataClasses3DataContext())
             {
-                dc.SP_RegistrarValores(descripcion, Sesion.UsuarioId);
+                dc.SP_RegistrarValores(descripcion, empresaId);
                 MessageBox.Show("Valores registrados exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

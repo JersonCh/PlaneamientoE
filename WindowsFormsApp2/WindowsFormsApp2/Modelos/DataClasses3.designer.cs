@@ -30,18 +30,27 @@ namespace WindowsFormsApp2.Modelos
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnCreated();
-    partial void InsertVision(Vision instance);
-    partial void UpdateVision(Vision instance);
-    partial void DeleteVision(Vision instance);
     partial void InsertUSUARIO(USUARIO instance);
     partial void UpdateUSUARIO(USUARIO instance);
     partial void DeleteUSUARIO(USUARIO instance);
-    partial void InsertMision(Mision instance);
-    partial void UpdateMision(Mision instance);
-    partial void DeleteMision(Mision instance);
     partial void InsertEmpresa(Empresa instance);
     partial void UpdateEmpresa(Empresa instance);
     partial void DeleteEmpresa(Empresa instance);
+    partial void InsertMision(Mision instance);
+    partial void UpdateMision(Mision instance);
+    partial void DeleteMision(Mision instance);
+    partial void InsertVision(Vision instance);
+    partial void UpdateVision(Vision instance);
+    partial void DeleteVision(Vision instance);
+    partial void InsertValores(Valores instance);
+    partial void UpdateValores(Valores instance);
+    partial void DeleteValores(Valores instance);
+    partial void InsertObjetivoG(ObjetivoG instance);
+    partial void UpdateObjetivoG(ObjetivoG instance);
+    partial void DeleteObjetivoG(ObjetivoG instance);
+    partial void InsertObjetivoE(ObjetivoE instance);
+    partial void UpdateObjetivoE(ObjetivoE instance);
+    partial void DeleteObjetivoE(ObjetivoE instance);
     #endregion
 		
 		public DataClasses3DataContext() : 
@@ -74,19 +83,19 @@ namespace WindowsFormsApp2.Modelos
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Vision> Vision
-		{
-			get
-			{
-				return this.GetTable<Vision>();
-			}
-		}
-		
 		public System.Data.Linq.Table<USUARIO> USUARIO
 		{
 			get
 			{
 				return this.GetTable<USUARIO>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Empresa> Empresa
+		{
+			get
+			{
+				return this.GetTable<Empresa>();
 			}
 		}
 		
@@ -98,11 +107,35 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
-		public System.Data.Linq.Table<Empresa> Empresa
+		public System.Data.Linq.Table<Vision> Vision
 		{
 			get
 			{
-				return this.GetTable<Empresa>();
+				return this.GetTable<Vision>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Valores> Valores
+		{
+			get
+			{
+				return this.GetTable<Valores>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ObjetivoG> ObjetivoG
+		{
+			get
+			{
+				return this.GetTable<ObjetivoG>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ObjetivoE> ObjetivoE
+		{
+			get
+			{
+				return this.GetTable<ObjetivoE>();
 			}
 		}
 		
@@ -156,185 +189,17 @@ namespace WindowsFormsApp2.Modelos
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarValores")]
-		public int SP_RegistrarValores([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
+		public int SP_RegistrarValores([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, usuario_id);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
 			return ((int)(result.ReturnValue));
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Vision")]
-	public partial class Vision : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _descripcion;
-		
-		private System.Nullable<System.DateTime> _fecha_registro;
-		
-		private System.Nullable<int> _usuario_id;
-		
-		private EntityRef<USUARIO> _USUARIO;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
-    partial void Onfecha_registroChanged();
-    partial void Onusuario_idChanging(System.Nullable<int> value);
-    partial void Onusuario_idChanged();
-    #endregion
-		
-		public Vision()
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarValores")]
+		public ISingleResult<SP_ListarValoresResult> SP_ListarValores([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpresaId", DbType="Int")] System.Nullable<int> empresaId)
 		{
-			this._USUARIO = default(EntityRef<USUARIO>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
-		public System.Nullable<System.DateTime> fecha_registro
-		{
-			get
-			{
-				return this._fecha_registro;
-			}
-			set
-			{
-				if ((this._fecha_registro != value))
-				{
-					this.Onfecha_registroChanging(value);
-					this.SendPropertyChanging();
-					this._fecha_registro = value;
-					this.SendPropertyChanged("fecha_registro");
-					this.Onfecha_registroChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
-		public System.Nullable<int> usuario_id
-		{
-			get
-			{
-				return this._usuario_id;
-			}
-			set
-			{
-				if ((this._usuario_id != value))
-				{
-					if (this._USUARIO.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onusuario_idChanging(value);
-					this.SendPropertyChanging();
-					this._usuario_id = value;
-					this.SendPropertyChanged("usuario_id");
-					this.Onusuario_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Vision", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
-		public USUARIO USUARIO
-		{
-			get
-			{
-				return this._USUARIO.Entity;
-			}
-			set
-			{
-				USUARIO previousValue = this._USUARIO.Entity;
-				if (((previousValue != value) 
-							|| (this._USUARIO.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._USUARIO.Entity = null;
-						previousValue.Vision.Remove(this);
-					}
-					this._USUARIO.Entity = value;
-					if ((value != null))
-					{
-						value.Vision.Add(this);
-						this._usuario_id = value.id;
-					}
-					else
-					{
-						this._usuario_id = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("USUARIO");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresaId);
+			return ((ISingleResult<SP_ListarValoresResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -353,10 +218,6 @@ namespace WindowsFormsApp2.Modelos
 		private string _email;
 		
 		private string _password_hash;
-		
-		private EntitySet<Vision> _Vision;
-		
-		private EntitySet<Mision> _Mision;
 		
 		private EntitySet<Empresa> _Empresa;
 		
@@ -378,8 +239,6 @@ namespace WindowsFormsApp2.Modelos
 		
 		public USUARIO()
 		{
-			this._Vision = new EntitySet<Vision>(new Action<Vision>(this.attach_Vision), new Action<Vision>(this.detach_Vision));
-			this._Mision = new EntitySet<Mision>(new Action<Mision>(this.attach_Mision), new Action<Mision>(this.detach_Mision));
 			this._Empresa = new EntitySet<Empresa>(new Action<Empresa>(this.attach_Empresa), new Action<Empresa>(this.detach_Empresa));
 			OnCreated();
 		}
@@ -484,32 +343,6 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Vision", Storage="_Vision", ThisKey="id", OtherKey="usuario_id")]
-		public EntitySet<Vision> Vision
-		{
-			get
-			{
-				return this._Vision;
-			}
-			set
-			{
-				this._Vision.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Mision", Storage="_Mision", ThisKey="id", OtherKey="usuario_id")]
-		public EntitySet<Mision> Mision
-		{
-			get
-			{
-				return this._Mision;
-			}
-			set
-			{
-				this._Mision.Assign(value);
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_Empresa", ThisKey="id", OtherKey="usuario_id")]
 		public EntitySet<Empresa> Empresa
 		{
@@ -543,30 +376,6 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
-		private void attach_Vision(Vision entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = this;
-		}
-		
-		private void detach_Vision(Vision entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = null;
-		}
-		
-		private void attach_Mision(Mision entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = this;
-		}
-		
-		private void detach_Mision(Mision entity)
-		{
-			this.SendPropertyChanging();
-			entity.USUARIO = null;
-		}
-		
 		private void attach_Empresa(Empresa entity)
 		{
 			this.SendPropertyChanging();
@@ -577,181 +386,6 @@ namespace WindowsFormsApp2.Modelos
 		{
 			this.SendPropertyChanging();
 			entity.USUARIO = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Mision")]
-	public partial class Mision : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _descripcion;
-		
-		private System.Nullable<System.DateTime> _fecha_registro;
-		
-		private System.Nullable<int> _usuario_id;
-		
-		private EntityRef<USUARIO> _USUARIO;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
-    partial void Onfecha_registroChanged();
-    partial void Onusuario_idChanging(System.Nullable<int> value);
-    partial void Onusuario_idChanged();
-    #endregion
-		
-		public Mision()
-		{
-			this._USUARIO = default(EntityRef<USUARIO>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
-		public System.Nullable<System.DateTime> fecha_registro
-		{
-			get
-			{
-				return this._fecha_registro;
-			}
-			set
-			{
-				if ((this._fecha_registro != value))
-				{
-					this.Onfecha_registroChanging(value);
-					this.SendPropertyChanging();
-					this._fecha_registro = value;
-					this.SendPropertyChanged("fecha_registro");
-					this.Onfecha_registroChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="Int")]
-		public System.Nullable<int> usuario_id
-		{
-			get
-			{
-				return this._usuario_id;
-			}
-			set
-			{
-				if ((this._usuario_id != value))
-				{
-					if (this._USUARIO.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onusuario_idChanging(value);
-					this.SendPropertyChanging();
-					this._usuario_id = value;
-					this.SendPropertyChanged("usuario_id");
-					this.Onusuario_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Mision", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
-		public USUARIO USUARIO
-		{
-			get
-			{
-				return this._USUARIO.Entity;
-			}
-			set
-			{
-				USUARIO previousValue = this._USUARIO.Entity;
-				if (((previousValue != value) 
-							|| (this._USUARIO.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._USUARIO.Entity = null;
-						previousValue.Mision.Remove(this);
-					}
-					this._USUARIO.Entity = value;
-					if ((value != null))
-					{
-						value.Mision.Add(this);
-						this._usuario_id = value.id;
-					}
-					else
-					{
-						this._usuario_id = default(Nullable<int>);
-					}
-					this.SendPropertyChanged("USUARIO");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
 		}
 	}
 	
@@ -768,6 +402,14 @@ namespace WindowsFormsApp2.Modelos
 		private System.Nullable<int> _usuario_id;
 		
 		private string _descripcion;
+		
+		private EntitySet<Mision> _Mision;
+		
+		private EntitySet<Vision> _Vision;
+		
+		private EntitySet<Valores> _Valores;
+		
+		private EntitySet<ObjetivoG> _ObjetivoG;
 		
 		private EntityRef<USUARIO> _USUARIO;
 		
@@ -787,6 +429,10 @@ namespace WindowsFormsApp2.Modelos
 		
 		public Empresa()
 		{
+			this._Mision = new EntitySet<Mision>(new Action<Mision>(this.attach_Mision), new Action<Mision>(this.detach_Mision));
+			this._Vision = new EntitySet<Vision>(new Action<Vision>(this.attach_Vision), new Action<Vision>(this.detach_Vision));
+			this._Valores = new EntitySet<Valores>(new Action<Valores>(this.attach_Valores), new Action<Valores>(this.detach_Valores));
+			this._ObjetivoG = new EntitySet<ObjetivoG>(new Action<ObjetivoG>(this.attach_ObjetivoG), new Action<ObjetivoG>(this.detach_ObjetivoG));
 			this._USUARIO = default(EntityRef<USUARIO>);
 			OnCreated();
 		}
@@ -875,6 +521,58 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_Mision", Storage="_Mision", ThisKey="id", OtherKey="empresa_id")]
+		public EntitySet<Mision> Mision
+		{
+			get
+			{
+				return this._Mision;
+			}
+			set
+			{
+				this._Mision.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_Vision", Storage="_Vision", ThisKey="id", OtherKey="empresa_id")]
+		public EntitySet<Vision> Vision
+		{
+			get
+			{
+				return this._Vision;
+			}
+			set
+			{
+				this._Vision.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_Valores", Storage="_Valores", ThisKey="id", OtherKey="empresa_id")]
+		public EntitySet<Valores> Valores
+		{
+			get
+			{
+				return this._Valores;
+			}
+			set
+			{
+				this._Valores.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_ObjetivoG", Storage="_ObjetivoG", ThisKey="id", OtherKey="empresa_id")]
+		public EntitySet<ObjetivoG> ObjetivoG
+		{
+			get
+			{
+				return this._ObjetivoG;
+			}
+			set
+			{
+				this._ObjetivoG.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
 		public USUARIO USUARIO
 		{
@@ -905,6 +603,957 @@ namespace WindowsFormsApp2.Modelos
 						this._usuario_id = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("USUARIO");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Mision(Mision entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = this;
+		}
+		
+		private void detach_Mision(Mision entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = null;
+		}
+		
+		private void attach_Vision(Vision entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = this;
+		}
+		
+		private void detach_Vision(Vision entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = null;
+		}
+		
+		private void attach_Valores(Valores entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = this;
+		}
+		
+		private void detach_Valores(Valores entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = null;
+		}
+		
+		private void attach_ObjetivoG(ObjetivoG entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = this;
+		}
+		
+		private void detach_ObjetivoG(ObjetivoG entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Mision")]
+	public partial class Mision : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _empresa_id;
+		
+		private EntityRef<Empresa> _Empresa;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
+    partial void Onfecha_registroChanged();
+    partial void Onempresa_idChanging(System.Nullable<int> value);
+    partial void Onempresa_idChanged();
+    #endregion
+		
+		public Mision()
+		{
+			this._Empresa = default(EntityRef<Empresa>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this.Onfecha_registroChanging(value);
+					this.SendPropertyChanging();
+					this._fecha_registro = value;
+					this.SendPropertyChanged("fecha_registro");
+					this.Onfecha_registroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int")]
+		public System.Nullable<int> empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					if (this._Empresa.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onempresa_idChanging(value);
+					this.SendPropertyChanging();
+					this._empresa_id = value;
+					this.SendPropertyChanged("empresa_id");
+					this.Onempresa_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_Mision", Storage="_Empresa", ThisKey="empresa_id", OtherKey="id", IsForeignKey=true)]
+		public Empresa Empresa
+		{
+			get
+			{
+				return this._Empresa.Entity;
+			}
+			set
+			{
+				Empresa previousValue = this._Empresa.Entity;
+				if (((previousValue != value) 
+							|| (this._Empresa.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Empresa.Entity = null;
+						previousValue.Mision.Remove(this);
+					}
+					this._Empresa.Entity = value;
+					if ((value != null))
+					{
+						value.Mision.Add(this);
+						this._empresa_id = value.id;
+					}
+					else
+					{
+						this._empresa_id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Empresa");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Vision")]
+	public partial class Vision : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _empresa_id;
+		
+		private EntityRef<Empresa> _Empresa;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
+    partial void Onfecha_registroChanged();
+    partial void Onempresa_idChanging(System.Nullable<int> value);
+    partial void Onempresa_idChanged();
+    #endregion
+		
+		public Vision()
+		{
+			this._Empresa = default(EntityRef<Empresa>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this.Onfecha_registroChanging(value);
+					this.SendPropertyChanging();
+					this._fecha_registro = value;
+					this.SendPropertyChanged("fecha_registro");
+					this.Onfecha_registroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int")]
+		public System.Nullable<int> empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					if (this._Empresa.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onempresa_idChanging(value);
+					this.SendPropertyChanging();
+					this._empresa_id = value;
+					this.SendPropertyChanged("empresa_id");
+					this.Onempresa_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_Vision", Storage="_Empresa", ThisKey="empresa_id", OtherKey="id", IsForeignKey=true)]
+		public Empresa Empresa
+		{
+			get
+			{
+				return this._Empresa.Entity;
+			}
+			set
+			{
+				Empresa previousValue = this._Empresa.Entity;
+				if (((previousValue != value) 
+							|| (this._Empresa.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Empresa.Entity = null;
+						previousValue.Vision.Remove(this);
+					}
+					this._Empresa.Entity = value;
+					if ((value != null))
+					{
+						value.Vision.Add(this);
+						this._empresa_id = value.id;
+					}
+					else
+					{
+						this._empresa_id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Empresa");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Valores")]
+	public partial class Valores : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _empresa_id;
+		
+		private EntityRef<Empresa> _Empresa;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
+    partial void Onfecha_registroChanged();
+    partial void Onempresa_idChanging(System.Nullable<int> value);
+    partial void Onempresa_idChanged();
+    #endregion
+		
+		public Valores()
+		{
+			this._Empresa = default(EntityRef<Empresa>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this.Onfecha_registroChanging(value);
+					this.SendPropertyChanging();
+					this._fecha_registro = value;
+					this.SendPropertyChanged("fecha_registro");
+					this.Onfecha_registroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int")]
+		public System.Nullable<int> empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					if (this._Empresa.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onempresa_idChanging(value);
+					this.SendPropertyChanging();
+					this._empresa_id = value;
+					this.SendPropertyChanged("empresa_id");
+					this.Onempresa_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_Valores", Storage="_Empresa", ThisKey="empresa_id", OtherKey="id", IsForeignKey=true)]
+		public Empresa Empresa
+		{
+			get
+			{
+				return this._Empresa.Entity;
+			}
+			set
+			{
+				Empresa previousValue = this._Empresa.Entity;
+				if (((previousValue != value) 
+							|| (this._Empresa.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Empresa.Entity = null;
+						previousValue.Valores.Remove(this);
+					}
+					this._Empresa.Entity = value;
+					if ((value != null))
+					{
+						value.Valores.Add(this);
+						this._empresa_id = value.id;
+					}
+					else
+					{
+						this._empresa_id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Empresa");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ObjetivoG")]
+	public partial class ObjetivoG : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _empresa_id;
+		
+		private EntitySet<ObjetivoE> _ObjetivoE;
+		
+		private EntityRef<Empresa> _Empresa;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
+    partial void Onfecha_registroChanged();
+    partial void Onempresa_idChanging(System.Nullable<int> value);
+    partial void Onempresa_idChanged();
+    #endregion
+		
+		public ObjetivoG()
+		{
+			this._ObjetivoE = new EntitySet<ObjetivoE>(new Action<ObjetivoE>(this.attach_ObjetivoE), new Action<ObjetivoE>(this.detach_ObjetivoE));
+			this._Empresa = default(EntityRef<Empresa>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this.Onfecha_registroChanging(value);
+					this.SendPropertyChanging();
+					this._fecha_registro = value;
+					this.SendPropertyChanged("fecha_registro");
+					this.Onfecha_registroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int")]
+		public System.Nullable<int> empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					if (this._Empresa.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onempresa_idChanging(value);
+					this.SendPropertyChanging();
+					this._empresa_id = value;
+					this.SendPropertyChanged("empresa_id");
+					this.Onempresa_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ObjetivoG_ObjetivoE", Storage="_ObjetivoE", ThisKey="id", OtherKey="objetivo_id")]
+		public EntitySet<ObjetivoE> ObjetivoE
+		{
+			get
+			{
+				return this._ObjetivoE;
+			}
+			set
+			{
+				this._ObjetivoE.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_ObjetivoG", Storage="_Empresa", ThisKey="empresa_id", OtherKey="id", IsForeignKey=true)]
+		public Empresa Empresa
+		{
+			get
+			{
+				return this._Empresa.Entity;
+			}
+			set
+			{
+				Empresa previousValue = this._Empresa.Entity;
+				if (((previousValue != value) 
+							|| (this._Empresa.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Empresa.Entity = null;
+						previousValue.ObjetivoG.Remove(this);
+					}
+					this._Empresa.Entity = value;
+					if ((value != null))
+					{
+						value.ObjetivoG.Add(this);
+						this._empresa_id = value.id;
+					}
+					else
+					{
+						this._empresa_id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Empresa");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_ObjetivoE(ObjetivoE entity)
+		{
+			this.SendPropertyChanging();
+			entity.ObjetivoG = this;
+		}
+		
+		private void detach_ObjetivoE(ObjetivoE entity)
+		{
+			this.SendPropertyChanging();
+			entity.ObjetivoG = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ObjetivoE")]
+	public partial class ObjetivoE : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _objetivo_id;
+		
+		private EntityRef<ObjetivoG> _ObjetivoG;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void Onfecha_registroChanging(System.Nullable<System.DateTime> value);
+    partial void Onfecha_registroChanged();
+    partial void Onobjetivo_idChanging(System.Nullable<int> value);
+    partial void Onobjetivo_idChanged();
+    #endregion
+		
+		public ObjetivoE()
+		{
+			this._ObjetivoG = default(EntityRef<ObjetivoG>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this.Onfecha_registroChanging(value);
+					this.SendPropertyChanging();
+					this._fecha_registro = value;
+					this.SendPropertyChanged("fecha_registro");
+					this.Onfecha_registroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_objetivo_id", DbType="Int")]
+		public System.Nullable<int> objetivo_id
+		{
+			get
+			{
+				return this._objetivo_id;
+			}
+			set
+			{
+				if ((this._objetivo_id != value))
+				{
+					if (this._ObjetivoG.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onobjetivo_idChanging(value);
+					this.SendPropertyChanging();
+					this._objetivo_id = value;
+					this.SendPropertyChanged("objetivo_id");
+					this.Onobjetivo_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ObjetivoG_ObjetivoE", Storage="_ObjetivoG", ThisKey="objetivo_id", OtherKey="id", IsForeignKey=true)]
+		public ObjetivoG ObjetivoG
+		{
+			get
+			{
+				return this._ObjetivoG.Entity;
+			}
+			set
+			{
+				ObjetivoG previousValue = this._ObjetivoG.Entity;
+				if (((previousValue != value) 
+							|| (this._ObjetivoG.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ObjetivoG.Entity = null;
+						previousValue.ObjetivoE.Remove(this);
+					}
+					this._ObjetivoG.Entity = value;
+					if ((value != null))
+					{
+						value.ObjetivoE.Add(this);
+						this._objetivo_id = value.id;
+					}
+					else
+					{
+						this._objetivo_id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("ObjetivoG");
 				}
 			}
 		}
@@ -1209,6 +1858,86 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._usuario_id != value))
 				{
 					this._usuario_id = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarValoresResult
+	{
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<System.DateTime> _fecha_registro;
+		
+		private System.Nullable<int> _empresa_id;
+		
+		public SP_ListarValoresResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this._id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_registro", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha_registro
+		{
+			get
+			{
+				return this._fecha_registro;
+			}
+			set
+			{
+				if ((this._fecha_registro != value))
+				{
+					this._fecha_registro = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int")]
+		public System.Nullable<int> empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					this._empresa_id = value;
 				}
 			}
 		}
