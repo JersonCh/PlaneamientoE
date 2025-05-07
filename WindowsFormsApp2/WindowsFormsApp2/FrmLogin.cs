@@ -90,5 +90,10 @@ namespace WindowsFormsApp2
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

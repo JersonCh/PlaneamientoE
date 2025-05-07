@@ -173,6 +173,7 @@
             this.label11.TabIndex = 91;
             this.label11.Text = "COMO ELABORAR UN PLAN ESTRATEGICO DE TECNOLOGIAS DE INFORMACION - PETI";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // btncerrar
             // 

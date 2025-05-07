@@ -54,10 +54,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 75);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 78);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 210);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 267);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
@@ -66,7 +66,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(414, 18);
+            this.label2.Location = new System.Drawing.Point(507, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 58);
             this.label2.TabIndex = 3;
@@ -80,7 +80,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(270, 368);
+            this.panel2.Size = new System.Drawing.Size(329, 424);
             this.panel2.TabIndex = 72;
             // 
             // txtPass
@@ -88,12 +88,12 @@
             this.txtPass.BackColor = System.Drawing.Color.White;
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(345, 197);
+            this.txtPass.Location = new System.Drawing.Point(410, 229);
             this.txtPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(389, 34);
+            this.txtPass.Size = new System.Drawing.Size(430, 34);
             this.txtPass.TabIndex = 2;
             this.txtPass.Text = "CONTRASEÑA";
             this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
@@ -108,9 +108,9 @@
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
-            this.btnIngresar.Location = new System.Drawing.Point(309, 286);
+            this.btnIngresar.Location = new System.Drawing.Point(369, 335);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(425, 34);
+            this.btnIngresar.Size = new System.Drawing.Size(491, 39);
             this.btnIngresar.TabIndex = 0;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -119,7 +119,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(308, 117);
+            this.pictureBox2.Location = new System.Drawing.Point(369, 126);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(27, 25);
@@ -132,11 +132,11 @@
             this.txtCorreo.BackColor = System.Drawing.Color.White;
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(345, 116);
+            this.txtCorreo.Location = new System.Drawing.Point(410, 126);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(389, 34);
+            this.txtCorreo.Size = new System.Drawing.Size(436, 34);
             this.txtCorreo.TabIndex = 1;
             this.txtCorreo.Text = "USUARIO";
             this.txtCorreo.Enter += new System.EventHandler(this.txtCorreo_Enter);
@@ -145,7 +145,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(309, 197);
+            this.pictureBox3.Location = new System.Drawing.Point(370, 228);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(27, 25);
@@ -156,25 +156,25 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Black;
-            this.pictureBox4.Location = new System.Drawing.Point(345, 154);
+            this.pictureBox4.Location = new System.Drawing.Point(410, 166);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(389, 2);
+            this.pictureBox4.Size = new System.Drawing.Size(430, 2);
             this.pictureBox4.TabIndex = 76;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Black;
-            this.pictureBox5.Location = new System.Drawing.Point(345, 234);
+            this.pictureBox5.Location = new System.Drawing.Point(410, 268);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(389, 2);
+            this.pictureBox5.Size = new System.Drawing.Size(430, 2);
             this.pictureBox5.TabIndex = 77;
             this.pictureBox5.TabStop = false;
             // 
             // btnminimisar
             // 
             this.btnminimisar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimisar.Image")));
-            this.btnminimisar.Location = new System.Drawing.Point(728, 5);
+            this.btnminimisar.Location = new System.Drawing.Point(845, 11);
             this.btnminimisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnminimisar.Name = "btnminimisar";
             this.btnminimisar.Size = new System.Drawing.Size(18, 20);
@@ -186,7 +186,7 @@
             // btncerrar
             // 
             this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
-            this.btncerrar.Location = new System.Drawing.Point(754, 5);
+            this.btncerrar.Location = new System.Drawing.Point(871, 11);
             this.btncerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(18, 20);
@@ -200,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(780, 368);
+            this.ClientSize = new System.Drawing.Size(900, 424);
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.btnminimisar);
             this.Controls.Add(this.label2);
@@ -217,6 +217,7 @@
             this.Opacity = 0.93D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
