@@ -72,5 +72,12 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmCadenaValor frmcadenavalor = new FrmCadenaValor();
+            frmcadenavalor.Show();
+            this.Hide();
+        }
     }
 }

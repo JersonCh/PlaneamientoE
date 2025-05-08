@@ -55,10 +55,16 @@
             this.txtObjetivoE5 = new System.Windows.Forms.TextBox();
             this.txtObjetivoE6 = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnValores = new System.Windows.Forms.Button();
+            this.btnMision = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -385,12 +391,69 @@
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
+            // btnValores
+            // 
+            this.btnValores.BackColor = System.Drawing.Color.Black;
+            this.btnValores.FlatAppearance.BorderSize = 0;
+            this.btnValores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnValores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnValores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnValores.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValores.ForeColor = System.Drawing.Color.White;
+            this.btnValores.Location = new System.Drawing.Point(831, 720);
+            this.btnValores.Name = "btnValores";
+            this.btnValores.Size = new System.Drawing.Size(114, 36);
+            this.btnValores.TabIndex = 110;
+            this.btnValores.Text = "3. cadena valor";
+            this.btnValores.UseVisualStyleBackColor = false;
+            this.btnValores.Click += new System.EventHandler(this.btnValores_Click);
+            // 
+            // btnMision
+            // 
+            this.btnMision.BackColor = System.Drawing.Color.Black;
+            this.btnMision.FlatAppearance.BorderSize = 0;
+            this.btnMision.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMision.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnMision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMision.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMision.ForeColor = System.Drawing.Color.White;
+            this.btnMision.Location = new System.Drawing.Point(699, 720);
+            this.btnMision.Name = "btnMision";
+            this.btnMision.Size = new System.Drawing.Size(115, 33);
+            this.btnMision.TabIndex = 109;
+            this.btnMision.Text = "1. VALORES";
+            this.btnMision.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(967, 720);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 108;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(645, 720);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 36);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 107;
+            this.pictureBox3.TabStop = false;
+            // 
             // FrmObjetivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1010, 780);
+            this.Controls.Add(this.btnValores);
+            this.Controls.Add(this.btnMision);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtObjetivoE6);
             this.Controls.Add(this.txtObjetivoE5);
@@ -420,6 +483,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,5 +517,9 @@
         private System.Windows.Forms.TextBox txtObjetivoE5;
         private System.Windows.Forms.TextBox txtObjetivoE6;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnValores;
+        private System.Windows.Forms.Button btnMision;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

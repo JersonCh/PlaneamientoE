@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.Clases;
+using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2
 {
@@ -16,7 +18,10 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-
+        string f1;
+        string f2;
+        string d1;
+        string d2;
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -48,6 +53,56 @@ namespace WindowsFormsApp2
             }
             total2 = 1 - (total / 100.0);
             txtTotal.Text = (total2 * 100).ToString() + "%";
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtF1.Text) || string.IsNullOrWhiteSpace(txtF2.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    string f1 = txtF1.Text.Trim();
+                    string f2 = txtF2.Text.Trim();
+
+                    dc.SP_RegistrarFortaleza(f1, Sesion.EmpresaId);
+                    dc.SP_RegistrarFortaleza(f2, Sesion.EmpresaId);
+                }
+
+                MessageBox.Show("Fortalezas registradas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar las Fortalezas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (string.IsNullOrWhiteSpace(txtD1.Text) || string.IsNullOrWhiteSpace(txtD2.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    string D1 = txtD1.Text.Trim();
+                    string D2 = txtD2.Text.Trim();
+
+                    dc.SP_RegistrarDebilidad(D1, Sesion.EmpresaId);
+                    dc.SP_RegistrarDebilidad(D2, Sesion.EmpresaId);
+                }
+
+                MessageBox.Show("Debilidades registradas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar las debilidades: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

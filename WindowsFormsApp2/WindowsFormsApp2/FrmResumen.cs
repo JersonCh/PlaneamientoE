@@ -97,6 +97,20 @@ namespace WindowsFormsApp2
                     if (objetivosEspecificos.Count > 4) txtObjetivoE5.Text = objetivosEspecificos.ElementAtOrDefault(4)?.ObjetivoE_Descripcion ?? "";
                     if (objetivosEspecificos.Count > 5) txtObjetivoE6.Text = objetivosEspecificos.ElementAtOrDefault(5)?.ObjetivoE_Descripcion ?? "";
 
+                    //Obtener las Fortalezas
+                    var fortalezas = dc.SP_ListarFortalezas(empresaId).ToList();
+
+                    if (fortalezas.Count > 0) txtF1.Text = fortalezas.ElementAtOrDefault(0)?.Fortaleza_Descripcion ?? "";
+                    if (fortalezas.Count > 1) txtF2.Text = fortalezas.ElementAtOrDefault(1)?.Fortaleza_Descripcion ?? "";
+
+                    //Obtener las Debilidades
+                    var debilidades = dc.SP_ListarDebilidades(empresaId).ToList();
+
+                    if (debilidades.Count > 0) txtD1.Text = debilidades.ElementAtOrDefault(0)?.Debilidad_Descripcion ?? "";
+                    if (debilidades.Count > 1) txtD2.Text = debilidades.ElementAtOrDefault(1)?.Debilidad_Descripcion ?? "";
+
+
+
                 }
             }
             catch (Exception ex)
@@ -120,6 +134,11 @@ namespace WindowsFormsApp2
             FrmInicio frmInicio = new FrmInicio();
             frmInicio.Show();
             this.Hide();
+        }
+
+        private void FrmResumen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

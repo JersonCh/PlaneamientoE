@@ -33,6 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label34 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtTotal = new System.Windows.Forms.Label();
             this.p25 = new System.Windows.Forms.Panel();
             this.p25_4 = new System.Windows.Forms.RadioButton();
             this.p25_3 = new System.Windows.Forms.RadioButton();
@@ -224,7 +225,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.txtTotal = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtD1 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtD2 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtF1 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtF2 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.p25.SuspendLayout();
             this.p24.SuspendLayout();
@@ -252,6 +263,8 @@
             this.p1.SuspendLayout();
             this.p2.SuspendLayout();
             this.p10.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label33
@@ -379,6 +392,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1179, 603);
             this.tableLayoutPanel1.TabIndex = 30;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.AutoSize = true;
+            this.txtTotal.Location = new System.Drawing.Point(1045, 581);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(0, 13);
+            this.txtTotal.TabIndex = 44;
             // 
             // p25
             // 
@@ -2426,19 +2447,114 @@
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // txtTotal
+            // btnGuardar
             // 
-            this.txtTotal.AutoSize = true;
-            this.txtTotal.Location = new System.Drawing.Point(1045, 581);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(0, 13);
-            this.txtTotal.TabIndex = 44;
+            this.btnGuardar.Location = new System.Drawing.Point(1136, 840);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(104, 100);
+            this.btnGuardar.TabIndex = 57;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label32);
+            this.groupBox2.Controls.Add(this.txtD1);
+            this.groupBox2.Controls.Add(this.label35);
+            this.groupBox2.Controls.Add(this.txtD2);
+            this.groupBox2.Location = new System.Drawing.Point(605, 840);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(520, 100);
+            this.groupBox2.TabIndex = 56;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Debilidades";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(6, 48);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(27, 13);
+            this.label32.TabIndex = 51;
+            this.label32.Text = "D2 :";
+            // 
+            // txtD1
+            // 
+            this.txtD1.Location = new System.Drawing.Point(33, 19);
+            this.txtD1.Name = "txtD1";
+            this.txtD1.Size = new System.Drawing.Size(471, 20);
+            this.txtD1.TabIndex = 45;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(6, 22);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(27, 13);
+            this.label35.TabIndex = 50;
+            this.label35.Text = "D1 :";
+            // 
+            // txtD2
+            // 
+            this.txtD2.Location = new System.Drawing.Point(33, 45);
+            this.txtD2.Name = "txtD2";
+            this.txtD2.Size = new System.Drawing.Size(471, 20);
+            this.txtD2.TabIndex = 44;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label31);
+            this.groupBox1.Controls.Add(this.txtF1);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Controls.Add(this.txtF2);
+            this.groupBox1.Location = new System.Drawing.Point(61, 840);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(520, 100);
+            this.groupBox1.TabIndex = 55;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Fortalezas";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(6, 48);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(25, 13);
+            this.label31.TabIndex = 51;
+            this.label31.Text = "F2 :";
+            // 
+            // txtF1
+            // 
+            this.txtF1.Location = new System.Drawing.Point(31, 19);
+            this.txtF1.Name = "txtF1";
+            this.txtF1.Size = new System.Drawing.Size(471, 20);
+            this.txtF1.TabIndex = 45;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(6, 22);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(25, 13);
+            this.label29.TabIndex = 50;
+            this.label29.Text = "F1 :";
+            // 
+            // txtF2
+            // 
+            this.txtF2.Location = new System.Drawing.Point(31, 45);
+            this.txtF2.Name = "txtF2";
+            this.txtF2.Size = new System.Drawing.Size(471, 20);
+            this.txtF2.TabIndex = 44;
             // 
             // FrmAutoCadenaValor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1428, 1061);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -2506,6 +2622,10 @@
             this.p2.PerformLayout();
             this.p10.ResumeLayout(false);
             this.p10.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2708,5 +2828,16 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label txtTotal;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox txtD1;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox txtD2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox txtF1;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtF2;
     }
 }

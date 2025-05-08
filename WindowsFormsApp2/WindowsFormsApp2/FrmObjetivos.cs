@@ -130,5 +130,12 @@ namespace WindowsFormsApp2
                 MessageBox.Show("Error al registrar los objetivos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnValores_Click(object sender, EventArgs e)
+        {
+            FrmCadenaValor frmcadenavalor = new FrmCadenaValor();
+            frmcadenavalor.Show();
+            this.Hide();
+        }
     }
 }

@@ -73,12 +73,12 @@
             this.textBox39 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.txtF2 = new System.Windows.Forms.TextBox();
+            this.txtF1 = new System.Windows.Forms.TextBox();
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.txtD2 = new System.Windows.Forms.TextBox();
+            this.txtD1 = new System.Windows.Forms.TextBox();
             this.textBox47 = new System.Windows.Forms.TextBox();
             this.textBox48 = new System.Windows.Forms.TextBox();
             this.textBox49 = new System.Windows.Forms.TextBox();
@@ -562,23 +562,23 @@
             this.textBox40.Size = new System.Drawing.Size(271, 34);
             this.textBox40.TabIndex = 120;
             // 
-            // textBox41
+            // txtF2
             // 
-            this.textBox41.Location = new System.Drawing.Point(169, 862);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(271, 34);
-            this.textBox41.TabIndex = 119;
+            this.txtF2.Location = new System.Drawing.Point(169, 862);
+            this.txtF2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtF2.Multiline = true;
+            this.txtF2.Name = "txtF2";
+            this.txtF2.Size = new System.Drawing.Size(271, 34);
+            this.txtF2.TabIndex = 119;
             // 
-            // textBox42
+            // txtF1
             // 
-            this.textBox42.Location = new System.Drawing.Point(169, 828);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(271, 34);
-            this.textBox42.TabIndex = 118;
+            this.txtF1.Location = new System.Drawing.Point(169, 828);
+            this.txtF1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtF1.Multiline = true;
+            this.txtF1.Name = "txtF1";
+            this.txtF1.Size = new System.Drawing.Size(271, 34);
+            this.txtF1.TabIndex = 118;
             // 
             // textBox43
             // 
@@ -598,23 +598,23 @@
             this.textBox44.Size = new System.Drawing.Size(271, 34);
             this.textBox44.TabIndex = 116;
             // 
-            // textBox45
+            // txtD2
             // 
-            this.textBox45.Location = new System.Drawing.Point(169, 727);
-            this.textBox45.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox45.Multiline = true;
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(271, 34);
-            this.textBox45.TabIndex = 115;
+            this.txtD2.Location = new System.Drawing.Point(169, 727);
+            this.txtD2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtD2.Multiline = true;
+            this.txtD2.Name = "txtD2";
+            this.txtD2.Size = new System.Drawing.Size(271, 34);
+            this.txtD2.TabIndex = 115;
             // 
-            // textBox46
+            // txtD1
             // 
-            this.textBox46.Location = new System.Drawing.Point(169, 693);
-            this.textBox46.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox46.Multiline = true;
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(271, 34);
-            this.textBox46.TabIndex = 114;
+            this.txtD1.Location = new System.Drawing.Point(169, 693);
+            this.txtD1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtD1.Multiline = true;
+            this.txtD1.Name = "txtD1";
+            this.txtD1.Size = new System.Drawing.Size(271, 34);
+            this.txtD1.TabIndex = 114;
             // 
             // textBox47
             // 
@@ -715,12 +715,12 @@
             this.Controls.Add(this.textBox47);
             this.Controls.Add(this.textBox25);
             this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.textBox41);
-            this.Controls.Add(this.textBox42);
+            this.Controls.Add(this.txtF2);
+            this.Controls.Add(this.txtF1);
             this.Controls.Add(this.textBox43);
             this.Controls.Add(this.textBox44);
-            this.Controls.Add(this.textBox45);
-            this.Controls.Add(this.textBox46);
+            this.Controls.Add(this.txtD2);
+            this.Controls.Add(this.txtD1);
             this.Controls.Add(this.textBox38);
             this.Controls.Add(this.textBox39);
             this.Controls.Add(this.textBox36);
@@ -765,6 +765,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FrmResumen";
             this.Text = "FrmResumen";
+            this.Load += new System.EventHandler(this.FrmResumen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -816,12 +817,12 @@
         private System.Windows.Forms.TextBox textBox39;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox txtF2;
+        private System.Windows.Forms.TextBox txtF1;
         private System.Windows.Forms.TextBox textBox43;
         private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox txtD2;
+        private System.Windows.Forms.TextBox txtD1;
         private System.Windows.Forms.TextBox textBox47;
         private System.Windows.Forms.TextBox textBox48;
         private System.Windows.Forms.TextBox textBox49;

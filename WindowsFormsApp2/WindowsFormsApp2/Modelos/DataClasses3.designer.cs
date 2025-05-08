@@ -237,6 +237,34 @@ namespace WindowsFormsApp2.Modelos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
 			return ((ISingleResult<SP_ListarObjetivosGeneralesResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarFortaleza")]
+		public int SP_RegistrarFortaleza([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarDebilidad")]
+		public int SP_RegistrarDebilidad([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarFortalezas")]
+		public ISingleResult<SP_ListarFortalezasResult> SP_ListarFortalezas([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ListarFortalezasResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarDebilidades")]
+		public ISingleResult<SP_ListarDebilidadesResult> SP_ListarDebilidades([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ListarDebilidadesResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USUARIO")]
@@ -2106,6 +2134,94 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._ObjetivoG_Descripcion != value))
 				{
 					this._ObjetivoG_Descripcion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarFortalezasResult
+	{
+		
+		private int _Fortaleza_Id;
+		
+		private string _Fortaleza_Descripcion;
+		
+		public SP_ListarFortalezasResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fortaleza_Id", DbType="Int NOT NULL")]
+		public int Fortaleza_Id
+		{
+			get
+			{
+				return this._Fortaleza_Id;
+			}
+			set
+			{
+				if ((this._Fortaleza_Id != value))
+				{
+					this._Fortaleza_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fortaleza_Descripcion", DbType="NVarChar(MAX)")]
+		public string Fortaleza_Descripcion
+		{
+			get
+			{
+				return this._Fortaleza_Descripcion;
+			}
+			set
+			{
+				if ((this._Fortaleza_Descripcion != value))
+				{
+					this._Fortaleza_Descripcion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarDebilidadesResult
+	{
+		
+		private int _Debilidad_Id;
+		
+		private string _Debilidad_Descripcion;
+		
+		public SP_ListarDebilidadesResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Debilidad_Id", DbType="Int NOT NULL")]
+		public int Debilidad_Id
+		{
+			get
+			{
+				return this._Debilidad_Id;
+			}
+			set
+			{
+				if ((this._Debilidad_Id != value))
+				{
+					this._Debilidad_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Debilidad_Descripcion", DbType="NVarChar(MAX)")]
+		public string Debilidad_Descripcion
+		{
+			get
+			{
+				return this._Debilidad_Descripcion;
+			}
+			set
+			{
+				if ((this._Debilidad_Descripcion != value))
+				{
+					this._Debilidad_Descripcion = value;
 				}
 			}
 		}
