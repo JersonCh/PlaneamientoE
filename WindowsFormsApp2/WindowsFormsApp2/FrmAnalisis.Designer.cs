@@ -198,6 +198,7 @@
             this.button1.Text = "INDICE";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -222,6 +223,7 @@
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btncerrar.TabIndex = 89;
             this.btncerrar.TabStop = false;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // btnminimisar
             // 
@@ -233,6 +235,7 @@
             this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnminimisar.TabIndex = 88;
             this.btnminimisar.TabStop = false;
+            this.btnminimisar.Click += new System.EventHandler(this.btnminimisar_Click);
             // 
             // FrmAnalisis
             // 

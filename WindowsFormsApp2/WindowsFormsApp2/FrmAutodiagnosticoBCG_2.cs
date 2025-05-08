@@ -800,5 +800,22 @@ namespace WindowsFormsApp2
         {
             ActualizarCalculos();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.Show();
+            this.Hide();
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnminimisar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,6 +37,7 @@
             this.btnminimisar = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
@@ -73,7 +74,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(300, 705);
+            this.button5.Location = new System.Drawing.Point(310, 720);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(420, 58);
             this.button5.TabIndex = 104;
@@ -94,24 +95,26 @@
             // btncerrar
             // 
             this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
-            this.btncerrar.Location = new System.Drawing.Point(1004, 10);
+            this.btncerrar.Location = new System.Drawing.Point(992, 10);
             this.btncerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(18, 20);
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btncerrar.TabIndex = 89;
             this.btncerrar.TabStop = false;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // btnminimisar
             // 
             this.btnminimisar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimisar.Image")));
-            this.btnminimisar.Location = new System.Drawing.Point(978, 10);
+            this.btnminimisar.Location = new System.Drawing.Point(966, 10);
             this.btnminimisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnminimisar.Name = "btnminimisar";
             this.btnminimisar.Size = new System.Drawing.Size(18, 20);
             this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnminimisar.TabIndex = 88;
             this.btnminimisar.TabStop = false;
+            this.btnminimisar.Click += new System.EventHandler(this.btnminimisar_Click);
             // 
             // button1
             // 
@@ -130,6 +133,7 @@
             this.button1.Text = "INDICE";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -141,15 +145,25 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1033, 100);
+            this.panel1.Size = new System.Drawing.Size(1016, 100);
             this.panel1.TabIndex = 105;
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelContenedor.Location = new System.Drawing.Point(32, 797);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(960, 900);
+            this.panelContenedor.TabIndex = 658;
             // 
             // FrmMatrizDePorter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1033, 803);
+            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBox1);
@@ -174,5 +188,6 @@
         private System.Windows.Forms.PictureBox btnminimisar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelContenedor;
     }
 }

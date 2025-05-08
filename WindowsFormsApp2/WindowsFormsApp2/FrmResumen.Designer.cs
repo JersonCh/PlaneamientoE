@@ -408,6 +408,7 @@
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btncerrar.TabIndex = 89;
             this.btncerrar.TabStop = false;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // btnminimisar
             // 
@@ -419,10 +420,11 @@
             this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnminimisar.TabIndex = 88;
             this.btnminimisar.TabStop = false;
+            this.btnminimisar.Click += new System.EventHandler(this.btnminimisar_Click);
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label2.BackColor = System.Drawing.Color.DarkBlue;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 170);
@@ -434,7 +436,7 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label5.BackColor = System.Drawing.Color.DarkBlue;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(285, 170);
@@ -446,7 +448,7 @@
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label6.BackColor = System.Drawing.Color.DarkBlue;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(767, 170);
@@ -458,7 +460,7 @@
             // 
             // label7
             // 
-            this.label7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label7.BackColor = System.Drawing.Color.DarkBlue;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(530, 170);
@@ -470,7 +472,7 @@
             // 
             // label8
             // 
-            this.label8.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label8.BackColor = System.Drawing.Color.DarkBlue;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(12, 380);
@@ -482,7 +484,7 @@
             // 
             // label10
             // 
-            this.label10.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label10.BackColor = System.Drawing.Color.DarkBlue;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(281, 380);
@@ -494,7 +496,7 @@
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label11.BackColor = System.Drawing.Color.DarkBlue;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(617, 380);
@@ -671,7 +673,7 @@
             // 
             // label19
             // 
-            this.label19.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label19.BackColor = System.Drawing.Color.DarkBlue;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(723, 962);
@@ -683,7 +685,7 @@
             // 
             // label18
             // 
-            this.label18.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label18.BackColor = System.Drawing.Color.DarkBlue;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(445, 721);
@@ -695,7 +697,7 @@
             // 
             // label13
             // 
-            this.label13.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label13.BackColor = System.Drawing.Color.DarkBlue;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(720, 721);
@@ -707,7 +709,7 @@
             // 
             // label12
             // 
-            this.label12.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label12.BackColor = System.Drawing.Color.DarkBlue;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(14, 721);
@@ -719,7 +721,7 @@
             // 
             // label14
             // 
-            this.label14.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label14.BackColor = System.Drawing.Color.DarkBlue;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(14, 783);
@@ -731,7 +733,7 @@
             // 
             // label15
             // 
-            this.label15.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label15.BackColor = System.Drawing.Color.DarkBlue;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(14, 884);
@@ -743,7 +745,7 @@
             // 
             // label16
             // 
-            this.label16.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label16.BackColor = System.Drawing.Color.DarkBlue;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(14, 990);
@@ -755,7 +757,7 @@
             // 
             // label17
             // 
-            this.label17.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label17.BackColor = System.Drawing.Color.DarkBlue;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(14, 1098);
@@ -829,6 +831,7 @@
             this.Controls.Add(this.label9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmResumen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmResumen";
             this.Load += new System.EventHandler(this.FrmResumen_Load);
             this.panel1.ResumeLayout(false);

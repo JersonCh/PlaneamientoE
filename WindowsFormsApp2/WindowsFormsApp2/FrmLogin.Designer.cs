@@ -214,7 +214,6 @@
             this.Controls.Add(this.txtPass);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
-            this.Opacity = 0.93D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FrmLogin_Load);

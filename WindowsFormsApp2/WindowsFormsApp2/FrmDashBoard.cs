@@ -70,5 +70,15 @@ namespace WindowsFormsApp2
         {
             AbrirFormularioHijo(new FrmResumen());
         }
+
+        private void btnMatriz_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmBCG());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmCadenaValor());
+        }
     }
 }

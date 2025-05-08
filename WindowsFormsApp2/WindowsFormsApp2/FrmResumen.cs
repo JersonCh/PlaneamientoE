@@ -140,5 +140,15 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void btnminimisar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

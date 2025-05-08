@@ -76,7 +76,7 @@ namespace WindowsFormsApp2
                     int empresaId = nuevoIdEmpresa.Value;
                     Sesion.EmpresaId = empresaId;
                     // Mostrar el ID generado
-                    MessageBox.Show("ID de empresa registrado: " + empresaId, "ID Generado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("ID de empresa registrado: " + empresaId, "ID Generado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     this.Hide();
 

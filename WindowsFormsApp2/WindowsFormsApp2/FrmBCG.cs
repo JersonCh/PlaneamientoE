@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmCadenaValor : Form
+    public partial class FrmBCG : Form
     {
-        public FrmCadenaValor()
+        public FrmBCG()
         {
             InitializeComponent();
         }
@@ -31,31 +31,16 @@ namespace WindowsFormsApp2
             formularioHijo.Show();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmCadenaValor_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            AbrirFormularioHijo(new FrmAutoCadenaValor());
-        }
-
-        private void button6_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             FrmInicio frmInicio = new FrmInicio();
             frmInicio.Show();
             this.Hide();
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmAutodiagnosticoBCG_2());
         }
 
         private void btnminimisar_Click(object sender, EventArgs e)
