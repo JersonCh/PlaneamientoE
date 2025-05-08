@@ -32,12 +32,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUnidadEstrategica = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE1 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoG1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMision = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,13 +47,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoG2 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoG3 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE2 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE3 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE4 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE5 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE6 = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
@@ -100,14 +100,14 @@
             this.label6.Text = "Misión, visión y valores";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txtUnidadEstrategica
             // 
-            this.textBox1.Location = new System.Drawing.Point(34, 174);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(641, 142);
-            this.textBox1.TabIndex = 58;
+            this.txtUnidadEstrategica.Location = new System.Drawing.Point(34, 174);
+            this.txtUnidadEstrategica.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtUnidadEstrategica.Multiline = true;
+            this.txtUnidadEstrategica.Name = "txtUnidadEstrategica";
+            this.txtUnidadEstrategica.Size = new System.Drawing.Size(641, 142);
+            this.txtUnidadEstrategica.TabIndex = 58;
             // 
             // label10
             // 
@@ -121,27 +121,27 @@
             this.label10.Text = resources.GetString("label10.Text");
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox10
+            // txtObjetivoE1
             // 
-            this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(644, 453);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(313, 38);
-            this.textBox10.TabIndex = 69;
+            this.txtObjetivoE1.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoE1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoE1.Location = new System.Drawing.Point(644, 453);
+            this.txtObjetivoE1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE1.Multiline = true;
+            this.txtObjetivoE1.Name = "txtObjetivoE1";
+            this.txtObjetivoE1.Size = new System.Drawing.Size(313, 38);
+            this.txtObjetivoE1.TabIndex = 69;
             // 
-            // textBox5
+            // txtObjetivoG1
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(289, 453);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(351, 80);
-            this.textBox5.TabIndex = 64;
+            this.txtObjetivoG1.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoG1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoG1.Location = new System.Drawing.Point(289, 453);
+            this.txtObjetivoG1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoG1.Multiline = true;
+            this.txtObjetivoG1.Name = "txtObjetivoG1";
+            this.txtObjetivoG1.Size = new System.Drawing.Size(351, 80);
+            this.txtObjetivoG1.TabIndex = 64;
             // 
             // textBox3
             // 
@@ -158,18 +158,18 @@
             this.textBox3.Text = "MISION";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txtMision
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(38, 453);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(247, 253);
-            this.textBox2.TabIndex = 61;
+            this.txtMision.BackColor = System.Drawing.Color.White;
+            this.txtMision.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMision.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMision.Location = new System.Drawing.Point(38, 453);
+            this.txtMision.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMision.Multiline = true;
+            this.txtMision.Name = "txtMision";
+            this.txtMision.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtMision.Size = new System.Drawing.Size(247, 253);
+            this.txtMision.TabIndex = 61;
             // 
             // textBox4
             // 
@@ -291,82 +291,82 @@
             this.label11.Text = "En su caso, comente en este apartado las distintas UEN que tiene su empresa";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox7
+            // txtObjetivoG2
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(289, 537);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(351, 80);
-            this.textBox7.TabIndex = 99;
+            this.txtObjetivoG2.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoG2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoG2.Location = new System.Drawing.Point(289, 537);
+            this.txtObjetivoG2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoG2.Multiline = true;
+            this.txtObjetivoG2.Name = "txtObjetivoG2";
+            this.txtObjetivoG2.Size = new System.Drawing.Size(351, 80);
+            this.txtObjetivoG2.TabIndex = 99;
             // 
-            // textBox8
+            // txtObjetivoG3
             // 
-            this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(289, 621);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(351, 85);
-            this.textBox8.TabIndex = 100;
+            this.txtObjetivoG3.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoG3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoG3.Location = new System.Drawing.Point(289, 621);
+            this.txtObjetivoG3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoG3.Multiline = true;
+            this.txtObjetivoG3.Name = "txtObjetivoG3";
+            this.txtObjetivoG3.Size = new System.Drawing.Size(351, 85);
+            this.txtObjetivoG3.TabIndex = 100;
             // 
-            // textBox9
+            // txtObjetivoE2
             // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(644, 495);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(313, 38);
-            this.textBox9.TabIndex = 101;
+            this.txtObjetivoE2.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoE2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoE2.Location = new System.Drawing.Point(644, 495);
+            this.txtObjetivoE2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE2.Multiline = true;
+            this.txtObjetivoE2.Name = "txtObjetivoE2";
+            this.txtObjetivoE2.Size = new System.Drawing.Size(313, 38);
+            this.txtObjetivoE2.TabIndex = 101;
             // 
-            // textBox11
+            // txtObjetivoE3
             // 
-            this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(644, 537);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(313, 38);
-            this.textBox11.TabIndex = 102;
+            this.txtObjetivoE3.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoE3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoE3.Location = new System.Drawing.Point(644, 537);
+            this.txtObjetivoE3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE3.Multiline = true;
+            this.txtObjetivoE3.Name = "txtObjetivoE3";
+            this.txtObjetivoE3.Size = new System.Drawing.Size(313, 38);
+            this.txtObjetivoE3.TabIndex = 102;
             // 
-            // textBox12
+            // txtObjetivoE4
             // 
-            this.textBox12.BackColor = System.Drawing.Color.White;
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(644, 579);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(313, 38);
-            this.textBox12.TabIndex = 103;
+            this.txtObjetivoE4.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoE4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoE4.Location = new System.Drawing.Point(644, 579);
+            this.txtObjetivoE4.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE4.Multiline = true;
+            this.txtObjetivoE4.Name = "txtObjetivoE4";
+            this.txtObjetivoE4.Size = new System.Drawing.Size(313, 38);
+            this.txtObjetivoE4.TabIndex = 103;
             // 
-            // textBox13
+            // txtObjetivoE5
             // 
-            this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(644, 621);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(313, 38);
-            this.textBox13.TabIndex = 104;
+            this.txtObjetivoE5.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoE5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoE5.Location = new System.Drawing.Point(644, 621);
+            this.txtObjetivoE5.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE5.Multiline = true;
+            this.txtObjetivoE5.Name = "txtObjetivoE5";
+            this.txtObjetivoE5.Size = new System.Drawing.Size(313, 38);
+            this.txtObjetivoE5.TabIndex = 104;
             // 
-            // textBox14
+            // txtObjetivoE6
             // 
-            this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(644, 663);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(313, 43);
-            this.textBox14.TabIndex = 105;
+            this.txtObjetivoE6.BackColor = System.Drawing.Color.White;
+            this.txtObjetivoE6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjetivoE6.Location = new System.Drawing.Point(644, 663);
+            this.txtObjetivoE6.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE6.Multiline = true;
+            this.txtObjetivoE6.Name = "txtObjetivoE6";
+            this.txtObjetivoE6.Size = new System.Drawing.Size(313, 43);
+            this.txtObjetivoE6.TabIndex = 105;
             // 
             // btnRegistrar
             // 
@@ -383,6 +383,7 @@
             this.btnRegistrar.TabIndex = 106;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // FrmObjetivos
             // 
@@ -391,23 +392,23 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1010, 780);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtObjetivoE6);
+            this.Controls.Add(this.txtObjetivoE5);
+            this.Controls.Add(this.txtObjetivoE4);
+            this.Controls.Add(this.txtObjetivoE3);
+            this.Controls.Add(this.txtObjetivoE2);
+            this.Controls.Add(this.txtObjetivoG3);
+            this.Controls.Add(this.txtObjetivoG2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtObjetivoE1);
+            this.Controls.Add(this.txtObjetivoG1);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtMision);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUnidadEstrategica);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -429,12 +430,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUnidadEstrategica;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtObjetivoE1;
+        private System.Windows.Forms.TextBox txtObjetivoG1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMision;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label2;
@@ -443,13 +444,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtObjetivoG2;
+        private System.Windows.Forms.TextBox txtObjetivoG3;
+        private System.Windows.Forms.TextBox txtObjetivoE2;
+        private System.Windows.Forms.TextBox txtObjetivoE3;
+        private System.Windows.Forms.TextBox txtObjetivoE4;
+        private System.Windows.Forms.TextBox txtObjetivoE5;
+        private System.Windows.Forms.TextBox txtObjetivoE6;
         private System.Windows.Forms.Button btnRegistrar;
     }
 }

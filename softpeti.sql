@@ -106,7 +106,124 @@
 	END
 	GO
 
-	
+	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'UNID_ESTRA')
+BEGIN
+	CREATE TABLE UNID_ESTRA (
+		id INT PRIMARY KEY IDENTITY,
+		descripcion NVARCHAR(MAX),
+		fecha_registro DATETIME DEFAULT GETDATE(),
+		empresa_id INT,
+		FOREIGN KEY (empresa_id) REFERENCES EMPRESA(id)
+	);
+END
+GO
+
+CREATE PROCEDURE SP_RegistrarUnidEstra
+    @descripcion NVARCHAR(MAX),
+    @empresa_id INT
+AS
+BEGIN
+    INSERT INTO UNID_ESTRA (descripcion, empresa_id)
+    VALUES (@descripcion, @empresa_id)
+END
+GO
+
+
+
+CREATE PROCEDURE SP_ListarUnidEstraPorEmpresa
+    @EmpresaId INT
+AS
+BEGIN
+    SELECT descripcion
+    FROM UNID_ESTRA
+    WHERE empresa_id = @EmpresaId;
+END
+GO
+
+
+CREATE PROCEDURE SP_RegistrarObjetivos
+    @descripcionG1 NVARCHAR(MAX),
+    @descripcionG2 NVARCHAR(MAX),
+    @descripcionG3 NVARCHAR(MAX),
+    @empresa_id INT,
+    @descripcionE1 NVARCHAR(MAX),
+    @descripcionE2 NVARCHAR(MAX),
+    @descripcionE3 NVARCHAR(MAX),
+    @descripcionE4 NVARCHAR(MAX),
+    @descripcionE5 NVARCHAR(MAX),
+    @descripcionE6 NVARCHAR(MAX)
+AS
+BEGIN
+    DECLARE @idObjetivoG INT;
+
+    -- Insertar Objetivo General 1 (G1)
+    INSERT INTO ObjetivoG (descripcion, empresa_id)
+    VALUES (@descripcionG1, @empresa_id);
+
+    -- Obtener el id generado para G1
+    SET @idObjetivoG = SCOPE_IDENTITY();
+
+    -- Insertar Objetivos Específicos relacionados con G1
+    INSERT INTO ObjetivoE (descripcion, objetivo_id)
+    VALUES 
+        (@descripcionE1, @idObjetivoG),
+        (@descripcionE2, @idObjetivoG);
+
+    -- Insertar Objetivo General 2 (G2)
+    INSERT INTO ObjetivoG (descripcion, empresa_id)
+    VALUES (@descripcionG2, @empresa_id);
+
+    -- Obtener el id generado para G2
+    SET @idObjetivoG = SCOPE_IDENTITY();
+
+    -- Insertar Objetivos Específicos relacionados con G2
+    INSERT INTO ObjetivoE (descripcion, objetivo_id)
+    VALUES 
+        (@descripcionE3, @idObjetivoG),
+        (@descripcionE4, @idObjetivoG);
+
+    -- Insertar Objetivo General 3 (G3)
+    INSERT INTO ObjetivoG (descripcion, empresa_id)
+    VALUES (@descripcionG3, @empresa_id);
+
+    -- Obtener el id generado para G3
+    SET @idObjetivoG = SCOPE_IDENTITY();
+
+    -- Insertar Objetivos Específicos relacionados con G3
+    INSERT INTO ObjetivoE (descripcion, objetivo_id)
+    VALUES 
+        (@descripcionE5, @idObjetivoG),
+        (@descripcionE6, @idObjetivoG);
+END
+GO
+
+
+-- SP para Objetivos Generales
+CREATE PROCEDURE SP_ListarObjetivosGenerales
+    @empresa_id INT
+AS
+BEGIN
+    SELECT O.id AS ObjetivoG_Id, O.descripcion AS ObjetivoG_Descripcion
+    FROM ObjetivoG O
+    WHERE O.empresa_id = @empresa_id
+    ORDER BY O.id;
+END
+GO
+
+-- SP para Objetivos Específicos
+CREATE PROCEDURE SP_ListarObjetivosEspecificos
+    @empresa_id INT
+AS
+BEGIN
+    SELECT E.id AS ObjetivoE_Id, E.descripcion AS ObjetivoE_Descripcion, E.objetivo_id AS ObjetivoG_Id
+    FROM ObjetivoE E
+    WHERE EXISTS (
+        SELECT 1 FROM ObjetivoG O WHERE O.id = E.objetivo_id AND O.empresa_id = @empresa_id
+    )
+    ORDER BY E.objetivo_id, E.id;
+END
+GO
+
 
 
 
@@ -244,12 +361,12 @@ IF OBJECT_ID('SP_ListarValores') IS NOT NULL
     DROP PROCEDURE SP_ListarValores;
 GO
 
-CREATE PROCEDURE SP_ListarValores
+CREATE OR ALTER PROCEDURE SP_ListarValores
     @EmpresaId INT
 AS
 BEGIN
     SELECT id, descripcion, fecha_registro, empresa_id
-    FROM Valores
+    FROM VALORES
     WHERE empresa_id = @EmpresaId
     ORDER BY fecha_registro DESC;
 END

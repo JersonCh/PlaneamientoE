@@ -202,6 +202,41 @@ namespace WindowsFormsApp2.Modelos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresaId);
 			return ((ISingleResult<SP_ListarVisionPorUsuarioResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarUnidEstra")]
+		public int SP_RegistrarUnidEstra([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarObjetivos")]
+		public int SP_RegistrarObjetivos([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionG1, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionG2, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionG3, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionE1, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionE2, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionE3, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionE4, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionE5, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcionE6)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcionG1, descripcionG2, descripcionG3, empresa_id, descripcionE1, descripcionE2, descripcionE3, descripcionE4, descripcionE5, descripcionE6);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarUnidEstraPorEmpresa")]
+		public ISingleResult<SP_ListarUnidEstraPorEmpresaResult> SP_ListarUnidEstraPorEmpresa([global::System.Data.Linq.Mapping.ParameterAttribute(Name="EmpresaId", DbType="Int")] System.Nullable<int> empresaId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresaId);
+			return ((ISingleResult<SP_ListarUnidEstraPorEmpresaResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarObjetivosEspecificos")]
+		public ISingleResult<SP_ListarObjetivosEspecificosResult> SP_ListarObjetivosEspecificos([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ListarObjetivosEspecificosResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarObjetivosGenerales")]
+		public ISingleResult<SP_ListarObjetivosGeneralesResult> SP_ListarObjetivosGenerales([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ListarObjetivosGeneralesResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USUARIO")]
@@ -1939,6 +1974,138 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._empresa_id != value))
 				{
 					this._empresa_id = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarUnidEstraPorEmpresaResult
+	{
+		
+		private string _descripcion;
+		
+		public SP_ListarUnidEstraPorEmpresaResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarObjetivosEspecificosResult
+	{
+		
+		private int _ObjetivoE_Id;
+		
+		private string _ObjetivoE_Descripcion;
+		
+		private System.Nullable<int> _ObjetivoG_Id;
+		
+		public SP_ListarObjetivosEspecificosResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ObjetivoE_Id", DbType="Int NOT NULL")]
+		public int ObjetivoE_Id
+		{
+			get
+			{
+				return this._ObjetivoE_Id;
+			}
+			set
+			{
+				if ((this._ObjetivoE_Id != value))
+				{
+					this._ObjetivoE_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ObjetivoE_Descripcion", DbType="NVarChar(MAX)")]
+		public string ObjetivoE_Descripcion
+		{
+			get
+			{
+				return this._ObjetivoE_Descripcion;
+			}
+			set
+			{
+				if ((this._ObjetivoE_Descripcion != value))
+				{
+					this._ObjetivoE_Descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ObjetivoG_Id", DbType="Int")]
+		public System.Nullable<int> ObjetivoG_Id
+		{
+			get
+			{
+				return this._ObjetivoG_Id;
+			}
+			set
+			{
+				if ((this._ObjetivoG_Id != value))
+				{
+					this._ObjetivoG_Id = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarObjetivosGeneralesResult
+	{
+		
+		private int _ObjetivoG_Id;
+		
+		private string _ObjetivoG_Descripcion;
+		
+		public SP_ListarObjetivosGeneralesResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ObjetivoG_Id", DbType="Int NOT NULL")]
+		public int ObjetivoG_Id
+		{
+			get
+			{
+				return this._ObjetivoG_Id;
+			}
+			set
+			{
+				if ((this._ObjetivoG_Id != value))
+				{
+					this._ObjetivoG_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ObjetivoG_Descripcion", DbType="NVarChar(MAX)")]
+		public string ObjetivoG_Descripcion
+		{
+			get
+			{
+				return this._ObjetivoG_Descripcion;
+			}
+			set
+			{
+				if ((this._ObjetivoG_Descripcion != value))
+				{
+					this._ObjetivoG_Descripcion = value;
 				}
 			}
 		}

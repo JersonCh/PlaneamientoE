@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Data.Linq;
 using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp2.Clases;  
@@ -33,6 +34,7 @@ namespace WindowsFormsApp2
                     if (mision != null)
                     {
                         txtMision.Text = mision.descripcion;
+                        txtMisionO.Text = mision.descripcion;
                     }
 
                     // Obtener Visión del usuario
@@ -70,6 +72,31 @@ namespace WindowsFormsApp2
                     {
                         txtEmprendedor.Text = usuario.email;
                     }
+
+                    // Obtener valores del usuario
+                    var unid_estrat = dc.SP_ListarUnidEstraPorEmpresa(empresaId).FirstOrDefault();
+                    if (unid_estrat != null)
+                    {
+                        txtUnidadEstrategica.Text = unid_estrat.descripcion;
+                    }
+
+                    // Obtener Objetivos Generales
+                    var objetivosGenerales = dc.SP_ListarObjetivosGenerales(empresaId).ToList();
+
+                    if (objetivosGenerales.Count > 0) txtObjetivoG1.Text = objetivosGenerales.ElementAtOrDefault(0)?.ObjetivoG_Descripcion ?? "";
+                    if (objetivosGenerales.Count > 1) txtObjetivoG2.Text = objetivosGenerales.ElementAtOrDefault(1)?.ObjetivoG_Descripcion ?? "";
+                    if (objetivosGenerales.Count > 2) txtObjetivoG3.Text = objetivosGenerales.ElementAtOrDefault(2)?.ObjetivoG_Descripcion ?? "";
+
+                    // Obtener Objetivos Específicos
+                    var objetivosEspecificos = dc.SP_ListarObjetivosEspecificos(empresaId).ToList();
+
+                    if (objetivosEspecificos.Count > 0) txtObjetivoE1.Text = objetivosEspecificos.ElementAtOrDefault(0)?.ObjetivoE_Descripcion ?? "";
+                    if (objetivosEspecificos.Count > 1) txtObjetivoE2.Text = objetivosEspecificos.ElementAtOrDefault(1)?.ObjetivoE_Descripcion ?? "";
+                    if (objetivosEspecificos.Count > 2) txtObjetivoE3.Text = objetivosEspecificos.ElementAtOrDefault(2)?.ObjetivoE_Descripcion ?? "";
+                    if (objetivosEspecificos.Count > 3) txtObjetivoE4.Text = objetivosEspecificos.ElementAtOrDefault(3)?.ObjetivoE_Descripcion ?? "";
+                    if (objetivosEspecificos.Count > 4) txtObjetivoE5.Text = objetivosEspecificos.ElementAtOrDefault(4)?.ObjetivoE_Descripcion ?? "";
+                    if (objetivosEspecificos.Count > 5) txtObjetivoE6.Text = objetivosEspecificos.ElementAtOrDefault(5)?.ObjetivoE_Descripcion ?? "";
+
                 }
             }
             catch (Exception ex)

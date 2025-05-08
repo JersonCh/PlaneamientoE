@@ -135,4 +135,43 @@
       <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.SP_RegistrarUnidEstra" Method="SP_RegistrarUnidEstra">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_RegistrarObjetivos" Method="SP_RegistrarObjetivos">
+    <Parameter Name="descripcionG1" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="descripcionG2" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="descripcionG3" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="descripcionE1" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="descripcionE2" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="descripcionE3" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="descripcionE4" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="descripcionE5" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="descripcionE6" Type="System.String" DbType="NVarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ListarUnidEstraPorEmpresa" Method="SP_ListarUnidEstraPorEmpresa">
+    <Parameter Name="EmpresaId" Parameter="empresaId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarUnidEstraPorEmpresaResult">
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ListarObjetivosEspecificos" Method="SP_ListarObjetivosEspecificos">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarObjetivosEspecificosResult">
+      <Column Name="ObjetivoE_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ObjetivoE_Descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ObjetivoG_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ListarObjetivosGenerales" Method="SP_ListarObjetivosGenerales">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarObjetivosGeneralesResult">
+      <Column Name="ObjetivoG_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ObjetivoG_Descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

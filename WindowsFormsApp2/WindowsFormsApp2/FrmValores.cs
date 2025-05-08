@@ -64,9 +64,16 @@ namespace WindowsFormsApp2
 
             using (DataClasses3DataContext dc = new DataClasses3DataContext())
             {
-                dc.SP_RegistrarValores(descripcion, empresaId);
+                dc.SP_RegistrarValores(descripcion, Sesion.EmpresaId);
                 MessageBox.Show("Valores registrados exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnObjetivos_Click(object sender, EventArgs e)
+        {
+            FrmObjetivos objFrmObjetivos = new FrmObjetivos();
+            objFrmObjetivos.Show();
+            this.Hide();
         }
     }
 }

@@ -42,21 +42,21 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.txtValores = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtUnidadEstrategica = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE4 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE6 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE5 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE3 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE2 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoE1 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.txtMisionO = new System.Windows.Forms.TextBox();
+            this.txtObjetivoG3 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoG2 = new System.Windows.Forms.TextBox();
+            this.txtObjetivoG1 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
             this.textBox28 = new System.Windows.Forms.TextBox();
@@ -230,14 +230,14 @@
             this.textBox8.Text = "VALORES";
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // txtUnidadEstrategica
             // 
-            this.textBox9.Location = new System.Drawing.Point(941, 200);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(413, 123);
-            this.textBox9.TabIndex = 82;
+            this.txtUnidadEstrategica.Location = new System.Drawing.Point(941, 200);
+            this.txtUnidadEstrategica.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUnidadEstrategica.Multiline = true;
+            this.txtUnidadEstrategica.Name = "txtUnidadEstrategica";
+            this.txtUnidadEstrategica.Size = new System.Drawing.Size(413, 123);
+            this.txtUnidadEstrategica.TabIndex = 82;
             // 
             // textBox11
             // 
@@ -253,50 +253,50 @@
             this.textBox11.Text = "UNIDADES ESTRATÉGICAS";
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // txtObjetivoE4
             // 
-            this.textBox12.Location = new System.Drawing.Point(962, 509);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(392, 43);
-            this.textBox12.TabIndex = 95;
+            this.txtObjetivoE4.Location = new System.Drawing.Point(962, 509);
+            this.txtObjetivoE4.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE4.Multiline = true;
+            this.txtObjetivoE4.Name = "txtObjetivoE4";
+            this.txtObjetivoE4.Size = new System.Drawing.Size(392, 43);
+            this.txtObjetivoE4.TabIndex = 95;
             // 
-            // textBox14
+            // txtObjetivoE6
             // 
-            this.textBox14.Location = new System.Drawing.Point(962, 599);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(392, 45);
-            this.textBox14.TabIndex = 94;
+            this.txtObjetivoE6.Location = new System.Drawing.Point(962, 599);
+            this.txtObjetivoE6.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE6.Multiline = true;
+            this.txtObjetivoE6.Name = "txtObjetivoE6";
+            this.txtObjetivoE6.Size = new System.Drawing.Size(392, 45);
+            this.txtObjetivoE6.TabIndex = 94;
             // 
-            // textBox13
+            // txtObjetivoE5
             // 
-            this.textBox13.Location = new System.Drawing.Point(962, 548);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(392, 52);
-            this.textBox13.TabIndex = 93;
+            this.txtObjetivoE5.Location = new System.Drawing.Point(962, 548);
+            this.txtObjetivoE5.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE5.Multiline = true;
+            this.txtObjetivoE5.Name = "txtObjetivoE5";
+            this.txtObjetivoE5.Size = new System.Drawing.Size(392, 52);
+            this.txtObjetivoE5.TabIndex = 93;
             // 
-            // textBox15
+            // txtObjetivoE3
             // 
-            this.textBox15.Location = new System.Drawing.Point(962, 471);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(392, 43);
-            this.textBox15.TabIndex = 92;
+            this.txtObjetivoE3.Location = new System.Drawing.Point(962, 471);
+            this.txtObjetivoE3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE3.Multiline = true;
+            this.txtObjetivoE3.Name = "txtObjetivoE3";
+            this.txtObjetivoE3.Size = new System.Drawing.Size(392, 43);
+            this.txtObjetivoE3.TabIndex = 92;
             // 
-            // textBox16
+            // txtObjetivoE2
             // 
-            this.textBox16.Location = new System.Drawing.Point(962, 431);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(392, 43);
-            this.textBox16.TabIndex = 91;
+            this.txtObjetivoE2.Location = new System.Drawing.Point(962, 431);
+            this.txtObjetivoE2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE2.Multiline = true;
+            this.txtObjetivoE2.Name = "txtObjetivoE2";
+            this.txtObjetivoE2.Size = new System.Drawing.Size(392, 43);
+            this.txtObjetivoE2.TabIndex = 91;
             // 
             // textBox19
             // 
@@ -326,14 +326,14 @@
             this.textBox20.Text = "OBJETIVOS GENERALES O ESTRATÉGICOS";
             this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox21
+            // txtObjetivoE1
             // 
-            this.textBox21.Location = new System.Drawing.Point(962, 389);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(392, 43);
-            this.textBox21.TabIndex = 86;
+            this.txtObjetivoE1.Location = new System.Drawing.Point(962, 389);
+            this.txtObjetivoE1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoE1.Multiline = true;
+            this.txtObjetivoE1.Name = "txtObjetivoE1";
+            this.txtObjetivoE1.Size = new System.Drawing.Size(392, 43);
+            this.txtObjetivoE1.TabIndex = 86;
             // 
             // textBox23
             // 
@@ -349,54 +349,54 @@
             this.textBox23.Text = "MISION";
             this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox24
+            // txtMisionO
             // 
-            this.textBox24.BackColor = System.Drawing.Color.DarkBlue;
-            this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.textBox24.Location = new System.Drawing.Point(485, 386);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox24.Size = new System.Drawing.Size(216, 258);
-            this.textBox24.TabIndex = 83;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMisionO.BackColor = System.Drawing.Color.DarkBlue;
+            this.txtMisionO.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txtMisionO.Location = new System.Drawing.Point(485, 386);
+            this.txtMisionO.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMisionO.Multiline = true;
+            this.txtMisionO.Name = "txtMisionO";
+            this.txtMisionO.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtMisionO.Size = new System.Drawing.Size(216, 258);
+            this.txtMisionO.TabIndex = 83;
+            this.txtMisionO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox17
+            // txtObjetivoG3
             // 
-            this.textBox17.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.textBox17.Location = new System.Drawing.Point(689, 556);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(278, 88);
-            this.textBox17.TabIndex = 98;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtObjetivoG3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtObjetivoG3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txtObjetivoG3.Location = new System.Drawing.Point(689, 556);
+            this.txtObjetivoG3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoG3.Multiline = true;
+            this.txtObjetivoG3.Name = "txtObjetivoG3";
+            this.txtObjetivoG3.Size = new System.Drawing.Size(278, 88);
+            this.txtObjetivoG3.TabIndex = 98;
+            this.txtObjetivoG3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox18
+            // txtObjetivoG2
             // 
-            this.textBox18.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.textBox18.Location = new System.Drawing.Point(689, 470);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(278, 88);
-            this.textBox18.TabIndex = 97;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtObjetivoG2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtObjetivoG2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txtObjetivoG2.Location = new System.Drawing.Point(689, 470);
+            this.txtObjetivoG2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoG2.Multiline = true;
+            this.txtObjetivoG2.Name = "txtObjetivoG2";
+            this.txtObjetivoG2.Size = new System.Drawing.Size(278, 88);
+            this.txtObjetivoG2.TabIndex = 97;
+            this.txtObjetivoG2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox22
+            // txtObjetivoG1
             // 
-            this.textBox22.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.textBox22.Location = new System.Drawing.Point(689, 386);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(278, 88);
-            this.textBox22.TabIndex = 96;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtObjetivoG1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtObjetivoG1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txtObjetivoG1.Location = new System.Drawing.Point(689, 386);
+            this.txtObjetivoG1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtObjetivoG1.Multiline = true;
+            this.txtObjetivoG1.Name = "txtObjetivoG1";
+            this.txtObjetivoG1.Size = new System.Drawing.Size(278, 88);
+            this.txtObjetivoG1.TabIndex = 96;
+            this.txtObjetivoG1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox26
             // 
@@ -735,20 +735,20 @@
             this.Controls.Add(this.textBox27);
             this.Controls.Add(this.textBox28);
             this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.txtObjetivoG3);
+            this.Controls.Add(this.txtObjetivoG2);
+            this.Controls.Add(this.txtObjetivoG1);
+            this.Controls.Add(this.txtObjetivoE4);
+            this.Controls.Add(this.txtObjetivoE6);
+            this.Controls.Add(this.txtObjetivoE5);
+            this.Controls.Add(this.txtObjetivoE3);
+            this.Controls.Add(this.txtObjetivoE2);
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.txtObjetivoE1);
             this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtMisionO);
+            this.Controls.Add(this.txtUnidadEstrategica);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.txtValores);
             this.Controls.Add(this.textBox8);
@@ -785,21 +785,21 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox txtValores;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtUnidadEstrategica;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtObjetivoE4;
+        private System.Windows.Forms.TextBox txtObjetivoE6;
+        private System.Windows.Forms.TextBox txtObjetivoE5;
+        private System.Windows.Forms.TextBox txtObjetivoE3;
+        private System.Windows.Forms.TextBox txtObjetivoE2;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtObjetivoE1;
         private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox txtMisionO;
+        private System.Windows.Forms.TextBox txtObjetivoG3;
+        private System.Windows.Forms.TextBox txtObjetivoG2;
+        private System.Windows.Forms.TextBox txtObjetivoG1;
         private System.Windows.Forms.TextBox textBox26;
         private System.Windows.Forms.TextBox textBox27;
         private System.Windows.Forms.TextBox textBox28;
