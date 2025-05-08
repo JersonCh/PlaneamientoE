@@ -63,13 +63,28 @@ namespace WindowsFormsApp2
             dgvEmpresas.DataSource = filtradas;
         }
 
+
+        private void AbrirFormularioHijo(Form formularioHijo)
+        {
+            // Cerrar formulario activo si ya hay uno
+            if (panelContenedor.Controls.Count > 0)
+                panelContenedor.Controls[0].Dispose();
+
+            formularioHijo.TopLevel = false;
+            formularioHijo.FormBorderStyle = FormBorderStyle.None;
+            formularioHijo.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(formularioHijo);
+            panelContenedor.Tag = formularioHijo;
+            formularioHijo.Show();
+        }
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            FrmInformacion frminfo = new FrmInformacion();
-            frminfo.Show();
+        
+            AbrirFormularioHijo(new FrmInformacion());
 
-            
+
         }
 
         private void dgvEmpresas_CellContentClick(object sender, DataGridViewCellEventArgs e)

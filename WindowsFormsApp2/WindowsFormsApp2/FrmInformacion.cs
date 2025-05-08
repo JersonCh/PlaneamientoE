@@ -80,8 +80,8 @@ namespace WindowsFormsApp2
 
                     this.Hide();
 
-                    Form objFrmMision = new FrmMision();
-                    objFrmMision.Show();
+                    //Form objFrmMision = new FrmMision();
+                    //objFrmMision.Show();
                 }
                 else
                 {

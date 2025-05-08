@@ -55,5 +55,20 @@ namespace WindowsFormsApp2
         {
             AbrirFormularioHijo(new FrmValores());
         }
+
+        private void btnAnalisisIyE_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmAnalisis());
+        }
+
+        private void btnLas5Fuerzas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmMatrizDePorter());
+        }
+
+        private void btnResumen_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmResumen());
+        }
     }
 }

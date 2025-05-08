@@ -329,7 +329,6 @@ namespace WindowsFormsApp2
                 txttotal2.Text = "0.0%";
             }
         }
-
         private void FrmAutodiagnosticoBCG_2_Load(object sender, EventArgs e)
         {
 
@@ -796,5 +795,6 @@ namespace WindowsFormsApp2
             // Duplicar valor de txtbox5 a txtemp5
             txtemp5.Text = txtbox5.Text;
         }
+    
     }
 }

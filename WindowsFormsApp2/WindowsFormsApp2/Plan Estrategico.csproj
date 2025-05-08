@@ -67,17 +67,17 @@
     <Compile Include="FrmAutoCadenaValor.Designer.cs">
       <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAutodiagnosticoBCG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutodiagnosticoBCG.Designer.cs">
+      <DependentUpon>FrmAutodiagnosticoBCG.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAutodiagnosticoBCG_2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAutodiagnosticoBCG_2.Designer.cs">
       <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmBCG.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmBCG.Designer.cs">
-      <DependentUpon>FrmBCG.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCadenaValor.cs">
       <SubType>Form</SubType>
@@ -189,11 +189,11 @@
     <EmbeddedResource Include="FrmAutoCadenaValor.resx">
       <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutodiagnosticoBCG.resx">
+      <DependentUpon>FrmAutodiagnosticoBCG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAutodiagnosticoBCG_2.resx">
       <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmBCG.resx">
-      <DependentUpon>FrmBCG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadenaValor.resx">
       <DependentUpon>FrmCadenaValor.cs</DependentUpon>

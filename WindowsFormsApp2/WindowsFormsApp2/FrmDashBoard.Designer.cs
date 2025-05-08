@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDashBoard));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnVision = new System.Windows.Forms.Button();
-            this.btnMision = new System.Windows.Forms.Button();
+            this.btnResumen = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnInformacionEmpresa = new System.Windows.Forms.Button();
             this.btnLas5Fuerzas = new System.Windows.Forms.Button();
+            this.btnIdentificacion = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnPest = new System.Windows.Forms.Button();
             this.btnMatriz = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnAnalisisIyE = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnIdentificacion = new System.Windows.Forms.Button();
-            this.btnPest = new System.Windows.Forms.Button();
-            this.btnResumen = new System.Windows.Forms.Button();
-            this.btnInformacionEmpresa = new System.Windows.Forms.Button();
+            this.btnVision = new System.Windows.Forms.Button();
+            this.btnMision = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,101 @@
             this.panel2.Size = new System.Drawing.Size(329, 803);
             this.panel2.TabIndex = 73;
             // 
+            // btnResumen
+            // 
+            this.btnResumen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnResumen.FlatAppearance.BorderSize = 0;
+            this.btnResumen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnResumen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnResumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResumen.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResumen.ForeColor = System.Drawing.Color.White;
+            this.btnResumen.Location = new System.Drawing.Point(-1, 748);
+            this.btnResumen.Name = "btnResumen";
+            this.btnResumen.Size = new System.Drawing.Size(331, 55);
+            this.btnResumen.TabIndex = 155;
+            this.btnResumen.Text = "RESUMEN DEL PLAN EJECUTIVO";
+            this.btnResumen.UseVisualStyleBackColor = false;
+            this.btnResumen.Click += new System.EventHandler(this.btnResumen_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(-1, 680);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(330, 56);
+            this.button4.TabIndex = 155;
+            this.button4.Text = "  MATRIZ CAME";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // btnInformacionEmpresa
+            // 
+            this.btnInformacionEmpresa.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnInformacionEmpresa.FlatAppearance.BorderSize = 0;
+            this.btnInformacionEmpresa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnInformacionEmpresa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnInformacionEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformacionEmpresa.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformacionEmpresa.ForeColor = System.Drawing.Color.White;
+            this.btnInformacionEmpresa.Image = ((System.Drawing.Image)(resources.GetObject("btnInformacionEmpresa.Image")));
+            this.btnInformacionEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInformacionEmpresa.Location = new System.Drawing.Point(-1, 0);
+            this.btnInformacionEmpresa.Name = "btnInformacionEmpresa";
+            this.btnInformacionEmpresa.Size = new System.Drawing.Size(330, 54);
+            this.btnInformacionEmpresa.TabIndex = 154;
+            this.btnInformacionEmpresa.Text = "  INFOR. DE LA EMPRESA";
+            this.btnInformacionEmpresa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInformacionEmpresa.UseVisualStyleBackColor = false;
+            this.btnInformacionEmpresa.Click += new System.EventHandler(this.btnInformacionEmpresa_Click);
+            // 
+            // btnLas5Fuerzas
+            // 
+            this.btnLas5Fuerzas.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnLas5Fuerzas.FlatAppearance.BorderSize = 0;
+            this.btnLas5Fuerzas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnLas5Fuerzas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnLas5Fuerzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLas5Fuerzas.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLas5Fuerzas.ForeColor = System.Drawing.Color.White;
+            this.btnLas5Fuerzas.Image = ((System.Drawing.Image)(resources.GetObject("btnLas5Fuerzas.Image")));
+            this.btnLas5Fuerzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLas5Fuerzas.Location = new System.Drawing.Point(0, 494);
+            this.btnLas5Fuerzas.Name = "btnLas5Fuerzas";
+            this.btnLas5Fuerzas.Size = new System.Drawing.Size(330, 56);
+            this.btnLas5Fuerzas.TabIndex = 153;
+            this.btnLas5Fuerzas.Text = "  LAS 5 FUERZAS DE PORTER";
+            this.btnLas5Fuerzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLas5Fuerzas.UseVisualStyleBackColor = false;
+            this.btnLas5Fuerzas.Click += new System.EventHandler(this.btnLas5Fuerzas_Click);
+            // 
+            // btnIdentificacion
+            // 
+            this.btnIdentificacion.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnIdentificacion.FlatAppearance.BorderSize = 0;
+            this.btnIdentificacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnIdentificacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnIdentificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIdentificacion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIdentificacion.ForeColor = System.Drawing.Color.White;
+            this.btnIdentificacion.Image = ((System.Drawing.Image)(resources.GetObject("btnIdentificacion.Image")));
+            this.btnIdentificacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIdentificacion.Location = new System.Drawing.Point(-1, 618);
+            this.btnIdentificacion.Name = "btnIdentificacion";
+            this.btnIdentificacion.Size = new System.Drawing.Size(330, 56);
+            this.btnIdentificacion.TabIndex = 154;
+            this.btnIdentificacion.Text = "  IDENTIFICACION ESTRATEGICA";
+            this.btnIdentificacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnIdentificacion.UseVisualStyleBackColor = false;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.RoyalBlue;
@@ -89,85 +184,24 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnPest
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1, 184);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(329, 56);
-            this.button1.TabIndex = 147;
-            this.button1.Text = "  VALORES";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnVision
-            // 
-            this.btnVision.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnVision.FlatAppearance.BorderSize = 0;
-            this.btnVision.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnVision.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnVision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVision.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVision.ForeColor = System.Drawing.Color.White;
-            this.btnVision.Image = ((System.Drawing.Image)(resources.GetObject("btnVision.Image")));
-            this.btnVision.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVision.Location = new System.Drawing.Point(1, 122);
-            this.btnVision.Name = "btnVision";
-            this.btnVision.Size = new System.Drawing.Size(329, 56);
-            this.btnVision.TabIndex = 146;
-            this.btnVision.Text = "  VISION";
-            this.btnVision.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVision.UseVisualStyleBackColor = false;
-            this.btnVision.Click += new System.EventHandler(this.btnVision_Click);
-            // 
-            // btnMision
-            // 
-            this.btnMision.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnMision.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnMision.FlatAppearance.BorderSize = 0;
-            this.btnMision.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnMision.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
-            this.btnMision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMision.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMision.ForeColor = System.Drawing.Color.White;
-            this.btnMision.Image = ((System.Drawing.Image)(resources.GetObject("btnMision.Image")));
-            this.btnMision.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMision.Location = new System.Drawing.Point(0, 60);
-            this.btnMision.Name = "btnMision";
-            this.btnMision.Size = new System.Drawing.Size(329, 56);
-            this.btnMision.TabIndex = 145;
-            this.btnMision.Text = "  MISION";
-            this.btnMision.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMision.UseVisualStyleBackColor = false;
-            this.btnMision.Click += new System.EventHandler(this.btnMision_Click);
-            // 
-            // btnLas5Fuerzas
-            // 
-            this.btnLas5Fuerzas.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnLas5Fuerzas.FlatAppearance.BorderSize = 0;
-            this.btnLas5Fuerzas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnLas5Fuerzas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnLas5Fuerzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLas5Fuerzas.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLas5Fuerzas.ForeColor = System.Drawing.Color.White;
-            this.btnLas5Fuerzas.Image = ((System.Drawing.Image)(resources.GetObject("btnLas5Fuerzas.Image")));
-            this.btnLas5Fuerzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLas5Fuerzas.Location = new System.Drawing.Point(0, 494);
-            this.btnLas5Fuerzas.Name = "btnLas5Fuerzas";
-            this.btnLas5Fuerzas.Size = new System.Drawing.Size(330, 56);
-            this.btnLas5Fuerzas.TabIndex = 153;
-            this.btnLas5Fuerzas.Text = "  LAS 5 FUERZAS DE PORTER";
-            this.btnLas5Fuerzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLas5Fuerzas.UseVisualStyleBackColor = false;
+            this.btnPest.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnPest.FlatAppearance.BorderSize = 0;
+            this.btnPest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnPest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnPest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPest.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPest.ForeColor = System.Drawing.Color.White;
+            this.btnPest.Image = ((System.Drawing.Image)(resources.GetObject("btnPest.Image")));
+            this.btnPest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPest.Location = new System.Drawing.Point(-1, 556);
+            this.btnPest.Name = "btnPest";
+            this.btnPest.Size = new System.Drawing.Size(330, 56);
+            this.btnPest.TabIndex = 153;
+            this.btnPest.Text = "  PEST";
+            this.btnPest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPest.UseVisualStyleBackColor = false;
             // 
             // btnMatriz
             // 
@@ -207,6 +241,26 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1, 184);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(329, 56);
+            this.button1.TabIndex = 147;
+            this.button1.Text = "  VALORES";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnAnalisisIyE
             // 
             this.btnAnalisisIyE.BackColor = System.Drawing.Color.RoyalBlue;
@@ -226,103 +280,56 @@
             this.btnAnalisisIyE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnalisisIyE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAnalisisIyE.UseVisualStyleBackColor = false;
+            this.btnAnalisisIyE.Click += new System.EventHandler(this.btnAnalisisIyE_Click);
             // 
-            // button4
+            // btnVision
             // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-1, 680);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(330, 56);
-            this.button4.TabIndex = 155;
-            this.button4.Text = "  MATRIZ CAME";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnVision.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnVision.FlatAppearance.BorderSize = 0;
+            this.btnVision.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnVision.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnVision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVision.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVision.ForeColor = System.Drawing.Color.White;
+            this.btnVision.Image = ((System.Drawing.Image)(resources.GetObject("btnVision.Image")));
+            this.btnVision.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVision.Location = new System.Drawing.Point(1, 122);
+            this.btnVision.Name = "btnVision";
+            this.btnVision.Size = new System.Drawing.Size(329, 56);
+            this.btnVision.TabIndex = 146;
+            this.btnVision.Text = "  VISION";
+            this.btnVision.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVision.UseVisualStyleBackColor = false;
+            this.btnVision.Click += new System.EventHandler(this.btnVision_Click);
             // 
-            // btnIdentificacion
+            // btnMision
             // 
-            this.btnIdentificacion.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnIdentificacion.FlatAppearance.BorderSize = 0;
-            this.btnIdentificacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnIdentificacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnIdentificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIdentificacion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIdentificacion.ForeColor = System.Drawing.Color.White;
-            this.btnIdentificacion.Image = ((System.Drawing.Image)(resources.GetObject("btnIdentificacion.Image")));
-            this.btnIdentificacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIdentificacion.Location = new System.Drawing.Point(-1, 618);
-            this.btnIdentificacion.Name = "btnIdentificacion";
-            this.btnIdentificacion.Size = new System.Drawing.Size(330, 56);
-            this.btnIdentificacion.TabIndex = 154;
-            this.btnIdentificacion.Text = "  IDENTIFICACION ESTRATEGICA";
-            this.btnIdentificacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnIdentificacion.UseVisualStyleBackColor = false;
-            // 
-            // btnPest
-            // 
-            this.btnPest.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnPest.FlatAppearance.BorderSize = 0;
-            this.btnPest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnPest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.btnPest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPest.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPest.ForeColor = System.Drawing.Color.White;
-            this.btnPest.Image = ((System.Drawing.Image)(resources.GetObject("btnPest.Image")));
-            this.btnPest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPest.Location = new System.Drawing.Point(-1, 556);
-            this.btnPest.Name = "btnPest";
-            this.btnPest.Size = new System.Drawing.Size(330, 56);
-            this.btnPest.TabIndex = 153;
-            this.btnPest.Text = "  PEST";
-            this.btnPest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPest.UseVisualStyleBackColor = false;
-            // 
-            // btnResumen
-            // 
-            this.btnResumen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnResumen.FlatAppearance.BorderSize = 0;
-            this.btnResumen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnResumen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnResumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResumen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResumen.ForeColor = System.Drawing.Color.White;
-            this.btnResumen.Location = new System.Drawing.Point(-1, 748);
-            this.btnResumen.Name = "btnResumen";
-            this.btnResumen.Size = new System.Drawing.Size(331, 55);
-            this.btnResumen.TabIndex = 155;
-            this.btnResumen.Text = "RESUMEN DEL PLAN EJECUTIVO";
-            this.btnResumen.UseVisualStyleBackColor = false;
-            // 
-            // btnInformacionEmpresa
-            // 
-            this.btnInformacionEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnInformacionEmpresa.FlatAppearance.BorderSize = 0;
-            this.btnInformacionEmpresa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnInformacionEmpresa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnInformacionEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformacionEmpresa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInformacionEmpresa.ForeColor = System.Drawing.Color.White;
-            this.btnInformacionEmpresa.Location = new System.Drawing.Point(-1, 0);
-            this.btnInformacionEmpresa.Name = "btnInformacionEmpresa";
-            this.btnInformacionEmpresa.Size = new System.Drawing.Size(330, 54);
-            this.btnInformacionEmpresa.TabIndex = 154;
-            this.btnInformacionEmpresa.Text = "INFORMACION DE LA EMPRESA";
-            this.btnInformacionEmpresa.UseVisualStyleBackColor = false;
-            this.btnInformacionEmpresa.Click += new System.EventHandler(this.btnInformacionEmpresa_Click);
+            this.btnMision.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnMision.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMision.FlatAppearance.BorderSize = 0;
+            this.btnMision.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnMision.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.btnMision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMision.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMision.ForeColor = System.Drawing.Color.White;
+            this.btnMision.Image = ((System.Drawing.Image)(resources.GetObject("btnMision.Image")));
+            this.btnMision.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMision.Location = new System.Drawing.Point(0, 60);
+            this.btnMision.Name = "btnMision";
+            this.btnMision.Size = new System.Drawing.Size(329, 56);
+            this.btnMision.TabIndex = 145;
+            this.btnMision.Text = "  MISION";
+            this.btnMision.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMision.UseVisualStyleBackColor = false;
+            this.btnMision.Click += new System.EventHandler(this.btnMision_Click);
             // 
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panelContenedor.Location = new System.Drawing.Point(338, 11);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelContenedor.Location = new System.Drawing.Point(326, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1010, 780);
+            this.panelContenedor.Size = new System.Drawing.Size(1033, 803);
             this.panelContenedor.TabIndex = 74;
             // 
             // FrmDashBoard

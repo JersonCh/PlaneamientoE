@@ -44,6 +44,7 @@ namespace WindowsFormsApp2
             this.btnminimisar = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresas)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
@@ -60,9 +61,9 @@ namespace WindowsFormsApp2
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(783, 560);
+            this.btnAgregar.Location = new System.Drawing.Point(266, 369);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(180, 40);
+            this.btnAgregar.Size = new System.Drawing.Size(230, 35);
             this.btnAgregar.TabIndex = 87;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -71,7 +72,7 @@ namespace WindowsFormsApp2
             // dgvEmpresas
             // 
             this.dgvEmpresas.AllowUserToOrderColumns = true;
-            this.dgvEmpresas.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvEmpresas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvEmpresas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvEmpresas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvEmpresas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -83,7 +84,7 @@ namespace WindowsFormsApp2
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvEmpresas.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvEmpresas.Location = new System.Drawing.Point(56, 178);
+            this.dgvEmpresas.Location = new System.Drawing.Point(38, 178);
             this.dgvEmpresas.Name = "dgvEmpresas";
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
@@ -99,7 +100,7 @@ namespace WindowsFormsApp2
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.RoyalBlue;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
             this.dgvEmpresas.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvEmpresas.Size = new System.Drawing.Size(712, 559);
+            this.dgvEmpresas.Size = new System.Drawing.Size(935, 180);
             this.dgvEmpresas.TabIndex = 84;
             this.dgvEmpresas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpresas_CellClick);
             this.dgvEmpresas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpresas_CellContentClick);
@@ -113,9 +114,9 @@ namespace WindowsFormsApp2
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(783, 121);
+            this.btnBuscar.Location = new System.Drawing.Point(793, 130);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(180, 42);
+            this.btnBuscar.Size = new System.Drawing.Size(180, 37);
             this.btnBuscar.TabIndex = 83;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -125,7 +126,7 @@ namespace WindowsFormsApp2
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(53, 130);
+            this.label4.Location = new System.Drawing.Point(34, 130);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(182, 22);
@@ -145,7 +146,7 @@ namespace WindowsFormsApp2
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btncerrar);
             this.panel1.Controls.Add(this.btnminimisar);
@@ -199,9 +200,9 @@ namespace WindowsFormsApp2
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(783, 633);
+            this.button2.Location = new System.Drawing.Point(516, 369);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(180, 40);
+            this.button2.Size = new System.Drawing.Size(227, 35);
             this.button2.TabIndex = 92;
             this.button2.Text = "ELIMINAR";
             this.button2.UseVisualStyleBackColor = false;
@@ -215,12 +216,21 @@ namespace WindowsFormsApp2
             this.pictureBox4.TabIndex = 93;
             this.pictureBox4.TabStop = false;
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelContenedor.Location = new System.Drawing.Point(38, 422);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(935, 334);
+            this.panelContenedor.TabIndex = 94;
+            // 
             // FrmEmpresas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1010, 780);
+            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
@@ -256,5 +266,6 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panelContenedor;
     }
 }

@@ -287,6 +287,7 @@ D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\W
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.AssemblyReference.cache
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAnalisis.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.panel.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCadenaValor.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard.resources
@@ -444,4 +445,30 @@ C:\Users\Jerson\Music\jf\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Deb
 C:\Users\Jerson\Music\jf\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
 C:\Users\Jerson\Music\jf\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Jerson\Music\jf\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAnalisis.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.panel.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCadenaValor.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmEmpresas.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmInformacion.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmInicio.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizCame.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizDePorter.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizParticipacion.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMision.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmObjetivos.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmResumen.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmValores.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmVision.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmLogin.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.GenerateResource.cache
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\andre\Desktop\MAÑANA\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
