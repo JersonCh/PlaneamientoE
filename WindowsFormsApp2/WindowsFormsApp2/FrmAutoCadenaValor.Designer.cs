@@ -223,6 +223,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.txtTotal = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.p25.SuspendLayout();
             this.p24.SuspendLayout();
@@ -291,6 +293,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88.53016F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.46984F));
+            this.tableLayoutPanel1.Controls.Add(this.txtTotal, 1, 26);
             this.tableLayoutPanel1.Controls.Add(this.p25, 1, 25);
             this.tableLayoutPanel1.Controls.Add(this.p24, 1, 24);
             this.tableLayoutPanel1.Controls.Add(this.p23, 1, 23);
@@ -2413,11 +2416,30 @@
             this.button2.TabIndex = 38;
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(1243, 690);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcular.TabIndex = 43;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.AutoSize = true;
+            this.txtTotal.Location = new System.Drawing.Point(1045, 581);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(0, 13);
+            this.txtTotal.TabIndex = 44;
+            // 
             // FrmAutoCadenaValor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1428, 1061);
+            this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -2684,5 +2706,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label txtTotal;
     }
 }
