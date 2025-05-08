@@ -339,31 +339,6 @@ namespace WindowsFormsApp2
 
         }
 
-        private void txtbox1_TextChanged(object sender, EventArgs e)
-        {
-            ActualizarCalculos();
-        }
-
-        private void txtbox2_TextChanged(object sender, EventArgs e)
-        {
-            ActualizarCalculos();
-        }
-
-        private void txtbox3_TextChanged(object sender, EventArgs e)
-        {
-            ActualizarCalculos();
-        }
-
-        private void txtbox4_TextChanged(object sender, EventArgs e)
-        {
-            ActualizarCalculos();
-        }
-
-        private void txtbox5_TextChanged(object sender, EventArgs e)
-        {
-            ActualizarCalculos();
-        }
-
         private void txttotal1_TextChanged(object sender, EventArgs e)
         {
 
@@ -795,6 +770,35 @@ namespace WindowsFormsApp2
             // Duplicar valor de txtbox5 a txtemp5
             txtemp5.Text = txtbox5.Text;
         }
-    
+
+        private void FrmAutodiagnosticoBCG_2_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbox1_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarCalculos();
+        }
+
+        private void txtbox2_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarCalculos();
+        }
+
+        private void txtbox3_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarCalculos();
+        }
+
+        private void txtbox4_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarCalculos();
+        }
+
+        private void txtbox5_TextChanged(object sender, EventArgs e)
+        {
+            ActualizarCalculos();
+        }
     }
 }
