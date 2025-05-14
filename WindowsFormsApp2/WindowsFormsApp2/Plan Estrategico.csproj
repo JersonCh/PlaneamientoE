@@ -85,6 +85,12 @@
     <Compile Include="FrmAutodiagnosticoBCG_2.Designer.cs">
       <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAutodiagosticoPorter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutodiagosticoPorter.Designer.cs">
+      <DependentUpon>FrmAutodiagosticoPorter.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAutoPest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutodiagnosticoBCG_2.resx">
       <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutodiagosticoPorter.resx">
+      <DependentUpon>FrmAutodiagosticoPorter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutoPest.resx">
       <DependentUpon>FrmAutoPest.cs</DependentUpon>
