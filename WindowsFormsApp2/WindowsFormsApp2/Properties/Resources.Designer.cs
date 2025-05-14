@@ -93,6 +93,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pest {
+            get {
+                object obj = ResourceManager.GetObject("pest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RELACION_MISION_VISION {
             get {
                 object obj = ResourceManager.GetObject("RELACION MISION VISION", resourceCulture);

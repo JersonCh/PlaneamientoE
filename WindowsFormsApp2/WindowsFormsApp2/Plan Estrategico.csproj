@@ -55,6 +55,12 @@
   <ItemGroup>
     <Compile Include="Clases\clsSesion.cs" />
     <Compile Include="Clases\clsUsuario.cs" />
+    <Compile Include="FormPest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPest.Designer.cs">
+      <DependentUpon>FormPest.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAnalisis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,12 @@
     </Compile>
     <Compile Include="FrmAutodiagnosticoBCG_2.Designer.cs">
       <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutoPest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutoPest.Designer.cs">
+      <DependentUpon>FrmAutoPest.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmBCG.cs">
       <SubType>Form</SubType>
@@ -189,6 +201,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SOFTPETIDataSet_3.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormPest.resx">
+      <DependentUpon>FormPest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAnalisis.resx">
       <DependentUpon>FrmAnalisis.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutodiagnosticoBCG_2.resx">
       <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutoPest.resx">
+      <DependentUpon>FrmAutoPest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBCG.resx">
       <DependentUpon>FrmBCG.cs</DependentUpon>
@@ -321,7 +339,10 @@
   <ItemGroup>
     <None Include="Resources\grafico2cadenadevalor.PNG" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\pest.png" />
+    <None Include="Resources\pest1.png" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>

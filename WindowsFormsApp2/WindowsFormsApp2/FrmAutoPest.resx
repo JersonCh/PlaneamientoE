@@ -117,29 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="RELACION MISION VISION" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RELACION MISION VISION.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label30.Text" xml:space="preserve">
+    <value>A partir de la conclusión obtenida en el diagnóstico en cada uno de los factores, determine  las oportunidades y amenazas más relevantes que desee que se reflejen en el análisis FODA  
+de su Plan Estratégico</value>
   </data>
-  <data name="grafico2cadenadevalor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grafico2cadenadevalor.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RIGHT32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RIGHT32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RIGHT24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RIGHT24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LEFT32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LEFT32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RIGHT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadenadevalor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadenadevalor.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pest1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label34.Text" xml:space="preserve">
+    <value>A continuación marque con una X para valorar su empresa en función de cada una de las afirmaciones, de tal forma que 0= En total en desacuerdo; 1= No está de acuerdo; 
+2=Está de acuerdo; 3= Está bastante de acuerdo; 4=En total acuerdo. En caso de no cumplimentar una casilla o duplicar su respuesta le aparecerá el mensaje de error ("¡REF!)</value>
   </data>
 </root>

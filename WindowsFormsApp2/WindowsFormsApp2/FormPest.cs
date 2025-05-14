@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmCadenaValor : Form
+    public partial class FormPest : Form
     {
-        public FrmCadenaValor()
+        public FormPest()
         {
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
         private void AbrirFormularioHijo(Form formularioHijo)
         {
             // Cerrar formulario activo si ya hay uno
@@ -31,46 +35,9 @@ namespace WindowsFormsApp2
             formularioHijo.Show();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmCadenaValor_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new FrmAutoCadenaValor());
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            FrmInicio frmInicio = new FrmInicio();
-            frmInicio.Show();
-            this.Hide();
-        }
-
-        private void btnminimisar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btncerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
+            AbrirFormularioHijo(new FrmAutoPest());
         }
     }
 }

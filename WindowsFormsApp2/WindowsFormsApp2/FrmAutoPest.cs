@@ -1,0 +1,81 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp2
+{
+    public partial class FrmAutoPest : Form
+    {
+        public FrmAutoPest()
+        {
+            InitializeComponent();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            MostrarResultado(txtSociales, CalcularFactor(1, 5),
+                "FACTORES SOCIALES Y DEMOGRÁFICOS");
+
+            MostrarResultado(txtPoliticos, CalcularFactor(6, 10),
+                "FACTORES POLÍTICOS");
+
+            MostrarResultado(txtEconomicos, CalcularFactor(11, 15),
+                "FACTORES ECONÓMICOS");
+
+            MostrarResultado(txtTecnologicos, CalcularFactor(16, 20),
+                "FACTORES TECNOLÓGICOS");
+
+            MostrarResultado(txtAmbientales, CalcularFactor(21, 25),
+                "FACTORES MEDIO AMBIENTALES");
+        }
+
+        private double CalcularFactor(int inicio, int fin)
+        {
+            int suma = 0;
+            for (int i = inicio; i <= fin; i++)
+            {
+                Panel panel = this.Controls.Find($"p{i}", true).FirstOrDefault() as Panel;
+                if (panel != null)
+                {
+                    foreach (RadioButton rb in panel.Controls.OfType<RadioButton>())
+                    {
+                        if (rb.Checked)
+                        {
+                            string[] parts = rb.Name.Split('_');
+                            if (parts.Length == 2 && int.TryParse(parts[1], out int value))
+                            {
+                                suma += value;
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+            return (suma / 20.0) * 100;
+        }
+
+        private void MostrarResultado(TextBox txt, double porcentaje, string factorNombre)
+        {
+            string mensaje;
+
+            if (porcentaje >= 70)
+                mensaje = $"HAY UN NOTABLE IMPACTO DE {factorNombre} EN EL FUNCIONAMIENTO DE LA EMPRESA";
+            else
+                mensaje = $"NO HAY UN NOTABLE IMPACTO DE {factorNombre} EN EL FUNCIONAMIENTO DE LA EMPRESA";
+
+            txt.Text = $"{porcentaje:0.##}% - {mensaje}";
+        }
+
+    }
+}
