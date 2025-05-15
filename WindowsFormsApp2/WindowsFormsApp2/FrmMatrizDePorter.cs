@@ -29,6 +29,20 @@ namespace WindowsFormsApp2
             this.Hide();
         }
 
+        private void AbrirFormularioHijo(Form formularioHijo)
+        {
+            // Cerrar formulario activo si ya hay uno
+            if (panelContenedor.Controls.Count > 0)
+                panelContenedor.Controls[0].Dispose();
+
+            formularioHijo.TopLevel = false;
+            formularioHijo.FormBorderStyle = FormBorderStyle.None;
+            formularioHijo.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(formularioHijo);
+            panelContenedor.Tag = formularioHijo;
+            formularioHijo.Show();
+        }
+
         private void btnminimisar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -37,6 +51,11 @@ namespace WindowsFormsApp2
         private void btncerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmAutodiagosticoPorter());
         }
     }
 }
