@@ -52,6 +52,19 @@ namespace WindowsFormsApp2
             txttotal2.Text = "0.0%";
         }
 
+        private void AbrirFormularioHijo(Form formularioHijo)
+        {
+            // Cerrar formulario activo si ya hay uno
+            if (panelContenedor.Controls.Count > 0)
+                panelContenedor.Controls[0].Dispose();
+
+            formularioHijo.TopLevel = false;
+            formularioHijo.FormBorderStyle = FormBorderStyle.None;
+            formularioHijo.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(formularioHijo);
+            panelContenedor.Tag = formularioHijo;
+            formularioHijo.Show();
+        }
         private void ConfigurarTextBoxesBCG()
         {
             // Configurar los TextBoxes de resultados de BCG para que sean de solo lectura
@@ -817,5 +830,47 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string[] valoresPRM = new string[5];
+
+            // Convertir los valores a formato numérico (quitar el posible formato)
+            valoresPRM[0] = ConvertirAValorNumerico(txtbox41.Text);
+            valoresPRM[1] = ConvertirAValorNumerico(txtbox42.Text);
+            valoresPRM[2] = ConvertirAValorNumerico(txtbox43.Text);
+            valoresPRM[3] = ConvertirAValorNumerico(txtbox44.Text);
+            valoresPRM[4] = ConvertirAValorNumerico(txtbox45.Text);
+
+            // Crear y abrir el formulario con los valores
+            FrmBCGgenerado frmBCG = new FrmBCGgenerado(valoresPRM);
+            AbrirFormularioHijo(frmBCG);
+        }
+        private string ConvertirAValorNumerico(string texto)
+        {
+            // Quitar cualquier símbolo que no sea número o punto decimal
+            string valorNumerico = texto.Replace("%", "").Trim();
+
+            // Verificar si se puede convertir a double (para validar el formato)
+            if (double.TryParse(valorNumerico, out double valor))
+            {
+                // Devolver el valor como string
+                return valor.ToString();
+            }
+
+            // Si no se puede convertir, devolver "0"
+            return "0";
+        }
+
     }
 }

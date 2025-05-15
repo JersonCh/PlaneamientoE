@@ -53,9 +53,10 @@
             // 
             this.label119.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label119.ForeColor = System.Drawing.Color.White;
-            this.label119.Location = new System.Drawing.Point(107, 10);
+            this.label119.Location = new System.Drawing.Point(143, 12);
+            this.label119.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(828, 83);
+            this.label119.Size = new System.Drawing.Size(1104, 102);
             this.label119.TabIndex = 91;
             this.label119.Text = "7. ANÁLISIS INTERNO: MATRIZ DE CRECIMIENTO - PARTICIPACIÓN BCG";
             this.label119.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,17 +70,18 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1016, 100);
+            this.panel1.Size = new System.Drawing.Size(1356, 123);
             this.panel1.TabIndex = 655;
             // 
             // btncerrar
             // 
             this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
-            this.btncerrar.Location = new System.Drawing.Point(988, 10);
-            this.btncerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btncerrar.Location = new System.Drawing.Point(1317, 12);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(18, 20);
+            this.btncerrar.Size = new System.Drawing.Size(24, 25);
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btncerrar.TabIndex = 89;
             this.btncerrar.TabStop = false;
@@ -88,10 +90,10 @@
             // btnminimisar
             // 
             this.btnminimisar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimisar.Image")));
-            this.btnminimisar.Location = new System.Drawing.Point(962, 10);
-            this.btnminimisar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnminimisar.Location = new System.Drawing.Point(1283, 12);
+            this.btnminimisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnminimisar.Name = "btnminimisar";
-            this.btnminimisar.Size = new System.Drawing.Size(18, 20);
+            this.btnminimisar.Size = new System.Drawing.Size(24, 25);
             this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnminimisar.TabIndex = 88;
             this.btnminimisar.TabStop = false;
@@ -107,9 +109,10 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(12, 10);
+            this.button2.Location = new System.Drawing.Point(16, 12);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 73);
+            this.button2.Size = new System.Drawing.Size(119, 90);
             this.button2.TabIndex = 59;
             this.button2.Text = "INDICE";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -119,9 +122,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(156, 425);
+            this.pictureBox4.Location = new System.Drawing.Point(208, 523);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(708, 230);
+            this.pictureBox4.Size = new System.Drawing.Size(944, 283);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 663;
             this.pictureBox4.TabStop = false;
@@ -129,9 +133,10 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 329);
+            this.label5.Location = new System.Drawing.Point(31, 405);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(621, 52);
+            this.label5.Size = new System.Drawing.Size(828, 64);
             this.label5.TabIndex = 662;
             this.label5.Text = "El eje vertical de la matriz define el crecimiento en el mercado, y el horizontal" +
     " la cuota de mercado. ";
@@ -139,9 +144,10 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 114);
+            this.label3.Location = new System.Drawing.Point(31, 140);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(664, 30);
+            this.label3.Size = new System.Drawing.Size(885, 37);
             this.label3.TabIndex = 661;
             this.label3.Text = "Toda empresa debe analizar de forma periodica su cartera de productos y servicios" +
     ". ";
@@ -150,10 +156,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(298, 392);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(397, 482);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(445, 19);
+            this.label4.Size = new System.Drawing.Size(575, 23);
             this.label4.TabIndex = 660;
             this.label4.Text = "CUADRO RESUMEN DE LAS PRINCIPALES CARACTERISTICAS ";
             // 
@@ -166,9 +171,10 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(350, 674);
+            this.btnRegistrar.Location = new System.Drawing.Point(467, 830);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(337, 36);
+            this.btnRegistrar.Size = new System.Drawing.Size(449, 44);
             this.btnRegistrar.TabIndex = 659;
             this.btnRegistrar.Text = "AUTODIAGNÓSTICO BCG";
             this.btnRegistrar.UseVisualStyleBackColor = false;
@@ -177,9 +183,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(665, 123);
+            this.pictureBox1.Location = new System.Drawing.Point(887, 151);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(332, 245);
+            this.pictureBox1.Size = new System.Drawing.Size(443, 302);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 658;
             this.pictureBox1.TabStop = false;
@@ -187,27 +194,30 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 144);
+            this.label1.Location = new System.Drawing.Point(31, 177);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(636, 175);
+            this.label1.Size = new System.Drawing.Size(848, 215);
             this.label1.TabIndex = 656;
             this.label1.Text = resources.GetString("label1.Text");
             // 
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelContenedor.Location = new System.Drawing.Point(33, 731);
+            this.panelContenedor.Location = new System.Drawing.Point(44, 900);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(960, 900);
+            this.panelContenedor.Size = new System.Drawing.Size(1280, 1108);
             this.panelContenedor.TabIndex = 664;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // FrmBCG
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1033, 764);
+            this.ClientSize = new System.Drawing.Size(1377, 940);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label5);
@@ -218,6 +228,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmBCG";
             this.Text = "FrmBCG";
             this.panel1.ResumeLayout(false);

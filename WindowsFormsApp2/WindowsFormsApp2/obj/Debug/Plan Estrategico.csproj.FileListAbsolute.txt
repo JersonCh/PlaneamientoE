@@ -562,3 +562,8 @@ D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsForms
 D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
 D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCGgenerado.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmPest.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagosticoPorter.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoPest.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG.resources
