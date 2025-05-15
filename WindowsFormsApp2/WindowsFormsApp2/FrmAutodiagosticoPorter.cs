@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.Clases;
+using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2
 {
@@ -109,6 +111,41 @@ namespace WindowsFormsApp2
                 return "La situación actual del mercado es favorable a la empresa.";
             else
                 return "Estamos en una situación excelente para la empresa.";
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            // Validar que los campos de Oportunidades y Amenazas no estén vacíos
+            if (string.IsNullOrWhiteSpace(txtO1.Text) || string.IsNullOrWhiteSpace(txtO2.Text) ||
+                string.IsNullOrWhiteSpace(txtA1.Text) || string.IsNullOrWhiteSpace(txtA2.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    string o1 = txtO1.Text.Trim();
+                    string o2 = txtO2.Text.Trim();
+
+                    string a1 = txtA1.Text.Trim();
+                    string a2 = txtA2.Text.Trim();
+
+                    dc.SP_RegistrarOportunidad(o1, Sesion.EmpresaId);
+                    dc.SP_RegistrarOportunidad(o2, Sesion.EmpresaId);
+
+                    dc.SP_RegistrarAmenaza(a1, Sesion.EmpresaId);
+                    dc.SP_RegistrarAmenaza(a2, Sesion.EmpresaId);
+                }
+
+                MessageBox.Show("Oportunidades y Amenazas registradas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar Oportunidades y Amenazas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

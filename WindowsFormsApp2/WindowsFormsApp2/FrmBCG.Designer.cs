@@ -77,7 +77,7 @@
             // 
             this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
             this.btncerrar.Location = new System.Drawing.Point(988, 10);
-            this.btncerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(18, 20);
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -89,7 +89,7 @@
             // 
             this.btnminimisar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimisar.Image")));
             this.btnminimisar.Location = new System.Drawing.Point(962, 10);
-            this.btnminimisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnminimisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnminimisar.Name = "btnminimisar";
             this.btnminimisar.Size = new System.Drawing.Size(18, 20);
             this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

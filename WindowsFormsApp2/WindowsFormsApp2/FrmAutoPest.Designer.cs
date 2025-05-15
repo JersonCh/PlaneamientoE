@@ -349,6 +349,7 @@
             this.txtO3.Name = "txtO3";
             this.txtO3.Size = new System.Drawing.Size(395, 20);
             this.txtO3.TabIndex = 45;
+            this.txtO3.TextChanged += new System.EventHandler(this.txtO3_TextChanged);
             // 
             // label29
             // 

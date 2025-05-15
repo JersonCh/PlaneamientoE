@@ -34,12 +34,12 @@ namespace WindowsFormsApp2
             this.label119 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.textBox85 = new System.Windows.Forms.TextBox();
+            this.txtA2 = new System.Windows.Forms.TextBox();
             this.label71 = new System.Windows.Forms.Label();
-            this.textBox90 = new System.Windows.Forms.TextBox();
-            this.textBox84 = new System.Windows.Forms.TextBox();
+            this.txtA1 = new System.Windows.Forms.TextBox();
+            this.txtO2 = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.textBox79 = new System.Windows.Forms.TextBox();
+            this.txtO1 = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
@@ -226,7 +226,7 @@ namespace WindowsFormsApp2
             this.label73.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.Location = new System.Drawing.Point(64, 1648);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(822, 28);
+            this.label73.Size = new System.Drawing.Size(822, 224);
             this.label73.TabIndex = 995;
             // 
             // btnRegistrar
@@ -244,20 +244,21 @@ namespace WindowsFormsApp2
             this.btnRegistrar.TabIndex = 994;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // textBox85
+            // txtA2
             // 
-            this.textBox85.BackColor = System.Drawing.Color.White;
-            this.textBox85.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox85.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox85.Location = new System.Drawing.Point(565, 1543);
-            this.textBox85.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox85.Multiline = true;
-            this.textBox85.Name = "textBox85";
-            this.textBox85.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox85.Size = new System.Drawing.Size(362, 42);
-            this.textBox85.TabIndex = 993;
-            this.textBox85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtA2.BackColor = System.Drawing.Color.White;
+            this.txtA2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtA2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtA2.Location = new System.Drawing.Point(565, 1543);
+            this.txtA2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtA2.Multiline = true;
+            this.txtA2.Name = "txtA2";
+            this.txtA2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtA2.Size = new System.Drawing.Size(362, 42);
+            this.txtA2.TabIndex = 993;
+            this.txtA2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label71
             // 
@@ -271,33 +272,33 @@ namespace WindowsFormsApp2
             this.label71.Text = "AMENAZAS";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox90
+            // txtA1
             // 
-            this.textBox90.BackColor = System.Drawing.Color.White;
-            this.textBox90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox90.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox90.Location = new System.Drawing.Point(566, 1493);
-            this.textBox90.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox90.Multiline = true;
-            this.textBox90.Name = "textBox90";
-            this.textBox90.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox90.Size = new System.Drawing.Size(362, 42);
-            this.textBox90.TabIndex = 991;
-            this.textBox90.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtA1.BackColor = System.Drawing.Color.White;
+            this.txtA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtA1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtA1.Location = new System.Drawing.Point(566, 1493);
+            this.txtA1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtA1.Multiline = true;
+            this.txtA1.Name = "txtA1";
+            this.txtA1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtA1.Size = new System.Drawing.Size(362, 42);
+            this.txtA1.TabIndex = 991;
+            this.txtA1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox84
+            // txtO2
             // 
-            this.textBox84.BackColor = System.Drawing.Color.White;
-            this.textBox84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox84.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox84.Location = new System.Drawing.Point(117, 1543);
-            this.textBox84.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox84.Multiline = true;
-            this.textBox84.Name = "textBox84";
-            this.textBox84.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox84.Size = new System.Drawing.Size(338, 42);
-            this.textBox84.TabIndex = 990;
-            this.textBox84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtO2.BackColor = System.Drawing.Color.White;
+            this.txtO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtO2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtO2.Location = new System.Drawing.Point(117, 1543);
+            this.txtO2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtO2.Multiline = true;
+            this.txtO2.Name = "txtO2";
+            this.txtO2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtO2.Size = new System.Drawing.Size(338, 42);
+            this.txtO2.TabIndex = 990;
+            this.txtO2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label68
             // 
@@ -311,19 +312,19 @@ namespace WindowsFormsApp2
             this.label68.Text = "OPORTUNIDADES";
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox79
+            // txtO1
             // 
-            this.textBox79.BackColor = System.Drawing.Color.White;
-            this.textBox79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox79.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox79.Location = new System.Drawing.Point(118, 1493);
-            this.textBox79.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox79.Multiline = true;
-            this.textBox79.Name = "textBox79";
-            this.textBox79.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox79.Size = new System.Drawing.Size(338, 42);
-            this.textBox79.TabIndex = 988;
-            this.textBox79.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtO1.BackColor = System.Drawing.Color.White;
+            this.txtO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtO1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtO1.Location = new System.Drawing.Point(118, 1493);
+            this.txtO1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtO1.Multiline = true;
+            this.txtO1.Name = "txtO1";
+            this.txtO1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtO1.Size = new System.Drawing.Size(338, 42);
+            this.txtO1.TabIndex = 988;
+            this.txtO1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label66
             // 
@@ -2439,12 +2440,12 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.label67);
             this.Controls.Add(this.label73);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.textBox85);
+            this.Controls.Add(this.txtA2);
             this.Controls.Add(this.label71);
-            this.Controls.Add(this.textBox90);
-            this.Controls.Add(this.textBox84);
+            this.Controls.Add(this.txtA1);
+            this.Controls.Add(this.txtO2);
             this.Controls.Add(this.label68);
-            this.Controls.Add(this.textBox79);
+            this.Controls.Add(this.txtO1);
             this.Controls.Add(this.label66);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label61);
@@ -2614,12 +2615,12 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Label label119;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.TextBox textBox85;
+        private System.Windows.Forms.TextBox txtA2;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.TextBox textBox90;
-        private System.Windows.Forms.TextBox textBox84;
+        private System.Windows.Forms.TextBox txtA1;
+        private System.Windows.Forms.TextBox txtO2;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox textBox79;
+        private System.Windows.Forms.TextBox txtO1;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label61;

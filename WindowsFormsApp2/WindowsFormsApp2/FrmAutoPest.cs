@@ -109,5 +109,9 @@ namespace WindowsFormsApp2
             txt.Text = $"{porcentaje:0.##}% - {mensaje}";
         }
 
+        private void txtO3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

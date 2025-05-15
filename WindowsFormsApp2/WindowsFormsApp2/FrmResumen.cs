@@ -112,14 +112,18 @@ namespace WindowsFormsApp2
                     // Obtener las Oportunidades
                     var oportunidades = dc.SP_ListarOportunidades(empresaId).ToList();
 
-                    if (oportunidades.Count > 0) txtO3.Text = oportunidades.ElementAtOrDefault(0)?.Oportunidad_Descripcion ?? "";
-                    if (oportunidades.Count > 1) txtO4.Text = oportunidades.ElementAtOrDefault(1)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 0) txtO1.Text = oportunidades.ElementAtOrDefault(0)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 1) txtO2.Text = oportunidades.ElementAtOrDefault(1)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 2) txtO3.Text = oportunidades.ElementAtOrDefault(2)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 3) txtO4.Text = oportunidades.ElementAtOrDefault(3)?.Oportunidad_Descripcion ?? "";
 
                     // Obtener las Amenazas
                     var amenazas = dc.SP_ListarAmenazas(empresaId).ToList();
 
-                    if (amenazas.Count > 0) txtA3.Text = amenazas.ElementAtOrDefault(0)?.Amenaza_Descripcion ?? "";
-                    if (amenazas.Count > 1) txtA4.Text = amenazas.ElementAtOrDefault(1)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 0) txtA1.Text = amenazas.ElementAtOrDefault(0)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 1) txtA2.Text = amenazas.ElementAtOrDefault(1)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 2) txtA3.Text = amenazas.ElementAtOrDefault(2)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 3) txtA4.Text = amenazas.ElementAtOrDefault(3)?.Amenaza_Descripcion ?? "";
 
 
                 }
