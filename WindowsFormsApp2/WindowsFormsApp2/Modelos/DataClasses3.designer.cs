@@ -265,6 +265,34 @@ namespace WindowsFormsApp2.Modelos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
 			return ((ISingleResult<SP_ListarDebilidadesResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarOportunidad")]
+		public int SP_RegistrarOportunidad([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarAmenaza")]
+		public int SP_RegistrarAmenaza([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarOportunidades")]
+		public ISingleResult<SP_ListarOportunidadesResult> SP_ListarOportunidades([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ListarOportunidadesResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarAmenazas")]
+		public ISingleResult<SP_ListarAmenazasResult> SP_ListarAmenazas([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ListarAmenazasResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USUARIO")]
@@ -2222,6 +2250,94 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._Debilidad_Descripcion != value))
 				{
 					this._Debilidad_Descripcion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarOportunidadesResult
+	{
+		
+		private int _Oportunidad_Id;
+		
+		private string _Oportunidad_Descripcion;
+		
+		public SP_ListarOportunidadesResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Oportunidad_Id", DbType="Int NOT NULL")]
+		public int Oportunidad_Id
+		{
+			get
+			{
+				return this._Oportunidad_Id;
+			}
+			set
+			{
+				if ((this._Oportunidad_Id != value))
+				{
+					this._Oportunidad_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Oportunidad_Descripcion", DbType="NVarChar(MAX)")]
+		public string Oportunidad_Descripcion
+		{
+			get
+			{
+				return this._Oportunidad_Descripcion;
+			}
+			set
+			{
+				if ((this._Oportunidad_Descripcion != value))
+				{
+					this._Oportunidad_Descripcion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarAmenazasResult
+	{
+		
+		private int _Amenaza_Id;
+		
+		private string _Amenaza_Descripcion;
+		
+		public SP_ListarAmenazasResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Amenaza_Id", DbType="Int NOT NULL")]
+		public int Amenaza_Id
+		{
+			get
+			{
+				return this._Amenaza_Id;
+			}
+			set
+			{
+				if ((this._Amenaza_Id != value))
+				{
+					this._Amenaza_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Amenaza_Descripcion", DbType="NVarChar(MAX)")]
+		public string Amenaza_Descripcion
+		{
+			get
+			{
+				return this._Amenaza_Descripcion;
+			}
+			set
+			{
+				if ((this._Amenaza_Descripcion != value))
+				{
+					this._Amenaza_Descripcion = value;
 				}
 			}
 		}

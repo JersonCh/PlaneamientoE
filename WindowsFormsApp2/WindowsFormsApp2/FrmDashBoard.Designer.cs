@@ -202,6 +202,7 @@
             this.btnPest.Text = "  PEST";
             this.btnPest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPest.UseVisualStyleBackColor = false;
+            this.btnPest.Click += new System.EventHandler(this.btnPest_Click);
             // 
             // btnMatriz
             // 

@@ -55,11 +55,11 @@
   <ItemGroup>
     <Compile Include="Clases\clsSesion.cs" />
     <Compile Include="Clases\clsUsuario.cs" />
-    <Compile Include="FormPest.cs">
+    <Compile Include="FrmPest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPest.Designer.cs">
-      <DependentUpon>FormPest.cs</DependentUpon>
+    <Compile Include="FrmPest.Designer.cs">
+      <DependentUpon>FrmPest.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAnalisis.cs">
       <SubType>Form</SubType>
@@ -207,8 +207,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SOFTPETIDataSet_3.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormPest.resx">
-      <DependentUpon>FormPest.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPest.resx">
+      <DependentUpon>FrmPest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAnalisis.resx">
       <DependentUpon>FrmAnalisis.cs</DependentUpon>

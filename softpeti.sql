@@ -473,6 +473,27 @@ BEGIN
 END
 GO
 
+CREATE PROCEDURE SP_ListarOportunidades
+    @empresa_id INT
+AS
+BEGIN
+    SELECT O.id AS Oportunidad_Id, O.descripcion AS Oportunidad_Descripcion
+    FROM Oportunidad O
+    WHERE O.empresa_id = @empresa_id
+    ORDER BY O.id;
+END
+GO
+
+CREATE PROCEDURE SP_ListarAmenazas
+    @empresa_id INT
+AS
+BEGIN
+    SELECT A.id AS Amenaza_Id, A.descripcion AS Amenaza_Descripcion
+    FROM Amenaza A
+    WHERE A.empresa_id = @empresa_id
+    ORDER BY A.id;
+END
+GO
 
 
 ----------------------------I N S E R C I O N E S  --------------------------------------

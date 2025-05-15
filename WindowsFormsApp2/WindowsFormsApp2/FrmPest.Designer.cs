@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class FormPest
+    partial class FrmPest
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPest));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPest));
             this.label119 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btncerrar = new System.Windows.Forms.PictureBox();
+            this.btnminimisar = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.btncerrar = new System.Windows.Forms.PictureBox();
-            this.btnminimisar = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,8 +68,48 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 100);
+            this.panel1.Size = new System.Drawing.Size(1001, 100);
             this.panel1.TabIndex = 660;
+            // 
+            // btncerrar
+            // 
+            this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
+            this.btncerrar.Location = new System.Drawing.Point(977, 10);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(18, 20);
+            this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btncerrar.TabIndex = 89;
+            this.btncerrar.TabStop = false;
+            // 
+            // btnminimisar
+            // 
+            this.btnminimisar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimisar.Image")));
+            this.btnminimisar.Location = new System.Drawing.Point(951, 10);
+            this.btnminimisar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnminimisar.Name = "btnminimisar";
+            this.btnminimisar.Size = new System.Drawing.Size(18, 20);
+            this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnminimisar.TabIndex = 88;
+            this.btnminimisar.TabStop = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkBlue;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(12, 10);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(89, 73);
+            this.button6.TabIndex = 59;
+            this.button6.Text = "INDICE";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -117,46 +157,6 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // btncerrar
-            // 
-            this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
-            this.btncerrar.Location = new System.Drawing.Point(977, 10);
-            this.btncerrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(18, 20);
-            this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btncerrar.TabIndex = 89;
-            this.btncerrar.TabStop = false;
-            // 
-            // btnminimisar
-            // 
-            this.btnminimisar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimisar.Image")));
-            this.btnminimisar.Location = new System.Drawing.Point(951, 10);
-            this.btnminimisar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnminimisar.Name = "btnminimisar";
-            this.btnminimisar.Size = new System.Drawing.Size(18, 20);
-            this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnminimisar.TabIndex = 88;
-            this.btnminimisar.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.DarkBlue;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkBlue;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(12, 10);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(89, 73);
-            this.button6.TabIndex = 59;
-            this.button6.Text = "INDICE";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.pest;
@@ -175,23 +175,23 @@
             this.panelContenedor.Size = new System.Drawing.Size(960, 900);
             this.panelContenedor.TabIndex = 661;
             // 
-            // FormPest
+            // FrmPest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1001, 1061);
+            this.ClientSize = new System.Drawing.Size(1018, 1061);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
-            this.Name = "FormPest";
+            this.Name = "FrmPest";
             this.Text = "FormPest";
             this.panel1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -531,3 +531,34 @@ C:\Users\HP\3D Objects\PETI AVANCE 4\PlaneamientoE\WindowsFormsApp2\WindowsForms
 C:\Users\HP\3D Objects\PETI AVANCE 4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\HP\3D Objects\PETI AVANCE 4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FormPest.resources
 C:\Users\HP\3D Objects\PETI AVANCE 4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoPest.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.AssemblyReference.cache
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmPest.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAnalisis.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.panel.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagosticoPorter.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoPest.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCadenaValor.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmEmpresas.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmInformacion.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmInicio.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizCame.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizDePorter.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizParticipacion.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMision.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmObjetivos.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmResumen.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmValores.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmVision.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmLogin.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.GenerateResource.cache
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+D:\Biblioteca\Videos\Planeamiento\v4\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

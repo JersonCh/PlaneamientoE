@@ -80,5 +80,10 @@ namespace WindowsFormsApp2
         {
             AbrirFormularioHijo(new FrmCadenaValor());
         }
+
+        private void btnPest_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmPest());
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class FormPest : Form
+    public partial class FrmPest : Form
     {
-        public FormPest()
+        public FrmPest()
         {
             InitializeComponent();
         }

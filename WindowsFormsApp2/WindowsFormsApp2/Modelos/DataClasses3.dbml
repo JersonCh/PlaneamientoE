@@ -198,4 +198,28 @@
       <Column Name="Debilidad_Descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.SP_RegistrarOportunidad" Method="SP_RegistrarOportunidad">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_RegistrarAmenaza" Method="SP_RegistrarAmenaza">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ListarOportunidades" Method="SP_ListarOportunidades">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarOportunidadesResult">
+      <Column Name="Oportunidad_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Oportunidad_Descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ListarAmenazas" Method="SP_ListarAmenazas">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarAmenazasResult">
+      <Column Name="Amenaza_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amenaza_Descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

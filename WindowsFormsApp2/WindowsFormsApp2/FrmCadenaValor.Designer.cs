@@ -34,20 +34,20 @@
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnminimisar = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +110,16 @@
     "se optimice (excelencia en la ejecución de una actividad) y/o mejore su coordina" +
     "ción con otra actividad.";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.grafico2cadenadevalor;
+            this.pictureBox2.Location = new System.Drawing.Point(163, 85);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(662, 276);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 40;
+            this.pictureBox2.TabStop = false;
+            // 
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,14 +155,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1017, 100);
             this.panel1.TabIndex = 656;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelContenedor.Location = new System.Drawing.Point(28, 928);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(960, 900);
-            this.panelContenedor.TabIndex = 657;
             // 
             // btncerrar
             // 
@@ -197,15 +199,13 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // pictureBox2
+            // panelContenedor
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.grafico2cadenadevalor;
-            this.pictureBox2.Location = new System.Drawing.Point(163, 85);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(662, 276);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 40;
-            this.pictureBox2.TabStop = false;
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelContenedor.Location = new System.Drawing.Point(28, 928);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(960, 900);
+            this.panelContenedor.TabIndex = 657;
             // 
             // pictureBox1
             // 
@@ -237,10 +237,10 @@
             this.Text = "FrmCadenaValor";
             this.Load += new System.EventHandler(this.FrmCadenaValor_Load);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

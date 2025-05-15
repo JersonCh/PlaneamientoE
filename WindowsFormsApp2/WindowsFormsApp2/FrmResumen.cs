@@ -109,6 +109,17 @@ namespace WindowsFormsApp2
                     if (debilidades.Count > 0) txtD1.Text = debilidades.ElementAtOrDefault(0)?.Debilidad_Descripcion ?? "";
                     if (debilidades.Count > 1) txtD2.Text = debilidades.ElementAtOrDefault(1)?.Debilidad_Descripcion ?? "";
 
+                    // Obtener las Oportunidades
+                    var oportunidades = dc.SP_ListarOportunidades(empresaId).ToList();
+
+                    if (oportunidades.Count > 0) txtO3.Text = oportunidades.ElementAtOrDefault(0)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 1) txtO4.Text = oportunidades.ElementAtOrDefault(1)?.Oportunidad_Descripcion ?? "";
+
+                    // Obtener las Amenazas
+                    var amenazas = dc.SP_ListarAmenazas(empresaId).ToList();
+
+                    if (amenazas.Count > 0) txtA3.Text = amenazas.ElementAtOrDefault(0)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 1) txtA4.Text = amenazas.ElementAtOrDefault(1)?.Amenaza_Descripcion ?? "";
 
 
                 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.Clases;
+using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2
 {
@@ -19,7 +21,37 @@ namespace WindowsFormsApp2
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            // Validar que los campos de Oportunidades y Amenazas no estén vacíos
+            if (string.IsNullOrWhiteSpace(txtO3.Text) || string.IsNullOrWhiteSpace(txtO4.Text) ||
+                string.IsNullOrWhiteSpace(txtA3.Text) || string.IsNullOrWhiteSpace(txtA4.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    string o3 = txtO3.Text.Trim();
+                    string o4 = txtO4.Text.Trim();
+
+                    string a3 = txtA3.Text.Trim();
+                    string a4 = txtA4.Text.Trim();
+
+                    dc.SP_RegistrarOportunidad(o3, Sesion.EmpresaId);
+                    dc.SP_RegistrarOportunidad(o4, Sesion.EmpresaId);
+
+                    dc.SP_RegistrarAmenaza(a3, Sesion.EmpresaId);
+                    dc.SP_RegistrarAmenaza(a4, Sesion.EmpresaId);
+                }
+
+                MessageBox.Show("Oportunidades y Amenazas registradas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar Oportunidades y Amenazas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)

@@ -118,22 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAkJJREFUWEftl0FLFlEUhiUiQiJaSESEC2kRIiESLVyEtAiRaBEtJFyEK4mIaBEh
-        0c51ixb9gBYuQqSFSxEJkQiRcCERIhIiIiIRERHxxAvnjsfDfMPM9H1K0AMXZu459953zpx750xb278K
-        cBy4CzwETrr+PuBmg3bt4Cw1AQaBVfb5DFw32yfXH/kNHIvzlQboBKbirI5JYDt2OuoJsHA/Br6FCb/m
-        9BVRXQBwBViKMwHTwAWLyttobEB5AcAp4AXwK0yyAdwC5DMCDNv1HWAz+EbKCQBuAOthsIRIkIT1Au+c
-        bRa4BJwBXtlCeRQLAM4Cr+Mo4L1tLy3wMicq4icwAbQD/cBKdDAB7XHdlGSPgL0wQPdjZle4t4I9jzVg
-        CDgBPAW+B/sXYDSLhCXRh+AkpYrEOQvtXLCX4Y0laRcwE4322jokQOH1KHQD9gTPgR/BXgVt0wd6WuC2
-        JbBnVgIUsuSsva5wa+vlvcO6LADdlsDKk/RQqxJw1RZWAkrpeIMk+1u06BNbQ69dOXc+JqM+Lq2m+8Ci
-        HuBe9G4BPXHdjP8CDknA5bhuRgMBOifm7exX05ZSWzSbP+l0rf7kq3FpbDoDKgu4GP08wEfnuxDtCTuQ
-        REsFzEd7ArhvPk0XsOx856I9YR810RttGTUF+GrpSAT4L2mZV9BSAUVJqP8H0XQB/nOuOkJFzC6w45ru
-        VTGJvjhHRk0B2vdVaLoAX5yWoekCqpZrhQJUv6kMS03FSfbjmYf9D/gxRe0ZcDrOcaT8ATsfjTQi6ZfR
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btncerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
@@ -307,6 +291,38 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1qVXAVgnfT+H9sMV
         AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAkJJREFUWEftl0FLFlEUhiUiQiJaSESEC2kRIiESLVyEtAiRaBEtJFyEK4mIaBEh
+        0c51ixb9gBYuQqSFSxEJkQiRcCERIhIiIiIRERHxxAvnjsfDfMPM9H1K0AMXZu459953zpx750xb278K
+        cBy4CzwETrr+PuBmg3bt4Cw1AQaBVfb5DFw32yfXH/kNHIvzlQboBKbirI5JYDt2OuoJsHA/Br6FCb/m
+        9BVRXQBwBViKMwHTwAWLyttobEB5AcAp4AXwK0yyAdwC5DMCDNv1HWAz+EbKCQBuAOthsIRIkIT1Au+c
+        bRa4BJwBXtlCeRQLAM4Cr+Mo4L1tLy3wMicq4icwAbQD/cBKdDAB7XHdlGSPgL0wQPdjZle4t4I9jzVg
+        CDgBPAW+B/sXYDSLhCXRh+AkpYrEOQvtXLCX4Y0laRcwE4322jokQOH1KHQD9gTPgR/BXgVt0wd6WuC2
+        JbBnVgIUsuSsva5wa+vlvcO6LADdlsDKk/RQqxJw1RZWAkrpeIMk+1u06BNbQ69dOXc+JqM+Lq2m+8Ci
+        HuBe9G4BPXHdjP8CDknA5bhuRgMBOifm7exX05ZSWzSbP+l0rf7kq3FpbDoDKgu4GP08wEfnuxDtCTuQ
+        REsFzEd7ArhvPk0XsOx856I9YR810RttGTUF+GrpSAT4L2mZV9BSAUVJqP8H0XQB/nOuOkJFzC6w45ru
+        VTGJvjhHRk0B2vdVaLoAX5yWoekCqpZrhQJUv6kMS03FSfbjmYf9D/gxRe0ZcDrOcaT8ATsfjTQi6ZfR
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>PEST analiza el macro entorno de una empresa a través de cuatro factores clave:
+
+Políticos: leyes y regulaciones que afectan a la empresa (tributación, laborales, medio ambiente, tratados).
+
+Económicos: condiciones económicas generales (intereses, empleo, inflación, poder adquisitivo).
+
+Sociales: características y cambios en la sociedad (demografía, estilos de vida, cultura, religión).
+
+Tecnológicos: avances que influyen en procesos y competitividad (automatización, obsolescencia, TICs).
+</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>A continuación marque con una X para valorar su empresa en función de cada una de las afirmaciones, de tal forma que 0= En total en desacuerdo; 1= No está de acuerdo; 2= Está de acuerdo; 3= Está bastante de acuerdo; 4= En total acuerdo. En caso de no cumplimentar una casilla o duplicar su respuesta le aparecerá el mensaje de error ("¡REF!)
 </value>
   </data>
 </root>
