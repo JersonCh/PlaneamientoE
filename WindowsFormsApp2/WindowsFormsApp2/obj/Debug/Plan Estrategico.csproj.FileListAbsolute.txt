@@ -599,3 +599,4 @@ C:\Users\andre\Desktop\HOY EXPO\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\
 C:\Users\andre\Desktop\HOY EXPO\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\HOY EXPO\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\andre\Desktop\HOY EXPO\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG2.resources

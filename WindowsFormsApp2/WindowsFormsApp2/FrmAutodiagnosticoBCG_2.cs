@@ -872,5 +872,9 @@ namespace WindowsFormsApp2
             return "0";
         }
 
+        private void txttotal1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
