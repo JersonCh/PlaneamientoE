@@ -125,6 +125,9 @@ namespace WindowsFormsApp2
             int totalIndex = dgvPrevision.Rows.Count - 1;
             dgvPrevision.Rows[totalIndex].Cells[1].Value = totalVentas;
             dgvPrevision.Rows[totalIndex].Cells[2].Value = "100.00%";
+
+            // Actualizar las ventas de empresa en la tabla de competidores
+            ActualizarVentasEmpresa();
         }
 
         #endregion
@@ -324,6 +327,7 @@ namespace WindowsFormsApp2
 
             // Esto ya lo tienes para la tabla de evolución
             ActualizarColumnasEvolucionDemanda();
+            ActualizarTablaCompetidores();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -335,6 +339,7 @@ namespace WindowsFormsApp2
             btnActualizarTCM_Click(sender, e);
 
             ActualizarColumnasEvolucionDemanda();
+            ActualizarTablaCompetidores();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -542,6 +547,281 @@ namespace WindowsFormsApp2
         private void btnActualizarDemanda_Click(object sender, EventArgs e)
         {
             ActualizarColumnasEvolucionDemanda();
+        }
+        private void ConfigurarTablaCompetidores()
+        {
+            // Limpiar tabla existente
+            dgvCompetidores.Rows.Clear();
+            dgvCompetidores.Columns.Clear();
+
+            // Obtener lista de productos (excepto TOTAL)
+            var productos = new List<string>();
+            foreach (DataGridViewRow row in dgvPrevision.Rows)
+            {
+                if (row.Cells[0].Value?.ToString() != "TOTAL")
+                {
+                    string producto = row.Cells[0].Value?.ToString();
+                    if (!string.IsNullOrEmpty(producto))
+                        productos.Add(producto);
+                }
+            }
+
+            // Si no hay productos, salir
+            if (productos.Count == 0)
+                return;
+
+            // Configurar columnas para cada producto
+            foreach (string producto in productos)
+            {
+                // Crear columna para el competidor
+                DataGridViewTextBoxColumn colCompetidor = new DataGridViewTextBoxColumn
+                {
+                    Name = $"Competidor_{producto}",
+                    HeaderText = "Competidor"
+                };
+                dgvCompetidores.Columns.Add(colCompetidor);
+
+                // Crear columna para las ventas
+                DataGridViewTextBoxColumn colVentas = new DataGridViewTextBoxColumn
+                {
+                    Name = $"Ventas_{producto}",
+                    HeaderText = "Ventas"
+                };
+                dgvCompetidores.Columns.Add(colVentas);
+            }
+
+            // Configurar evento para validación de entrada numérica
+            dgvCompetidores.EditingControlShowing += dgvCompetidores_EditingControlShowing;
+            dgvCompetidores.CellValueChanged += dgvCompetidores_CellValueChanged;
+
+            // Agregar filas para EMPRESA y MAYOR
+            AgregarFilasEspecialesCompetidores();
+        }
+
+        private void AgregarFilasEspecialesCompetidores()
+        {
+            // Agregar fila para la EMPRESA con los valores de ventas de dgvPrevision
+            int rowEmpresa = dgvCompetidores.Rows.Add();
+
+            // Para cada producto, agregar el valor de ventas desde dgvPrevision
+            int colIndex = 0;
+            foreach (DataGridViewRow row in dgvPrevision.Rows)
+            {
+                if (row.Cells[0].Value?.ToString() != "TOTAL")
+                {
+                    // Obtener el nombre del producto y usarlo en lugar de "EMPRESA"
+                    string nombreProducto = row.Cells[0].Value?.ToString();
+                    dgvCompetidores.Rows[rowEmpresa].Cells[colIndex].Value = nombreProducto;
+
+                    // Obtener ventas del producto
+                    int ventas = 0;
+                    int.TryParse(row.Cells[1].Value?.ToString(), out ventas);
+                    dgvCompetidores.Rows[rowEmpresa].Cells[colIndex + 1].Value = ventas;
+
+                    colIndex += 2;
+                }
+            }
+
+            // Aplicar formato a la fila EMPRESA
+            dgvCompetidores.Rows[rowEmpresa].DefaultCellStyle.BackColor = Color.LightGray;
+            dgvCompetidores.Rows[rowEmpresa].DefaultCellStyle.Font = new Font(dgvCompetidores.Font, FontStyle.Bold);
+
+            // Agregar fila de encabezados de columnas
+            int rowHeader = dgvCompetidores.Rows.Add();
+            colIndex = 0;
+            foreach (DataGridViewRow row in dgvPrevision.Rows)
+            {
+                if (row.Cells[0].Value?.ToString() != "TOTAL")
+                {
+                    dgvCompetidores.Rows[rowHeader].Cells[colIndex].Value = "Competidor";
+                    dgvCompetidores.Rows[rowHeader].Cells[colIndex + 1].Value = "Ventas";
+                    colIndex += 2;
+                }
+            }
+            dgvCompetidores.Rows[rowHeader].DefaultCellStyle.BackColor = Color.LightBlue;
+            dgvCompetidores.Rows[rowHeader].DefaultCellStyle.Font = new Font(dgvCompetidores.Font, FontStyle.Bold);
+        }
+
+        private void AgregarCompetidores(int numeroCompetidores)
+        {
+            // Verificar que hay productos
+            if (dgvCompetidores.Columns.Count == 0)
+                return;
+
+            dgvCompetidores.EndEdit();
+            try
+            {
+                while (dgvCompetidores.Rows.Count > 2)
+                {
+                    if (!dgvCompetidores.Rows[2].IsNewRow)
+                        dgvCompetidores.Rows.RemoveAt(2);
+                    else
+                        break;
+                }
+            }
+            catch (InvalidOperationException)
+            {
+                // Si hay un problema con la eliminación, reconfiguramos desde cero
+                ConfigurarTablaCompetidores();
+                AgregarFilasEspecialesCompetidores();
+                return;
+            }
+
+            // Obtener lista de productos (excepto TOTAL)
+            var productos = new List<string>();
+            foreach (DataGridViewRow row in dgvPrevision.Rows)
+            {
+                if (row.Cells[0].Value?.ToString() != "TOTAL")
+                    productos.Add(row.Cells[0].Value?.ToString());
+            }
+
+            // Agregar filas de competidores
+            for (int i = 1; i <= numeroCompetidores; i++)
+            {
+                int rowIndex = dgvCompetidores.Rows.Add();
+                int colIndexCompetidor = 0; // Nombre cambiado para evitar conflicto
+
+                foreach (string producto in productos)
+                {
+                    dgvCompetidores.Rows[rowIndex].Cells[colIndexCompetidor].Value = $"CP{productos.IndexOf(producto) + 1}-{i}";
+                    dgvCompetidores.Rows[rowIndex].Cells[colIndexCompetidor + 1].Value = 0;
+                    colIndexCompetidor += 2;
+                }
+            }
+
+            // Agregar fila para MAYOR
+            int rowMayor = dgvCompetidores.Rows.Add();
+            int colIndex = 0;
+            foreach (string producto in productos)
+            {
+                dgvCompetidores.Rows[rowMayor].Cells[colIndex].Value = "Mayor";
+                dgvCompetidores.Rows[rowMayor].Cells[colIndex + 1].Value = 0;
+                colIndex += 2;
+            }
+
+            // Aplicar formato a la fila MAYOR
+            dgvCompetidores.Rows[rowMayor].DefaultCellStyle.BackColor = Color.LightGray;
+            dgvCompetidores.Rows[rowMayor].DefaultCellStyle.Font = new Font(dgvCompetidores.Font, FontStyle.Bold);
+
+            // Calcular valores máximos iniciales
+            ActualizarValoresMayores();
+        }
+
+        private void ActualizarValoresMayores()
+        {
+            // Obtener índice de la fila MAYOR (última fila)
+            int mayorRowIndex = -1;
+
+            // Buscar la fila que contiene "Mayor"
+            for (int i = 0; i < dgvCompetidores.Rows.Count; i++)
+            {
+                if (dgvCompetidores.Rows[i].Cells[0].Value?.ToString() == "Mayor")
+                {
+                    mayorRowIndex = i;
+                    break;
+                }
+            }
+
+            // Si no se encontró la fila "Mayor", salir
+            if (mayorRowIndex == -1)
+                return;
+
+            // Para cada producto (cada par de columnas)
+            for (int colIndex = 0; colIndex < dgvCompetidores.Columns.Count; colIndex += 2)
+            {
+                int ventasColIndex = colIndex + 1;
+                int maxVentas = 0;
+
+                // Buscar el valor máximo en todas las filas excepto la de EMPRESA (0), encabezados (1) y Mayor
+                for (int rowIndex = 2; rowIndex < dgvCompetidores.Rows.Count; rowIndex++)
+                {
+                    // Saltar la fila Mayor
+                    if (rowIndex == mayorRowIndex)
+                        continue;
+
+                    if (dgvCompetidores.Rows[rowIndex].Cells[ventasColIndex].Value != null)
+                    {
+                        int ventas = 0;
+                        int.TryParse(dgvCompetidores.Rows[rowIndex].Cells[ventasColIndex].Value.ToString(), out ventas);
+                        if (ventas > maxVentas)
+                            maxVentas = ventas;
+                    }
+                }
+
+                // Asignar el valor máximo a la celda correspondiente en la fila MAYOR
+                dgvCompetidores.Rows[mayorRowIndex].Cells[ventasColIndex].Value = maxVentas;
+            }
+        }
+
+        private void dgvCompetidores_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            if (dgvCompetidores.CurrentCell.ColumnIndex % 2 == 1) // Índices 1, 3, 5, ... son columnas de ventas
+            {
+                e.Control.KeyPress -= SoloNumeros_KeyPress;
+                e.Control.KeyPress += SoloNumeros_KeyPress;
+            }
+        }
+
+        private void dgvCompetidores_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex % 2 == 1 && e.RowIndex >= 2 && e.RowIndex < dgvCompetidores.Rows.Count - 1)
+            {
+                ActualizarValoresMayores();
+            }
+        }
+
+        private void btnAgregarCompetidores_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtNumeroCompetidores.Text, out int numeroCompetidores) || numeroCompetidores < 1)
+            {
+                MessageBox.Show("Por favor ingrese un número válido de competidores.");
+                return;
+            }
+
+            // Agregar competidores
+            AgregarCompetidores(numeroCompetidores);
+        }
+        private void ActualizarTablaCompetidores()
+        {
+            ConfigurarTablaCompetidores();
+
+            // Si hay un número válido en txtNumeroCompetidores, agregar esa cantidad de competidores
+            if (int.TryParse(txtNumeroCompetidores.Text, out int numeroCompetidores) && numeroCompetidores > 0)
+            {
+                AgregarCompetidores(numeroCompetidores);
+            }
+        }
+        private void ActualizarVentasEmpresa()
+        {
+            // Verificar que hay filas en dgvCompetidores
+            if (dgvCompetidores.Rows.Count == 0)
+                return;
+
+            // La primera fila es la de EMPRESA
+            int rowEmpresa = 0;
+
+            // Actualizar ventas de cada producto
+            int colIndex = 0;
+            foreach (DataGridViewRow row in dgvPrevision.Rows)
+            {
+                if (row.Cells[0].Value?.ToString() != "TOTAL" && colIndex / 2 < dgvCompetidores.Columns.Count / 2)
+                {
+                    // Obtener ventas del producto
+                    int ventas = 0;
+                    int.TryParse(row.Cells[1].Value?.ToString(), out ventas);
+
+                    // Actualizar valor en la tabla de competidores
+                    if (colIndex + 1 < dgvCompetidores.Columns.Count)
+                        dgvCompetidores.Rows[rowEmpresa].Cells[colIndex + 1].Value = ventas;
+
+                    colIndex += 2;
+                }
+            }
+        }
+
+        private void FrmBCG2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
