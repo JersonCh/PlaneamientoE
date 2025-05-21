@@ -15,6 +15,9 @@ namespace WindowsFormsApp2
         private DataTable dtPrevision;
         private DataTable dtVLC;
         private int contadorCompetidores = 1;
+        private DataTable dtVSA;
+        private int anioInicio = 2024;
+        private int anioFinal = 2025;
 
         private const string COL_PRODUCTOS = "PRODUCTOS";
         private const string COL_VENTAS = "VENTAS";
@@ -27,6 +30,7 @@ namespace WindowsFormsApp2
             InitializeComponent();
             ConfigurarTablaPrevision();
             ConfigurarTablaVLC();
+            ConfigurarTablaVSA();
             // Suscribimos eventos
             dtPrevision.RowChanged += DtPrevision_RowChanged;
             dtPrevision.TableNewRow += DtPrevision_TableNewRow;
@@ -112,12 +116,14 @@ namespace WindowsFormsApp2
             AgregarFilaTotal();
             CalcularPorcentajes();
             SincronizarProductos();
+            SincronizarProductosVSA();
         }
 
         private void btnActualizar_Click_1(object sender, EventArgs e)
         {
             CalcularPorcentajes();
             dgvPrevision.Refresh();
+            SincronizarProductosVSA();
         }
 
         private void btnLimpiar_Click_1(object sender, EventArgs e)
@@ -127,6 +133,7 @@ namespace WindowsFormsApp2
             AgregarFilaTotal();
             CalcularPorcentajes();
             SincronizarProductos();
+            SincronizarProductosVSA();
         }
         public DataTable ObtenerDatosPrevision()
         {
@@ -142,94 +149,58 @@ namespace WindowsFormsApp2
         /// </summary>
         private void ConfigurarTablaVLC()
         {
-            // Crear el DataTable
             dtVLC = new DataTable();
-
-            // Agregar columna de productos
             dtVLC.Columns.Add(COL_PRODUCTOS, typeof(string));
-
-            // Agregar primera columna de competidor
             dtVLC.Columns.Add($"{COMPETIDOR_BASE}{contadorCompetidores}", typeof(decimal));
-
-            // Agregar columna de líder
             dtVLC.Columns.Add(COL_LIDER, typeof(decimal));
-
-            // Asignar el DataTable al DataGridView
             dgvVLC.DataSource = dtVLC;
-
-            // Configurar propiedades del DataGridView
             dgvVLC.AllowUserToAddRows = false;
             dgvVLC.AllowUserToDeleteRows = false;
-
-            // Configurar eventos
             dgvVLC.CellEndEdit += DgvVLC_CellEndEdit;
-
-            // Sincronizar productos iniciales
             SincronizarProductos();
-
-            // Formatear tabla
             FormatearTablaVLC();
         }
         private void FormatearTablaVLC()
         {
-            // Formatear columnas
             dgvVLC.Columns[COL_PRODUCTOS].Width = 150;
             dgvVLC.Columns[COL_PRODUCTOS].ReadOnly = true;
-
-            // Formatear columna de líder
             int colLider = dgvVLC.Columns.Count - 1;
             dgvVLC.Columns[colLider].Width = 120;
             dgvVLC.Columns[colLider].ReadOnly = true;
             dgvVLC.Columns[colLider].DefaultCellStyle.BackColor = Color.LightGray;
             dgvVLC.Columns[colLider].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            dgvVLC.Columns[colLider].DefaultCellStyle.Format = "F2"; // Formato con 2 decimales
-
-            // Formatear columnas de competidores
+            dgvVLC.Columns[colLider].DefaultCellStyle.Format = "F2";
             for (int i = 1; i < colLider; i++)
             {
                 dgvVLC.Columns[i].Width = 100;
                 dgvVLC.Columns[i].ReadOnly = false;
                 dgvVLC.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-                dgvVLC.Columns[i].DefaultCellStyle.Format = "F2"; // Formato con 2 decimales
+                dgvVLC.Columns[i].DefaultCellStyle.Format = "F2";
             }
-
-            // Ajustar el ancho de las columnas al contenido
             dgvVLC.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
         private void SincronizarProductos()
         {
-            // Limpiamos la tabla VLC manteniendo sus columnas
             dtVLC.Rows.Clear();
-
-            // Recorremos los productos de la tabla de previsión (excluyendo la fila TOTAL)
             for (int i = 0; i < dtPrevision.Rows.Count - 1; i++)
             {
                 DataRow nuevaFila = dtVLC.NewRow();
                 nuevaFila[COL_PRODUCTOS] = dtPrevision.Rows[i][COL_PRODUCTOS];
-
-                // Inicializamos los valores en cero para competidores
                 for (int j = 1; j < dtVLC.Columns.Count - 1; j++)
                 {
                     nuevaFila[j] = 0.00m;
                 }
-
-                // Inicializamos el líder en cero
                 nuevaFila[COL_LIDER] = 0.00m;
 
                 dtVLC.Rows.Add(nuevaFila);
             }
-
-            // Actualizar los valores de líder
             ActualizarLideresCompetidores();
         }
         private void ActualizarLideresCompetidores()
         {
-            // Para cada fila (producto)
             for (int i = 0; i < dtVLC.Rows.Count; i++)
             {
                 decimal maximo = 0;
-
-                // Buscar el valor máximo entre todos los competidores
                 for (int j = 1; j < dtVLC.Columns.Count - 1; j++)
                 {
                     if (dtVLC.Rows[i][j] != DBNull.Value)
@@ -241,17 +212,13 @@ namespace WindowsFormsApp2
                         }
                     }
                 }
-
-                // Asignar el valor máximo a la columna de líder
                 dtVLC.Rows[i][COL_LIDER] = maximo;
             }
         }
         private void DtPrevision_RowChanged(object sender, DataRowChangeEventArgs e)
         {
-            // Si no es la fila TOTAL y se ha modificado un nombre de producto
             if (e.Action == DataRowAction.Change && e.Row[COL_PRODUCTOS].ToString() != FILA_TOTAL)
             {
-                // Actualizar el nombre del producto en la tabla VLC
                 int index = dtPrevision.Rows.IndexOf(e.Row);
                 if (index < dtVLC.Rows.Count)
                 {
@@ -261,7 +228,6 @@ namespace WindowsFormsApp2
         }
         private void DtPrevision_TableNewRow(object sender, DataTableNewRowEventArgs e)
         {
-            // Asegurarnos de que no estamos reaccionando a la fila TOTAL
             if (e.Row[COL_PRODUCTOS].ToString() != FILA_TOTAL)
             {
                 SincronizarProductos();
@@ -269,7 +235,6 @@ namespace WindowsFormsApp2
         }
         private void DgvVLC_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            // Si es una columna de competidor (no es la columna de productos ni la de líder)
             if (e.ColumnIndex > 0 && e.ColumnIndex < dgvVLC.Columns.Count - 1)
             {
                 ActualizarLideresCompetidores();
@@ -278,67 +243,153 @@ namespace WindowsFormsApp2
 
         private void btnAgregarCompetidor_Click(object sender, EventArgs e)
         {
-            // Incrementar el contador de competidores
             contadorCompetidores++;
-
-            // Agregar nueva columna de competidor (antes de la columna de líder)
-            int posicionColumna = dtVLC.Columns.Count - 1;
-            dtVLC.Columns.Add($"{COMPETIDOR_BASE}{contadorCompetidores}", typeof(decimal)).SetOrdinal(posicionColumna);
-
-            // Inicializar los valores de la nueva columna en cero
+            string nuevoNombreColumna = $"{COMPETIDOR_BASE}{contadorCompetidores}";
+            int posicionColumna = dtVLC.Columns.IndexOf(COL_LIDER);
+            dtVLC.Columns.Add(nuevoNombreColumna, typeof(decimal));
+            dtVLC.Columns[nuevoNombreColumna].SetOrdinal(posicionColumna);
             foreach (DataRow fila in dtVLC.Rows)
             {
-                fila[posicionColumna] = 0.00m;
+                fila[nuevoNombreColumna] = 0.00m;
             }
+            dgvVLC.DataSource = null;
+            dgvVLC.DataSource = dtVLC;
 
-            // Formatear la nueva columna
-            dgvVLC.Columns[posicionColumna].Width = 100;
-            dgvVLC.Columns[posicionColumna].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            dgvVLC.Columns[posicionColumna].DefaultCellStyle.Format = "F2";
-
-            // Actualizar los líderes por si acaso
+            FormatearTablaVLC();
             ActualizarLideresCompetidores();
         }
 
         private void btnActualizarCompetidor_Click(object sender, EventArgs e)
         {
-            // Actualizar los líderes de competidores
             ActualizarLideresCompetidores();
-
-            // Refrescar la tabla
             dgvVLC.Refresh();
         }
 
         private void btnLimpiarCompetidor_Click(object sender, EventArgs e)
         {
-            // Reiniciar contador de competidores
             contadorCompetidores = 1;
-
-            // Limpiar todas las columnas excepto la primera (productos) y crear una nueva de competidor
-            while (dtVLC.Columns.Count > 1)
-            {
-                dtVLC.Columns.RemoveAt(1);
-            }
-
-            // Añadir columna de competidor
-            dtVLC.Columns.Add($"{COMPETIDOR_BASE}{contadorCompetidores}", typeof(decimal));
-
-            // Añadir columna de líder
-            dtVLC.Columns.Add(COL_LIDER, typeof(decimal));
-
-            // Inicializar los valores en cero
-            foreach (DataRow fila in dtVLC.Rows)
-            {
-                fila[1] = 0.00m;
-                fila[2] = 0.00m;
-            }
-
-            // Formatear la tabla
-            FormatearTablaVLC();
+            ConfigurarTablaVLC();
         }
         public DataTable ObtenerDatosVLC()
         {
             return dtVLC.Copy();
+        }
+
+        private void dgvVLC_ColumnHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.ColumnIndex > 0 && e.ColumnIndex < dgvVLC.Columns.Count - 1)
+            {
+                string nombreActual = dgvVLC.Columns[e.ColumnIndex].HeaderText;
+                string nuevoNombre = Microsoft.VisualBasic.Interaction.InputBox(
+                    "Introduzca el nuevo nombre para el competidor:",
+                    "Editar nombre de competidor",
+                    nombreActual);
+                if (!string.IsNullOrWhiteSpace(nuevoNombre))
+                {
+                    dtVLC.Columns[e.ColumnIndex].ColumnName = nuevoNombre;
+                    dgvVLC.Columns[e.ColumnIndex].HeaderText = nuevoNombre;
+                }
+            }
+        }
+        /// <summary>
+        /// Tabla Ventas Sector
+        /// </summary>
+        private void ConfigurarTablaVSA()
+        {
+            dtVSA = new DataTable();
+            dtVSA.Columns.Add(COL_PRODUCTOS, typeof(string));
+            // Solo agregar columnas por defecto 2024 y 2025
+            dtVSA.Columns.Add("2024", typeof(decimal));
+            dtVSA.Columns.Add("2025", typeof(decimal));
+
+            dgvVSA.DataSource = dtVSA;
+            dgvVSA.AllowUserToAddRows = false;
+            dgvVSA.AllowUserToDeleteRows = false;
+            dgvVSA.Columns[COL_PRODUCTOS].ReadOnly = true;
+
+            SincronizarProductosVSA();
+            FormatearTablaVSA();
+        }
+        private void SincronizarProductosVSA()
+        {
+            dtVSA.Rows.Clear();
+            for (int i = 0; i < dtPrevision.Rows.Count - 1; i++)
+            {
+                DataRow nuevaFila = dtVSA.NewRow();
+                nuevaFila[COL_PRODUCTOS] = dtPrevision.Rows[i][COL_PRODUCTOS];
+
+                // Inicializar valores numéricos en 0
+                for (int j = 1; j < dtVSA.Columns.Count; j++)
+                {
+                    nuevaFila[j] = 0.00m;
+                }
+
+                dtVSA.Rows.Add(nuevaFila);
+            }
+        }
+        private void ActualizarColumnasVSA()
+        {
+            // Leer años de los textbox
+            if (!int.TryParse(txtInicio.Text, out anioInicio) ||
+                !int.TryParse(txtFinal.Text, out anioFinal))
+            {
+                MessageBox.Show("Por favor ingrese años válidos");
+                return;
+            }
+
+            if (anioInicio > anioFinal)
+            {
+                MessageBox.Show("El año inicial debe ser menor o igual al final");
+                return;
+            }
+
+            // Limpiar columnas excepto PRODUCTOS
+            for (int i = dtVSA.Columns.Count - 1; i > 0; i--)
+            {
+                dtVSA.Columns.RemoveAt(i);
+            }
+
+            // Agregar nuevas columnas de años
+            for (int año = anioInicio; año <= anioFinal; año++)
+            {
+                dtVSA.Columns.Add(año.ToString(), typeof(decimal));
+            }
+
+            SincronizarProductosVSA();
+            FormatearTablaVSA();
+        }
+        private void FormatearTablaVSA()
+        {
+            dgvVSA.Columns[COL_PRODUCTOS].Width = 150;
+            dgvVSA.Columns[COL_PRODUCTOS].ReadOnly = true;
+
+            // Formatear columnas de años
+            for (int i = 1; i < dgvVSA.Columns.Count; i++)
+            {
+                dgvVSA.Columns[i].Width = 80;
+                dgvVSA.Columns[i].ReadOnly = false;
+                dgvVSA.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                dgvVSA.Columns[i].DefaultCellStyle.Format = "F2";
+            }
+
+            dgvVSA.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+
+        private void btnActualizarVSA_Click(object sender, EventArgs e)
+        {
+            SincronizarProductosVSA();
+            dgvVSA.Refresh();
+        }
+
+        private void btnLimpiarVSA_Click(object sender, EventArgs e)
+        {
+            ConfigurarTablaVSA();
+            SincronizarProductosVSA();
+        }
+
+        private void btnAnios_Click(object sender, EventArgs e)
+        {
+            ActualizarColumnasVSA();
         }
     }
 }

@@ -608,7 +608,6 @@ C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmPest.resources
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAnalisis.resources
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
-C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.panel.resources
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagosticoPorter.resources
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoPest.resources
@@ -633,3 +632,4 @@ C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG3.resources
+C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG3.resources
