@@ -287,7 +287,6 @@ D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\W
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.AssemblyReference.cache
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAnalisis.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
-D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.panel.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCadenaValor.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard.resources
@@ -633,3 +632,4 @@ C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG3.resources

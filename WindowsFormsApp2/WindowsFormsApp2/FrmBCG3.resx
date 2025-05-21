@@ -117,12 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>A continuación analice su cartera de productos y /o servicios e intente clasificarlos calcular el posicionamiento de su 
-cartera de productos en la matriz B.C.G. Para ello rellene las siguientes tablas con la mayor precisión posible.</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Las celdas sombreadas en colores no hay que modificarlas. Sólo debe introducir los datos en las celdas con 
-fondo color blanco y fuente color azul. Podrá consultar los comentarios aclaratorios en algunas de las celdas. </value>
-  </data>
 </root>
