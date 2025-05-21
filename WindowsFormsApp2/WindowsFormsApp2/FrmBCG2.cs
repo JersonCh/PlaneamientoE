@@ -33,6 +33,7 @@ namespace WindowsFormsApp2
             dgvPrevision.AllowUserToAddRows = false;
             dgvPrevision.CellValueChanged += dgvPrevision_CellValueChanged;
             dgvPrevision.EditingControlShowing += dgvPrevision_EditingControlShowing;
+            dgvEvolucionDemanda.AllowUserToAddRows = false;
 
             AgregarFilaTotal();
         }
@@ -161,11 +162,26 @@ namespace WindowsFormsApp2
             });
 
             // Añadir columnas de productos desde dgvPrevision
-            ActualizarColumnasEvolucionDemanda();
+            foreach (DataGridViewRow row in dgvPrevision.Rows)
+            {
+                if (row.Cells[0].Value?.ToString() != "TOTAL")
+                {
+                    string producto = row.Cells[0].Value?.ToString();
+                    dgvEvolucionDemanda.Columns.Add(new DataGridViewTextBoxColumn
+                    {
+                        Name = producto,
+                        HeaderText = producto,
+                        DefaultCellStyle = { Format = "N2" } // Formato con 2 decimales
+                    });
+                }
+            }
 
             // Configurar validación de entrada
             dgvEvolucionDemanda.EditingControlShowing += dgvEvolucionDemanda_EditingControlShowing;
             dgvEvolucionDemanda.CellValueChanged += dgvEvolucionDemanda_CellValueChanged;
+
+            // IMPORTANTE: Solo actualizar filas DESPUÉS de configurar columnas
+            ActualizarFilasEvolucionDemanda();
         }
 
         private void ActualizarColumnasEvolucionDemanda()
@@ -222,6 +238,13 @@ namespace WindowsFormsApp2
 
         private void ActualizarFilasEvolucionDemanda(Dictionary<string, Dictionary<string, object>> datosExistentes = null)
         {
+            // VERIFICACIÓN: Si no hay columnas, configurarlas primero
+            if (dgvEvolucionDemanda.Columns.Count == 0)
+            {
+                ActualizarColumnasEvolucionDemanda();
+                return; // Salir para evitar recursión
+            }
+
             // Limpiar filas
             dgvEvolucionDemanda.Rows.Clear();
 
@@ -233,8 +256,10 @@ namespace WindowsFormsApp2
             var anios = new HashSet<string>();
             foreach (DataGridViewRow row in dgvTCM.Rows)
             {
-                anios.Add(row.Cells[0].Value?.ToString());
-                anios.Add(row.Cells[1].Value?.ToString());
+                if (row.Cells[0].Value != null)
+                    anios.Add(row.Cells[0].Value.ToString());
+                if (row.Cells[1].Value != null)
+                    anios.Add(row.Cells[1].Value.ToString());
             }
 
             // Ordenar años y añadirlos a la tabla
@@ -246,18 +271,22 @@ namespace WindowsFormsApp2
 
             foreach (string anio in aniosOrdenados)
             {
-                var rowIndex = dgvEvolucionDemanda.Rows.Add();
-                dgvEvolucionDemanda.Rows[rowIndex].Cells["Anio"].Value = anio;
-
-                // Restaurar datos si existen
-                if (datosExistentes != null && datosExistentes.ContainsKey(anio))
+                // VERIFICACIÓN: Asegurarse de que hay columnas antes de agregar filas
+                if (dgvEvolucionDemanda.Columns.Count > 0)
                 {
-                    for (int i = 1; i < dgvEvolucionDemanda.Columns.Count; i++)
+                    var rowIndex = dgvEvolucionDemanda.Rows.Add();
+                    dgvEvolucionDemanda.Rows[rowIndex].Cells["Anio"].Value = anio;
+
+                    // Restaurar datos si existen
+                    if (datosExistentes != null && datosExistentes.ContainsKey(anio))
                     {
-                        string columnName = dgvEvolucionDemanda.Columns[i].Name;
-                        if (datosExistentes[anio].ContainsKey(columnName))
+                        for (int i = 1; i < dgvEvolucionDemanda.Columns.Count; i++)
                         {
-                            dgvEvolucionDemanda.Rows[rowIndex].Cells[i].Value = datosExistentes[anio][columnName];
+                            string columnName = dgvEvolucionDemanda.Columns[i].Name;
+                            if (datosExistentes[anio].ContainsKey(columnName))
+                            {
+                                dgvEvolucionDemanda.Rows[rowIndex].Cells[i].Value = datosExistentes[anio][columnName];
+                            }
                         }
                     }
                 }
@@ -289,6 +318,11 @@ namespace WindowsFormsApp2
             int indexTotal = dgvPrevision.Rows.Count - 1;
             dgvPrevision.Rows.Insert(indexTotal, $"Producto {indexTotal + 1}", 0, "0.00%");
             RecalcularTotales();
+
+            // Actualizar TCM con el nuevo producto
+            btnActualizarTCM_Click(sender, e);
+
+            // Esto ya lo tienes para la tabla de evolución
             ActualizarColumnasEvolucionDemanda();
         }
 
@@ -296,6 +330,10 @@ namespace WindowsFormsApp2
         {
             dgvPrevision.Rows.Clear(); // Elimina todas las filas
             AgregarFilaTotal(); // Vuelve a agregar la fila TOTAL
+
+            // Actualizar TCM después de limpiar
+            btnActualizarTCM_Click(sender, e);
+
             ActualizarColumnasEvolucionDemanda();
         }
 
@@ -409,23 +447,40 @@ namespace WindowsFormsApp2
             // Actualizar columnas (productos)
             ConfigurarColumnasTCM();
 
-            // Reestablecer filas guardadas en la tabla
-            foreach (var fila in filasDatos)
+            // VERIFICACIÓN: Asegurarse de que hay columnas antes de agregar filas
+            if (dgvTCM.Columns.Count > 0)
             {
-                // Ajustar tamaño del array si columnas cambiaron
-                if (fila.Length < dgvTCM.Columns.Count)
+                // Reestablecer filas guardadas en la tabla
+                foreach (var fila in filasDatos)
                 {
-                    var nuevoFila = new object[dgvTCM.Columns.Count];
-                    Array.Copy(fila, nuevoFila, fila.Length);
-                    for (int i = fila.Length; i < nuevoFila.Length; i++)
-                        nuevoFila[i] = "0.00%";  // valores nuevos inicializados
-                    dgvTCM.Rows.Add(nuevoFila);
-                }
-                else
-                {
-                    dgvTCM.Rows.Add(fila);
+                    // Ajustar tamaño del array si columnas cambiaron
+                    if (fila.Length < dgvTCM.Columns.Count)
+                    {
+                        var nuevoFila = new object[dgvTCM.Columns.Count];
+                        Array.Copy(fila, nuevoFila, fila.Length);
+                        for (int i = fila.Length; i < nuevoFila.Length; i++)
+                            nuevoFila[i] = "0.00%";  // valores nuevos inicializados
+                        dgvTCM.Rows.Add(nuevoFila);
+                    }
+                    else if (dgvTCM.Columns.Count > 0) // Verificación adicional
+                    {
+                        dgvTCM.Rows.Add(fila);
+                    }
                 }
             }
+
+            // Si no hay filas después de configurar columnas y hay al menos dos columnas (para años)
+            if (dgvTCM.Rows.Count == 0 && dgvTCM.Columns.Count >= 2)
+            {
+                // Agregar al menos una fila con años por defecto
+                object[] nuevaFila = new object[dgvTCM.Columns.Count];
+                nuevaFila[0] = "2024"; // Año por defecto inicio
+                nuevaFila[1] = "2025"; // Año por defecto fin
+                for (int i = 2; i < nuevaFila.Length; i++)
+                    nuevaFila[i] = "0.00%";
+                dgvTCM.Rows.Add(nuevaFila);
+            }
+
             ActualizarFilasEvolucionDemanda();
         }
         private void txtAnio_KeyPress(object sender, KeyPressEventArgs e)
