@@ -50,6 +50,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvBCG = new System.Windows.Forms.DataGridView();
+            this.btnActualizarBCG = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrevision)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTCM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEvolucionDemanda)).BeginInit();
@@ -180,7 +181,7 @@
             // txtAnioInicio
             // 
             this.txtAnioInicio.Location = new System.Drawing.Point(735, 354);
-            this.txtAnioInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAnioInicio.Margin = new System.Windows.Forms.Padding(4);
             this.txtAnioInicio.Name = "txtAnioInicio";
             this.txtAnioInicio.Size = new System.Drawing.Size(132, 22);
             this.txtAnioInicio.TabIndex = 11;
@@ -188,7 +189,7 @@
             // txtAnioFin
             // 
             this.txtAnioFin.Location = new System.Drawing.Point(896, 354);
-            this.txtAnioFin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAnioFin.Margin = new System.Windows.Forms.Padding(4);
             this.txtAnioFin.Name = "txtAnioFin";
             this.txtAnioFin.Size = new System.Drawing.Size(132, 22);
             this.txtAnioFin.TabIndex = 12;
@@ -291,11 +292,23 @@
             this.dgvBCG.Size = new System.Drawing.Size(527, 234);
             this.dgvBCG.TabIndex = 21;
             // 
+            // btnActualizarBCG
+            // 
+            this.btnActualizarBCG.Location = new System.Drawing.Point(622, 969);
+            this.btnActualizarBCG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnActualizarBCG.Name = "btnActualizarBCG";
+            this.btnActualizarBCG.Size = new System.Drawing.Size(163, 32);
+            this.btnActualizarBCG.TabIndex = 22;
+            this.btnActualizarBCG.Text = "Actualizar";
+            this.btnActualizarBCG.UseVisualStyleBackColor = true;
+            this.btnActualizarBCG.Click += new System.EventHandler(this.btnActualizarBCG_Click);
+            // 
             // FrmBCG2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1395, 1415);
+            this.Controls.Add(this.btnActualizarBCG);
             this.Controls.Add(this.dgvBCG);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -356,5 +369,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvBCG;
+        private System.Windows.Forms.Button btnActualizarBCG;
     }
 }

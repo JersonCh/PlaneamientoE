@@ -34,6 +34,7 @@ namespace WindowsFormsApp2
             dgvPrevision.CellValueChanged += dgvPrevision_CellValueChanged;
             dgvPrevision.EditingControlShowing += dgvPrevision_EditingControlShowing;
             dgvEvolucionDemanda.AllowUserToAddRows = false;
+            dgvCompetidores.AllowUserToAddRows = false;
 
             AgregarFilaTotal();
         }
@@ -71,6 +72,276 @@ namespace WindowsFormsApp2
                     dgvTCM.Columns.Add(col);
                 }
             }
+        }
+        private void ConfigurarTablaBCG()
+        {
+            try
+            {
+                // Limpiar tabla
+                dgvBCG.Rows.Clear();
+                dgvBCG.Columns.Clear();
+
+                // Configurar que la tabla sea de solo lectura
+                dgvBCG.ReadOnly = true;
+                dgvBCG.AllowUserToAddRows = false;
+                dgvBCG.AllowUserToDeleteRows = false;
+                dgvBCG.AllowUserToResizeRows = false;
+
+                // Agregar primera columna para etiquetas
+                dgvBCG.Columns.Add("Metrica", "BCG");
+
+                // Verificar que hay productos para añadir
+                if (dgvPrevision.Rows.Count <= 1)
+                {
+                    return;
+                }
+
+                // Agregar columnas para cada producto desde dgvPrevision
+                foreach (DataGridViewRow row in dgvPrevision.Rows)
+                {
+                    if (row.Cells[0].Value?.ToString() != "TOTAL")
+                    {
+                        string producto = row.Cells[0].Value?.ToString();
+                        if (!string.IsNullOrEmpty(producto))
+                        {
+                            dgvBCG.Columns.Add(producto, producto);
+                        }
+                    }
+                }
+
+                // Verificar que se agregaron columnas
+                if (dgvBCG.Columns.Count <= 1)
+                {
+                    MessageBox.Show("No se pudieron agregar productos a la matriz BCG.",
+                        "Configuración BCG", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Agregar filas para TCM, PRM y % S/VTAS
+                dgvBCG.Rows.Add("TCM");
+                dgvBCG.Rows.Add("PRM");
+                dgvBCG.Rows.Add("% S/VTAS");
+
+                // Configurar formato de celdas
+                foreach (DataGridViewRow row in dgvBCG.Rows)
+                {
+                    row.Cells[0].Style.BackColor = Color.LightGray;
+                    row.Cells[0].Style.Font = new Font(dgvBCG.Font, FontStyle.Bold);
+
+                    // Inicializar valores en 0 para todas las celdas
+                    for (int i = 1; i < dgvBCG.Columns.Count; i++)
+                    {
+                        if (row.Index == 0 || row.Index == 2) // TCM y % S/VTAS como porcentaje
+                        {
+                            row.Cells[i].Value = 0.0;
+                            row.Cells[i].Style.Format = "P2";
+                        }
+                        else // PRM como número
+                        {
+                            row.Cells[i].Value = 0.0;
+                            row.Cells[i].Style.Format = "N2";
+                        }
+                    }
+                }
+
+                // Actualizar datos iniciales
+                Console.WriteLine("Configuración de tabla BCG completada. Ejecutando ActualizarDatosBCG()");
+                ActualizarDatosBCG();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al configurar la matriz BCG: {ex.Message}",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void ActualizarDatosBCG()
+        {
+            // Si la tabla no tiene columnas o filas configuradas correctamente, salir
+            if (dgvBCG.Columns.Count <= 1 || dgvBCG.Rows.Count < 3)
+            {
+                MessageBox.Show("La tabla BCG no está configurada correctamente. Verifique que tenga productos añadidos.");
+                return;
+            }
+
+            // Verificar si hay datos para procesar
+            if (dgvPrevision.Rows.Count <= 1)
+            {
+                MessageBox.Show("No hay productos definidos en la tabla de previsión.");
+                return;
+            }
+
+            // --- 1. Obtener % S/VTAS desde dgvPrevision ---
+            for (int col = 1; col < dgvBCG.Columns.Count; col++)
+            {
+                string producto = dgvBCG.Columns[col].Name;
+                bool encontrado = false;
+
+                // Buscar el producto en dgvPrevision
+                foreach (DataGridViewRow row in dgvPrevision.Rows)
+                {
+                    if (row.Cells[0].Value?.ToString() == producto)
+                    {
+                        // Fila % S/VTAS (índice 2)
+                        double porcentaje = 0;
+                        var cellValue = row.Cells[2].Value;
+
+                        if (cellValue != null)
+                        {
+                            if (cellValue is double)
+                                porcentaje = (double)cellValue;
+                            else
+                                double.TryParse(cellValue.ToString().Replace("%", ""), out porcentaje);
+                        }
+
+                        dgvBCG.Rows[2].Cells[col].Value = porcentaje / 100.0; // Formato directo como decimal para %
+                        encontrado = true;
+                        break;
+                    }
+                }
+
+                if (!encontrado)
+                {
+                    Console.WriteLine($"Producto '{producto}' no encontrado en tabla de previsión");
+                }
+            }
+
+            // --- 2. Obtener TCM desde dgvTCM ---
+            if (dgvTCM.Rows.Count > 0)
+            {
+                for (int col = 1; col < dgvBCG.Columns.Count; col++)
+                {
+                    string producto = dgvBCG.Columns[col].Name;
+                    bool encontrado = false;
+
+                    // Buscar la columna correspondiente en dgvTCM
+                    for (int i = 2; i < dgvTCM.Columns.Count; i++)
+                    {
+                        // Verificar coincidencia por Name o HeaderText
+                        if (dgvTCM.Columns[i].Name == producto || dgvTCM.Columns[i].HeaderText == producto)
+                        {
+                            if (dgvTCM.Rows.Count > 0)
+                            {
+                                // Tomar el valor de la primera fila
+                                double tcm = 0;
+                                var cellValue = dgvTCM.Rows[0].Cells[i].Value;
+
+                                if (cellValue != null)
+                                {
+                                    if (cellValue is double)
+                                        tcm = (double)cellValue;
+                                    else
+                                    {
+                                        string strValue = cellValue.ToString().Replace("%", "");
+                                        double.TryParse(strValue, out tcm);
+                                        tcm /= 100.0; // Convertir a decimal si viene como porcentaje texto
+                                    }
+                                }
+
+                                dgvBCG.Rows[0].Cells[col].Value = tcm; // Para formato porcentaje
+                                encontrado = true;
+                            }
+                            break;
+                        }
+                    }
+
+                    if (!encontrado)
+                    {
+                        Console.WriteLine($"TCM para producto '{producto}' no encontrado");
+                        // Valor por defecto si no se encuentra
+                        dgvBCG.Rows[0].Cells[col].Value = 0.0;
+                    }
+                }
+            }
+
+            // --- 3. Calcular PRM para cada producto (CORREGIDO) ---
+            for (int col = 1; col < dgvBCG.Columns.Count; col++)
+            {
+                string producto = dgvBCG.Columns[col].Name;
+                bool encontrado = false;
+
+                // Buscar el producto en dgvCompetidores
+                for (int i = 0; i < dgvCompetidores.Columns.Count; i += 2)
+                {
+                    if (i + 1 < dgvCompetidores.Columns.Count)
+                    {
+                        // Verificar que hay filas en la tabla de competidores
+                        if (dgvCompetidores.Rows.Count < 3)
+                            continue;
+
+                        // Intentar obtener el nombre del producto de la primera fila (producto)
+                        string productoCompetidor = null;
+                        if (dgvCompetidores.Rows[0].Cells[i].Value != null)
+                        {
+                            productoCompetidor = dgvCompetidores.Rows[0].Cells[i].Value.ToString();
+                        }
+
+                        // Si coincide con el producto que buscamos
+                        if (productoCompetidor == producto)
+                        {
+                            int columnVentas = i + 1; // Columna de ventas
+                            double ventasEmpresa = 0;
+                            double ventasMayor = 0;
+                            int filaMayor = -1;
+
+                            // Encontrar la fila "Mayor" (normalmente la última)
+                            for (int r = 0; r < dgvCompetidores.Rows.Count; r++)
+                            {
+                                if (dgvCompetidores.Rows[r].Cells[i].Value?.ToString() == "Mayor")
+                                {
+                                    filaMayor = r;
+                                    break;
+                                }
+                            }
+
+                            // Obtener ventas de la empresa (primera fila)
+                            if (dgvCompetidores.Rows[0].Cells[columnVentas].Value != null)
+                            {
+                                double.TryParse(dgvCompetidores.Rows[0].Cells[columnVentas].Value.ToString(), out ventasEmpresa);
+                            }
+
+                            // Obtener ventas del competidor mayor
+                            if (filaMayor >= 0 && dgvCompetidores.Rows[filaMayor].Cells[columnVentas].Value != null)
+                            {
+                                double.TryParse(dgvCompetidores.Rows[filaMayor].Cells[columnVentas].Value.ToString(), out ventasMayor);
+                            }
+
+                            // Calcular PRM como ventas empresa / ventas mayor competidor
+                            double prm = (ventasMayor == 0) ? 1.0 : (ventasEmpresa / ventasMayor);
+
+                            // Asignar el valor PRM a la tabla BCG
+                            dgvBCG.Rows[1].Cells[col].Value = prm;
+                            encontrado = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (!encontrado)
+                {
+                    Console.WriteLine($"Competidores para producto '{producto}' no encontrados");
+                    // Asignar valor por defecto
+                    dgvBCG.Rows[1].Cells[col].Value = 0.0;
+                }
+            }
+
+            // --- 4. Aplicar formato a las celdas ---
+            foreach (DataGridViewRow row in dgvBCG.Rows)
+            {
+                for (int i = 1; i < dgvBCG.Columns.Count; i++)
+                {
+                    if (row.Index == 0 || row.Index == 2) // TCM y % S/VTAS como porcentaje
+                    {
+                        dgvBCG.Rows[row.Index].Cells[i].Style.Format = "P2";
+                    }
+                    else // PRM como número
+                    {
+                        dgvBCG.Rows[row.Index].Cells[i].Style.Format = "N2";
+                    }
+                }
+            }
+
+            // Log de depuración para verificar que se ejecutó completamente
+            Console.WriteLine("ActualizarDatosBCG completado");
         }
 
         private void ConfigurarTablaTCM()
@@ -328,6 +599,7 @@ namespace WindowsFormsApp2
             // Esto ya lo tienes para la tabla de evolución
             ActualizarColumnasEvolucionDemanda();
             ActualizarTablaCompetidores();
+            ConfigurarTablaBCG();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -340,6 +612,7 @@ namespace WindowsFormsApp2
 
             ActualizarColumnasEvolucionDemanda();
             ActualizarTablaCompetidores();
+            ConfigurarTablaBCG();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -822,6 +1095,39 @@ namespace WindowsFormsApp2
         private void FrmBCG2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnActualizarBCG_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Validar que tenemos datos para actualizar
+                if (dgvPrevision.Rows.Count <= 1)
+                {
+                    MessageBox.Show("No hay productos definidos. Añada productos primero.", "Actualización BCG",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Antes de actualizar, asegurar que la tabla BCG está configurada
+                if (dgvBCG.Columns.Count <= 1)
+                {
+                    MessageBox.Show("La matriz BCG no está configurada. Reconfigurando...", "Actualización BCG",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ConfigurarTablaBCG();
+                }
+
+                // Llamar a la función de actualización
+                ActualizarDatosBCG();
+
+                MessageBox.Show("Matriz BCG actualizada correctamente.", "Actualización BCG",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al actualizar la matriz BCG: {ex.Message}\n\n{ex.StackTrace}",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
