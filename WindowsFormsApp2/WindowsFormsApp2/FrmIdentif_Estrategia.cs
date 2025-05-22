@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -48,10 +48,8 @@ namespace WindowsFormsApp2
 
         private void AsociarEventosGrupo(string grupo, string prefijo)
         {
-            // En FO y DO asumimos 4 filas x 4 columnas
-            // En FA y DA asumimos 4 filas x 1 columna (según ejemplo txtA1_F1_FA)
             int filas = 4;
-            int columnas = (grupo == "FA" || grupo == "DA") ? 1 : 4;
+            int columnas = 4;
 
             for (int fila = 1; fila <= filas; fila++)
             {
@@ -67,9 +65,11 @@ namespace WindowsFormsApp2
             }
         }
 
+
+
         private void CalcularTotalesGrupo(string grupo, string prefijo)
         {
-            int columnas = (grupo == "FA" || grupo == "DA") ? 1 : 4;
+            int columnas = 4;
             int filas = 4;
 
             double[] totalColumnas = new double[columnas];
@@ -120,23 +120,11 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void AbrirFormularioHijo(Form formularioHijo)
-        {
-            /*// Cerrar formulario activo si ya hay uno
-            if (panelContenedor.Controls.Count > 0)
-                panelContenedor.Controls[0].Dispose();
-
-            formularioHijo.TopLevel = false;
-            formularioHijo.FormBorderStyle = FormBorderStyle.None;
-            formularioHijo.Dock = DockStyle.Fill;
-            panelContenedor.Controls.Add(formularioHijo);
-            panelContenedor.Tag = formularioHijo;
-            formularioHijo.Show();*/
-        }
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new FrmDAFO());
+            FrmDAFO formularioEmergente = new FrmDAFO();
+            formularioEmergente.ShowDialog();
         }
 
         private void FrmIdentif_Estrategia_Load_1(object sender, EventArgs e)
