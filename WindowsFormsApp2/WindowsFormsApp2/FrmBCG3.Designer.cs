@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBCG3));
             this.dgvPrevision = new System.Windows.Forms.DataGridView();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -42,28 +46,44 @@
             this.txtInicio = new System.Windows.Forms.TextBox();
             this.txtFinal = new System.Windows.Forms.TextBox();
             this.btnAnios = new System.Windows.Forms.Button();
+            this.btnActualizarResultado = new System.Windows.Forms.Button();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
+            this.chartBCG2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnLimpiarChart = new System.Windows.Forms.Button();
+            this.btnChart = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrevision)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVLC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVSA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBCG2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPrevision
             // 
             this.dgvPrevision.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPrevision.Location = new System.Drawing.Point(25, 33);
-            this.dgvPrevision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPrevision.Location = new System.Drawing.Point(33, 41);
+            this.dgvPrevision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvPrevision.Name = "dgvPrevision";
             this.dgvPrevision.RowHeadersWidth = 51;
             this.dgvPrevision.RowTemplate.Height = 24;
-            this.dgvPrevision.Size = new System.Drawing.Size(395, 190);
+            this.dgvPrevision.Size = new System.Drawing.Size(527, 234);
             this.dgvPrevision.TabIndex = 1;
+            this.dgvPrevision.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrevision_CellEndEdit_1);
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(302, 242);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Location = new System.Drawing.Point(403, 298);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(122, 26);
+            this.btnLimpiar.Size = new System.Drawing.Size(163, 32);
             this.btnLimpiar.TabIndex = 6;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -71,10 +91,10 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(165, 242);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizar.Location = new System.Drawing.Point(220, 298);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(122, 26);
+            this.btnActualizar.Size = new System.Drawing.Size(163, 32);
             this.btnActualizar.TabIndex = 5;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -82,10 +102,10 @@
             // 
             // btnAgregarProducto
             // 
-            this.btnAgregarProducto.Location = new System.Drawing.Point(28, 242);
-            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(37, 298);
+            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(122, 26);
+            this.btnAgregarProducto.Size = new System.Drawing.Size(163, 32);
             this.btnAgregarProducto.TabIndex = 4;
             this.btnAgregarProducto.Text = "Agregar Producto";
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
@@ -94,21 +114,22 @@
             // dgvVLC
             // 
             this.dgvVLC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVLC.Location = new System.Drawing.Point(484, 33);
-            this.dgvVLC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvVLC.Location = new System.Drawing.Point(645, 41);
+            this.dgvVLC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvVLC.Name = "dgvVLC";
             this.dgvVLC.RowHeadersWidth = 51;
             this.dgvVLC.RowTemplate.Height = 24;
-            this.dgvVLC.Size = new System.Drawing.Size(395, 190);
+            this.dgvVLC.Size = new System.Drawing.Size(527, 234);
             this.dgvVLC.TabIndex = 7;
+            this.dgvVLC.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVLC_CellEndEdit_1);
             this.dgvVLC.ColumnHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvVLC_ColumnHeaderMouseDoubleClick);
             // 
             // btnLimpiarCompetidor
             // 
-            this.btnLimpiarCompetidor.Location = new System.Drawing.Point(758, 242);
-            this.btnLimpiarCompetidor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiarCompetidor.Location = new System.Drawing.Point(1011, 298);
+            this.btnLimpiarCompetidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpiarCompetidor.Name = "btnLimpiarCompetidor";
-            this.btnLimpiarCompetidor.Size = new System.Drawing.Size(122, 26);
+            this.btnLimpiarCompetidor.Size = new System.Drawing.Size(163, 32);
             this.btnLimpiarCompetidor.TabIndex = 10;
             this.btnLimpiarCompetidor.Text = "Limpiar";
             this.btnLimpiarCompetidor.UseVisualStyleBackColor = true;
@@ -116,10 +137,10 @@
             // 
             // btnActualizarCompetidor
             // 
-            this.btnActualizarCompetidor.Location = new System.Drawing.Point(621, 242);
-            this.btnActualizarCompetidor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizarCompetidor.Location = new System.Drawing.Point(828, 298);
+            this.btnActualizarCompetidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizarCompetidor.Name = "btnActualizarCompetidor";
-            this.btnActualizarCompetidor.Size = new System.Drawing.Size(122, 26);
+            this.btnActualizarCompetidor.Size = new System.Drawing.Size(163, 32);
             this.btnActualizarCompetidor.TabIndex = 9;
             this.btnActualizarCompetidor.Text = "Actualizar";
             this.btnActualizarCompetidor.UseVisualStyleBackColor = true;
@@ -127,10 +148,10 @@
             // 
             // btnAgregarCompetidor
             // 
-            this.btnAgregarCompetidor.Location = new System.Drawing.Point(484, 242);
-            this.btnAgregarCompetidor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarCompetidor.Location = new System.Drawing.Point(645, 298);
+            this.btnAgregarCompetidor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarCompetidor.Name = "btnAgregarCompetidor";
-            this.btnAgregarCompetidor.Size = new System.Drawing.Size(122, 26);
+            this.btnAgregarCompetidor.Size = new System.Drawing.Size(163, 32);
             this.btnAgregarCompetidor.TabIndex = 8;
             this.btnAgregarCompetidor.Text = "Agregar Competidor";
             this.btnAgregarCompetidor.UseVisualStyleBackColor = true;
@@ -139,20 +160,20 @@
             // dgvVSA
             // 
             this.dgvVSA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVSA.Location = new System.Drawing.Point(29, 301);
-            this.dgvVSA.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvVSA.Location = new System.Drawing.Point(39, 370);
+            this.dgvVSA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvVSA.Name = "dgvVSA";
             this.dgvVSA.RowHeadersWidth = 51;
             this.dgvVSA.RowTemplate.Height = 24;
-            this.dgvVSA.Size = new System.Drawing.Size(395, 190);
+            this.dgvVSA.Size = new System.Drawing.Size(527, 234);
             this.dgvVSA.TabIndex = 11;
             // 
             // btnLimpiarVSA
             // 
-            this.btnLimpiarVSA.Location = new System.Drawing.Point(228, 552);
-            this.btnLimpiarVSA.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLimpiarVSA.Location = new System.Drawing.Point(304, 679);
+            this.btnLimpiarVSA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpiarVSA.Name = "btnLimpiarVSA";
-            this.btnLimpiarVSA.Size = new System.Drawing.Size(122, 26);
+            this.btnLimpiarVSA.Size = new System.Drawing.Size(163, 32);
             this.btnLimpiarVSA.TabIndex = 13;
             this.btnLimpiarVSA.Text = "Limpiar";
             this.btnLimpiarVSA.UseVisualStyleBackColor = true;
@@ -160,10 +181,10 @@
             // 
             // btnActualizarVSA
             // 
-            this.btnActualizarVSA.Location = new System.Drawing.Point(91, 552);
-            this.btnActualizarVSA.Margin = new System.Windows.Forms.Padding(2);
+            this.btnActualizarVSA.Location = new System.Drawing.Point(121, 679);
+            this.btnActualizarVSA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizarVSA.Name = "btnActualizarVSA";
-            this.btnActualizarVSA.Size = new System.Drawing.Size(122, 26);
+            this.btnActualizarVSA.Size = new System.Drawing.Size(163, 32);
             this.btnActualizarVSA.TabIndex = 12;
             this.btnActualizarVSA.Text = "Actualizar";
             this.btnActualizarVSA.UseVisualStyleBackColor = true;
@@ -171,34 +192,146 @@
             // 
             // txtInicio
             // 
-            this.txtInicio.Location = new System.Drawing.Point(29, 514);
+            this.txtInicio.Location = new System.Drawing.Point(39, 633);
+            this.txtInicio.Margin = new System.Windows.Forms.Padding(4);
             this.txtInicio.Name = "txtInicio";
-            this.txtInicio.Size = new System.Drawing.Size(100, 20);
+            this.txtInicio.Size = new System.Drawing.Size(132, 22);
             this.txtInicio.TabIndex = 14;
             // 
             // txtFinal
             // 
-            this.txtFinal.Location = new System.Drawing.Point(146, 514);
+            this.txtFinal.Location = new System.Drawing.Point(195, 633);
+            this.txtFinal.Margin = new System.Windows.Forms.Padding(4);
             this.txtFinal.Name = "txtFinal";
-            this.txtFinal.Size = new System.Drawing.Size(100, 20);
+            this.txtFinal.Size = new System.Drawing.Size(132, 22);
             this.txtFinal.TabIndex = 15;
             // 
             // btnAnios
             // 
-            this.btnAnios.Location = new System.Drawing.Point(265, 510);
-            this.btnAnios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnios.Location = new System.Drawing.Point(353, 628);
+            this.btnAnios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAnios.Name = "btnAnios";
-            this.btnAnios.Size = new System.Drawing.Size(122, 26);
+            this.btnAnios.Size = new System.Drawing.Size(163, 32);
             this.btnAnios.TabIndex = 16;
             this.btnAnios.Text = "Agregar Años";
             this.btnAnios.UseVisualStyleBackColor = true;
             this.btnAnios.Click += new System.EventHandler(this.btnAnios_Click);
             // 
+            // btnActualizarResultado
+            // 
+            this.btnActualizarResultado.Location = new System.Drawing.Point(828, 633);
+            this.btnActualizarResultado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnActualizarResultado.Name = "btnActualizarResultado";
+            this.btnActualizarResultado.Size = new System.Drawing.Size(163, 32);
+            this.btnActualizarResultado.TabIndex = 20;
+            this.btnActualizarResultado.Text = "Actualizar Resultado";
+            this.btnActualizarResultado.UseVisualStyleBackColor = true;
+            this.btnActualizarResultado.Click += new System.EventHandler(this.btnActualizarResultado_Click);
+            // 
+            // dgvResultados
+            // 
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Location = new System.Drawing.Point(645, 370);
+            this.dgvResultados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.RowHeadersWidth = 51;
+            this.dgvResultados.RowTemplate.Height = 24;
+            this.dgvResultados.Size = new System.Drawing.Size(527, 234);
+            this.dgvResultados.TabIndex = 19;
+            this.dgvResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultados_CellContentClick);
+            // 
+            // chartBCG2
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartBCG2.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartBCG2.Legends.Add(legend1);
+            this.chartBCG2.Location = new System.Drawing.Point(240, 743);
+            this.chartBCG2.Name = "chartBCG2";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartBCG2.Series.Add(series1);
+            this.chartBCG2.Size = new System.Drawing.Size(809, 519);
+            this.chartBCG2.TabIndex = 22;
+            this.chartBCG2.Text = "chart2";
+            // 
+            // btnLimpiarChart
+            // 
+            this.btnLimpiarChart.Location = new System.Drawing.Point(628, 1302);
+            this.btnLimpiarChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLimpiarChart.Name = "btnLimpiarChart";
+            this.btnLimpiarChart.Size = new System.Drawing.Size(163, 32);
+            this.btnLimpiarChart.TabIndex = 24;
+            this.btnLimpiarChart.Text = "Limpiar";
+            this.btnLimpiarChart.UseVisualStyleBackColor = true;
+            this.btnLimpiarChart.Click += new System.EventHandler(this.btnLimpiarChart_Click);
+            // 
+            // btnChart
+            // 
+            this.btnChart.Location = new System.Drawing.Point(445, 1302);
+            this.btnChart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChart.Name = "btnChart";
+            this.btnChart.Size = new System.Drawing.Size(163, 32);
+            this.btnChart.TabIndex = 23;
+            this.btnChart.Text = "Actualizar";
+            this.btnChart.UseVisualStyleBackColor = true;
+            this.btnChart.Click += new System.EventHandler(this.btnChart_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1007, 743);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(165, 102);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1020, 1188);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(173, 102);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(68, 1188);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(181, 102);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 30;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(68, 743);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(181, 102);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 29;
+            this.pictureBox3.TabStop = false;
+            // 
             // FrmBCG3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 712);
+            this.ClientSize = new System.Drawing.Size(1296, 1378);
+            this.Controls.Add(this.btnLimpiarChart);
+            this.Controls.Add(this.btnChart);
+            this.Controls.Add(this.chartBCG2);
+            this.Controls.Add(this.btnActualizarResultado);
+            this.Controls.Add(this.dgvResultados);
             this.Controls.Add(this.btnAnios);
             this.Controls.Add(this.txtFinal);
             this.Controls.Add(this.txtInicio);
@@ -213,12 +346,22 @@
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.dgvPrevision);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox4);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmBCG3";
             this.Text = "FrmBCG3";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrevision)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVLC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVSA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBCG2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,5 +383,15 @@
         private System.Windows.Forms.TextBox txtInicio;
         private System.Windows.Forms.TextBox txtFinal;
         private System.Windows.Forms.Button btnAnios;
+        private System.Windows.Forms.Button btnActualizarResultado;
+        private System.Windows.Forms.DataGridView dgvResultados;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartBCG2;
+        private System.Windows.Forms.Button btnLimpiarChart;
+        private System.Windows.Forms.Button btnChart;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        //private System.Windows.Forms.DataVisualization.Charting.Chart chartBCG;
     }
 }

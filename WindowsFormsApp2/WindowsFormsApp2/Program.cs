@@ -16,7 +16,7 @@ namespace WindowsFormsApp2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmIdentif_Estrategia());
+            Application.Run(new FrmBCG3());
         }
     }
 }
