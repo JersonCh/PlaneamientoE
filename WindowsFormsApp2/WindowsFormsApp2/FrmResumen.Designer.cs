@@ -65,14 +65,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.txtt8 = new System.Windows.Forms.TextBox();
+            this.txtt7 = new System.Windows.Forms.TextBox();
+            this.txtt6 = new System.Windows.Forms.TextBox();
+            this.txtt5 = new System.Windows.Forms.TextBox();
+            this.txtt4 = new System.Windows.Forms.TextBox();
+            this.txtt3 = new System.Windows.Forms.TextBox();
+            this.txtt2 = new System.Windows.Forms.TextBox();
+            this.txtt1 = new System.Windows.Forms.TextBox();
             this.txtA4 = new System.Windows.Forms.TextBox();
             this.txtA3 = new System.Windows.Forms.TextBox();
             this.txtA2 = new System.Windows.Forms.TextBox();
@@ -92,18 +92,18 @@
             this.txtF3 = new System.Windows.Forms.TextBox();
             this.txtF2 = new System.Windows.Forms.TextBox();
             this.txtF1 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtt12 = new System.Windows.Forms.TextBox();
+            this.txtt11 = new System.Windows.Forms.TextBox();
+            this.txtt10 = new System.Windows.Forms.TextBox();
+            this.txtt9 = new System.Windows.Forms.TextBox();
             this.txtO4 = new System.Windows.Forms.TextBox();
             this.txtO3 = new System.Windows.Forms.TextBox();
             this.txtO2 = new System.Windows.Forms.TextBox();
             this.txtO1 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtt16 = new System.Windows.Forms.TextBox();
+            this.txtt15 = new System.Windows.Forms.TextBox();
+            this.txtt14 = new System.Windows.Forms.TextBox();
+            this.txtt13 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
@@ -358,7 +358,7 @@
             this.textBox31.Margin = new System.Windows.Forms.Padding(2);
             this.textBox31.Multiline = true;
             this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(282, 180);
+            this.textBox31.Size = new System.Drawing.Size(282, 611);
             this.textBox31.TabIndex = 106;
             // 
             // txtD1
@@ -370,6 +370,7 @@
             this.txtD1.Name = "txtD1";
             this.txtD1.Size = new System.Drawing.Size(271, 46);
             this.txtD1.TabIndex = 114;
+            this.txtD1.TextChanged += new System.EventHandler(this.txtD1_TextChanged);
             // 
             // button1
             // 
@@ -537,85 +538,85 @@
             this.textBox30.Text = "ACCIONES COMPETITIVAS";
             this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox38
+            // txtt8
             // 
-            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox38.Location = new System.Drawing.Point(449, 1149);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(257, 51);
-            this.textBox38.TabIndex = 113;
+            this.txtt8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt8.Location = new System.Drawing.Point(449, 1149);
+            this.txtt8.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt8.Multiline = true;
+            this.txtt8.Name = "txtt8";
+            this.txtt8.Size = new System.Drawing.Size(257, 51);
+            this.txtt8.TabIndex = 113;
             // 
-            // textBox39
+            // txtt7
             // 
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox39.Location = new System.Drawing.Point(449, 1098);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(257, 46);
-            this.textBox39.TabIndex = 112;
+            this.txtt7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt7.Location = new System.Drawing.Point(449, 1098);
+            this.txtt7.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt7.Multiline = true;
+            this.txtt7.Name = "txtt7";
+            this.txtt7.Size = new System.Drawing.Size(257, 46);
+            this.txtt7.TabIndex = 112;
             // 
-            // textBox36
+            // txtt6
             // 
-            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox36.Location = new System.Drawing.Point(449, 1043);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox36.Multiline = true;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(257, 51);
-            this.textBox36.TabIndex = 111;
+            this.txtt6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt6.Location = new System.Drawing.Point(449, 1043);
+            this.txtt6.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt6.Multiline = true;
+            this.txtt6.Name = "txtt6";
+            this.txtt6.Size = new System.Drawing.Size(257, 51);
+            this.txtt6.TabIndex = 111;
             // 
-            // textBox37
+            // txtt5
             // 
-            this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox37.Location = new System.Drawing.Point(449, 990);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(257, 49);
-            this.textBox37.TabIndex = 110;
+            this.txtt5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt5.Location = new System.Drawing.Point(449, 990);
+            this.txtt5.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt5.Multiline = true;
+            this.txtt5.Name = "txtt5";
+            this.txtt5.Size = new System.Drawing.Size(257, 49);
+            this.txtt5.TabIndex = 110;
             // 
-            // textBox34
+            // txtt4
             // 
-            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox34.Location = new System.Drawing.Point(449, 935);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(257, 51);
-            this.textBox34.TabIndex = 109;
+            this.txtt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt4.Location = new System.Drawing.Point(449, 935);
+            this.txtt4.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt4.Multiline = true;
+            this.txtt4.Name = "txtt4";
+            this.txtt4.Size = new System.Drawing.Size(257, 51);
+            this.txtt4.TabIndex = 109;
             // 
-            // textBox35
+            // txtt3
             // 
-            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox35.Location = new System.Drawing.Point(449, 883);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(257, 48);
-            this.textBox35.TabIndex = 108;
+            this.txtt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt3.Location = new System.Drawing.Point(449, 883);
+            this.txtt3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt3.Multiline = true;
+            this.txtt3.Name = "txtt3";
+            this.txtt3.Size = new System.Drawing.Size(257, 48);
+            this.txtt3.TabIndex = 108;
             // 
-            // textBox33
+            // txtt2
             // 
-            this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox33.Location = new System.Drawing.Point(449, 833);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(257, 46);
-            this.textBox33.TabIndex = 107;
+            this.txtt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt2.Location = new System.Drawing.Point(449, 833);
+            this.txtt2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt2.Multiline = true;
+            this.txtt2.Name = "txtt2";
+            this.txtt2.Size = new System.Drawing.Size(257, 46);
+            this.txtt2.TabIndex = 107;
             // 
-            // textBox29
+            // txtt1
             // 
-            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox29.Location = new System.Drawing.Point(449, 783);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(257, 46);
-            this.textBox29.TabIndex = 104;
+            this.txtt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt1.Location = new System.Drawing.Point(449, 783);
+            this.txtt1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt1.Multiline = true;
+            this.txtt1.Name = "txtt1";
+            this.txtt1.Size = new System.Drawing.Size(257, 46);
+            this.txtt1.TabIndex = 104;
             // 
             // txtA4
             // 
@@ -823,45 +824,45 @@
             this.txtF1.Size = new System.Drawing.Size(271, 50);
             this.txtF1.TabIndex = 171;
             // 
-            // textBox5
+            // txtt12
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(449, 1364);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(257, 51);
-            this.textBox5.TabIndex = 170;
+            this.txtt12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt12.Location = new System.Drawing.Point(449, 1364);
+            this.txtt12.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt12.Multiline = true;
+            this.txtt12.Name = "txtt12";
+            this.txtt12.Size = new System.Drawing.Size(257, 51);
+            this.txtt12.TabIndex = 170;
             // 
-            // textBox6
+            // txtt11
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(449, 1313);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(257, 46);
-            this.textBox6.TabIndex = 169;
+            this.txtt11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt11.Location = new System.Drawing.Point(449, 1313);
+            this.txtt11.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt11.Multiline = true;
+            this.txtt11.Name = "txtt11";
+            this.txtt11.Size = new System.Drawing.Size(257, 46);
+            this.txtt11.TabIndex = 169;
             // 
-            // textBox7
+            // txtt10
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(449, 1258);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(257, 51);
-            this.textBox7.TabIndex = 168;
+            this.txtt10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt10.Location = new System.Drawing.Point(449, 1258);
+            this.txtt10.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt10.Multiline = true;
+            this.txtt10.Name = "txtt10";
+            this.txtt10.Size = new System.Drawing.Size(257, 51);
+            this.txtt10.TabIndex = 168;
             // 
-            // textBox8
+            // txtt9
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(449, 1205);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(257, 49);
-            this.textBox8.TabIndex = 167;
+            this.txtt9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt9.Location = new System.Drawing.Point(449, 1205);
+            this.txtt9.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt9.Multiline = true;
+            this.txtt9.Name = "txtt9";
+            this.txtt9.Size = new System.Drawing.Size(257, 49);
+            this.txtt9.TabIndex = 167;
             // 
             // txtO4
             // 
@@ -882,6 +883,7 @@
             this.txtO3.Name = "txtO3";
             this.txtO3.Size = new System.Drawing.Size(271, 49);
             this.txtO3.TabIndex = 181;
+            this.txtO3.TextChanged += new System.EventHandler(this.txtO3_TextChanged);
             // 
             // txtO2
             // 
@@ -903,45 +905,45 @@
             this.txtO1.Size = new System.Drawing.Size(271, 50);
             this.txtO1.TabIndex = 179;
             // 
-            // textBox13
+            // txtt16
             // 
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Location = new System.Drawing.Point(449, 1579);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(257, 51);
-            this.textBox13.TabIndex = 178;
+            this.txtt16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt16.Location = new System.Drawing.Point(449, 1579);
+            this.txtt16.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt16.Multiline = true;
+            this.txtt16.Name = "txtt16";
+            this.txtt16.Size = new System.Drawing.Size(257, 51);
+            this.txtt16.TabIndex = 178;
             // 
-            // textBox14
+            // txtt15
             // 
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Location = new System.Drawing.Point(449, 1528);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(257, 46);
-            this.textBox14.TabIndex = 177;
+            this.txtt15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt15.Location = new System.Drawing.Point(449, 1528);
+            this.txtt15.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt15.Multiline = true;
+            this.txtt15.Name = "txtt15";
+            this.txtt15.Size = new System.Drawing.Size(257, 46);
+            this.txtt15.TabIndex = 177;
             // 
-            // textBox15
+            // txtt14
             // 
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Location = new System.Drawing.Point(449, 1473);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(257, 51);
-            this.textBox15.TabIndex = 176;
+            this.txtt14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt14.Location = new System.Drawing.Point(449, 1473);
+            this.txtt14.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt14.Multiline = true;
+            this.txtt14.Name = "txtt14";
+            this.txtt14.Size = new System.Drawing.Size(257, 51);
+            this.txtt14.TabIndex = 176;
             // 
-            // textBox16
+            // txtt13
             // 
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox16.Location = new System.Drawing.Point(449, 1420);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(257, 49);
-            this.textBox16.TabIndex = 175;
+            this.txtt13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtt13.Location = new System.Drawing.Point(449, 1420);
+            this.txtt13.Margin = new System.Windows.Forms.Padding(2);
+            this.txtt13.Multiline = true;
+            this.txtt13.Name = "txtt13";
+            this.txtt13.Size = new System.Drawing.Size(257, 49);
+            this.txtt13.TabIndex = 175;
             // 
             // FrmResumen
             // 
@@ -954,18 +956,18 @@
             this.Controls.Add(this.txtO3);
             this.Controls.Add(this.txtO2);
             this.Controls.Add(this.txtO1);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.txtt16);
+            this.Controls.Add(this.txtt15);
+            this.Controls.Add(this.txtt14);
+            this.Controls.Add(this.txtt13);
             this.Controls.Add(this.txtF4);
             this.Controls.Add(this.txtF3);
             this.Controls.Add(this.txtF2);
             this.Controls.Add(this.txtF1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtt12);
+            this.Controls.Add(this.txtt11);
+            this.Controls.Add(this.txtt10);
+            this.Controls.Add(this.txtt9);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -990,15 +992,15 @@
             this.Controls.Add(this.txtD3);
             this.Controls.Add(this.txtD2);
             this.Controls.Add(this.txtD1);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.textBox39);
-            this.Controls.Add(this.textBox36);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox33);
+            this.Controls.Add(this.txtt8);
+            this.Controls.Add(this.txtt7);
+            this.Controls.Add(this.txtt6);
+            this.Controls.Add(this.txtt5);
+            this.Controls.Add(this.txtt4);
+            this.Controls.Add(this.txtt3);
+            this.Controls.Add(this.txtt2);
             this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox29);
+            this.Controls.Add(this.txtt1);
             this.Controls.Add(this.textBox30);
             this.Controls.Add(this.textBox27);
             this.Controls.Add(this.txtObjetivoG3);
@@ -1071,14 +1073,14 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox txtt8;
+        private System.Windows.Forms.TextBox txtt7;
+        private System.Windows.Forms.TextBox txtt6;
+        private System.Windows.Forms.TextBox txtt5;
+        private System.Windows.Forms.TextBox txtt4;
+        private System.Windows.Forms.TextBox txtt3;
+        private System.Windows.Forms.TextBox txtt2;
+        private System.Windows.Forms.TextBox txtt1;
         private System.Windows.Forms.TextBox txtA4;
         private System.Windows.Forms.TextBox txtA3;
         private System.Windows.Forms.TextBox txtA2;
@@ -1098,17 +1100,17 @@
         private System.Windows.Forms.TextBox txtF3;
         private System.Windows.Forms.TextBox txtF2;
         private System.Windows.Forms.TextBox txtF1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtt12;
+        private System.Windows.Forms.TextBox txtt11;
+        private System.Windows.Forms.TextBox txtt10;
+        private System.Windows.Forms.TextBox txtt9;
         private System.Windows.Forms.TextBox txtO4;
         private System.Windows.Forms.TextBox txtO3;
         private System.Windows.Forms.TextBox txtO2;
         private System.Windows.Forms.TextBox txtO1;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtt16;
+        private System.Windows.Forms.TextBox txtt15;
+        private System.Windows.Forms.TextBox txtt14;
+        private System.Windows.Forms.TextBox txtt13;
     }
 }

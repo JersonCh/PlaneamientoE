@@ -51,6 +51,9 @@ namespace WindowsFormsApp2.Modelos
     partial void InsertObjetivoE(ObjetivoE instance);
     partial void UpdateObjetivoE(ObjetivoE instance);
     partial void DeleteObjetivoE(ObjetivoE instance);
+    partial void InsertMatrizCAME(MatrizCAME instance);
+    partial void UpdateMatrizCAME(MatrizCAME instance);
+    partial void DeleteMatrizCAME(MatrizCAME instance);
     #endregion
 		
 		public DataClasses3DataContext() : 
@@ -136,6 +139,14 @@ namespace WindowsFormsApp2.Modelos
 			get
 			{
 				return this.GetTable<ObjetivoE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<MatrizCAME> MatrizCAME
+		{
+			get
+			{
+				return this.GetTable<MatrizCAME>();
 			}
 		}
 		
@@ -292,6 +303,35 @@ namespace WindowsFormsApp2.Modelos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
 			return ((ISingleResult<SP_ListarAmenazasResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarMatrizCAME")]
+		public ISingleResult<SP_ListarMatrizCAMEResult> SP_ListarMatrizCAME([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ListarMatrizCAMEResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarMatrizCAME")]
+		public int SP_RegistrarMatrizCAME([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Char(2)")] string codigo_accion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] ref System.Nullable<int> nuevaMatrizCAMEId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), codigo_accion, descripcion, empresa_id, nuevaMatrizCAMEId);
+			nuevaMatrizCAMEId = ((System.Nullable<int>)(result.GetParameterValue(3)));
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarMatrizCAME2")]
+		public int SP_RegistrarMatrizCAME2([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarCAME2")]
+		public ISingleResult<SP_ListarCAME2Result> SP_ListarCAME2([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ListarCAME2Result>)(result.ReturnValue));
 		}
 	}
 	
@@ -1671,6 +1711,140 @@ namespace WindowsFormsApp2.Modelos
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.MatrizCAME")]
+	public partial class MatrizCAME : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _codigo_accion;
+		
+		private string _descripcion;
+		
+		private int _empresa_id;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void Oncodigo_accionChanging(string value);
+    partial void Oncodigo_accionChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void Onempresa_idChanging(int value);
+    partial void Onempresa_idChanged();
+    #endregion
+		
+		public MatrizCAME()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_codigo_accion", DbType="Char(2) NOT NULL", CanBeNull=false)]
+		public string codigo_accion
+		{
+			get
+			{
+				return this._codigo_accion;
+			}
+			set
+			{
+				if ((this._codigo_accion != value))
+				{
+					this.Oncodigo_accionChanging(value);
+					this.SendPropertyChanging();
+					this._codigo_accion = value;
+					this.SendPropertyChanged("codigo_accion");
+					this.Oncodigo_accionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int NOT NULL")]
+		public int empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					this.Onempresa_idChanging(value);
+					this.SendPropertyChanging();
+					this._empresa_id = value;
+					this.SendPropertyChanged("empresa_id");
+					this.Onempresa_idChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	public partial class SP_AutenticarResult
 	{
 		
@@ -2338,6 +2512,130 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._Amenaza_Descripcion != value))
 				{
 					this._Amenaza_Descripcion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarMatrizCAMEResult
+	{
+		
+		private int _id;
+		
+		private string _codigo_accion;
+		
+		private string _descripcion;
+		
+		private int _empresa_id;
+		
+		public SP_ListarMatrizCAMEResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this._id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_codigo_accion", DbType="Char(2) NOT NULL", CanBeNull=false)]
+		public string codigo_accion
+		{
+			get
+			{
+				return this._codigo_accion;
+			}
+			set
+			{
+				if ((this._codigo_accion != value))
+				{
+					this._codigo_accion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int NOT NULL")]
+		public int empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					this._empresa_id = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarCAME2Result
+	{
+		
+		private int _CAME_Id;
+		
+		private string _CAME_Descripcion;
+		
+		public SP_ListarCAME2Result()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CAME_Id", DbType="Int NOT NULL")]
+		public int CAME_Id
+		{
+			get
+			{
+				return this._CAME_Id;
+			}
+			set
+			{
+				if ((this._CAME_Id != value))
+				{
+					this._CAME_Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CAME_Descripcion", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string CAME_Descripcion
+		{
+			get
+			{
+				return this._CAME_Descripcion;
+			}
+			set
+			{
+				if ((this._CAME_Descripcion != value))
+				{
+					this._CAME_Descripcion = value;
 				}
 			}
 		}

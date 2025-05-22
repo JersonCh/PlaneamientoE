@@ -125,6 +125,25 @@ namespace WindowsFormsApp2
                     if (amenazas.Count > 2) txtA3.Text = amenazas.ElementAtOrDefault(2)?.Amenaza_Descripcion ?? "";
                     if (amenazas.Count > 3) txtA4.Text = amenazas.ElementAtOrDefault(3)?.Amenaza_Descripcion ?? "";
 
+                    // Listar Matriz CAME
+                    var came = dc.SP_ListarMatrizCAME(empresaId).ToList();
+
+                    if (came.Count > 0) txtt1.Text = came.ElementAtOrDefault(0)?.descripcion?? "";
+                    if (came.Count > 1) txtt2.Text = came.ElementAtOrDefault(1)?.descripcion ?? "";
+                    if (came.Count > 2) txtt3.Text = came.ElementAtOrDefault(2)?.descripcion ?? "";
+                    if (came.Count > 3) txtt4.Text = came.ElementAtOrDefault(3)?.descripcion ?? "";
+                    if (came.Count > 4) txtt5.Text = came.ElementAtOrDefault(4)?.descripcion ?? "";
+                    if (came.Count > 5) txtt6.Text = came.ElementAtOrDefault(5)?.descripcion ?? "";
+                    if (came.Count > 6) txtt7.Text = came.ElementAtOrDefault(6)?.descripcion ?? "";
+                    if (came.Count > 7) txtt8.Text = came.ElementAtOrDefault(7)?.descripcion ?? "";
+                    if (came.Count > 8) txtt9.Text = came.ElementAtOrDefault(8)?.descripcion ?? "";
+                    if (came.Count > 9) txtt10.Text = came.ElementAtOrDefault(9)?.descripcion ?? "";
+                    if (came.Count > 10) txtt11.Text = came.ElementAtOrDefault(10)?.descripcion ?? "";
+                    if (came.Count > 11) txtt12.Text = came.ElementAtOrDefault(11)?.descripcion ?? "";
+                    if (came.Count > 12) txtt13.Text = came.ElementAtOrDefault(12)?.descripcion ?? "";
+                    if (came.Count > 13) txtt14.Text = came.ElementAtOrDefault(13)?.descripcion ?? "";
+                    if (came.Count > 14) txtt15.Text = came.ElementAtOrDefault(14)?.descripcion ?? "";
+                    if (came.Count > 15) txtt16.Text = came.ElementAtOrDefault(15)?.descripcion ?? "";
 
                 }
             }
@@ -164,6 +183,16 @@ namespace WindowsFormsApp2
         private void btncerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtD1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtO3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

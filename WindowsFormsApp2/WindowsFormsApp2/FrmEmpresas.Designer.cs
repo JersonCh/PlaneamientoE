@@ -32,7 +32,6 @@ namespace WindowsFormsApp2
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmpresas));
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvEmpresas = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -40,20 +39,17 @@ namespace WindowsFormsApp2
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btncerrar = new System.Windows.Forms.PictureBox();
-            this.btnminimisar = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresas)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAgregar.BackColor = System.Drawing.Color.Black;
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -72,6 +68,8 @@ namespace WindowsFormsApp2
             // dgvEmpresas
             // 
             this.dgvEmpresas.AllowUserToOrderColumns = true;
+            this.dgvEmpresas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvEmpresas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvEmpresas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvEmpresas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -107,6 +105,7 @@ namespace WindowsFormsApp2
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuscar.BackColor = System.Drawing.Color.Black;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -114,7 +113,7 @@ namespace WindowsFormsApp2
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(793, 130);
+            this.btnBuscar.Location = new System.Drawing.Point(793, 123);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(180, 37);
             this.btnBuscar.TabIndex = 83;
@@ -124,6 +123,8 @@ namespace WindowsFormsApp2
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(34, 130);
@@ -135,6 +136,8 @@ namespace WindowsFormsApp2
             // 
             // txtBuscar
             // 
+            this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.Location = new System.Drawing.Point(232, 121);
@@ -146,11 +149,10 @@ namespace WindowsFormsApp2
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DarkBlue;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btncerrar);
-            this.panel1.Controls.Add(this.btnminimisar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1010, 100);
@@ -158,6 +160,7 @@ namespace WindowsFormsApp2
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(398, 23);
@@ -167,32 +170,9 @@ namespace WindowsFormsApp2
             this.label1.Text = "EMPRESAS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btncerrar
-            // 
-            this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
-            this.btncerrar.Location = new System.Drawing.Point(981, 11);
-            this.btncerrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(18, 20);
-            this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btncerrar.TabIndex = 89;
-            this.btncerrar.TabStop = false;
-            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
-            // 
-            // btnminimisar
-            // 
-            this.btnminimisar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimisar.Image")));
-            this.btnminimisar.Location = new System.Drawing.Point(955, 11);
-            this.btnminimisar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnminimisar.Name = "btnminimisar";
-            this.btnminimisar.Size = new System.Drawing.Size(18, 20);
-            this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnminimisar.TabIndex = 88;
-            this.btnminimisar.TabStop = false;
-            this.btnminimisar.Click += new System.EventHandler(this.btnminimisar_Click);
-            // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -209,6 +189,8 @@ namespace WindowsFormsApp2
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.Black;
             this.pictureBox4.Location = new System.Drawing.Point(232, 161);
             this.pictureBox4.Name = "pictureBox4";
@@ -218,6 +200,7 @@ namespace WindowsFormsApp2
             // 
             // panelContenedor
             // 
+            this.panelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelContenedor.Location = new System.Drawing.Point(38, 422);
             this.panelContenedor.Name = "panelContenedor";
@@ -245,8 +228,6 @@ namespace WindowsFormsApp2
             this.Text = "FrmEmpresas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresas)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,8 +241,6 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.PictureBox btncerrar;
-        private System.Windows.Forms.PictureBox btnminimisar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;

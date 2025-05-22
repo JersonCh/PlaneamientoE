@@ -69,6 +69,14 @@
       <Association Name="ObjetivoG_ObjetivoE" Member="ObjetivoG" ThisKey="objetivo_id" OtherKey="id" Type="ObjetivoG" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.MatrizCAME" Member="MatrizCAME">
+    <Type Name="MatrizCAME">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="codigo_accion" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
   <Function Name="dbo.SP_Autenticar" Method="SP_Autenticar">
     <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="PasswordHash" Parameter="passwordHash" Type="System.String" DbType="VarChar(64)" />
@@ -220,6 +228,34 @@
     <ElementType Name="SP_ListarAmenazasResult">
       <Column Name="Amenaza_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Amenaza_Descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ListarMatrizCAME" Method="SP_ListarMatrizCAME">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarMatrizCAMEResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codigo_accion" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_RegistrarMatrizCAME" Method="SP_RegistrarMatrizCAME">
+    <Parameter Name="codigo_accion" Type="System.String" DbType="Char(2)" />
+    <Parameter Name="descripcion" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nuevaMatrizCAMEId" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_RegistrarMatrizCAME2" Method="SP_RegistrarMatrizCAME2">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ListarCAME2" Method="SP_ListarCAME2">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarCAME2Result">
+      <Column Name="CAME_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CAME_Descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>

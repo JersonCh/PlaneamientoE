@@ -15,6 +15,8 @@ namespace WindowsFormsApp2
         public FrmDashBoard()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.Sizable;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void AbrirFormularioHijo(Form formularioHijo)
@@ -84,6 +86,16 @@ namespace WindowsFormsApp2
         private void btnPest_Click(object sender, EventArgs e)
         {
             AbrirFormularioHijo(new FrmPest());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmMatrizCame());
+        }
+
+        private void btnIdentificacion_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmIdentif_Estrategia());
         }
     }
 }

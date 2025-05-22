@@ -49,6 +49,10 @@ namespace WindowsFormsApp2
             }
         }
 
+        public FrmBCGgenerado()
+        {
+        }
+
         private void ConfigurarFondoTransparente()
         {
             // Hacer transparente el control chart

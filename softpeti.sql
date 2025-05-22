@@ -159,6 +159,46 @@ BEGIN
 	);
 END
 GO
+	-- TABLA MATRIZ CAME
+	CREATE TABLE MatrizCAME (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    codigo_accion CHAR(2) NOT NULL,  -- Código del 1 al 16
+    descripcion VARCHAR(MAX) NOT NULL,
+    empresa_id INT NOT NULL  -- ID de la empresa a la que pertenece la acción
+);
+	-- TABLA AUTO CADENA VA L O R
+	CREATE TABLE AutoCadenaValor (
+		id INT PRIMARY KEY IDENTITY(1,1),
+		empresa_id INT NOT NULL,
+		p1 INT NOT NULL,
+		p2 INT NOT NULL,
+		p3 INT NOT NULL,
+		p4 INT NOT NULL,
+		p5 INT NOT NULL,
+		p6 INT NOT NULL,
+		p7 INT NOT NULL,
+		p8 INT NOT NULL,
+		p9 INT NOT NULL,
+		p10 INT NOT NULL,
+		p11 INT NOT NULL,
+		p12 INT NOT NULL,
+		p13 INT NOT NULL,
+		p14 INT NOT NULL,
+		p15 INT NOT NULL,
+		p16 INT NOT NULL,
+		p17 INT NOT NULL,
+		p18 INT NOT NULL,
+		p19 INT NOT NULL,
+		p20 INT NOT NULL,
+		p21 INT NOT NULL,
+		p22 INT NOT NULL,
+		p23 INT NOT NULL,
+		p24 INT NOT NULL,
+		p25 INT NOT NULL,
+		total INT NOT NULL
+	);
+
+
 ----------------------------P R O C E D I M I E N T O S   -- A L M A C E N A D O S   ------------------------------------
 
 -- SP: Registrar Empresa
@@ -494,6 +534,78 @@ BEGIN
     ORDER BY A.id;
 END
 GO
+
+-- REGISTRAR CAME
+IF OBJECT_ID('SP_RegistrarMatrizCAME') IS NOT NULL
+    DROP PROCEDURE SP_RegistrarMatrizCAME;
+GO
+
+CREATE OR ALTER PROCEDURE SP_RegistrarMatrizCAME
+    @codigo_accion CHAR(2),
+    @descripcion VARCHAR(MAX),
+    @empresa_id INT,
+    @nuevaMatrizCAMEId INT OUTPUT
+AS
+BEGIN
+    INSERT INTO MatrizCAME (codigo_accion, descripcion, empresa_id)
+    VALUES (@codigo_accion, @descripcion, @empresa_id);
+
+    SET @nuevaMatrizCAMEId = SCOPE_IDENTITY();
+END
+GO
+-- REGISTRAR C A D E N A   V A L O R ----
+	IF OBJECT_ID('SP_RegistrarAutoCadenaValor') IS NOT NULL
+		DROP PROCEDURE SP_RegistrarAutoCadenaValor;
+	GO
+
+	CREATE PROCEDURE SP_RegistrarAutoCadenaValor
+		@empresa_id INT,
+		@p1 INT, @p2 INT, @p3 INT, @p4 INT, @p5 INT,
+		@p6 INT, @p7 INT, @p8 INT, @p9 INT, @p10 INT,
+		@p11 INT, @p12 INT, @p13 INT, @p14 INT, @p15 INT,
+		@p16 INT, @p17 INT, @p18 INT, @p19 INT, @p20 INT,
+		@p21 INT, @p22 INT, @p23 INT, @p24 INT, @p25 INT,
+		@total INT
+	AS
+	BEGIN
+		INSERT INTO AutoCadenaValor (
+			empresa_id, p1, p2, p3, p4, p5,
+			p6, p7, p8, p9, p10,
+			p11, p12, p13, p14, p15,
+			p16, p17, p18, p19, p20,
+			p21, p22, p23, p24, p25,
+			total
+		)
+		VALUES (
+			@empresa_id, @p1, @p2, @p3, @p4, @p5,
+			@p6, @p7, @p8, @p9, @p10,
+			@p11, @p12, @p13, @p14, @p15,
+			@p16, @p17, @p18, @p19, @p20,
+			@p21, @p22, @p23, @p24, @p25,
+			@total
+		);
+	END;
+	GO
+
+	-- SP: Listar Matriz CAME
+	IF OBJECT_ID('SP_ListarMatrizCAME') IS NOT NULL
+		DROP PROCEDURE SP_ListarMatrizCAME;
+	GO
+
+	CREATE OR ALTER PROCEDURE SP_ListarMatrizCAME
+		@empresa_id INT
+	AS
+	BEGIN
+		SELECT 
+			id,
+			codigo_accion,
+			descripcion,
+			empresa_id
+		FROM MatrizCAME
+		WHERE empresa_id = @empresa_id
+		ORDER BY codigo_accion;
+	END
+	GO
 
 
 ----------------------------I N S E R C I O N E S  --------------------------------------

@@ -117,10 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>A continuación y para finalizar de elaborar un Plan Estratégico, además de tener 
-identificada la estrategia es necesario determinar acciones que permitan 
-corregir las debilidades, afrontar las amenazas, mantener las fortalezas y explotar las 
-oportunidades. </value>
-  </data>
 </root>

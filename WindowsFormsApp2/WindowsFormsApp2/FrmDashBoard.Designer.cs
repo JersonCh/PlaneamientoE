@@ -80,7 +80,7 @@
             this.btnResumen.ForeColor = System.Drawing.Color.White;
             this.btnResumen.Location = new System.Drawing.Point(-1, 748);
             this.btnResumen.Name = "btnResumen";
-            this.btnResumen.Size = new System.Drawing.Size(331, 55);
+            this.btnResumen.Size = new System.Drawing.Size(330, 55);
             this.btnResumen.TabIndex = 155;
             this.btnResumen.Text = "RESUMEN DEL PLAN EJECUTIVO";
             this.btnResumen.UseVisualStyleBackColor = false;
@@ -104,6 +104,7 @@
             this.button4.Text = "  MATRIZ CAME";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnInformacionEmpresa
             // 
@@ -163,6 +164,7 @@
             this.btnIdentificacion.Text = "  IDENTIFICACION ESTRATEGICA";
             this.btnIdentificacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnIdentificacion.UseVisualStyleBackColor = false;
+            this.btnIdentificacion.Click += new System.EventHandler(this.btnIdentificacion_Click);
             // 
             // button2
             // 
@@ -328,11 +330,13 @@
             // 
             // panelContenedor
             // 
+            this.panelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelContenedor.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelContenedor.Location = new System.Drawing.Point(326, 0);
+            this.panelContenedor.Location = new System.Drawing.Point(327, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1033, 803);
+            this.panelContenedor.Size = new System.Drawing.Size(1032, 803);
             this.panelContenedor.TabIndex = 74;
             // 
             // FrmDashBoard

@@ -40,7 +40,7 @@ namespace WindowsFormsApp2
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new FrmAutodiagnosticoBCG_2());
+        
         }
 
         private void btnminimisar_Click(object sender, EventArgs e)
@@ -56,6 +56,11 @@ namespace WindowsFormsApp2
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new FrmBCG3());
         }
     }
 }
