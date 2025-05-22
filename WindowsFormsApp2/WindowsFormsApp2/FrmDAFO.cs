@@ -16,7 +16,7 @@ namespace WindowsFormsApp2
     {
         public FrmDAFO()
         {
-            InitializeComponent(); InitializeComponent();
+            InitializeComponent(); 
             CargarDatos();  // Llamar al método para cargar los datos
 
         }
