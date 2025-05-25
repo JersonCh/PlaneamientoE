@@ -139,7 +139,7 @@
             this.btnLas5Fuerzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLas5Fuerzas.Location = new System.Drawing.Point(0, 494);
             this.btnLas5Fuerzas.Name = "btnLas5Fuerzas";
-            this.btnLas5Fuerzas.Size = new System.Drawing.Size(330, 56);
+            this.btnLas5Fuerzas.Size = new System.Drawing.Size(311, 56);
             this.btnLas5Fuerzas.TabIndex = 153;
             this.btnLas5Fuerzas.Text = "  LAS 5 FUERZAS DE PORTER";
             this.btnLas5Fuerzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -277,7 +277,7 @@
             this.btnAnalisisIyE.ForeColor = System.Drawing.Color.White;
             this.btnAnalisisIyE.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalisisIyE.Image")));
             this.btnAnalisisIyE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnalisisIyE.Location = new System.Drawing.Point(0, 308);
+            this.btnAnalisisIyE.Location = new System.Drawing.Point(-4, 308);
             this.btnAnalisisIyE.Name = "btnAnalisisIyE";
             this.btnAnalisisIyE.Size = new System.Drawing.Size(330, 56);
             this.btnAnalisisIyE.TabIndex = 150;
@@ -334,9 +334,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelContenedor.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panelContenedor.Location = new System.Drawing.Point(327, 0);
+            this.panelContenedor.Location = new System.Drawing.Point(317, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1032, 803);
+            this.panelContenedor.Size = new System.Drawing.Size(1042, 803);
             this.panelContenedor.TabIndex = 74;
             // 
             // FrmDashBoard

@@ -252,7 +252,7 @@ namespace WindowsFormsApp2
             this.txtA2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtA2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtA2.Location = new System.Drawing.Point(565, 1543);
-            this.txtA2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA2.Margin = new System.Windows.Forms.Padding(2);
             this.txtA2.Multiline = true;
             this.txtA2.Name = "txtA2";
             this.txtA2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -278,7 +278,7 @@ namespace WindowsFormsApp2
             this.txtA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtA1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtA1.Location = new System.Drawing.Point(566, 1493);
-            this.txtA1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA1.Margin = new System.Windows.Forms.Padding(2);
             this.txtA1.Multiline = true;
             this.txtA1.Name = "txtA1";
             this.txtA1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -292,7 +292,7 @@ namespace WindowsFormsApp2
             this.txtO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtO2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtO2.Location = new System.Drawing.Point(117, 1543);
-            this.txtO2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtO2.Margin = new System.Windows.Forms.Padding(2);
             this.txtO2.Multiline = true;
             this.txtO2.Name = "txtO2";
             this.txtO2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -318,7 +318,7 @@ namespace WindowsFormsApp2
             this.txtO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtO1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtO1.Location = new System.Drawing.Point(118, 1493);
-            this.txtO1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtO1.Margin = new System.Windows.Forms.Padding(2);
             this.txtO1.Multiline = true;
             this.txtO1.Name = "txtO1";
             this.txtO1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -344,7 +344,7 @@ namespace WindowsFormsApp2
             this.txtTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.Location = new System.Drawing.Point(810, 1324);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Multiline = true;
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -371,7 +371,7 @@ namespace WindowsFormsApp2
             this.txtConclusion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtConclusion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConclusion.Location = new System.Drawing.Point(168, 1285);
-            this.txtConclusion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConclusion.Margin = new System.Windows.Forms.Padding(2);
             this.txtConclusion.Multiline = true;
             this.txtConclusion.Name = "txtConclusion";
             this.txtConclusion.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -411,7 +411,7 @@ namespace WindowsFormsApp2
             this.txtSustitutos5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSustitutos5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSustitutos5.Location = new System.Drawing.Point(701, 1235);
-            this.txtSustitutos5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSustitutos5.Margin = new System.Windows.Forms.Padding(2);
             this.txtSustitutos5.Multiline = true;
             this.txtSustitutos5.Name = "txtSustitutos5";
             this.txtSustitutos5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -425,7 +425,7 @@ namespace WindowsFormsApp2
             this.txtSustitutos4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSustitutos4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSustitutos4.Location = new System.Drawing.Point(598, 1235);
-            this.txtSustitutos4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSustitutos4.Margin = new System.Windows.Forms.Padding(2);
             this.txtSustitutos4.Multiline = true;
             this.txtSustitutos4.Name = "txtSustitutos4";
             this.txtSustitutos4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -439,7 +439,7 @@ namespace WindowsFormsApp2
             this.txtSustitutos3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSustitutos3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSustitutos3.Location = new System.Drawing.Point(495, 1235);
-            this.txtSustitutos3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSustitutos3.Margin = new System.Windows.Forms.Padding(2);
             this.txtSustitutos3.Multiline = true;
             this.txtSustitutos3.Name = "txtSustitutos3";
             this.txtSustitutos3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -453,7 +453,7 @@ namespace WindowsFormsApp2
             this.txtSustitutos2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSustitutos2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSustitutos2.Location = new System.Drawing.Point(392, 1235);
-            this.txtSustitutos2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSustitutos2.Margin = new System.Windows.Forms.Padding(2);
             this.txtSustitutos2.Multiline = true;
             this.txtSustitutos2.Name = "txtSustitutos2";
             this.txtSustitutos2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -504,7 +504,7 @@ namespace WindowsFormsApp2
             this.txtSustitutos1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSustitutos1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSustitutos1.Location = new System.Drawing.Point(289, 1235);
-            this.txtSustitutos1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSustitutos1.Margin = new System.Windows.Forms.Padding(2);
             this.txtSustitutos1.Multiline = true;
             this.txtSustitutos1.Name = "txtSustitutos1";
             this.txtSustitutos1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -570,7 +570,7 @@ namespace WindowsFormsApp2
             this.txtCambio5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCambio5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCambio5.Location = new System.Drawing.Point(702, 1113);
-            this.txtCambio5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCambio5.Margin = new System.Windows.Forms.Padding(2);
             this.txtCambio5.Multiline = true;
             this.txtCambio5.Name = "txtCambio5";
             this.txtCambio5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -584,7 +584,7 @@ namespace WindowsFormsApp2
             this.txtRentClientes5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentClientes5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentClientes5.Location = new System.Drawing.Point(702, 1062);
-            this.txtRentClientes5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentClientes5.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentClientes5.Multiline = true;
             this.txtRentClientes5.Name = "txtRentClientes5";
             this.txtRentClientes5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -598,7 +598,7 @@ namespace WindowsFormsApp2
             this.txtIntegracion5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIntegracion5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIntegracion5.Location = new System.Drawing.Point(702, 1010);
-            this.txtIntegracion5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIntegracion5.Margin = new System.Windows.Forms.Padding(2);
             this.txtIntegracion5.Multiline = true;
             this.txtIntegracion5.Name = "txtIntegracion5";
             this.txtIntegracion5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -612,7 +612,7 @@ namespace WindowsFormsApp2
             this.txtNumClientes5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNumClientes5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumClientes5.Location = new System.Drawing.Point(702, 959);
-            this.txtNumClientes5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumClientes5.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumClientes5.Multiline = true;
             this.txtNumClientes5.Name = "txtNumClientes5";
             this.txtNumClientes5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -626,7 +626,7 @@ namespace WindowsFormsApp2
             this.txtCambio4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCambio4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCambio4.Location = new System.Drawing.Point(599, 1113);
-            this.txtCambio4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCambio4.Margin = new System.Windows.Forms.Padding(2);
             this.txtCambio4.Multiline = true;
             this.txtCambio4.Name = "txtCambio4";
             this.txtCambio4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -640,7 +640,7 @@ namespace WindowsFormsApp2
             this.txtRentClientes4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentClientes4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentClientes4.Location = new System.Drawing.Point(599, 1062);
-            this.txtRentClientes4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentClientes4.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentClientes4.Multiline = true;
             this.txtRentClientes4.Name = "txtRentClientes4";
             this.txtRentClientes4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -654,7 +654,7 @@ namespace WindowsFormsApp2
             this.txtIntegracion4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIntegracion4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIntegracion4.Location = new System.Drawing.Point(599, 1010);
-            this.txtIntegracion4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIntegracion4.Margin = new System.Windows.Forms.Padding(2);
             this.txtIntegracion4.Multiline = true;
             this.txtIntegracion4.Name = "txtIntegracion4";
             this.txtIntegracion4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -668,7 +668,7 @@ namespace WindowsFormsApp2
             this.txtNumClientes4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNumClientes4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumClientes4.Location = new System.Drawing.Point(599, 959);
-            this.txtNumClientes4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumClientes4.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumClientes4.Multiline = true;
             this.txtNumClientes4.Name = "txtNumClientes4";
             this.txtNumClientes4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -682,7 +682,7 @@ namespace WindowsFormsApp2
             this.txtCambio3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCambio3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCambio3.Location = new System.Drawing.Point(496, 1113);
-            this.txtCambio3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCambio3.Margin = new System.Windows.Forms.Padding(2);
             this.txtCambio3.Multiline = true;
             this.txtCambio3.Name = "txtCambio3";
             this.txtCambio3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -696,7 +696,7 @@ namespace WindowsFormsApp2
             this.txtRentClientes3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentClientes3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentClientes3.Location = new System.Drawing.Point(496, 1062);
-            this.txtRentClientes3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentClientes3.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentClientes3.Multiline = true;
             this.txtRentClientes3.Name = "txtRentClientes3";
             this.txtRentClientes3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -710,7 +710,7 @@ namespace WindowsFormsApp2
             this.txtIntegracion3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIntegracion3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIntegracion3.Location = new System.Drawing.Point(496, 1010);
-            this.txtIntegracion3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIntegracion3.Margin = new System.Windows.Forms.Padding(2);
             this.txtIntegracion3.Multiline = true;
             this.txtIntegracion3.Name = "txtIntegracion3";
             this.txtIntegracion3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -724,7 +724,7 @@ namespace WindowsFormsApp2
             this.txtNumClientes3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNumClientes3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumClientes3.Location = new System.Drawing.Point(496, 959);
-            this.txtNumClientes3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumClientes3.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumClientes3.Multiline = true;
             this.txtNumClientes3.Name = "txtNumClientes3";
             this.txtNumClientes3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -738,7 +738,7 @@ namespace WindowsFormsApp2
             this.txtCambio2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCambio2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCambio2.Location = new System.Drawing.Point(393, 1113);
-            this.txtCambio2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCambio2.Margin = new System.Windows.Forms.Padding(2);
             this.txtCambio2.Multiline = true;
             this.txtCambio2.Name = "txtCambio2";
             this.txtCambio2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -752,7 +752,7 @@ namespace WindowsFormsApp2
             this.txtRentClientes2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentClientes2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentClientes2.Location = new System.Drawing.Point(393, 1062);
-            this.txtRentClientes2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentClientes2.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentClientes2.Multiline = true;
             this.txtRentClientes2.Name = "txtRentClientes2";
             this.txtRentClientes2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -766,7 +766,7 @@ namespace WindowsFormsApp2
             this.txtIntegracion2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIntegracion2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIntegracion2.Location = new System.Drawing.Point(393, 1010);
-            this.txtIntegracion2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIntegracion2.Margin = new System.Windows.Forms.Padding(2);
             this.txtIntegracion2.Multiline = true;
             this.txtIntegracion2.Name = "txtIntegracion2";
             this.txtIntegracion2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -780,7 +780,7 @@ namespace WindowsFormsApp2
             this.txtNumClientes2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNumClientes2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumClientes2.Location = new System.Drawing.Point(393, 959);
-            this.txtNumClientes2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumClientes2.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumClientes2.Multiline = true;
             this.txtNumClientes2.Name = "txtNumClientes2";
             this.txtNumClientes2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -794,7 +794,7 @@ namespace WindowsFormsApp2
             this.txtCambio1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCambio1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCambio1.Location = new System.Drawing.Point(290, 1113);
-            this.txtCambio1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCambio1.Margin = new System.Windows.Forms.Padding(2);
             this.txtCambio1.Multiline = true;
             this.txtCambio1.Name = "txtCambio1";
             this.txtCambio1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -808,7 +808,7 @@ namespace WindowsFormsApp2
             this.txtRentClientes1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentClientes1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentClientes1.Location = new System.Drawing.Point(290, 1062);
-            this.txtRentClientes1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentClientes1.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentClientes1.Multiline = true;
             this.txtRentClientes1.Name = "txtRentClientes1";
             this.txtRentClientes1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -822,7 +822,7 @@ namespace WindowsFormsApp2
             this.txtIntegracion1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIntegracion1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIntegracion1.Location = new System.Drawing.Point(290, 1010);
-            this.txtIntegracion1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIntegracion1.Margin = new System.Windows.Forms.Padding(2);
             this.txtIntegracion1.Multiline = true;
             this.txtIntegracion1.Name = "txtIntegracion1";
             this.txtIntegracion1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -948,7 +948,7 @@ namespace WindowsFormsApp2
             this.txtNumClientes1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNumClientes1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumClientes1.Location = new System.Drawing.Point(290, 959);
-            this.txtNumClientes1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumClientes1.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumClientes1.Multiline = true;
             this.txtNumClientes1.Name = "txtNumClientes1";
             this.txtNumClientes1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1040,7 +1040,7 @@ namespace WindowsFormsApp2
             this.txtReaccion5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReaccion5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReaccion5.Location = new System.Drawing.Point(702, 840);
-            this.txtReaccion5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReaccion5.Margin = new System.Windows.Forms.Padding(2);
             this.txtReaccion5.Multiline = true;
             this.txtReaccion5.Name = "txtReaccion5";
             this.txtReaccion5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1054,7 +1054,7 @@ namespace WindowsFormsApp2
             this.txtTramites5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTramites5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTramites5.Location = new System.Drawing.Point(702, 789);
-            this.txtTramites5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTramites5.Margin = new System.Windows.Forms.Padding(2);
             this.txtTramites5.Multiline = true;
             this.txtTramites5.Name = "txtTramites5";
             this.txtTramites5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1068,7 +1068,7 @@ namespace WindowsFormsApp2
             this.txtReglamentos5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReglamentos5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReglamentos5.Location = new System.Drawing.Point(702, 737);
-            this.txtReglamentos5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReglamentos5.Margin = new System.Windows.Forms.Padding(2);
             this.txtReglamentos5.Multiline = true;
             this.txtReglamentos5.Name = "txtReglamentos5";
             this.txtReglamentos5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1082,7 +1082,7 @@ namespace WindowsFormsApp2
             this.txtAccesoTec5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAccesoTec5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccesoTec5.Location = new System.Drawing.Point(702, 686);
-            this.txtAccesoTec5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAccesoTec5.Margin = new System.Windows.Forms.Padding(2);
             this.txtAccesoTec5.Multiline = true;
             this.txtAccesoTec5.Name = "txtAccesoTec5";
             this.txtAccesoTec5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1096,7 +1096,7 @@ namespace WindowsFormsApp2
             this.txtCapital5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCapital5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCapital5.Location = new System.Drawing.Point(702, 634);
-            this.txtCapital5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCapital5.Margin = new System.Windows.Forms.Padding(2);
             this.txtCapital5.Multiline = true;
             this.txtCapital5.Name = "txtCapital5";
             this.txtCapital5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1110,7 +1110,7 @@ namespace WindowsFormsApp2
             this.txtEconomias5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEconomias5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEconomias5.Location = new System.Drawing.Point(702, 583);
-            this.txtEconomias5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEconomias5.Margin = new System.Windows.Forms.Padding(2);
             this.txtEconomias5.Multiline = true;
             this.txtEconomias5.Name = "txtEconomias5";
             this.txtEconomias5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1124,7 +1124,7 @@ namespace WindowsFormsApp2
             this.txtReaccion4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReaccion4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReaccion4.Location = new System.Drawing.Point(599, 840);
-            this.txtReaccion4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReaccion4.Margin = new System.Windows.Forms.Padding(2);
             this.txtReaccion4.Multiline = true;
             this.txtReaccion4.Name = "txtReaccion4";
             this.txtReaccion4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1138,7 +1138,7 @@ namespace WindowsFormsApp2
             this.txtTramites4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTramites4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTramites4.Location = new System.Drawing.Point(599, 789);
-            this.txtTramites4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTramites4.Margin = new System.Windows.Forms.Padding(2);
             this.txtTramites4.Multiline = true;
             this.txtTramites4.Name = "txtTramites4";
             this.txtTramites4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1152,7 +1152,7 @@ namespace WindowsFormsApp2
             this.txtReglamentos4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReglamentos4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReglamentos4.Location = new System.Drawing.Point(599, 737);
-            this.txtReglamentos4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReglamentos4.Margin = new System.Windows.Forms.Padding(2);
             this.txtReglamentos4.Multiline = true;
             this.txtReglamentos4.Name = "txtReglamentos4";
             this.txtReglamentos4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1166,7 +1166,7 @@ namespace WindowsFormsApp2
             this.txtAccesoTec4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAccesoTec4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccesoTec4.Location = new System.Drawing.Point(599, 686);
-            this.txtAccesoTec4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAccesoTec4.Margin = new System.Windows.Forms.Padding(2);
             this.txtAccesoTec4.Multiline = true;
             this.txtAccesoTec4.Name = "txtAccesoTec4";
             this.txtAccesoTec4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1180,7 +1180,7 @@ namespace WindowsFormsApp2
             this.txtCapital4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCapital4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCapital4.Location = new System.Drawing.Point(599, 634);
-            this.txtCapital4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCapital4.Margin = new System.Windows.Forms.Padding(2);
             this.txtCapital4.Multiline = true;
             this.txtCapital4.Name = "txtCapital4";
             this.txtCapital4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1194,7 +1194,7 @@ namespace WindowsFormsApp2
             this.txtEconomias4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEconomias4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEconomias4.Location = new System.Drawing.Point(599, 583);
-            this.txtEconomias4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEconomias4.Margin = new System.Windows.Forms.Padding(2);
             this.txtEconomias4.Multiline = true;
             this.txtEconomias4.Name = "txtEconomias4";
             this.txtEconomias4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1208,7 +1208,7 @@ namespace WindowsFormsApp2
             this.txtReaccion3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReaccion3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReaccion3.Location = new System.Drawing.Point(496, 840);
-            this.txtReaccion3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReaccion3.Margin = new System.Windows.Forms.Padding(2);
             this.txtReaccion3.Multiline = true;
             this.txtReaccion3.Name = "txtReaccion3";
             this.txtReaccion3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1222,7 +1222,7 @@ namespace WindowsFormsApp2
             this.txtTramites3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTramites3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTramites3.Location = new System.Drawing.Point(496, 789);
-            this.txtTramites3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTramites3.Margin = new System.Windows.Forms.Padding(2);
             this.txtTramites3.Multiline = true;
             this.txtTramites3.Name = "txtTramites3";
             this.txtTramites3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1236,7 +1236,7 @@ namespace WindowsFormsApp2
             this.txtReglamentos3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReglamentos3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReglamentos3.Location = new System.Drawing.Point(496, 737);
-            this.txtReglamentos3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReglamentos3.Margin = new System.Windows.Forms.Padding(2);
             this.txtReglamentos3.Multiline = true;
             this.txtReglamentos3.Name = "txtReglamentos3";
             this.txtReglamentos3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1250,7 +1250,7 @@ namespace WindowsFormsApp2
             this.txtAccesoTec3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAccesoTec3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccesoTec3.Location = new System.Drawing.Point(496, 686);
-            this.txtAccesoTec3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAccesoTec3.Margin = new System.Windows.Forms.Padding(2);
             this.txtAccesoTec3.Multiline = true;
             this.txtAccesoTec3.Name = "txtAccesoTec3";
             this.txtAccesoTec3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1264,7 +1264,7 @@ namespace WindowsFormsApp2
             this.txtCapital3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCapital3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCapital3.Location = new System.Drawing.Point(496, 634);
-            this.txtCapital3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCapital3.Margin = new System.Windows.Forms.Padding(2);
             this.txtCapital3.Multiline = true;
             this.txtCapital3.Name = "txtCapital3";
             this.txtCapital3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1278,7 +1278,7 @@ namespace WindowsFormsApp2
             this.txtEconomias3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEconomias3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEconomias3.Location = new System.Drawing.Point(496, 583);
-            this.txtEconomias3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEconomias3.Margin = new System.Windows.Forms.Padding(2);
             this.txtEconomias3.Multiline = true;
             this.txtEconomias3.Name = "txtEconomias3";
             this.txtEconomias3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1292,7 +1292,7 @@ namespace WindowsFormsApp2
             this.txtReaccion2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReaccion2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReaccion2.Location = new System.Drawing.Point(393, 840);
-            this.txtReaccion2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReaccion2.Margin = new System.Windows.Forms.Padding(2);
             this.txtReaccion2.Multiline = true;
             this.txtReaccion2.Name = "txtReaccion2";
             this.txtReaccion2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1306,7 +1306,7 @@ namespace WindowsFormsApp2
             this.txtTramites2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTramites2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTramites2.Location = new System.Drawing.Point(393, 789);
-            this.txtTramites2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTramites2.Margin = new System.Windows.Forms.Padding(2);
             this.txtTramites2.Multiline = true;
             this.txtTramites2.Name = "txtTramites2";
             this.txtTramites2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1320,7 +1320,7 @@ namespace WindowsFormsApp2
             this.txtReglamentos2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReglamentos2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReglamentos2.Location = new System.Drawing.Point(393, 737);
-            this.txtReglamentos2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReglamentos2.Margin = new System.Windows.Forms.Padding(2);
             this.txtReglamentos2.Multiline = true;
             this.txtReglamentos2.Name = "txtReglamentos2";
             this.txtReglamentos2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1334,7 +1334,7 @@ namespace WindowsFormsApp2
             this.txtAccesoTec2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAccesoTec2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccesoTec2.Location = new System.Drawing.Point(393, 686);
-            this.txtAccesoTec2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAccesoTec2.Margin = new System.Windows.Forms.Padding(2);
             this.txtAccesoTec2.Multiline = true;
             this.txtAccesoTec2.Name = "txtAccesoTec2";
             this.txtAccesoTec2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1348,7 +1348,7 @@ namespace WindowsFormsApp2
             this.txtCapital2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCapital2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCapital2.Location = new System.Drawing.Point(393, 634);
-            this.txtCapital2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCapital2.Margin = new System.Windows.Forms.Padding(2);
             this.txtCapital2.Multiline = true;
             this.txtCapital2.Name = "txtCapital2";
             this.txtCapital2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1362,7 +1362,7 @@ namespace WindowsFormsApp2
             this.txtEconomias2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEconomias2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEconomias2.Location = new System.Drawing.Point(393, 583);
-            this.txtEconomias2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEconomias2.Margin = new System.Windows.Forms.Padding(2);
             this.txtEconomias2.Multiline = true;
             this.txtEconomias2.Name = "txtEconomias2";
             this.txtEconomias2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1376,7 +1376,7 @@ namespace WindowsFormsApp2
             this.txtReaccion1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReaccion1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReaccion1.Location = new System.Drawing.Point(290, 840);
-            this.txtReaccion1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReaccion1.Margin = new System.Windows.Forms.Padding(2);
             this.txtReaccion1.Multiline = true;
             this.txtReaccion1.Name = "txtReaccion1";
             this.txtReaccion1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1390,7 +1390,7 @@ namespace WindowsFormsApp2
             this.txtTramites1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTramites1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTramites1.Location = new System.Drawing.Point(290, 789);
-            this.txtTramites1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTramites1.Margin = new System.Windows.Forms.Padding(2);
             this.txtTramites1.Multiline = true;
             this.txtTramites1.Name = "txtTramites1";
             this.txtTramites1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1404,7 +1404,7 @@ namespace WindowsFormsApp2
             this.txtReglamentos1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReglamentos1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReglamentos1.Location = new System.Drawing.Point(290, 737);
-            this.txtReglamentos1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtReglamentos1.Margin = new System.Windows.Forms.Padding(2);
             this.txtReglamentos1.Multiline = true;
             this.txtReglamentos1.Name = "txtReglamentos1";
             this.txtReglamentos1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1418,7 +1418,7 @@ namespace WindowsFormsApp2
             this.txtAccesoTec1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAccesoTec1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccesoTec1.Location = new System.Drawing.Point(290, 686);
-            this.txtAccesoTec1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAccesoTec1.Margin = new System.Windows.Forms.Padding(2);
             this.txtAccesoTec1.Multiline = true;
             this.txtAccesoTec1.Name = "txtAccesoTec1";
             this.txtAccesoTec1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1432,7 +1432,7 @@ namespace WindowsFormsApp2
             this.txtCapital1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCapital1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCapital1.Location = new System.Drawing.Point(290, 634);
-            this.txtCapital1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCapital1.Margin = new System.Windows.Forms.Padding(2);
             this.txtCapital1.Multiline = true;
             this.txtCapital1.Name = "txtCapital1";
             this.txtCapital1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1608,7 +1608,7 @@ namespace WindowsFormsApp2
             this.txtEconomias1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEconomias1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEconomias1.Location = new System.Drawing.Point(290, 583);
-            this.txtEconomias1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEconomias1.Margin = new System.Windows.Forms.Padding(2);
             this.txtEconomias1.Multiline = true;
             this.txtEconomias1.Name = "txtEconomias1";
             this.txtEconomias1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1700,7 +1700,7 @@ namespace WindowsFormsApp2
             this.txtBarrerasSalida5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBarrerasSalida5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarrerasSalida5.Location = new System.Drawing.Point(703, 463);
-            this.txtBarrerasSalida5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBarrerasSalida5.Margin = new System.Windows.Forms.Padding(2);
             this.txtBarrerasSalida5.Multiline = true;
             this.txtBarrerasSalida5.Name = "txtBarrerasSalida5";
             this.txtBarrerasSalida5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1714,7 +1714,7 @@ namespace WindowsFormsApp2
             this.txtDiferenciacion5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiferenciacion5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiferenciacion5.Location = new System.Drawing.Point(703, 412);
-            this.txtDiferenciacion5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiferenciacion5.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiferenciacion5.Multiline = true;
             this.txtDiferenciacion5.Name = "txtDiferenciacion5";
             this.txtDiferenciacion5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1728,7 +1728,7 @@ namespace WindowsFormsApp2
             this.txtRentabilidad5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentabilidad5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentabilidad5.Location = new System.Drawing.Point(703, 360);
-            this.txtRentabilidad5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentabilidad5.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentabilidad5.Multiline = true;
             this.txtRentabilidad5.Name = "txtRentabilidad5";
             this.txtRentabilidad5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1742,7 +1742,7 @@ namespace WindowsFormsApp2
             this.txtExceso5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExceso5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExceso5.Location = new System.Drawing.Point(703, 309);
-            this.txtExceso5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExceso5.Margin = new System.Windows.Forms.Padding(2);
             this.txtExceso5.Multiline = true;
             this.txtExceso5.Name = "txtExceso5";
             this.txtExceso5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1756,7 +1756,7 @@ namespace WindowsFormsApp2
             this.txtNaturaleza5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNaturaleza5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNaturaleza5.Location = new System.Drawing.Point(703, 257);
-            this.txtNaturaleza5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNaturaleza5.Margin = new System.Windows.Forms.Padding(2);
             this.txtNaturaleza5.Multiline = true;
             this.txtNaturaleza5.Name = "txtNaturaleza5";
             this.txtNaturaleza5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1770,7 +1770,7 @@ namespace WindowsFormsApp2
             this.txtCrecimiento5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCrecimiento5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCrecimiento5.Location = new System.Drawing.Point(703, 206);
-            this.txtCrecimiento5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCrecimiento5.Margin = new System.Windows.Forms.Padding(2);
             this.txtCrecimiento5.Multiline = true;
             this.txtCrecimiento5.Name = "txtCrecimiento5";
             this.txtCrecimiento5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1784,7 +1784,7 @@ namespace WindowsFormsApp2
             this.txtBarrerasSalida4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBarrerasSalida4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarrerasSalida4.Location = new System.Drawing.Point(600, 463);
-            this.txtBarrerasSalida4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBarrerasSalida4.Margin = new System.Windows.Forms.Padding(2);
             this.txtBarrerasSalida4.Multiline = true;
             this.txtBarrerasSalida4.Name = "txtBarrerasSalida4";
             this.txtBarrerasSalida4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1798,7 +1798,7 @@ namespace WindowsFormsApp2
             this.txtDiferenciacion4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiferenciacion4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiferenciacion4.Location = new System.Drawing.Point(600, 412);
-            this.txtDiferenciacion4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiferenciacion4.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiferenciacion4.Multiline = true;
             this.txtDiferenciacion4.Name = "txtDiferenciacion4";
             this.txtDiferenciacion4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1812,7 +1812,7 @@ namespace WindowsFormsApp2
             this.txtRentabilidad4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentabilidad4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentabilidad4.Location = new System.Drawing.Point(600, 360);
-            this.txtRentabilidad4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentabilidad4.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentabilidad4.Multiline = true;
             this.txtRentabilidad4.Name = "txtRentabilidad4";
             this.txtRentabilidad4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1826,7 +1826,7 @@ namespace WindowsFormsApp2
             this.txtExceso4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExceso4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExceso4.Location = new System.Drawing.Point(600, 309);
-            this.txtExceso4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExceso4.Margin = new System.Windows.Forms.Padding(2);
             this.txtExceso4.Multiline = true;
             this.txtExceso4.Name = "txtExceso4";
             this.txtExceso4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1840,7 +1840,7 @@ namespace WindowsFormsApp2
             this.txtNaturaleza4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNaturaleza4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNaturaleza4.Location = new System.Drawing.Point(600, 257);
-            this.txtNaturaleza4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNaturaleza4.Margin = new System.Windows.Forms.Padding(2);
             this.txtNaturaleza4.Multiline = true;
             this.txtNaturaleza4.Name = "txtNaturaleza4";
             this.txtNaturaleza4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1854,7 +1854,7 @@ namespace WindowsFormsApp2
             this.txtCrecimiento4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCrecimiento4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCrecimiento4.Location = new System.Drawing.Point(600, 206);
-            this.txtCrecimiento4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCrecimiento4.Margin = new System.Windows.Forms.Padding(2);
             this.txtCrecimiento4.Multiline = true;
             this.txtCrecimiento4.Name = "txtCrecimiento4";
             this.txtCrecimiento4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1868,7 +1868,7 @@ namespace WindowsFormsApp2
             this.txtBarrerasSalida3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBarrerasSalida3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarrerasSalida3.Location = new System.Drawing.Point(497, 463);
-            this.txtBarrerasSalida3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBarrerasSalida3.Margin = new System.Windows.Forms.Padding(2);
             this.txtBarrerasSalida3.Multiline = true;
             this.txtBarrerasSalida3.Name = "txtBarrerasSalida3";
             this.txtBarrerasSalida3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1882,7 +1882,7 @@ namespace WindowsFormsApp2
             this.txtDiferenciacion3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiferenciacion3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiferenciacion3.Location = new System.Drawing.Point(497, 412);
-            this.txtDiferenciacion3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiferenciacion3.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiferenciacion3.Multiline = true;
             this.txtDiferenciacion3.Name = "txtDiferenciacion3";
             this.txtDiferenciacion3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1896,7 +1896,7 @@ namespace WindowsFormsApp2
             this.txtRentabilidad3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentabilidad3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentabilidad3.Location = new System.Drawing.Point(497, 360);
-            this.txtRentabilidad3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentabilidad3.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentabilidad3.Multiline = true;
             this.txtRentabilidad3.Name = "txtRentabilidad3";
             this.txtRentabilidad3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1910,7 +1910,7 @@ namespace WindowsFormsApp2
             this.txtExceso3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExceso3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExceso3.Location = new System.Drawing.Point(497, 309);
-            this.txtExceso3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExceso3.Margin = new System.Windows.Forms.Padding(2);
             this.txtExceso3.Multiline = true;
             this.txtExceso3.Name = "txtExceso3";
             this.txtExceso3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1924,7 +1924,7 @@ namespace WindowsFormsApp2
             this.txtNaturaleza3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNaturaleza3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNaturaleza3.Location = new System.Drawing.Point(497, 257);
-            this.txtNaturaleza3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNaturaleza3.Margin = new System.Windows.Forms.Padding(2);
             this.txtNaturaleza3.Multiline = true;
             this.txtNaturaleza3.Name = "txtNaturaleza3";
             this.txtNaturaleza3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1938,7 +1938,7 @@ namespace WindowsFormsApp2
             this.txtCrecimiento3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCrecimiento3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCrecimiento3.Location = new System.Drawing.Point(497, 206);
-            this.txtCrecimiento3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCrecimiento3.Margin = new System.Windows.Forms.Padding(2);
             this.txtCrecimiento3.Multiline = true;
             this.txtCrecimiento3.Name = "txtCrecimiento3";
             this.txtCrecimiento3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1952,7 +1952,7 @@ namespace WindowsFormsApp2
             this.txtBarrerasSalida2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBarrerasSalida2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarrerasSalida2.Location = new System.Drawing.Point(394, 463);
-            this.txtBarrerasSalida2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBarrerasSalida2.Margin = new System.Windows.Forms.Padding(2);
             this.txtBarrerasSalida2.Multiline = true;
             this.txtBarrerasSalida2.Name = "txtBarrerasSalida2";
             this.txtBarrerasSalida2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1966,7 +1966,7 @@ namespace WindowsFormsApp2
             this.txtDiferenciacion2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiferenciacion2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiferenciacion2.Location = new System.Drawing.Point(394, 412);
-            this.txtDiferenciacion2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiferenciacion2.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiferenciacion2.Multiline = true;
             this.txtDiferenciacion2.Name = "txtDiferenciacion2";
             this.txtDiferenciacion2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1980,7 +1980,7 @@ namespace WindowsFormsApp2
             this.txtRentabilidad2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentabilidad2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentabilidad2.Location = new System.Drawing.Point(394, 360);
-            this.txtRentabilidad2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentabilidad2.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentabilidad2.Multiline = true;
             this.txtRentabilidad2.Name = "txtRentabilidad2";
             this.txtRentabilidad2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1994,7 +1994,7 @@ namespace WindowsFormsApp2
             this.txtExceso2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExceso2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExceso2.Location = new System.Drawing.Point(394, 309);
-            this.txtExceso2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExceso2.Margin = new System.Windows.Forms.Padding(2);
             this.txtExceso2.Multiline = true;
             this.txtExceso2.Name = "txtExceso2";
             this.txtExceso2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2008,7 +2008,7 @@ namespace WindowsFormsApp2
             this.txtNaturaleza2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNaturaleza2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNaturaleza2.Location = new System.Drawing.Point(394, 257);
-            this.txtNaturaleza2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNaturaleza2.Margin = new System.Windows.Forms.Padding(2);
             this.txtNaturaleza2.Multiline = true;
             this.txtNaturaleza2.Name = "txtNaturaleza2";
             this.txtNaturaleza2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2022,7 +2022,7 @@ namespace WindowsFormsApp2
             this.txtCrecimiento2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCrecimiento2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCrecimiento2.Location = new System.Drawing.Point(394, 206);
-            this.txtCrecimiento2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCrecimiento2.Margin = new System.Windows.Forms.Padding(2);
             this.txtCrecimiento2.Multiline = true;
             this.txtCrecimiento2.Name = "txtCrecimiento2";
             this.txtCrecimiento2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2036,7 +2036,7 @@ namespace WindowsFormsApp2
             this.txtBarrerasSalida1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBarrerasSalida1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarrerasSalida1.Location = new System.Drawing.Point(291, 463);
-            this.txtBarrerasSalida1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBarrerasSalida1.Margin = new System.Windows.Forms.Padding(2);
             this.txtBarrerasSalida1.Multiline = true;
             this.txtBarrerasSalida1.Name = "txtBarrerasSalida1";
             this.txtBarrerasSalida1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2050,7 +2050,7 @@ namespace WindowsFormsApp2
             this.txtDiferenciacion1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiferenciacion1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiferenciacion1.Location = new System.Drawing.Point(291, 412);
-            this.txtDiferenciacion1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiferenciacion1.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiferenciacion1.Multiline = true;
             this.txtDiferenciacion1.Name = "txtDiferenciacion1";
             this.txtDiferenciacion1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2064,7 +2064,7 @@ namespace WindowsFormsApp2
             this.txtRentabilidad1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRentabilidad1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentabilidad1.Location = new System.Drawing.Point(291, 360);
-            this.txtRentabilidad1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRentabilidad1.Margin = new System.Windows.Forms.Padding(2);
             this.txtRentabilidad1.Multiline = true;
             this.txtRentabilidad1.Name = "txtRentabilidad1";
             this.txtRentabilidad1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2078,7 +2078,7 @@ namespace WindowsFormsApp2
             this.txtExceso1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExceso1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExceso1.Location = new System.Drawing.Point(291, 309);
-            this.txtExceso1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExceso1.Margin = new System.Windows.Forms.Padding(2);
             this.txtExceso1.Multiline = true;
             this.txtExceso1.Name = "txtExceso1";
             this.txtExceso1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2092,7 +2092,7 @@ namespace WindowsFormsApp2
             this.txtNaturaleza1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNaturaleza1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNaturaleza1.Location = new System.Drawing.Point(291, 257);
-            this.txtNaturaleza1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNaturaleza1.Margin = new System.Windows.Forms.Padding(2);
             this.txtNaturaleza1.Multiline = true;
             this.txtNaturaleza1.Name = "txtNaturaleza1";
             this.txtNaturaleza1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -2371,7 +2371,7 @@ namespace WindowsFormsApp2
             this.txtCrecimiento1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCrecimiento1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCrecimiento1.Location = new System.Drawing.Point(291, 206);
-            this.txtCrecimiento1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCrecimiento1.Margin = new System.Windows.Forms.Padding(2);
             this.txtCrecimiento1.Multiline = true;
             this.txtCrecimiento1.Name = "txtCrecimiento1";
             this.txtCrecimiento1.RightToLeft = System.Windows.Forms.RightToLeft.No;

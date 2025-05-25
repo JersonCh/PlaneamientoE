@@ -42,7 +42,7 @@ namespace WindowsFormsApp2
 
         private void btnVision_Click(object sender, EventArgs e)
         {
-            FrmVision frmVision = new FrmVision();
+            Vision frmVision = new Vision();
             frmVision.Show();
             this.Hide();
         }

@@ -2,14 +2,15 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using CustomMessageBox;
 using WindowsFormsApp2.Clases;
 using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmMision : Form
+    public partial class Mision : Form
     {
-        public FrmMision()
+        public Mision()
         {
             InitializeComponent();
         }
@@ -31,8 +32,10 @@ namespace WindowsFormsApp2
                     dc.SP_RegistrarMision(descripcion, Sesion.EmpresaId);
                 }
 
-                MessageBox.Show("Misión registrada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-               
+                //MessageBox.Show("Misión registrada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult result = RJMessageBox.Show("Misión registrada correctamente",
+                 "Éxito");
+
             }
             catch (Exception ex)
             {
@@ -42,14 +45,14 @@ namespace WindowsFormsApp2
 
         private void btnVision_Click(object sender, EventArgs e)
         {
-            FrmVision frmVision = new FrmVision();
+            Vision frmVision = new Vision();
             frmVision.Show();
             this.Close(); 
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            FrmVision frmVision = new FrmVision();
+            Vision frmVision = new Vision();
             frmVision.Show();
             this.Close();
         }
@@ -81,7 +84,7 @@ namespace WindowsFormsApp2
 
         private void btnVision_Click_1(object sender, EventArgs e)
         {
-            FrmVision frmVision = new FrmVision();
+            Vision frmVision = new Vision();
             frmVision.Show();
             this.Hide();
         }

@@ -33,7 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -43,6 +48,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,10 +58,17 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\clsSesion.cs" />
     <Compile Include="Clases\clsUsuario.cs" />
+    <Compile Include="FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessageBox.Designer.cs">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBCG2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +92,12 @@
     </Compile>
     <Compile Include="FrmDAFO.Designer.cs">
       <DependentUpon>FrmDAFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashBoard2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashBoard2.Designer.cs">
+      <DependentUpon>FrmDashBoard2.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmIdentif_Estrategia.cs">
       <SubType>Form</SubType>
@@ -219,6 +238,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RJMessageBox.cs" />
     <Compile Include="SOFTPETIDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -232,6 +252,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SOFTPETIDataSet_3.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormMessageBox.resx">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBCG2.resx">
       <DependentUpon>FrmBCG2.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDAFO.resx">
       <DependentUpon>FrmDAFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashBoard2.resx">
+      <DependentUpon>FrmDashBoard2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIdentif_Estrategia.resx">
       <DependentUpon>FrmIdentif_Estrategia.cs</DependentUpon>
@@ -386,7 +412,12 @@
     <None Include="Resources\grafico2cadenadevalor.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\chat.png" />
+    <Content Include="Resources\error.png" />
+    <Content Include="Resources\exclamation.png" />
+    <Content Include="Resources\information.png" />
     <Content Include="Resources\pest.png" />
+    <Content Include="Resources\question.png" />
     <None Include="Resources\pest1.png" />
   </ItemGroup>
   <ItemGroup>

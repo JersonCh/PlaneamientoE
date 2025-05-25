@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CustomMessageBox;
 using WindowsFormsApp2.Clases;
 using WindowsFormsApp2.Modelos;
 
@@ -119,7 +120,12 @@ namespace WindowsFormsApp2
             if (string.IsNullOrWhiteSpace(txtO1.Text) || string.IsNullOrWhiteSpace(txtO2.Text) ||
                 string.IsNullOrWhiteSpace(txtA1.Text) || string.IsNullOrWhiteSpace(txtA2.Text))
             {
-                MessageBox.Show("Por favor, complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //MessageBox.Show("Por favor, complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
+                var result = RJMessageBox.Show("Por favor, complete todos los campos",
+                  "Validación",
+                  MessageBoxButtons.YesNoCancel,
+                  MessageBoxIcon.Warning);
                 return;
             }
 
@@ -140,11 +146,17 @@ namespace WindowsFormsApp2
                     dc.SP_RegistrarAmenaza(a2, Sesion.EmpresaId);
                 }
 
-                MessageBox.Show("Oportunidades y Amenazas registradas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Oportunidades y Amenazas registradas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult result = RJMessageBox.Show("Éxito",
+                   "Oportunidades y Amenazas registradas correctamente");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al registrar Oportunidades y Amenazas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Error al registrar Oportunidades y Amenazas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var result = RJMessageBox.Show("Error al registrar Oportunidades y Amenazas",
+                "Error",
+                MessageBoxButtons.RetryCancel,
+                MessageBoxIcon.Error);
             }
         }
     }

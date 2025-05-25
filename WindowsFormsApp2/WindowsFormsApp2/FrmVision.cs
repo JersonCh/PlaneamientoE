@@ -12,9 +12,9 @@ using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2
 {
-    public partial class FrmVision : Form
+    public partial class Vision : Form
     {
-        public FrmVision()
+        public Vision()
         {
             InitializeComponent();
         }

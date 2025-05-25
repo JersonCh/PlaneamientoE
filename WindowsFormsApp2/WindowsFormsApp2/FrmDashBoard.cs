@@ -40,12 +40,12 @@ namespace WindowsFormsApp2
 
         private void btnMision_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new FrmMision());
+            AbrirFormularioHijo(new Mision());
         }
 
         private void btnVision_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new FrmVision());
+            AbrirFormularioHijo(new Vision());
         }
 
         private void button2_Click(object sender, EventArgs e)

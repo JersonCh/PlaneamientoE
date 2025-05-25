@@ -75,7 +75,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);

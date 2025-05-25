@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CustomMessageBox;
 using WindowsFormsApp2.Clases;
 using WindowsFormsApp2.Modelos;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -35,14 +36,24 @@ namespace WindowsFormsApp2
                 // Guardamos el ID del usuario en la clase estática Sesion
                 Sesion.UsuarioId = usuario.id;
 
-                MessageBox.Show("Inicio de sesión exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Inicio de sesión exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                DialogResult result = RJMessageBox.Show("Inicio de sesión exitoso, Bienvenido Usuario",
+                    "Bienvenido");
+                
+
                 this.Hide();
                 Form objFrmDashBoard = new FrmDashBoard();
                 objFrmDashBoard.Show();
             }
             else
             {
-                MessageBox.Show("Correo o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Correo o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                var result = RJMessageBox.Show("Correo y/o contraseña son incorrectos",
+                "Error",
+                MessageBoxButtons.RetryCancel,
+                MessageBoxIcon.Error);
             }
         }
         //Aparecer o no el texto USUARIO y CONTRASEÑA

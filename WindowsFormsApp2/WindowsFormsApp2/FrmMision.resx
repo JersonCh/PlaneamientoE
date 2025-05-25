@@ -117,27 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAAllJREFUWEftl79rFEEcR48gIkHEQkRELIKFBJEQgoWFiIVIkBRiIWIhqYKIiIVI
-        kHTWFhb+ARYWImJhGUKQEIKEIBZBREQkSBAREREROd/bnTXD7ma93dz5A3zwYG++Mzefm539ca1/lna7
-        vQnP4iXcEpptH8aT63gkdNsYfNEJXMaMF3gs1J4nLeV8x77kS5rA4L14329ah7u4mh6W0iwAg1zuK/gJ
-        Yz5ivq2K+gEYMIKLjs7xAPegq/LQhg7oPAAdt+JN/IYxr3EM7XMOz4Tj07iCVXQWgE7H8ZUjIgxiIIMN
-        4WPMmMb9uB1voxOVUR2A4k68Y88cC+jl5QS3ML8q8hVvYD8exmeYxwD9Ybo1aHSTXcYPGOPnCbTucr/F
-        X/ESR3EzXsPPGPMGxzFdCQ7cRE8wxqSuxC50aWewLvfQTTqAj2zI4WnbYQCXN8alO4r+gin8gk3xMr2I
-        fXgK3cAx0wZwycTOXusut5de2TlsyhwOohvYfZL9qGUDHEIndgOadBLLNtlGcdKr6Byedvfc7mQfZNDg
-        w6XXDIbpilA8n/bpKQfCdEUo/g/wOwIcDNMVoVgWwPvELHrvVy8pnUdr8Z3OY9uzvo7Lxmb3gNoB9oVy
-        KdSfpt0S5kJzAWrekKSnAWZDcwFqF9Iu3Q+wlHZLmAnNBaj5UJOh0FSEYpMA8dvSHwkQP0k7OQU9DVC1
-        Cf3/IF0PED/OfY/wJeY9vov0s29MMhyGFqHYJIDXfR26HsCbTB26HqDu61plAN/ffA3L9OXk5x/PMqj7
-        fyAeU+V13BaG/g20Wj8AOx+NNNjELkkAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>La MISIÓN es la razón de ser de la empresa/organización.
-• Debe ser clara, concisa y compartida. 
-• Siempre orientada hacia el cliente no hacia el producto o servicio. 
-• Refleja el propósito fundamental de la empresa en el mercado.</value>
+  <data name="label10.Text" xml:space="preserve">
+    <value>La misión es la razón de ser de una empresa u organización; debe expresarse de forma clara, concisa y ser compartida por todos, enfocándose siempre en el cliente y no en el producto o servicio, ya que refleja el propósito fundamental de la empresa en el mercado.
+En este apartado describa la Mision de su empresa</value>
   </data>
 </root>

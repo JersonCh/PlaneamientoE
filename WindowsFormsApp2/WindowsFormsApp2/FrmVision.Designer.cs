@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class FrmVision
+    partial class Vision
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVision));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vision));
             this.label1 = new System.Windows.Forms.Label();
             this.txtVision = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
@@ -180,7 +180,7 @@
             this.label3.Text = "La VISION de una empresa define lo que la empresa/organización quiere lograr en e" +
     "l futuro. Es lo que la organización aspira llegar a ser en torno a  2 -3 años. ";
             // 
-            // FrmVision
+            // Vision
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,7 +193,7 @@
             this.Controls.Add(this.txtVision);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmVision";
+            this.Name = "Vision";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVision";
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();

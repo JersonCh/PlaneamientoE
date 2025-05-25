@@ -67,23 +67,21 @@ namespace WindowsFormsApp2
         private void AbrirFormularioHijo(Form formularioHijo)
         {
             // Cerrar formulario activo si ya hay uno
-            if (panelContenedor.Controls.Count > 0)
-                panelContenedor.Controls[0].Dispose();
+            //if (panelContenedor.Controls.Count > 0)
+                //panelContenedor.Controls[0].Dispose();
 
-            formularioHijo.TopLevel = false;
-            formularioHijo.FormBorderStyle = FormBorderStyle.None;
-            formularioHijo.Dock = DockStyle.Fill;
-            panelContenedor.Controls.Add(formularioHijo);
-            panelContenedor.Tag = formularioHijo;
-            formularioHijo.Show();
+            //formularioHijo.TopLevel = false;
+            //formularioHijo.FormBorderStyle = FormBorderStyle.None;
+            //formularioHijo.Dock = DockStyle.Fill;
+            //panelContenedor.Controls.Add(formularioHijo);
+            //panelContenedor.Tag = formularioHijo;
+            //formularioHijo.Show();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
-        
-            AbrirFormularioHijo(new FrmInformacion());
-
+            FrmInformacion formularioEmergente = new FrmInformacion();
+            formularioEmergente.ShowDialog();
 
         }
 
