@@ -120,5 +120,27 @@ namespace WindowsFormsApp2
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string textoBusqueda = txtBuscar.Text.Trim().ToLower();
+
+            var filtradas = listaEmpresas
+                .Where(emp => emp.nombre.ToLower().Contains(textoBusqueda))
+                .ToList();
+
+            dgvEmpresas.DataSource = filtradas;
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            FrmInformacion formularioEmergente = new FrmInformacion();
+            formularioEmergente.ShowDialog();
+        }
     }
 }
