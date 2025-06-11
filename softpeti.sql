@@ -606,6 +606,22 @@ GO
 		ORDER BY codigo_accion;
 	END
 	GO
+-------------------SP PARA MEJORA 2 -----------------------------------
+
+CREATE PROCEDURE SP_ActualizarPassword
+    @Email VARCHAR(100),
+    @PasswordHash VARCHAR(64)
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    UPDATE USUARIO
+    SET password_hash = @PasswordHash
+    WHERE email = @Email;
+    
+    SELECT @@ROWCOUNT AS RowsAffected; 
+END
+GO
 
 
 ----------------------------I N S E R C I O N E S  --------------------------------------
