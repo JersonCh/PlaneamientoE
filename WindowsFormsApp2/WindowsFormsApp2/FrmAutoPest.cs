@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using WindowsFormsApp2.Clases;
 using WindowsFormsApp2.Modelos;
 
@@ -18,6 +19,13 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        // Definimos un tipo para el evento que enviará los totales
+        public delegate void TotalesCalculadosHandler(object sender, List<(string factor, double porcentaje)> totales);
+
+        // Evento que se dispara cuando se calculan los totales
+        public event TotalesCalculadosHandler TotalesCalculados;
+
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -54,22 +62,27 @@ namespace WindowsFormsApp2
             }
         }
 
+
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            MostrarResultado(txtSociales, CalcularFactor(1, 5),
-                "FACTORES SOCIALES Y DEMOGRÁFICOS");
+            var resultados = new List<(string nombre, double porcentaje)>
+        {
+            ("Factores Sociales y Demográficos", CalcularFactor(1, 5)),
+            ("Factores Políticos", CalcularFactor(6, 10)),
+            ("Factores Económicos", CalcularFactor(11, 15)),
+            ("Factores Tecnológicos", CalcularFactor(16, 20)),
+            ("Factores Medio Ambientales", CalcularFactor(21, 25))
+        };
 
-            MostrarResultado(txtPoliticos, CalcularFactor(6, 10),
-                "FACTORES POLÍTICOS");
+            // Mostrar resultados en los TextBoxes
+            MostrarResultado(txtSociales, resultados[0].porcentaje, resultados[0].nombre);
+            MostrarResultado(txtPoliticos, resultados[1].porcentaje, resultados[1].nombre);
+            MostrarResultado(txtEconomicos, resultados[2].porcentaje, resultados[2].nombre);
+            MostrarResultado(txtTecnologicos, resultados[3].porcentaje, resultados[3].nombre);
+            MostrarResultado(txtAmbientales, resultados[4].porcentaje, resultados[4].nombre);
 
-            MostrarResultado(txtEconomicos, CalcularFactor(11, 15),
-                "FACTORES ECONÓMICOS");
-
-            MostrarResultado(txtTecnologicos, CalcularFactor(16, 20),
-                "FACTORES TECNOLÓGICOS");
-
-            MostrarResultado(txtAmbientales, CalcularFactor(21, 25),
-                "FACTORES MEDIO AMBIENTALES");
+            // Disparar evento para avisar al padre
+            TotalesCalculados?.Invoke(this, resultados);
         }
 
         private double CalcularFactor(int inicio, int fin)

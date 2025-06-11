@@ -333,6 +333,13 @@ namespace WindowsFormsApp2.Modelos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
 			return ((ISingleResult<SP_ListarCAME2Result>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ActualizarPassword")]
+		public ISingleResult<SP_ActualizarPasswordResult> SP_ActualizarPassword([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PasswordHash", DbType="VarChar(64)")] string passwordHash)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), email, passwordHash);
+			return ((ISingleResult<SP_ActualizarPasswordResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USUARIO")]
@@ -2636,6 +2643,32 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._CAME_Descripcion != value))
 				{
 					this._CAME_Descripcion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ActualizarPasswordResult
+	{
+		
+		private int _RowsAffected;
+		
+		public SP_ActualizarPasswordResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RowsAffected", DbType="Int NOT NULL")]
+		public int RowsAffected
+		{
+			get
+			{
+				return this._RowsAffected;
+			}
+			set
+			{
+				if ((this._RowsAffected != value))
+				{
+					this._RowsAffected = value;
 				}
 			}
 		}

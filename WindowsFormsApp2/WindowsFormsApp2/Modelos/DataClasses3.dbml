@@ -258,4 +258,11 @@
       <Column Name="CAME_Descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
+  <Function Name="dbo.SP_ActualizarPassword" Method="SP_ActualizarPassword">
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="PasswordHash" Parameter="passwordHash" Type="System.String" DbType="VarChar(64)" />
+    <ElementType Name="SP_ActualizarPasswordResult">
+      <Column Name="RowsAffected" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>

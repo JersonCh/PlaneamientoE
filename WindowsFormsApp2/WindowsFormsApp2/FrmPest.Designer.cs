@@ -29,22 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPest));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label119 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnminimisar = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.chartFactores = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFactores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label119
@@ -111,16 +117,6 @@
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 116);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(521, 303);
-            this.label1.TabIndex = 657;
-            this.label1.Text = resources.GetString("label1.Text");
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -157,16 +153,6 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.pest;
-            this.pictureBox1.Location = new System.Drawing.Point(522, 149);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(460, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 658;
-            this.pictureBox1.TabStop = false;
-            // 
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -175,16 +161,65 @@
             this.panelContenedor.Size = new System.Drawing.Size(960, 900);
             this.panelContenedor.TabIndex = 661;
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(586, 240);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(319, 170);
+            this.label2.TabIndex = 667;
+            this.label2.Text = "Leyenda de colores:\r\n\r\nRojo: Impacto alto (≥ 70%)\r\n\r\nNaranja: Impacto medio (40% " +
+    "– 69%)\r\n\r\nVerde: Impacto bajo (< 40%)";
+            // 
+            // chartFactores
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartFactores.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFactores.Legends.Add(legend1);
+            this.chartFactores.Location = new System.Drawing.Point(51, 176);
+            this.chartFactores.Name = "chartFactores";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFactores.Series.Add(series1);
+            this.chartFactores.Size = new System.Drawing.Size(483, 251);
+            this.chartFactores.TabIndex = 666;
+            this.chartFactores.Text = "chartFactores";
+            this.chartFactores.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartFactores_MouseMove_1);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.pest;
+            this.pictureBox2.Location = new System.Drawing.Point(673, 106);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(302, 112);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 665;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(25, 122);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(642, 51);
+            this.label4.TabIndex = 664;
+            this.label4.Text = "El siguiente gráfico reflejará la valoración obtenida en cada una de las variable" +
+    "s del diagnóstico macro-entorno. \r\n";
+            // 
             // FrmPest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1018, 1061);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.chartFactores);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Name = "FrmPest";
             this.Text = "FormPest";
@@ -192,7 +227,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFactores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,11 +240,13 @@
         private System.Windows.Forms.PictureBox btnminimisar;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFactores;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
     }
 }

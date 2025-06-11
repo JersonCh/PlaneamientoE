@@ -87,6 +87,12 @@
     <Compile Include="FrmBCGgenerado.Designer.cs">
       <DependentUpon>FrmBCGgenerado.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCambioPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambioPassword.Designer.cs">
+      <DependentUpon>FrmCambioPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDAFO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBCGgenerado.resx">
       <DependentUpon>FrmBCGgenerado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambioPassword.resx">
+      <DependentUpon>FrmCambioPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDAFO.resx">
       <DependentUpon>FrmDAFO.cs</DependentUpon>
