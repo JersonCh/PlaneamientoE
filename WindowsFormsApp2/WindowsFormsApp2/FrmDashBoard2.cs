@@ -11,7 +11,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media;
 using FontAwesome.Sharp;
+using WindowsFormsApp2.Clases;
+using WindowsFormsApp2.Modelos;
 using Color = System.Drawing.Color;
+
 
 namespace WindowsFormsApp2
 {
@@ -129,19 +132,19 @@ namespace WindowsFormsApp2
         private void btnValores_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new Mision());
+            OpenChildForm(new FrmValores());
         }
 
         private void btnAnalisisIyE_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new Mision());
+            OpenChildForm(new FrmAnalisis());
         }
 
         private void btnObjetivos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new Mision());
+            OpenChildForm(new FrmObjetivos());
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
@@ -208,7 +211,80 @@ namespace WindowsFormsApp2
         private void horafecha_Tick(object sender, EventArgs e)
         {
             lblhora.Text = DateTime.Now.ToLongTimeString();
-            lblfecha.Text = DateTime.Now.ToString("dddd MMMM yyyy");
+            string fecha = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy");
+            System.Globalization.CultureInfo cultura = new System.Globalization.CultureInfo("es-ES");
+
+            // Convertimos la primera letra de cada palabra a mayúscula
+            lblfecha.Text = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(fecha);
+
+
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Deseas cerrar sesión?",
+                                          "Cerrar sesión",
+                                          MessageBoxButtons.YesNo,
+                                          MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Limpiar los datos de sesión
+                Sesion.UsuarioId = 0;
+                Sesion.EmpresaId = 0;
+
+                // Volver al formulario de login
+                this.Hide();
+                FrmLogin login = new FrmLogin();
+                login.Show();
+            }
+        }
+
+        private void btnCadenaValor_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FrmCadenaValor());
+        }
+
+        private void btnMatriz_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FrmMatrizParticipacion());
+        }
+
+        private void btn5fuerzas_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FrmMatrizDePorter());
+        }
+
+        private void btnPest_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FrmPest());
+        }
+
+        private void btnIdentificacionE_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FrmIdentif_Estrategia());
+        }
+
+        private void btnMatrizCame_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FrmMatrizCame());
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FrmResumen());
+        }
+
+        private void lblfecha_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

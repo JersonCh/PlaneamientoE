@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnRecuperarPass = new System.Windows.Forms.Button();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnminimisar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -42,10 +42,12 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -62,6 +64,17 @@
             this.panel2.Size = new System.Drawing.Size(329, 424);
             this.panel2.TabIndex = 72;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(30, 78);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(267, 267);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 69;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnIngresar
             // 
             this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -71,9 +84,9 @@
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
-            this.btnIngresar.Location = new System.Drawing.Point(372, 306);
+            this.btnIngresar.Location = new System.Drawing.Point(367, 322);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(491, 39);
+            this.btnIngresar.Size = new System.Drawing.Size(236, 39);
             this.btnIngresar.TabIndex = 0;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -88,9 +101,9 @@
             this.btnRecuperarPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecuperarPass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperarPass.ForeColor = System.Drawing.Color.White;
-            this.btnRecuperarPass.Location = new System.Drawing.Point(501, 360);
+            this.btnRecuperarPass.Location = new System.Drawing.Point(625, 322);
             this.btnRecuperarPass.Name = "btnRecuperarPass";
-            this.btnRecuperarPass.Size = new System.Drawing.Size(257, 39);
+            this.btnRecuperarPass.Size = new System.Drawing.Size(236, 39);
             this.btnRecuperarPass.TabIndex = 80;
             this.btnRecuperarPass.Text = "RECUPERAR CONTRASEÑA";
             this.btnRecuperarPass.UseVisualStyleBackColor = false;
@@ -120,23 +133,13 @@
             this.btnminimisar.TabStop = false;
             this.btnminimisar.Click += new System.EventHandler(this.btnminimisar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(30, 78);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 267);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 69;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtPass
             // 
             this.txtPass.BackColor = System.Drawing.Color.White;
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(410, 229);
+            this.txtPass.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.txtPass.Location = new System.Drawing.Point(410, 238);
             this.txtPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
@@ -149,7 +152,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(369, 126);
+            this.pictureBox2.Location = new System.Drawing.Point(372, 135);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(27, 25);
@@ -160,7 +163,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(370, 228);
+            this.pictureBox3.Location = new System.Drawing.Point(373, 243);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(27, 25);
@@ -173,7 +176,8 @@
             this.txtCorreo.BackColor = System.Drawing.Color.White;
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(410, 126);
+            this.txtCorreo.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.txtCorreo.Location = new System.Drawing.Point(410, 131);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
@@ -192,7 +196,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Black;
-            this.pictureBox5.Location = new System.Drawing.Point(410, 268);
+            this.pictureBox5.Location = new System.Drawing.Point(410, 273);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(430, 2);
             this.pictureBox5.TabIndex = 77;
@@ -209,12 +213,34 @@
             this.label2.Text = "LOGIN";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.Location = new System.Drawing.Point(366, 102);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(85, 22);
+            this.lblTitleChildForm.TabIndex = 81;
+            this.lblTitleChildForm.Text = "Usuario :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(366, 210);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 22);
+            this.label1.TabIndex = 82;
+            this.label1.Text = "Contraseña :";
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 424);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTitleChildForm);
             this.Controls.Add(this.btnRecuperarPass);
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.btnminimisar);
@@ -233,9 +259,9 @@
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -259,5 +285,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTitleChildForm;
+        private System.Windows.Forms.Label label1;
     }
 }

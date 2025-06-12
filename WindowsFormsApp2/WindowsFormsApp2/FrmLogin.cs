@@ -57,7 +57,7 @@ namespace WindowsFormsApp2
                     ultimaTemporalGenerada = "";
                     correoTemporal = "";
                     this.Hide();
-                    Form objFrmDashBoard = new FrmDashBoard();
+                    Form objFrmDashBoard = new FrmDashBoard2();
                     objFrmDashBoard.Show();
                 }
             }
