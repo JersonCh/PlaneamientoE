@@ -18,20 +18,14 @@ namespace WindowsFormsApp2.Clases
             {
                 using (DataClasses3DataContext dc = new DataClasses3DataContext())
                 {
-                    // Depuración: Mostrar el correo buscado
-                    MessageBox.Show($"Buscando usuario con correo: \"{email}\"", "Depuración");
-
+                    
                     var usuario = dc.USUARIO.FirstOrDefault(u => u.email == email);
 
                     if (usuario != null)
                     {
-                        MessageBox.Show($"Usuario encontrado: {usuario.email}", "Depuración");
-
                         string passwordIngresadaHash = ComputeSha256Hash(passwordPlano);
 
-                        // Depuración: Mostrar los hashes
-                        MessageBox.Show($"Hash en BD: {usuario.password_hash}\nHash ingresado: {passwordIngresadaHash}", "Depuración");
-
+                        
                         if (usuario.password_hash.Equals(passwordIngresadaHash, StringComparison.OrdinalIgnoreCase))
                         {
                             this.id = usuario.id;

@@ -32,16 +32,12 @@ namespace WindowsFormsApp2
             string email = txtCorreo.Text.Trim();
             string password = txtPass.Text.Trim();
 
-            // Depuración: Mostrar datos ingresados
-            MessageBox.Show($"Correo ingresado: \"{email}\"\nContraseña ingresada: \"{password}\"", "Depuración");
-
+            
             clsUsuario usuario = new clsUsuario();
 
             bool autenticado = usuario.Autenticar(email, password);
 
-            // Depuración: Mostrar resultado de autenticación
-            MessageBox.Show($"¿Autenticado?: {autenticado}", "Depuración");
-
+            
             if (autenticado)
             {
                 // Si el usuario ingresa la contraseña temporal (que tienes guardada)
