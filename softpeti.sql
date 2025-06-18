@@ -195,9 +195,45 @@ GO
 		p23 INT NOT NULL,
 		p24 INT NOT NULL,
 		p25 INT NOT NULL,
-		total INT NOT NULL
+		total INT NOT NULL,
+		FOREIGN KEY (empresa_id) REFERENCES Empresa(id)
 	);
 
+	-- TABLA AUTO PEST
+	CREATE TABLE AutoPEST (
+		id INT PRIMARY KEY IDENTITY(1,1),
+		empresa_id INT NOT NULL,
+		p1 INT NOT NULL,
+		p2 INT NOT NULL,
+		p3 INT NOT NULL,
+		p4 INT NOT NULL,
+		p5 INT NOT NULL,
+		p6 INT NOT NULL,
+		p7 INT NOT NULL,
+		p8 INT NOT NULL,
+		p9 INT NOT NULL,
+		p10 INT NOT NULL,
+		p11 INT NOT NULL,
+		p12 INT NOT NULL,
+		p13 INT NOT NULL,
+		p14 INT NOT NULL,
+		p15 INT NOT NULL,
+		p16 INT NOT NULL,
+		p17 INT NOT NULL,
+		p18 INT NOT NULL,
+		p19 INT NOT NULL,
+		p20 INT NOT NULL,
+		p21 INT NOT NULL,
+		p22 INT NOT NULL,
+		p23 INT NOT NULL,
+		p24 INT NOT NULL,
+		p25 INT NOT NULL,
+		R1 VARCHAR(250) NOT NULL,
+		R2 VARCHAR(250) NOT NULL,
+		R3 VARCHAR(250) NOT NULL,
+		R4 VARCHAR(250) NOT NULL,
+		FOREIGN KEY (empresa_id) REFERENCES Empresa(id) 
+	);
 
 ----------------------------P R O C E D I M I E N T O S   -- A L M A C E N A D O S   ------------------------------------
 
@@ -622,6 +658,150 @@ BEGIN
     SELECT @@ROWCOUNT AS RowsAffected; 
 END
 GO
+
+
+-- ------------------------------PROCEDIMIENTOS JERSON
+
+	-- SP: Insertar o Actualizar AutoCadenaValor
+IF OBJECT_ID('SP_InsertarOActualizarAutoCadenaValor') IS NOT NULL
+    DROP PROCEDURE SP_InsertarOActualizarAutoCadenaValor;
+GO
+
+CREATE PROCEDURE SP_InsertarOActualizarAutoCadenaValor
+    @empresa_id INT,
+    @p1 INT, @p2 INT, @p3 INT, @p4 INT, @p5 INT,
+    @p6 INT, @p7 INT, @p8 INT, @p9 INT, @p10 INT,
+    @p11 INT, @p12 INT, @p13 INT, @p14 INT, @p15 INT,
+    @p16 INT, @p17 INT, @p18 INT, @p19 INT, @p20 INT,
+    @p21 INT, @p22 INT, @p23 INT, @p24 INT, @p25 INT,
+    @total INT
+AS
+BEGIN
+    -- Verificar si ya existe un registro para esta empresa
+    IF EXISTS (SELECT 1 FROM AutoCadenaValor WHERE empresa_id = @empresa_id)
+    BEGIN
+        -- Actualizar registro existente
+        UPDATE AutoCadenaValor 
+        SET 
+            p1 = @p1, p2 = @p2, p3 = @p3, p4 = @p4, p5 = @p5,
+            p6 = @p6, p7 = @p7, p8 = @p8, p9 = @p9, p10 = @p10,
+            p11 = @p11, p12 = @p12, p13 = @p13, p14 = @p14, p15 = @p15,
+            p16 = @p16, p17 = @p17, p18 = @p18, p19 = @p19, p20 = @p20,
+            p21 = @p21, p22 = @p22, p23 = @p23, p24 = @p24, p25 = @p25,
+            total = @total
+        WHERE empresa_id = @empresa_id;
+        
+        SELECT 'ACTUALIZADO' AS Resultado;
+    END
+    ELSE
+    BEGIN
+        -- Insertar nuevo registro
+        INSERT INTO AutoCadenaValor (
+            empresa_id, p1, p2, p3, p4, p5,
+            p6, p7, p8, p9, p10,
+            p11, p12, p13, p14, p15,
+            p16, p17, p18, p19, p20,
+            p21, p22, p23, p24, p25,
+            total
+        )
+        VALUES (
+            @empresa_id, @p1, @p2, @p3, @p4, @p5,
+            @p6, @p7, @p8, @p9, @p10,
+            @p11, @p12, @p13, @p14, @p15,
+            @p16, @p17, @p18, @p19, @p20,
+            @p21, @p22, @p23, @p24, @p25,
+            @total
+        );
+        
+        SELECT 'INSERTADO' AS Resultado;
+    END
+END;
+GO
+
+
+-------------------------------------- PESTTTT
+
+-- SP: Insertar o Actualizar AutoPEST
+IF OBJECT_ID('SP_InsertarOActualizarAutoPEST') IS NOT NULL
+    DROP PROCEDURE SP_InsertarOActualizarAutoPEST;
+GO
+
+CREATE PROCEDURE SP_InsertarOActualizarAutoPEST
+    @empresa_id INT,
+    @p1 INT, @p2 INT, @p3 INT, @p4 INT, @p5 INT,
+    @p6 INT, @p7 INT, @p8 INT, @p9 INT, @p10 INT,
+    @p11 INT, @p12 INT, @p13 INT, @p14 INT, @p15 INT,
+    @p16 INT, @p17 INT, @p18 INT, @p19 INT, @p20 INT,
+    @p21 INT, @p22 INT, @p23 INT, @p24 INT, @p25 INT,
+    @R1 VARCHAR(250),
+    @R2 VARCHAR(250),
+    @R3 VARCHAR(250),
+    @R4 VARCHAR(250)
+AS
+BEGIN
+    -- Verificar si ya existe un registro para esta empresa
+    IF EXISTS (SELECT 1 FROM AutoPEST WHERE empresa_id = @empresa_id)
+    BEGIN
+        -- Actualizar registro existente
+        UPDATE AutoPEST 
+        SET 
+            p1 = @p1, p2 = @p2, p3 = @p3, p4 = @p4, p5 = @p5,
+            p6 = @p6, p7 = @p7, p8 = @p8, p9 = @p9, p10 = @p10,
+            p11 = @p11, p12 = @p12, p13 = @p13, p14 = @p14, p15 = @p15,
+            p16 = @p16, p17 = @p17, p18 = @p18, p19 = @p19, p20 = @p20,
+            p21 = @p21, p22 = @p22, p23 = @p23, p24 = @p24, p25 = @p25,
+            R1 = @R1, R2 = @R2, R3 = @R3, R4 = @R4
+        WHERE empresa_id = @empresa_id;
+        
+        SELECT 'ACTUALIZADO' AS Resultado;
+    END
+    ELSE
+    BEGIN
+        -- Insertar nuevo registro------g
+        INSERT INTO AutoPEST (
+            empresa_id, p1, p2, p3, p4, p5,
+            p6, p7, p8, p9, p10,
+            p11, p12, p13, p14, p15,
+            p16, p17, p18, p19, p20,
+            p21, p22, p23, p24, p25,
+            R1, R2, R3, R4
+        )
+        VALUES (
+            @empresa_id, @p1, @p2, @p3, @p4, @p5,
+            @p6, @p7, @p8, @p9, @p10,
+            @p11, @p12, @p13, @p14, @p15,
+            @p16, @p17, @p18, @p19, @p20,
+            @p21, @p22, @p23, @p24, @p25,
+            @R1, @R2, @R3, @R4
+        );
+        
+        SELECT 'INSERTADO' AS Resultado;
+    END
+END;
+GO
+
+-- SP: Consultar AutoPEST por empresa
+IF OBJECT_ID('SP_ConsultarAutoPEST') IS NOT NULL
+    DROP PROCEDURE SP_ConsultarAutoPEST;
+GO
+
+CREATE PROCEDURE SP_ConsultarAutoPEST
+    @empresa_id INT
+AS
+BEGIN
+    SELECT 
+        id, empresa_id,
+        p1, p2, p3, p4, p5,
+        p6, p7, p8, p9, p10,
+        p11, p12, p13, p14, p15,
+        p16, p17, p18, p19, p20,
+        p21, p22, p23, p24, p25,
+        R1, R2, R3, R4
+    FROM AutoPEST
+    WHERE empresa_id = @empresa_id;
+END;
+GO
+
 
 
 ----------------------------I N S E R C I O N E S  --------------------------------------

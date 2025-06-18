@@ -57,7 +57,7 @@ namespace WindowsFormsApp2.Modelos
     #endregion
 		
 		public DataClasses3DataContext() : 
-				base(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString3, mappingSource)
+				base(global::WindowsFormsApp2.Properties.Settings.Default.SOFTPETIConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -339,6 +339,40 @@ namespace WindowsFormsApp2.Modelos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), email, passwordHash);
 			return ((ISingleResult<SP_ActualizarPasswordResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_InsertarOActualizarAutoCadenaValor")]
+		public ISingleResult<SP_InsertarOActualizarAutoCadenaValorResult> SP_InsertarOActualizarAutoCadenaValor(
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p1, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p2, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p3, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p4, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p5, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p6, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p7, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p8, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p9, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p10, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p11, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p12, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p13, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p14, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p15, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p16, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p17, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p18, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p19, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p20, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p21, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p22, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p23, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p24, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p25, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> total)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, total);
+			return ((ISingleResult<SP_InsertarOActualizarAutoCadenaValorResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -2669,6 +2703,32 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._RowsAffected != value))
 				{
 					this._RowsAffected = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_InsertarOActualizarAutoCadenaValorResult
+	{
+		
+		private string _Resultado;
+		
+		public SP_InsertarOActualizarAutoCadenaValorResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Resultado", DbType="VarChar(11) NOT NULL", CanBeNull=false)]
+		public string Resultado
+		{
+			get
+			{
+				return this._Resultado;
+			}
+			set
+			{
+				if ((this._Resultado != value))
+				{
+					this._Resultado = value;
 				}
 			}
 		}

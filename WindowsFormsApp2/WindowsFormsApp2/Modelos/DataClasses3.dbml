@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SOFTPETI" Class="DataClasses3DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=SOFTPETI;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="WindowsFormsApp2.Properties.Settings" SettingsPropertyName="SOFTPETIConnectionString3" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=SOFTPETI;Integrated Security=True" SettingsObjectName="WindowsFormsApp2.Properties.Settings" SettingsPropertyName="SOFTPETIConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.USUARIO" Member="USUARIO">
     <Type Name="USUARIO">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -263,6 +263,38 @@
     <Parameter Name="PasswordHash" Parameter="passwordHash" Type="System.String" DbType="VarChar(64)" />
     <ElementType Name="SP_ActualizarPasswordResult">
       <Column Name="RowsAffected" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_InsertarOActualizarAutoCadenaValor" Method="SP_InsertarOActualizarAutoCadenaValor">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p1" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p2" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p3" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p4" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p5" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p6" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p7" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p8" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p9" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p10" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p11" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p12" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p13" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p14" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p15" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p16" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p17" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p18" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p19" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p20" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p21" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p22" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p23" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p24" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p25" Type="System.Int32" DbType="Int" />
+    <Parameter Name="total" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_InsertarOActualizarAutoCadenaValorResult">
+      <Column Name="Resultado" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>
