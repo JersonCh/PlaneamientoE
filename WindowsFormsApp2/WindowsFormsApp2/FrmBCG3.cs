@@ -823,5 +823,20 @@ namespace WindowsFormsApp2
                 GenerarMatrizBCG();
             }
         }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            this.TopMost = false;
+
+            this.Hide(); 
+
+            FrmMatrizDePorter frm = new FrmMatrizDePorter();
+            frm.StartPosition = FormStartPosition.CenterScreen;
+            frm.WindowState = FormWindowState.Maximized; 
+            frm.ShowDialog();
+
+            this.Show(); 
+            this.TopMost = true;
+        }
     }
 }

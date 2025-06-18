@@ -35,6 +35,7 @@ namespace WindowsFormsApp2.Clases
                             this.email = usuario.email;
                             this.nombre = usuario.nombre;
                             this.apellido = usuario.apellido;
+                            Sesion.UsuarioId = this.id;
                             MessageBox.Show("¡Autenticación exitosa!", "Depuración");
                             return true;
                         }

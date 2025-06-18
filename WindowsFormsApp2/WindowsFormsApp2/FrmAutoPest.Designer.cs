@@ -2493,7 +2493,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 866);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(950, 866);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtAmbientales);
             this.Controls.Add(this.txtTecnologicos);

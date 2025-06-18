@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBCG3));
             this.dgvPrevision = new System.Windows.Forms.DataGridView();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -55,6 +55,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSiguiente = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrevision)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVLC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVSA)).BeginInit();
@@ -70,7 +72,7 @@
             // 
             this.dgvPrevision.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPrevision.Location = new System.Drawing.Point(50, 15);
-            this.dgvPrevision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPrevision.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPrevision.Name = "dgvPrevision";
             this.dgvPrevision.RowHeadersWidth = 51;
             this.dgvPrevision.RowTemplate.Height = 24;
@@ -81,7 +83,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Location = new System.Drawing.Point(326, 163);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(122, 26);
             this.btnLimpiar.TabIndex = 6;
@@ -92,7 +94,7 @@
             // btnActualizar
             // 
             this.btnActualizar.Location = new System.Drawing.Point(189, 163);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(122, 26);
             this.btnActualizar.TabIndex = 5;
@@ -103,7 +105,7 @@
             // btnAgregarProducto
             // 
             this.btnAgregarProducto.Location = new System.Drawing.Point(52, 163);
-            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
             this.btnAgregarProducto.Size = new System.Drawing.Size(122, 26);
             this.btnAgregarProducto.TabIndex = 4;
@@ -115,7 +117,7 @@
             // 
             this.dgvVLC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVLC.Location = new System.Drawing.Point(509, 15);
-            this.dgvVLC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvVLC.Margin = new System.Windows.Forms.Padding(2);
             this.dgvVLC.Name = "dgvVLC";
             this.dgvVLC.RowHeadersWidth = 51;
             this.dgvVLC.RowTemplate.Height = 24;
@@ -127,7 +129,7 @@
             // btnLimpiarCompetidor
             // 
             this.btnLimpiarCompetidor.Location = new System.Drawing.Point(782, 163);
-            this.btnLimpiarCompetidor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiarCompetidor.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiarCompetidor.Name = "btnLimpiarCompetidor";
             this.btnLimpiarCompetidor.Size = new System.Drawing.Size(122, 26);
             this.btnLimpiarCompetidor.TabIndex = 10;
@@ -138,7 +140,7 @@
             // btnActualizarCompetidor
             // 
             this.btnActualizarCompetidor.Location = new System.Drawing.Point(645, 163);
-            this.btnActualizarCompetidor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizarCompetidor.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizarCompetidor.Name = "btnActualizarCompetidor";
             this.btnActualizarCompetidor.Size = new System.Drawing.Size(122, 26);
             this.btnActualizarCompetidor.TabIndex = 9;
@@ -149,7 +151,7 @@
             // btnAgregarCompetidor
             // 
             this.btnAgregarCompetidor.Location = new System.Drawing.Point(508, 163);
-            this.btnAgregarCompetidor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarCompetidor.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarCompetidor.Name = "btnAgregarCompetidor";
             this.btnAgregarCompetidor.Size = new System.Drawing.Size(122, 26);
             this.btnAgregarCompetidor.TabIndex = 8;
@@ -161,7 +163,7 @@
             // 
             this.dgvVSA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVSA.Location = new System.Drawing.Point(54, 207);
-            this.dgvVSA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvVSA.Margin = new System.Windows.Forms.Padding(2);
             this.dgvVSA.Name = "dgvVSA";
             this.dgvVSA.RowHeadersWidth = 51;
             this.dgvVSA.RowTemplate.Height = 24;
@@ -171,7 +173,7 @@
             // btnLimpiarVSA
             // 
             this.btnLimpiarVSA.Location = new System.Drawing.Point(274, 400);
-            this.btnLimpiarVSA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiarVSA.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiarVSA.Name = "btnLimpiarVSA";
             this.btnLimpiarVSA.Size = new System.Drawing.Size(122, 26);
             this.btnLimpiarVSA.TabIndex = 13;
@@ -182,7 +184,7 @@
             // btnActualizarVSA
             // 
             this.btnActualizarVSA.Location = new System.Drawing.Point(137, 400);
-            this.btnActualizarVSA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizarVSA.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizarVSA.Name = "btnActualizarVSA";
             this.btnActualizarVSA.Size = new System.Drawing.Size(122, 26);
             this.btnActualizarVSA.TabIndex = 12;
@@ -207,7 +209,7 @@
             // btnAnios
             // 
             this.btnAnios.Location = new System.Drawing.Point(311, 365);
-            this.btnAnios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnios.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnios.Name = "btnAnios";
             this.btnAnios.Size = new System.Drawing.Size(122, 26);
             this.btnAnios.TabIndex = 16;
@@ -218,7 +220,7 @@
             // btnActualizarResultado
             // 
             this.btnActualizarResultado.Location = new System.Drawing.Point(645, 377);
-            this.btnActualizarResultado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizarResultado.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizarResultado.Name = "btnActualizarResultado";
             this.btnActualizarResultado.Size = new System.Drawing.Size(122, 26);
             this.btnActualizarResultado.TabIndex = 20;
@@ -230,7 +232,7 @@
             // 
             this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultados.Location = new System.Drawing.Point(509, 207);
-            this.dgvResultados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvResultados.Margin = new System.Windows.Forms.Padding(2);
             this.dgvResultados.Name = "dgvResultados";
             this.dgvResultados.RowHeadersWidth = 51;
             this.dgvResultados.RowTemplate.Height = 24;
@@ -240,17 +242,17 @@
             // 
             // chartBCG2
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartBCG2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartBCG2.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartBCG2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartBCG2.Legends.Add(legend2);
             this.chartBCG2.Location = new System.Drawing.Point(177, 430);
-            this.chartBCG2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartBCG2.Margin = new System.Windows.Forms.Padding(2);
             this.chartBCG2.Name = "chartBCG2";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartBCG2.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartBCG2.Series.Add(series2);
             this.chartBCG2.Size = new System.Drawing.Size(607, 422);
             this.chartBCG2.TabIndex = 22;
             this.chartBCG2.Text = "chart2";
@@ -258,7 +260,7 @@
             // btnLimpiarChart
             // 
             this.btnLimpiarChart.Location = new System.Drawing.Point(475, 863);
-            this.btnLimpiarChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiarChart.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiarChart.Name = "btnLimpiarChart";
             this.btnLimpiarChart.Size = new System.Drawing.Size(122, 26);
             this.btnLimpiarChart.TabIndex = 24;
@@ -269,7 +271,7 @@
             // btnChart
             // 
             this.btnChart.Location = new System.Drawing.Point(338, 863);
-            this.btnChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChart.Margin = new System.Windows.Forms.Padding(2);
             this.btnChart.Name = "btnChart";
             this.btnChart.Size = new System.Drawing.Size(122, 26);
             this.btnChart.TabIndex = 23;
@@ -281,7 +283,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(762, 430);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(124, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -292,7 +294,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(762, 791);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(130, 83);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -303,7 +305,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(48, 791);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(136, 83);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -314,18 +316,43 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(48, 430);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(136, 83);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 29;
             this.pictureBox3.TabStop = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(12, 911);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(550, 13);
+            this.textBox1.TabIndex = 32;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnSiguiente.IconColor = System.Drawing.Color.Black;
+            this.btnSiguiente.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSiguiente.Location = new System.Drawing.Point(741, 891);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(178, 33);
+            this.btnSiguiente.TabIndex = 33;
+            this.btnSiguiente.Text = "Siguiente";
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
+            // 
             // FrmBCG3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 900);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(960, 932);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnLimpiarChart);
             this.Controls.Add(this.btnChart);
             this.Controls.Add(this.chartBCG2);
@@ -350,7 +377,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmBCG3";
             this.Text = "FrmBCG3";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrevision)).EndInit();
@@ -392,6 +419,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox textBox1;
+        private FontAwesome.Sharp.IconButton btnSiguiente;
         //private System.Windows.Forms.DataVisualization.Charting.Chart chartBCG;
     }
 }

@@ -32,10 +32,10 @@ namespace WindowsFormsApp2
             InitializeComponent();
 
             // Pantalla completa sin barra de título NI barra de tareas
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Normal;
-            this.Bounds = Screen.PrimaryScreen.Bounds;
-            this.TopMost = true;
+            //this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            //this.Bounds = Screen.PrimaryScreen.Bounds;
+            //this.TopMost = true;
 
             // Opcionales para apariencia y botones
             this.Text = string.Empty;
@@ -260,7 +260,7 @@ namespace WindowsFormsApp2
         private void btnMatriz_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FrmMatrizParticipacion());
+            OpenChildForm(new FrmBCG3());
         }
 
         private void btn5fuerzas_Click(object sender, EventArgs e)
