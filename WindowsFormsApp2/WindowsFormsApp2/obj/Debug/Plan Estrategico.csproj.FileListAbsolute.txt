@@ -899,3 +899,43 @@ C:\Users\andre\Desktop\PEI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\D
 C:\Users\andre\Desktop\PEI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Est.A4323EC3.Up2Date
 C:\Users\andre\Desktop\PEI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\andre\Desktop\PEI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\CustomMessageBox.Private.FormMessageBox.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG2.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG3.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCGgenerado.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCambioPassword.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDAFO.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard2.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmIdentif_Estrategia.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmPest.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAnalisis.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagosticoPorter.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoPest.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCadenaValor.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmEmpresas.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmInformacion.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmInicio.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizCame.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizDePorter.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizParticipacion.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Mision.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmObjetivos.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmResumen.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmValores.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Vision.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmLogin.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.GenerateResource.cache
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Est.A4323EC3.Up2Date
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\andre\Desktop\MAÑANA PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

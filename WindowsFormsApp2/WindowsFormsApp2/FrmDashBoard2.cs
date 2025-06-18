@@ -24,20 +24,33 @@ namespace WindowsFormsApp2
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+        private clsUsuario usuarioActual;
 
         //
-        public FrmDashBoard2()
+        public FrmDashBoard2(clsUsuario usuario)
         {
             InitializeComponent();
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 50);
-            panelMenu.Controls.Add(leftBorderBtn);
-            //Form
+
+            // Pantalla completa sin barra de título NI barra de tareas
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Normal;
+            this.Bounds = Screen.PrimaryScreen.Bounds;
+            this.TopMost = true;
+
+            // Opcionales para apariencia y botones
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+            // Panel lateral
+            leftBorderBtn = new Panel();
+            leftBorderBtn.Size = new Size(7, 50);
+            panelMenu.Controls.Add(leftBorderBtn);
+
+            // Guardar usuario
+            this.usuarioActual = usuario;
         }
+
 
         //
         private struct RGBColors
@@ -106,7 +119,6 @@ namespace WindowsFormsApp2
             panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lblTitleChildForm.Text = childForm.Text;
         }
 
 
@@ -162,7 +174,6 @@ namespace WindowsFormsApp2
             leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.White;
-            lblTitleChildForm.Text = "Home";
         }
 
         //Drag Form
@@ -283,6 +294,36 @@ namespace WindowsFormsApp2
         }
 
         private void lblfecha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Deseas cerrar sesión?",
+                                          "Cerrar sesión",
+                                          MessageBoxButtons.YesNo,
+                                          MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Limpiar los datos de sesión
+                Sesion.UsuarioId = 0;
+                Sesion.EmpresaId = 0;
+
+                // Volver al formulario de login
+                this.Hide();
+                FrmLogin login = new FrmLogin();
+                login.Show();
+            }
+        }
+
+        private void FrmDashBoard2_Load(object sender, EventArgs e)
+        {
+            txtNombreUsuario.Text = usuarioActual.nombre + " " + usuarioActual.apellido;
+        }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
         {
 
         }

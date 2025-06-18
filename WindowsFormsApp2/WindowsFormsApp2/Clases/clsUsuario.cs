@@ -7,10 +7,13 @@ using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2.Clases
 {
-    internal class clsUsuario
+    public class clsUsuario
     {
         public int id { get; set; }
         public string email { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+
 
         public bool Autenticar(string email, string passwordPlano)
         {
@@ -30,6 +33,8 @@ namespace WindowsFormsApp2.Clases
                         {
                             this.id = usuario.id;
                             this.email = usuario.email;
+                            this.nombre = usuario.nombre;
+                            this.apellido = usuario.apellido;
                             MessageBox.Show("¡Autenticación exitosa!", "Depuración");
                             return true;
                         }

@@ -20,12 +20,15 @@ namespace WindowsFormsApp2
         public string ultimaTemporalGenerada = "";
         public string correoTemporal = "";
 
+
         public FrmLogin()
         {
             InitializeComponent();
             //Instancia de dataset con objeto user
             DataClasses3DataContext user = new DataClasses3DataContext();
         }
+
+
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
@@ -57,7 +60,7 @@ namespace WindowsFormsApp2
                     ultimaTemporalGenerada = "";
                     correoTemporal = "";
                     this.Hide();
-                    Form objFrmDashBoard = new FrmDashBoard2();
+                    FrmDashBoard2 objFrmDashBoard = new FrmDashBoard2(usuario); // ← Pasa el usuario autenticado
                     objFrmDashBoard.Show();
                 }
             }
