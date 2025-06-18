@@ -104,6 +104,8 @@
             this.txtt15 = new System.Windows.Forms.TextBox();
             this.txtt14 = new System.Windows.Forms.TextBox();
             this.txtt13 = new System.Windows.Forms.TextBox();
+            this.btnImprimir = new System.Windows.Forms.Label();
+            this.btnPrevisualizar = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).BeginInit();
@@ -185,7 +187,6 @@
             this.txtMision.Name = "txtMision";
             this.txtMision.Size = new System.Drawing.Size(260, 155);
             this.txtMision.TabIndex = 76;
-            this.txtMision.TextChanged += new System.EventHandler(this.txtMision_TextChanged);
             // 
             // txtVision
             // 
@@ -370,7 +371,6 @@
             this.txtD1.Name = "txtD1";
             this.txtD1.Size = new System.Drawing.Size(271, 46);
             this.txtD1.TabIndex = 114;
-            this.txtD1.TextChanged += new System.EventHandler(this.txtD1_TextChanged);
             // 
             // button1
             // 
@@ -389,7 +389,6 @@
             this.button1.Text = "INDICE";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -425,7 +424,6 @@
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btncerrar.TabIndex = 89;
             this.btncerrar.TabStop = false;
-            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // btnminimisar
             // 
@@ -437,7 +435,6 @@
             this.btnminimisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnminimisar.TabIndex = 88;
             this.btnminimisar.TabStop = false;
-            this.btnminimisar.Click += new System.EventHandler(this.btnminimisar_Click);
             // 
             // label2
             // 
@@ -883,7 +880,6 @@
             this.txtO3.Name = "txtO3";
             this.txtO3.Size = new System.Drawing.Size(271, 49);
             this.txtO3.TabIndex = 181;
-            this.txtO3.TextChanged += new System.EventHandler(this.txtO3_TextChanged);
             // 
             // txtO2
             // 
@@ -945,6 +941,32 @@
             this.txtt13.Size = new System.Drawing.Size(257, 49);
             this.txtt13.TabIndex = 175;
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnImprimir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.ForeColor = System.Drawing.Color.White;
+            this.btnImprimir.Location = new System.Drawing.Point(380, 353);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(241, 27);
+            this.btnImprimir.TabIndex = 183;
+            this.btnImprimir.Text = "IMPRIMIR";
+            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // btnPrevisualizar
+            // 
+            this.btnPrevisualizar.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnPrevisualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevisualizar.ForeColor = System.Drawing.Color.White;
+            this.btnPrevisualizar.Location = new System.Drawing.Point(648, 353);
+            this.btnPrevisualizar.Name = "btnPrevisualizar";
+            this.btnPrevisualizar.Size = new System.Drawing.Size(241, 27);
+            this.btnPrevisualizar.TabIndex = 184;
+            this.btnPrevisualizar.Text = "PREVISUALIZAR";
+            this.btnPrevisualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPrevisualizar.Click += new System.EventHandler(this.btnPrevisualizar_Click);
+            // 
             // FrmResumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -952,6 +974,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1033, 803);
+            this.Controls.Add(this.btnPrevisualizar);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.txtO4);
             this.Controls.Add(this.txtO3);
             this.Controls.Add(this.txtO2);
@@ -1027,7 +1051,6 @@
             this.Name = "FrmResumen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmResumen";
-            this.Load += new System.EventHandler(this.FrmResumen_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).EndInit();
@@ -1112,5 +1135,7 @@
         private System.Windows.Forms.TextBox txtt15;
         private System.Windows.Forms.TextBox txtt14;
         private System.Windows.Forms.TextBox txtt13;
+        private System.Windows.Forms.Label btnImprimir;
+        private System.Windows.Forms.Label btnPrevisualizar;
     }
 }
