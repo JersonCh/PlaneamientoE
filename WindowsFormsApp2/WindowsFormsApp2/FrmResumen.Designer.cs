@@ -39,8 +39,8 @@
             this.txtValores = new System.Windows.Forms.TextBox();
             this.txtUnidadEstrategica = new System.Windows.Forms.TextBox();
             this.txtMisionO = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.txtIdentEstrategic = new System.Windows.Forms.TextBox();
+            this.txtConclusion = new System.Windows.Forms.TextBox();
             this.txtD1 = new System.Windows.Forms.TextBox();
             this.txtt8 = new System.Windows.Forms.TextBox();
             this.txtt7 = new System.Windows.Forms.TextBox();
@@ -113,6 +113,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -255,25 +256,25 @@
             this.txtMisionO.Size = new System.Drawing.Size(253, 253);
             this.txtMisionO.TabIndex = 83;
             // 
-            // textBox27
+            // txtIdentEstrategic
             // 
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox27.Location = new System.Drawing.Point(29, 1319);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(544, 168);
-            this.textBox27.TabIndex = 102;
+            this.txtIdentEstrategic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdentEstrategic.Location = new System.Drawing.Point(29, 1319);
+            this.txtIdentEstrategic.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIdentEstrategic.Multiline = true;
+            this.txtIdentEstrategic.Name = "txtIdentEstrategic";
+            this.txtIdentEstrategic.Size = new System.Drawing.Size(544, 168);
+            this.txtIdentEstrategic.TabIndex = 102;
             // 
-            // textBox31
+            // txtConclusion
             // 
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox31.Location = new System.Drawing.Point(602, 1317);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(601, 168);
-            this.textBox31.TabIndex = 106;
+            this.txtConclusion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtConclusion.Location = new System.Drawing.Point(602, 1317);
+            this.txtConclusion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtConclusion.Multiline = true;
+            this.txtConclusion.Name = "txtConclusion";
+            this.txtConclusion.Size = new System.Drawing.Size(601, 168);
+            this.txtConclusion.TabIndex = 106;
             // 
             // txtD1
             // 
@@ -605,7 +606,7 @@
             this.label26.Location = new System.Drawing.Point(26, 15);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(1203, 58);
+            this.label26.Size = new System.Drawing.Size(1186, 58);
             this.label26.TabIndex = 185;
             this.label26.Text = "RESUMEN EJECUTIVO DEL PLAN ESTRATÉGICO";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -937,7 +938,7 @@
             this.btnImprimir1.IconColor = System.Drawing.Color.White;
             this.btnImprimir1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnImprimir1.IconSize = 45;
-            this.btnImprimir1.Location = new System.Drawing.Point(995, 1504);
+            this.btnImprimir1.Location = new System.Drawing.Point(718, 1509);
             this.btnImprimir1.Name = "btnImprimir1";
             this.btnImprimir1.Size = new System.Drawing.Size(208, 48);
             this.btnImprimir1.TabIndex = 211;
@@ -957,7 +958,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 45;
-            this.iconButton1.Location = new System.Drawing.Point(764, 1504);
+            this.iconButton1.Location = new System.Drawing.Point(487, 1509);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(208, 48);
             this.iconButton1.TabIndex = 212;
@@ -1052,16 +1053,17 @@
             // 
             // panelAbajo
             // 
+            this.panelAbajo.Controls.Add(this.btnRegistrar);
             this.panelAbajo.Controls.Add(this.label17);
             this.panelAbajo.Controls.Add(this.label20);
             this.panelAbajo.Controls.Add(this.label21);
             this.panelAbajo.Controls.Add(this.label22);
             this.panelAbajo.Controls.Add(this.dgvObjE);
-            this.panelAbajo.Controls.Add(this.textBox31);
+            this.panelAbajo.Controls.Add(this.txtConclusion);
             this.panelAbajo.Controls.Add(this.dgvObjG);
             this.panelAbajo.Controls.Add(this.txtMisionO);
             this.panelAbajo.Controls.Add(this.label16);
-            this.panelAbajo.Controls.Add(this.textBox27);
+            this.panelAbajo.Controls.Add(this.txtIdentEstrategic);
             this.panelAbajo.Controls.Add(this.label15);
             this.panelAbajo.Controls.Add(this.txtt1);
             this.panelAbajo.Controls.Add(this.label14);
@@ -1176,6 +1178,23 @@
             this.label22.Text = "DEBILIDADES";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.BackColor = System.Drawing.Color.Black;
+            this.btnRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrar.Location = new System.Drawing.Point(934, 1507);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(240, 46);
+            this.btnRegistrar.TabIndex = 1021;
+            this.btnRegistrar.Text = "REGISTRAR CONCLUSION";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
             // FrmResumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1246,8 +1265,8 @@
         private System.Windows.Forms.TextBox txtValores;
         private System.Windows.Forms.TextBox txtUnidadEstrategica;
         private System.Windows.Forms.TextBox txtMisionO;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox txtIdentEstrategic;
+        private System.Windows.Forms.TextBox txtConclusion;
         private System.Windows.Forms.TextBox txtD1;
         private System.Windows.Forms.TextBox txtt8;
         private System.Windows.Forms.TextBox txtt7;
@@ -1320,5 +1339,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button btnRegistrar;
     }
 }

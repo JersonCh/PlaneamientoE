@@ -71,6 +71,25 @@ namespace WindowsFormsApp2
                     {
                         txtUnidadEstrategica.Text = unid_estrat.descripcion;
                     }
+                    // Cargar descripción de la estrategia identificada
+                    var identEstrategia = dc.IDENT_ESTRA
+                        .Where(ie => ie.empresa_id == empresaId)
+                        .OrderByDescending(ie => ie.fecha_registro) // Obtener la última estrategia registrada
+                        .FirstOrDefault();
+
+                    if (identEstrategia != null)
+                    {
+                        txtIdentEstrategic.Text = identEstrategia.descripcion;
+                    }
+                    var conclusionReciente = dc.CONCLUSION
+                    .Where(c => c.empresa_id == empresaId)
+                    .OrderByDescending(c => c.fecha_registro)
+                    .FirstOrDefault();
+
+                    if (conclusionReciente != null)
+                    {
+                        txtConclusion.Text = conclusionReciente.descripcion; // Mostrar la conclusión en el campo
+                    }
                     var objetivosGenerales = dc.SP_ListarObjetivosGenerales(empresaId).ToList();
                     var fortalezas = dc.SP_ListarFortalezas(empresaId).ToList();
                     if (fortalezas.Count > 0) txtF1.Text = fortalezas.ElementAtOrDefault(0)?.Fortaleza_Descripcion ?? "";
@@ -231,6 +250,17 @@ namespace WindowsFormsApp2
                 linesToPrint.Add(" 15. " + txtt15.Text);
                 linesToPrint.Add(" 16. " + txtt16.Text);
 
+                // Agregar Identificación Estratégica y Conclusión
+                linesToPrint.Add("");
+                linesToPrint.Add("Identificación Estratégica");
+                linesToPrint.Add(txtIdentEstrategic.Text); // Imprime el valor de Identificación Estratégica
+                linesToPrint.Add("");
+
+                linesToPrint.Add("Conclusión");
+                linesToPrint.Add(txtConclusion.Text); // Imprime el valor de la conclusión
+                linesToPrint.Add("");
+
+                // Configurar fuentes y colores
                 lineFonts = new List<Font>();
                 lineBrushes = new List<Brush>();
                 Font titleFont = new Font("Arial", 16, FontStyle.Bold);
@@ -251,7 +281,8 @@ namespace WindowsFormsApp2
                         line == "Misión" || line == "Visión" || line == "Valores" ||
                         line == "Unidad Estratégica" || line == "Objetivos Generales y Específicos" ||
                         line == "Fortalezas" || line == "Debilidades" || line == "Oportunidades" ||
-                        line == "Amenazas" || line == "Matriz CAME"
+                        line == "Amenazas" || line == "Matriz CAME" ||
+                        line == "Identificación Estratégica" || line == "Conclusión"
                     )
                     {
                         lineFonts.Add(sectionFont);
@@ -487,6 +518,84 @@ namespace WindowsFormsApp2
 
                 // Asegurar que no sea menor que la altura base
                 return Math.Max(60, alturaCalculada);
+            }
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            string descripcion = txtConclusion.Text.Trim(); // Obtener el texto de la conclusión
+            int empresaId = Sesion.EmpresaId; // Obtener el ID de la empresa desde la sesión
+
+            if (string.IsNullOrEmpty(descripcion))
+            {
+                MessageBox.Show("Por favor ingresa una conclusión válida.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    // Verificar si existe una conclusión para la empresa actual
+                    var conclusionExistente = dc.CONCLUSION
+                        .Where(c => c.empresa_id == empresaId)
+                        .FirstOrDefault();
+
+                    if (conclusionExistente != null)
+                    {
+                        // Actualizar la conclusión existente
+                        conclusionExistente.descripcion = descripcion;
+                        conclusionExistente.fecha_registro = DateTime.Now; // Actualizar la fecha de registro
+                        dc.SubmitChanges();
+
+                        MessageBox.Show("Conclusión actualizada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        // Insertar una nueva conclusión
+                        dc.CONCLUSION.InsertOnSubmit(new CONCLUSION
+                        {
+                            descripcion = descripcion,
+                            empresa_id = empresaId,
+                            fecha_registro = DateTime.Now
+                        });
+                        dc.SubmitChanges();
+
+                        MessageBox.Show("Conclusión registrada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                    // Actualizar el listado de datos (incluyendo el campo txtConclusion)
+                    ListarConclusion(dc, empresaId);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar o actualizar la conclusión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        private void ListarConclusion(DataClasses3DataContext dc, int empresaId)
+        {
+            try
+            {
+                // Obtener la última conclusión registrada para la empresa
+                var conclusionReciente = dc.CONCLUSION
+                    .Where(c => c.empresa_id == empresaId)
+                    .OrderByDescending(c => c.fecha_registro)
+                    .FirstOrDefault();
+
+                if (conclusionReciente != null)
+                {
+                    txtConclusion.Text = conclusionReciente.descripcion; // Mostrar la conclusión en el campo
+                }
+                else
+                {
+                    txtConclusion.Text = "No hay una conclusión registrada para esta empresa.";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al listar la conclusión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

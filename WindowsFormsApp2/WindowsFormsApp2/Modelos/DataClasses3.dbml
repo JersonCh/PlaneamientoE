@@ -22,6 +22,8 @@
       <Association Name="Empresa_ObjetivoG" Member="ObjetivoG" ThisKey="id" OtherKey="empresa_id" Type="ObjetivoG" />
       <Association Name="Empresa_BCG" Member="BCG" ThisKey="id" OtherKey="empresa_id" Type="BCG" />
       <Association Name="Empresa_UNID_ESTRA" Member="UNID_ESTRA" ThisKey="id" OtherKey="empresa_id" Type="UNID_ESTRA" />
+      <Association Name="Empresa_CONCLUSION" Member="CONCLUSION" ThisKey="id" OtherKey="empresa_id" Type="CONCLUSION" />
+      <Association Name="Empresa_IDENT_ESTRA" Member="IDENT_ESTRA" ThisKey="id" OtherKey="empresa_id" Type="IDENT_ESTRA" />
       <Association Name="USUARIO_Empresa" Member="USUARIO" ThisKey="usuario_id" OtherKey="id" Type="USUARIO" IsForeignKey="true" />
     </Type>
   </Table>
@@ -97,6 +99,24 @@
       <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Empresa_UNID_ESTRA" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONCLUSION" Member="CONCLUSION">
+    <Type Name="CONCLUSION">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Empresa_CONCLUSION" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IDENT_ESTRA" Member="IDENT_ESTRA">
+    <Type Name="IDENT_ESTRA">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Empresa_IDENT_ESTRA" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.SP_Autenticar" Method="SP_Autenticar">
@@ -460,5 +480,15 @@
     <ElementType Name="SP_InsertarOActualizarAutoPESTResult">
       <Column Name="Resultado" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.SP_RegistrarIDENT_ESTRA" Method="SP_RegistrarIDENT_ESTRA">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_RegistrarConclusion" Method="SP_RegistrarConclusion">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

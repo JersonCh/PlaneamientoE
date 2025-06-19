@@ -158,6 +158,30 @@ BEGIN
 		FOREIGN KEY (empresa_id) REFERENCES EMPRESA(id)
 	);
 END
+
+
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'IDENT_ESTRA')
+BEGIN
+	CREATE TABLE IDENT_ESTRA (
+		id INT PRIMARY KEY IDENTITY,
+		descripcion NVARCHAR(MAX),
+		fecha_registro DATETIME DEFAULT GETDATE(),
+		empresa_id INT,
+		FOREIGN KEY (empresa_id) REFERENCES EMPRESA(id)
+	);
+END
+-- Crea la tabla CONCLUSION si no existe
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'CONCLUSION')
+BEGIN
+    CREATE TABLE CONCLUSION (
+        id INT PRIMARY KEY IDENTITY, -- ID autoincremental
+        descripcion NVARCHAR(MAX),   -- Descripción de la conclusión
+        fecha_registro DATETIME DEFAULT GETDATE(), -- Fecha de registro
+        empresa_id INT,              -- ID de la empresa
+        FOREIGN KEY (empresa_id) REFERENCES EMPRESA(id) -- Relación con la tabla EMPRESA
+    );
+END;
+GO
 GO
 	-- TABLA MATRIZ CAME
 	CREATE TABLE MatrizCAME (
@@ -980,6 +1004,30 @@ BEGIN
     WHERE empresa_id = @empresa_id;
 END
 GO
+
+
+CREATE OR ALTER PROCEDURE SP_RegistrarConclusion
+    @descripcion NVARCHAR(MAX), -- Descripción de la conclusión
+    @empresa_id INT             -- ID de la empresa
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Inserta la conclusión en la tabla CONCLUSION
+    INSERT INTO CONCLUSION (descripcion, empresa_id)
+    VALUES (@descripcion, @empresa_id);
+END;
+go
+CREATE PROCEDURE SP_RegistrarIDENT_ESTRA
+    @descripcion NVARCHAR(MAX),
+    @empresa_id INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO IDENT_ESTRA (descripcion, empresa_id)
+    VALUES (@descripcion, @empresa_id);
+END
 
 
 ----------------------------I N S E R C I O N E S  --------------------------------------
