@@ -27,6 +27,21 @@ namespace WindowsFormsApp2
         private clsUsuario usuarioActual;
 
         //
+        private bool isInformacionEmpresaCompleted = false;
+        private bool isMisionCompleted = false;
+        private bool isVisionCompleted = false;
+        private bool isValoresCompleted = false;
+        private bool isAnalisisIyECompleted = false;
+        private bool isObjetivosCompleted = false;
+        private bool isCadenaValorCompleted = false;
+        private bool isMatrizCompleted = false;
+        private bool is5FuerzasCompleted = false;
+        private bool isPestCompleted = false;
+        private bool isIdentificacionECompleted = false;
+        private bool isMatrizCameCompleted = false;
+        //private bool isResumenCompleted = false;
+
+        //
         public FrmDashBoard2(clsUsuario usuario)
         {
             InitializeComponent();
@@ -49,6 +64,20 @@ namespace WindowsFormsApp2
 
             // Guardar usuario
             this.usuarioActual = usuario;
+
+            // Inicializar todos los botones bloqueados
+            btnMision.Enabled = false;
+            btnVision.Enabled = false;
+            btnValores.Enabled = false;
+            btnAnalisisIyE.Enabled = false;
+            btnObjetivos.Enabled = false;
+            btnCadenaValor.Enabled = false;
+            btnMatriz.Enabled = false;
+            btn5fuerzas.Enabled = false;
+            btnPest.Enabled = false;
+            btnIdentificacionE.Enabled = false;
+            btnMatrizCame.Enabled = false;
+            //iconButton1.Enabled = false;
         }
 
 
@@ -126,6 +155,9 @@ namespace WindowsFormsApp2
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmEmpresas());
+            //
+            isInformacionEmpresaCompleted = true;
+            CheckAndEnableNextButton();
 
         }
 
@@ -133,30 +165,40 @@ namespace WindowsFormsApp2
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new Mision());
+            isMisionCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnVision_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new Vision());
+            isVisionCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnValores_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmValores());
+            isValoresCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnAnalisisIyE_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmAnalisis());
+            isAnalisisIyECompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnObjetivos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmObjetivos());
+            isObjetivosCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
@@ -255,6 +297,8 @@ namespace WindowsFormsApp2
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmAutoCadenaValor());
+            isCadenaValorCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnMatriz_Click(object sender, EventArgs e)
@@ -262,36 +306,49 @@ namespace WindowsFormsApp2
             ActivateButton(sender, RGBColors.color6);
             //OpenChildForm(new FrmBCG3());
             OpenChildForm(new FrmBCGinicio());
+            isMatrizCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btn5fuerzas_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmAutodiagosticoPorter());
+            is5FuerzasCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnPest_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmAutoPest());
+            isPestCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnIdentificacionE_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmIdentif_Estrategia());
+            isIdentificacionECompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void btnMatrizCame_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmMatrizCame());
+            isMatrizCameCompleted = true;
+            CheckAndEnableNextButton();
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FrmResumen());
+            //resuumen
+            //isResumenCompleted = true;
+            //CheckAndEnableNextButton();
         }
 
         private void lblfecha_Click(object sender, EventArgs e)
@@ -336,6 +393,70 @@ namespace WindowsFormsApp2
 
             // Abrir FrmBCG3 usando el método existente del dashboard
             OpenChildForm(new FrmBCG3());
+        }
+
+        // Función para habilitar el siguiente botón si el formulario anterior está completado
+        private void CheckAndEnableNextButton()
+        {
+            if (isInformacionEmpresaCompleted)
+            {
+                btnMision.Enabled = true;
+            }
+
+            if (isMisionCompleted)
+            {
+                btnVision.Enabled = true;
+            }
+
+            if (isVisionCompleted)
+            {
+                btnValores.Enabled = true;
+            }
+
+            if (isValoresCompleted)
+            {
+                btnAnalisisIyE.Enabled = true;
+            }
+
+            if (isAnalisisIyECompleted)
+            {
+                btnObjetivos.Enabled = true;
+            }
+
+            if (isObjetivosCompleted)
+            {
+                btnCadenaValor.Enabled = true;
+            }
+
+            if (isCadenaValorCompleted)
+            {
+                btnMatriz.Enabled = true;
+            }
+
+            if (isMatrizCompleted)
+            {
+                btn5fuerzas.Enabled = true;
+            }
+
+            if (is5FuerzasCompleted)
+            {
+                btnPest.Enabled = true;
+            }
+
+            if (isPestCompleted)
+            {
+                btnIdentificacionE.Enabled = true;
+            }
+
+            if (isIdentificacionECompleted)
+            {
+                btnMatrizCame.Enabled = true;
+            }
+
+            //if (isMatrizCameCompleted)
+            //{
+               // iconButton1.Enabled = true;
+            //}
         }
 
     }

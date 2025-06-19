@@ -148,7 +148,7 @@
             this.txtEmpresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmpresa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpresa.Location = new System.Drawing.Point(84, 108);
-            this.txtEmpresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmpresa.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmpresa.Multiline = true;
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(326, 26);
@@ -170,10 +170,10 @@
             this.txtFecha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFecha.Location = new System.Drawing.Point(533, 110);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtFecha.Multiline = true;
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(263, 26);
+            this.txtFecha.Size = new System.Drawing.Size(270, 26);
             this.txtFecha.TabIndex = 72;
             // 
             // label3
@@ -192,10 +192,10 @@
             this.txtEmprendedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmprendedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmprendedor.Location = new System.Drawing.Point(926, 110);
-            this.txtEmprendedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmprendedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmprendedor.Multiline = true;
             this.txtEmprendedor.Name = "txtEmprendedor";
-            this.txtEmprendedor.Size = new System.Drawing.Size(282, 26);
+            this.txtEmprendedor.Size = new System.Drawing.Size(285, 26);
             this.txtEmprendedor.TabIndex = 74;
             // 
             // txtMision
@@ -203,7 +203,7 @@
             this.txtMision.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMision.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMision.Location = new System.Drawing.Point(26, 193);
-            this.txtMision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMision.Margin = new System.Windows.Forms.Padding(2);
             this.txtMision.Multiline = true;
             this.txtMision.Name = "txtMision";
             this.txtMision.Size = new System.Drawing.Size(584, 64);
@@ -214,10 +214,10 @@
             this.txtVision.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVision.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVision.Location = new System.Drawing.Point(620, 193);
-            this.txtVision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtVision.Margin = new System.Windows.Forms.Padding(2);
             this.txtVision.Multiline = true;
             this.txtVision.Name = "txtVision";
-            this.txtVision.Size = new System.Drawing.Size(587, 64);
+            this.txtVision.Size = new System.Drawing.Size(591, 64);
             this.txtVision.TabIndex = 78;
             // 
             // txtValores
@@ -225,7 +225,7 @@
             this.txtValores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtValores.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValores.Location = new System.Drawing.Point(26, 316);
-            this.txtValores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtValores.Margin = new System.Windows.Forms.Padding(2);
             this.txtValores.Multiline = true;
             this.txtValores.Name = "txtValores";
             this.txtValores.Size = new System.Drawing.Size(584, 59);
@@ -236,10 +236,10 @@
             this.txtUnidadEstrategica.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUnidadEstrategica.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUnidadEstrategica.Location = new System.Drawing.Point(620, 316);
-            this.txtUnidadEstrategica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUnidadEstrategica.Margin = new System.Windows.Forms.Padding(2);
             this.txtUnidadEstrategica.Multiline = true;
             this.txtUnidadEstrategica.Name = "txtUnidadEstrategica";
-            this.txtUnidadEstrategica.Size = new System.Drawing.Size(587, 59);
+            this.txtUnidadEstrategica.Size = new System.Drawing.Size(591, 59);
             this.txtUnidadEstrategica.TabIndex = 82;
             // 
             // txtMisionO
@@ -247,19 +247,19 @@
             this.txtMisionO.BackColor = System.Drawing.Color.White;
             this.txtMisionO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMisionO.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMisionO.Location = new System.Drawing.Point(22, 57);
-            this.txtMisionO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMisionO.Location = new System.Drawing.Point(22, 76);
+            this.txtMisionO.Margin = new System.Windows.Forms.Padding(2);
             this.txtMisionO.Multiline = true;
             this.txtMisionO.Name = "txtMisionO";
             this.txtMisionO.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtMisionO.Size = new System.Drawing.Size(248, 272);
+            this.txtMisionO.Size = new System.Drawing.Size(253, 253);
             this.txtMisionO.TabIndex = 83;
             // 
             // textBox27
             // 
             this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox27.Location = new System.Drawing.Point(29, 1319);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox27.Margin = new System.Windows.Forms.Padding(2);
             this.textBox27.Multiline = true;
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(544, 168);
@@ -269,7 +269,7 @@
             // 
             this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox31.Location = new System.Drawing.Point(602, 1317);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox31.Margin = new System.Windows.Forms.Padding(2);
             this.textBox31.Multiline = true;
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(601, 168);
@@ -279,7 +279,7 @@
             // 
             this.txtD1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtD1.Location = new System.Drawing.Point(170, 401);
-            this.txtD1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtD1.Margin = new System.Windows.Forms.Padding(2);
             this.txtD1.Multiline = true;
             this.txtD1.Name = "txtD1";
             this.txtD1.Size = new System.Drawing.Size(403, 46);
@@ -289,7 +289,7 @@
             // 
             this.txtt8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt8.Location = new System.Drawing.Point(610, 767);
-            this.txtt8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt8.Margin = new System.Windows.Forms.Padding(2);
             this.txtt8.Multiline = true;
             this.txtt8.Name = "txtt8";
             this.txtt8.Size = new System.Drawing.Size(593, 51);
@@ -299,7 +299,7 @@
             // 
             this.txtt7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt7.Location = new System.Drawing.Point(610, 716);
-            this.txtt7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt7.Margin = new System.Windows.Forms.Padding(2);
             this.txtt7.Multiline = true;
             this.txtt7.Name = "txtt7";
             this.txtt7.Size = new System.Drawing.Size(593, 46);
@@ -309,7 +309,7 @@
             // 
             this.txtt6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt6.Location = new System.Drawing.Point(610, 661);
-            this.txtt6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt6.Margin = new System.Windows.Forms.Padding(2);
             this.txtt6.Multiline = true;
             this.txtt6.Name = "txtt6";
             this.txtt6.Size = new System.Drawing.Size(593, 51);
@@ -319,7 +319,7 @@
             // 
             this.txtt5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt5.Location = new System.Drawing.Point(610, 608);
-            this.txtt5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt5.Margin = new System.Windows.Forms.Padding(2);
             this.txtt5.Multiline = true;
             this.txtt5.Name = "txtt5";
             this.txtt5.Size = new System.Drawing.Size(593, 49);
@@ -329,7 +329,7 @@
             // 
             this.txtt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt4.Location = new System.Drawing.Point(610, 552);
-            this.txtt4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt4.Margin = new System.Windows.Forms.Padding(2);
             this.txtt4.Multiline = true;
             this.txtt4.Name = "txtt4";
             this.txtt4.Size = new System.Drawing.Size(593, 51);
@@ -339,7 +339,7 @@
             // 
             this.txtt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt3.Location = new System.Drawing.Point(610, 500);
-            this.txtt3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt3.Margin = new System.Windows.Forms.Padding(2);
             this.txtt3.Multiline = true;
             this.txtt3.Name = "txtt3";
             this.txtt3.Size = new System.Drawing.Size(593, 48);
@@ -349,7 +349,7 @@
             // 
             this.txtt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt2.Location = new System.Drawing.Point(610, 451);
-            this.txtt2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt2.Margin = new System.Windows.Forms.Padding(2);
             this.txtt2.Multiline = true;
             this.txtt2.Name = "txtt2";
             this.txtt2.Size = new System.Drawing.Size(593, 46);
@@ -359,7 +359,7 @@
             // 
             this.txtt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt1.Location = new System.Drawing.Point(610, 401);
-            this.txtt1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt1.Margin = new System.Windows.Forms.Padding(2);
             this.txtt1.Multiline = true;
             this.txtt1.Name = "txtt1";
             this.txtt1.Size = new System.Drawing.Size(593, 46);
@@ -369,7 +369,7 @@
             // 
             this.txtA4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtA4.Location = new System.Drawing.Point(170, 766);
-            this.txtA4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA4.Margin = new System.Windows.Forms.Padding(2);
             this.txtA4.Multiline = true;
             this.txtA4.Name = "txtA4";
             this.txtA4.Size = new System.Drawing.Size(403, 51);
@@ -379,7 +379,7 @@
             // 
             this.txtA3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtA3.Location = new System.Drawing.Point(170, 713);
-            this.txtA3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA3.Margin = new System.Windows.Forms.Padding(2);
             this.txtA3.Multiline = true;
             this.txtA3.Name = "txtA3";
             this.txtA3.Size = new System.Drawing.Size(403, 49);
@@ -389,7 +389,7 @@
             // 
             this.txtA2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtA2.Location = new System.Drawing.Point(170, 661);
-            this.txtA2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA2.Margin = new System.Windows.Forms.Padding(2);
             this.txtA2.Multiline = true;
             this.txtA2.Name = "txtA2";
             this.txtA2.Size = new System.Drawing.Size(403, 48);
@@ -399,7 +399,7 @@
             // 
             this.txtA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtA1.Location = new System.Drawing.Point(170, 607);
-            this.txtA1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtA1.Margin = new System.Windows.Forms.Padding(2);
             this.txtA1.Multiline = true;
             this.txtA1.Name = "txtA1";
             this.txtA1.Size = new System.Drawing.Size(403, 50);
@@ -409,7 +409,7 @@
             // 
             this.txtD4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtD4.Location = new System.Drawing.Point(170, 554);
-            this.txtD4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtD4.Margin = new System.Windows.Forms.Padding(2);
             this.txtD4.Multiline = true;
             this.txtD4.Name = "txtD4";
             this.txtD4.Size = new System.Drawing.Size(403, 48);
@@ -419,7 +419,7 @@
             // 
             this.txtD3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtD3.Location = new System.Drawing.Point(170, 500);
-            this.txtD3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtD3.Margin = new System.Windows.Forms.Padding(2);
             this.txtD3.Multiline = true;
             this.txtD3.Name = "txtD3";
             this.txtD3.Size = new System.Drawing.Size(403, 48);
@@ -429,7 +429,7 @@
             // 
             this.txtD2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtD2.Location = new System.Drawing.Point(170, 451);
-            this.txtD2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtD2.Margin = new System.Windows.Forms.Padding(2);
             this.txtD2.Multiline = true;
             this.txtD2.Name = "txtD2";
             this.txtD2.Size = new System.Drawing.Size(403, 44);
@@ -439,7 +439,7 @@
             // 
             this.txtF4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtF4.Location = new System.Drawing.Point(170, 982);
-            this.txtF4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtF4.Margin = new System.Windows.Forms.Padding(2);
             this.txtF4.Multiline = true;
             this.txtF4.Name = "txtF4";
             this.txtF4.Size = new System.Drawing.Size(403, 51);
@@ -449,7 +449,7 @@
             // 
             this.txtF3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtF3.Location = new System.Drawing.Point(170, 928);
-            this.txtF3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtF3.Margin = new System.Windows.Forms.Padding(2);
             this.txtF3.Multiline = true;
             this.txtF3.Name = "txtF3";
             this.txtF3.Size = new System.Drawing.Size(403, 49);
@@ -459,7 +459,7 @@
             // 
             this.txtF2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtF2.Location = new System.Drawing.Point(170, 876);
-            this.txtF2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtF2.Margin = new System.Windows.Forms.Padding(2);
             this.txtF2.Multiline = true;
             this.txtF2.Name = "txtF2";
             this.txtF2.Size = new System.Drawing.Size(403, 48);
@@ -469,7 +469,7 @@
             // 
             this.txtF1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtF1.Location = new System.Drawing.Point(170, 821);
-            this.txtF1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtF1.Margin = new System.Windows.Forms.Padding(2);
             this.txtF1.Multiline = true;
             this.txtF1.Name = "txtF1";
             this.txtF1.Size = new System.Drawing.Size(403, 50);
@@ -479,7 +479,7 @@
             // 
             this.txtt12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt12.Location = new System.Drawing.Point(610, 982);
-            this.txtt12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt12.Margin = new System.Windows.Forms.Padding(2);
             this.txtt12.Multiline = true;
             this.txtt12.Name = "txtt12";
             this.txtt12.Size = new System.Drawing.Size(593, 51);
@@ -489,7 +489,7 @@
             // 
             this.txtt11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt11.Location = new System.Drawing.Point(610, 931);
-            this.txtt11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt11.Margin = new System.Windows.Forms.Padding(2);
             this.txtt11.Multiline = true;
             this.txtt11.Name = "txtt11";
             this.txtt11.Size = new System.Drawing.Size(593, 46);
@@ -499,7 +499,7 @@
             // 
             this.txtt10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt10.Location = new System.Drawing.Point(610, 876);
-            this.txtt10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt10.Margin = new System.Windows.Forms.Padding(2);
             this.txtt10.Multiline = true;
             this.txtt10.Name = "txtt10";
             this.txtt10.Size = new System.Drawing.Size(593, 51);
@@ -509,7 +509,7 @@
             // 
             this.txtt9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt9.Location = new System.Drawing.Point(610, 823);
-            this.txtt9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt9.Margin = new System.Windows.Forms.Padding(2);
             this.txtt9.Multiline = true;
             this.txtt9.Name = "txtt9";
             this.txtt9.Size = new System.Drawing.Size(593, 49);
@@ -519,7 +519,7 @@
             // 
             this.txtO4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtO4.Location = new System.Drawing.Point(170, 1198);
-            this.txtO4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtO4.Margin = new System.Windows.Forms.Padding(2);
             this.txtO4.Multiline = true;
             this.txtO4.Name = "txtO4";
             this.txtO4.Size = new System.Drawing.Size(403, 51);
@@ -529,7 +529,7 @@
             // 
             this.txtO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtO3.Location = new System.Drawing.Point(170, 1145);
-            this.txtO3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtO3.Margin = new System.Windows.Forms.Padding(2);
             this.txtO3.Multiline = true;
             this.txtO3.Name = "txtO3";
             this.txtO3.Size = new System.Drawing.Size(403, 49);
@@ -539,7 +539,7 @@
             // 
             this.txtO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtO2.Location = new System.Drawing.Point(170, 1092);
-            this.txtO2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtO2.Margin = new System.Windows.Forms.Padding(2);
             this.txtO2.Multiline = true;
             this.txtO2.Name = "txtO2";
             this.txtO2.Size = new System.Drawing.Size(403, 48);
@@ -549,7 +549,7 @@
             // 
             this.txtO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtO1.Location = new System.Drawing.Point(170, 1038);
-            this.txtO1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtO1.Margin = new System.Windows.Forms.Padding(2);
             this.txtO1.Multiline = true;
             this.txtO1.Name = "txtO1";
             this.txtO1.Size = new System.Drawing.Size(403, 50);
@@ -559,7 +559,7 @@
             // 
             this.txtt16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt16.Location = new System.Drawing.Point(610, 1197);
-            this.txtt16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt16.Margin = new System.Windows.Forms.Padding(2);
             this.txtt16.Multiline = true;
             this.txtt16.Name = "txtt16";
             this.txtt16.Size = new System.Drawing.Size(593, 51);
@@ -569,7 +569,7 @@
             // 
             this.txtt15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt15.Location = new System.Drawing.Point(610, 1146);
-            this.txtt15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt15.Margin = new System.Windows.Forms.Padding(2);
             this.txtt15.Multiline = true;
             this.txtt15.Name = "txtt15";
             this.txtt15.Size = new System.Drawing.Size(593, 46);
@@ -579,7 +579,7 @@
             // 
             this.txtt14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt14.Location = new System.Drawing.Point(610, 1091);
-            this.txtt14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt14.Margin = new System.Windows.Forms.Padding(2);
             this.txtt14.Multiline = true;
             this.txtt14.Name = "txtt14";
             this.txtt14.Size = new System.Drawing.Size(593, 51);
@@ -589,7 +589,7 @@
             // 
             this.txtt13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtt13.Location = new System.Drawing.Point(610, 1038);
-            this.txtt13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtt13.Margin = new System.Windows.Forms.Padding(2);
             this.txtt13.Multiline = true;
             this.txtt13.Name = "txtt13";
             this.txtt13.Size = new System.Drawing.Size(593, 49);
@@ -605,7 +605,7 @@
             this.label26.Location = new System.Drawing.Point(26, 15);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(1124, 58);
+            this.label26.Size = new System.Drawing.Size(1203, 58);
             this.label26.TabIndex = 185;
             this.label26.Text = "RESUMEN EJECUTIVO DEL PLAN ESTRATÉGICO";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -781,7 +781,7 @@
             // 
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(325, 20);
+            this.label8.Location = new System.Drawing.Point(335, 20);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(267, 27);
             this.label8.TabIndex = 200;
@@ -796,7 +796,7 @@
             this.iconPictureBox9.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox9.IconSize = 44;
-            this.iconPictureBox9.Location = new System.Drawing.Point(275, 10);
+            this.iconPictureBox9.Location = new System.Drawing.Point(285, 10);
             this.iconPictureBox9.Name = "iconPictureBox9";
             this.iconPictureBox9.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox9.TabIndex = 199;
@@ -806,7 +806,7 @@
             // 
             this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(667, 20);
+            this.label10.Location = new System.Drawing.Point(790, 20);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(267, 27);
             this.label10.TabIndex = 202;
@@ -821,7 +821,7 @@
             this.iconPictureBox10.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox10.IconSize = 44;
-            this.iconPictureBox10.Location = new System.Drawing.Point(616, 10);
+            this.iconPictureBox10.Location = new System.Drawing.Point(739, 10);
             this.iconPictureBox10.Name = "iconPictureBox10";
             this.iconPictureBox10.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox10.TabIndex = 201;
@@ -937,7 +937,7 @@
             this.btnImprimir1.IconColor = System.Drawing.Color.White;
             this.btnImprimir1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnImprimir1.IconSize = 45;
-            this.btnImprimir1.Location = new System.Drawing.Point(602, 1504);
+            this.btnImprimir1.Location = new System.Drawing.Point(995, 1504);
             this.btnImprimir1.Name = "btnImprimir1";
             this.btnImprimir1.Size = new System.Drawing.Size(208, 48);
             this.btnImprimir1.TabIndex = 211;
@@ -957,7 +957,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 45;
-            this.iconButton1.Location = new System.Drawing.Point(382, 1504);
+            this.iconButton1.Location = new System.Drawing.Point(764, 1504);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(208, 48);
             this.iconButton1.TabIndex = 212;
@@ -972,7 +972,7 @@
             this.label73.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.Location = new System.Drawing.Point(211, 1555);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(822, 33);
+            this.label73.Size = new System.Drawing.Size(822, 20);
             this.label73.TabIndex = 1009;
             // 
             // label19
@@ -981,7 +981,7 @@
             this.label19.BackColor = System.Drawing.Color.LightGray;
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(-7, 3609);
+            this.label19.Location = new System.Drawing.Point(-7, 3589);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(140, 201);
@@ -995,7 +995,7 @@
             this.label14.BackColor = System.Drawing.Color.LightGray;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(-7, 3816);
+            this.label14.Location = new System.Drawing.Point(-7, 3796);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(140, 209);
@@ -1009,7 +1009,7 @@
             this.label15.BackColor = System.Drawing.Color.LightGray;
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(-6, 4030);
+            this.label15.Location = new System.Drawing.Point(-6, 4010);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(140, 209);
@@ -1023,7 +1023,7 @@
             this.label16.BackColor = System.Drawing.Color.LightGray;
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(-7, 4247);
+            this.label16.Location = new System.Drawing.Point(-7, 4227);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(140, 209);
@@ -1034,19 +1034,19 @@
             // dgvObjE
             // 
             this.dgvObjE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvObjE.Location = new System.Drawing.Point(632, 71);
+            this.dgvObjE.Location = new System.Drawing.Point(742, 76);
             this.dgvObjE.Name = "dgvObjE";
             this.dgvObjE.RowHeadersWidth = 51;
-            this.dgvObjE.Size = new System.Drawing.Size(350, 253);
+            this.dgvObjE.Size = new System.Drawing.Size(461, 253);
             this.dgvObjE.TabIndex = 1015;
             // 
             // dgvObjG
             // 
             this.dgvObjG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvObjG.Location = new System.Drawing.Point(275, 72);
+            this.dgvObjG.Location = new System.Drawing.Point(291, 76);
             this.dgvObjG.Name = "dgvObjG";
             this.dgvObjG.RowHeadersWidth = 51;
-            this.dgvObjG.Size = new System.Drawing.Size(350, 253);
+            this.dgvObjG.Size = new System.Drawing.Size(441, 253);
             this.dgvObjG.TabIndex = 1014;
             this.dgvObjG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvObjG_CellClick);
             // 
@@ -1115,9 +1115,9 @@
             this.panelAbajo.Controls.Add(this.txtO3);
             this.panelAbajo.Controls.Add(this.txtO4);
             this.panelAbajo.Location = new System.Drawing.Point(8, 379);
-            this.panelAbajo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelAbajo.Margin = new System.Windows.Forms.Padding(2);
             this.panelAbajo.Name = "panelAbajo";
-            this.panelAbajo.Size = new System.Drawing.Size(1222, 1630);
+            this.panelAbajo.Size = new System.Drawing.Size(1222, 1591);
             this.panelAbajo.TabIndex = 1016;
             // 
             // label17
@@ -1126,7 +1126,7 @@
             this.label17.BackColor = System.Drawing.Color.LightGray;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(25, 1040);
+            this.label17.Location = new System.Drawing.Point(26, 1039);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(140, 209);
@@ -1140,7 +1140,7 @@
             this.label20.BackColor = System.Drawing.Color.LightGray;
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(26, 822);
+            this.label20.Location = new System.Drawing.Point(26, 821);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(140, 209);
@@ -1154,7 +1154,7 @@
             this.label21.BackColor = System.Drawing.Color.LightGray;
             this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(25, 609);
+            this.label21.Location = new System.Drawing.Point(26, 607);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(140, 209);
@@ -1168,7 +1168,7 @@
             this.label22.BackColor = System.Drawing.Color.LightGray;
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(25, 401);
+            this.label22.Location = new System.Drawing.Point(26, 401);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(140, 201);
