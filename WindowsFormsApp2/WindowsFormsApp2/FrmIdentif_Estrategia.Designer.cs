@@ -185,6 +185,8 @@
             this.txtO1_F2_DO = new System.Windows.Forms.TextBox();
             this.txtO1_F1_DO = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnListar
@@ -202,7 +204,6 @@
             this.btnListar.TabIndex = 765;
             this.btnListar.Text = "VER ANALISIS DAFO";
             this.btnListar.UseVisualStyleBackColor = false;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // label1
             // 
@@ -860,17 +861,18 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(398, 987);
+            this.btnRegistrar.Location = new System.Drawing.Point(134, 50);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(469, 44);
             this.btnRegistrar.TabIndex = 854;
             this.btnRegistrar.Text = "REGISTRAR RESULTADOS";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(395, 955);
+            this.label6.Location = new System.Drawing.Point(131, 18);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(479, 29);
             this.label6.TabIndex = 853;
@@ -1765,6 +1767,15 @@
     "rnos  de su empresa son los siguientes: ";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnRegistrar);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(251, 959);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(733, 100);
+            this.panel1.TabIndex = 856;
+            // 
             // FrmIdentif_Estrategia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1772,9 +1783,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1252, 1061);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox60);
             this.Controls.Add(this.txtDO);
             this.Controls.Add(this.textBox62);
@@ -1931,6 +1941,8 @@
             this.Controls.Add(this.txtO1_F1_FO);
             this.Name = "FrmIdentif_Estrategia";
             this.Text = "FrmIdentif_Estrategia";
+            this.Load += new System.EventHandler(this.FrmIdentif_Estrategia_Load_1);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2095,5 +2107,6 @@
         private System.Windows.Forms.TextBox txtO1_F2_DO;
         private System.Windows.Forms.TextBox txtO1_F1_DO;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Panel panel1;
     }
 }

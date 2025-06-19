@@ -630,7 +630,6 @@ C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.AssemblyReference.cache
-C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG2.resources
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG3.resources
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCGgenerado.resources
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDAFO.resources
@@ -638,7 +637,6 @@ C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmPest.resources
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAnalisis.resources
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
-C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagosticoPorter.resources
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoPest.resources
 C:\Users\HP\3D Objects\PETI\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG.resources
@@ -970,13 +968,11 @@ C:\Users\andre\Desktop\qqqqqq\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\ob
 C:\Users\andre\Desktop\qqqqqq\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\andre\Desktop\qqqqqq\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe.config
 C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\CustomMessageBox.Private.FormMessageBox.resources
 C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCambioPassword.resources
 C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard2.resources
 C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Mision.resources
 C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Vision.resources
-C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Est.A4323EC3.Up2Date
 C:\Users\HP\3D Objects\JCC\planeamiento 3unidad\jaime\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
 C:\Users\HP\3D Objects\JCC\planeamiento 3unidad\jaime\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
 C:\Users\HP\3D Objects\JCC\planeamiento 3unidad\jaime\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
@@ -1438,3 +1434,6 @@ C:\Users\andre\Desktop\fififi\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\ob
 C:\Users\andre\Desktop\fififi\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Est.A4323EC3.Up2Date
 C:\Users\andre\Desktop\fififi\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\andre\Desktop\fififi\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCGinicio.resources
+C:\Users\HP\3D Objects\peti\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CopyComplete
