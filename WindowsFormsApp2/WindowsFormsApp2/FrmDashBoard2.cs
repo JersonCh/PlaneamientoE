@@ -273,7 +273,7 @@ namespace WindowsFormsApp2
         private void btnPest_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FrmPest());
+            OpenChildForm(new FrmAutoPest());
         }
 
         private void btnIdentificacionE_Click(object sender, EventArgs e)

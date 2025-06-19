@@ -40,7 +40,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.txtA4 = new System.Windows.Forms.TextBox();
             this.txtA3 = new System.Windows.Forms.TextBox();
             this.txtA2 = new System.Windows.Forms.TextBox();
@@ -49,11 +48,13 @@
             this.txtD3 = new System.Windows.Forms.TextBox();
             this.txtD2 = new System.Windows.Forms.TextBox();
             this.txtD1 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtO4
             // 
             this.txtO4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtO4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtO4.Location = new System.Drawing.Point(595, 374);
             this.txtO4.Margin = new System.Windows.Forms.Padding(2);
             this.txtO4.Multiline = true;
@@ -64,6 +65,7 @@
             // txtO3
             // 
             this.txtO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtO3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtO3.Location = new System.Drawing.Point(595, 320);
             this.txtO3.Margin = new System.Windows.Forms.Padding(2);
             this.txtO3.Multiline = true;
@@ -74,6 +76,7 @@
             // txtO2
             // 
             this.txtO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtO2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtO2.Location = new System.Drawing.Point(595, 482);
             this.txtO2.Margin = new System.Windows.Forms.Padding(2);
             this.txtO2.Multiline = true;
@@ -84,6 +87,7 @@
             // txtO1
             // 
             this.txtO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtO1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtO1.Location = new System.Drawing.Point(595, 428);
             this.txtO1.Margin = new System.Windows.Forms.Padding(2);
             this.txtO1.Multiline = true;
@@ -94,6 +98,7 @@
             // txtF4
             // 
             this.txtF4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtF4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtF4.Location = new System.Drawing.Point(595, 264);
             this.txtF4.Margin = new System.Windows.Forms.Padding(2);
             this.txtF4.Multiline = true;
@@ -104,6 +109,7 @@
             // txtF3
             // 
             this.txtF3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtF3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtF3.Location = new System.Drawing.Point(595, 210);
             this.txtF3.Margin = new System.Windows.Forms.Padding(2);
             this.txtF3.Multiline = true;
@@ -114,6 +120,7 @@
             // txtF2
             // 
             this.txtF2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtF2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtF2.Location = new System.Drawing.Point(595, 158);
             this.txtF2.Margin = new System.Windows.Forms.Padding(2);
             this.txtF2.Multiline = true;
@@ -124,6 +131,7 @@
             // txtF1
             // 
             this.txtF1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtF1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtF1.Location = new System.Drawing.Point(595, 104);
             this.txtF1.Margin = new System.Windows.Forms.Padding(2);
             this.txtF1.Multiline = true;
@@ -179,21 +187,10 @@
             this.label14.Text = "DEBILIDADES";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.DarkBlue;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(243, 30);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(416, 46);
-            this.label12.TabIndex = 201;
-            this.label12.Text = "ANALISIS DAFONSEKA";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // txtA4
             // 
             this.txtA4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtA4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtA4.Location = new System.Drawing.Point(163, 369);
             this.txtA4.Margin = new System.Windows.Forms.Padding(2);
             this.txtA4.Multiline = true;
@@ -204,6 +201,7 @@
             // txtA3
             // 
             this.txtA3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtA3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtA3.Location = new System.Drawing.Point(163, 315);
             this.txtA3.Margin = new System.Windows.Forms.Padding(2);
             this.txtA3.Multiline = true;
@@ -214,6 +212,7 @@
             // txtA2
             // 
             this.txtA2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtA2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtA2.Location = new System.Drawing.Point(163, 479);
             this.txtA2.Margin = new System.Windows.Forms.Padding(2);
             this.txtA2.Multiline = true;
@@ -224,6 +223,7 @@
             // txtA1
             // 
             this.txtA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtA1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtA1.Location = new System.Drawing.Point(163, 425);
             this.txtA1.Margin = new System.Windows.Forms.Padding(2);
             this.txtA1.Multiline = true;
@@ -234,6 +234,7 @@
             // txtD4
             // 
             this.txtD4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtD4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtD4.Location = new System.Drawing.Point(163, 263);
             this.txtD4.Margin = new System.Windows.Forms.Padding(2);
             this.txtD4.Multiline = true;
@@ -244,6 +245,7 @@
             // txtD3
             // 
             this.txtD3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtD3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtD3.Location = new System.Drawing.Point(163, 210);
             this.txtD3.Margin = new System.Windows.Forms.Padding(2);
             this.txtD3.Multiline = true;
@@ -254,6 +256,7 @@
             // txtD2
             // 
             this.txtD2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtD2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtD2.Location = new System.Drawing.Point(163, 160);
             this.txtD2.Margin = new System.Windows.Forms.Padding(2);
             this.txtD2.Multiline = true;
@@ -264,6 +267,7 @@
             // txtD1
             // 
             this.txtD1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtD1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtD1.Location = new System.Drawing.Point(163, 110);
             this.txtD1.Margin = new System.Windows.Forms.Padding(2);
             this.txtD1.Multiline = true;
@@ -271,11 +275,27 @@
             this.txtD1.Size = new System.Drawing.Size(271, 46);
             this.txtD1.TabIndex = 193;
             // 
+            // label33
+            // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label33.BackColor = System.Drawing.Color.LightGray;
+            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label33.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(22, 21);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(844, 63);
+            this.label33.TabIndex = 1008;
+            this.label33.Text = "Analisis DAFO";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmDAFO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.txtO4);
             this.Controls.Add(this.txtO3);
             this.Controls.Add(this.txtO2);
@@ -288,7 +308,6 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.txtA4);
             this.Controls.Add(this.txtA3);
             this.Controls.Add(this.txtA2);
@@ -298,6 +317,7 @@
             this.Controls.Add(this.txtD2);
             this.Controls.Add(this.txtD1);
             this.Name = "FrmDAFO";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDAFO";
             this.Load += new System.EventHandler(this.FrmDAFO_Load);
             this.ResumeLayout(false);
@@ -319,7 +339,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtA4;
         private System.Windows.Forms.TextBox txtA3;
         private System.Windows.Forms.TextBox txtA2;
@@ -328,5 +347,6 @@
         private System.Windows.Forms.TextBox txtD3;
         private System.Windows.Forms.TextBox txtD2;
         private System.Windows.Forms.TextBox txtD1;
+        private System.Windows.Forms.Label label33;
     }
 }

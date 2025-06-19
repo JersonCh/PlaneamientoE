@@ -29,18 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAutoPest));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label32 = new System.Windows.Forms.Label();
             this.txtA3 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
             this.txtA4 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label31 = new System.Windows.Forms.Label();
             this.txtO3 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
             this.txtO4 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.p25 = new System.Windows.Forms.Panel();
             this.p25_4 = new System.Windows.Forms.RadioButton();
@@ -225,15 +221,24 @@
             this.p10_2 = new System.Windows.Forms.RadioButton();
             this.p10_1 = new System.Windows.Forms.RadioButton();
             this.p10_0 = new System.Windows.Forms.RadioButton();
-            this.label34 = new System.Windows.Forms.Label();
             this.txtSociales = new System.Windows.Forms.TextBox();
             this.txtPoliticos = new System.Windows.Forms.TextBox();
             this.txtEconomicos = new System.Windows.Forms.TextBox();
             this.txtTecnologicos = new System.Windows.Forms.TextBox();
             this.txtAmbientales = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.chartFactores = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label36 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.p25.SuspendLayout();
             this.p24.SuspendLayout();
@@ -261,128 +266,66 @@
             this.p1.SuspendLayout();
             this.p2.SuspendLayout();
             this.p10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFactores)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(841, 779);
+            this.btnGuardar.BackColor = System.Drawing.Color.Black;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(441, 1491);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(93, 75);
+            this.btnGuardar.Size = new System.Drawing.Size(384, 63);
             this.btnGuardar.TabIndex = 65;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label32);
-            this.groupBox2.Controls.Add(this.txtA3);
-            this.groupBox2.Controls.Add(this.label35);
-            this.groupBox2.Controls.Add(this.txtA4);
-            this.groupBox2.Location = new System.Drawing.Point(467, 779);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(368, 73);
-            this.groupBox2.TabIndex = 64;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Amenazas";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(6, 47);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(26, 13);
-            this.label32.TabIndex = 51;
-            this.label32.Text = "A4 :";
             // 
             // txtA3
             // 
             this.txtA3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA3.Location = new System.Drawing.Point(33, 18);
+            this.txtA3.Location = new System.Drawing.Point(52, 26);
             this.txtA3.Name = "txtA3";
-            this.txtA3.Size = new System.Drawing.Size(319, 20);
+            this.txtA3.Size = new System.Drawing.Size(510, 27);
             this.txtA3.TabIndex = 45;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(6, 21);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(26, 13);
-            this.label35.TabIndex = 50;
-            this.label35.Text = "A3 :";
             // 
             // txtA4
             // 
             this.txtA4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA4.Location = new System.Drawing.Point(33, 44);
+            this.txtA4.Location = new System.Drawing.Point(52, 72);
             this.txtA4.Name = "txtA4";
-            this.txtA4.Size = new System.Drawing.Size(319, 20);
+            this.txtA4.Size = new System.Drawing.Size(510, 27);
             this.txtA4.TabIndex = 44;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label31);
-            this.groupBox1.Controls.Add(this.txtO3);
-            this.groupBox1.Controls.Add(this.label29);
-            this.groupBox1.Controls.Add(this.txtO4);
-            this.groupBox1.Location = new System.Drawing.Point(16, 779);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(445, 73);
-            this.groupBox1.TabIndex = 63;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Oportunidades";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(4, 46);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(27, 13);
-            this.label31.TabIndex = 51;
-            this.label31.Text = "O4 :";
             // 
             // txtO3
             // 
             this.txtO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO3.Location = new System.Drawing.Point(31, 17);
+            this.txtO3.Location = new System.Drawing.Point(53, 26);
             this.txtO3.Name = "txtO3";
-            this.txtO3.Size = new System.Drawing.Size(395, 20);
+            this.txtO3.Size = new System.Drawing.Size(481, 27);
             this.txtO3.TabIndex = 45;
             this.txtO3.TextChanged += new System.EventHandler(this.txtO3_TextChanged);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(5, 20);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(27, 13);
-            this.label29.TabIndex = 50;
-            this.label29.Text = "O3 :";
             // 
             // txtO4
             // 
             this.txtO4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO4.Location = new System.Drawing.Point(31, 43);
+            this.txtO4.Location = new System.Drawing.Point(53, 72);
             this.txtO4.Name = "txtO4";
-            this.txtO4.Size = new System.Drawing.Size(395, 20);
+            this.txtO4.Size = new System.Drawing.Size(481, 27);
             this.txtO4.TabIndex = 44;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(33, 744);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(882, 26);
-            this.label30.TabIndex = 60;
-            this.label30.Text = resources.GetString("label30.Text");
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.58952F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.41048F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88.20639F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.79361F));
             this.tableLayoutPanel1.Controls.Add(this.p25, 1, 25);
             this.tableLayoutPanel1.Controls.Add(this.p24, 1, 24);
             this.tableLayoutPanel1.Controls.Add(this.p23, 1, 23);
@@ -435,7 +378,8 @@
             this.tableLayoutPanel1.Controls.Add(this.p1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.p2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.p10, 1, 10);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(14, 35);
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 522);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 26;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -464,7 +408,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(918, 603);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1198, 603);
             this.tableLayoutPanel1.TabIndex = 59;
             // 
             // p25
@@ -474,7 +418,7 @@
             this.p25.Controls.Add(this.p25_2);
             this.p25.Controls.Add(this.p25_1);
             this.p25.Controls.Add(this.p25_0);
-            this.p25.Location = new System.Drawing.Point(787, 584);
+            this.p25.Location = new System.Drawing.Point(1058, 584);
             this.p25.Name = "p25";
             this.p25.Size = new System.Drawing.Size(118, 14);
             this.p25.TabIndex = 37;
@@ -536,7 +480,7 @@
             this.p24.Controls.Add(this.p24_2);
             this.p24.Controls.Add(this.p24_1);
             this.p24.Controls.Add(this.p24_0);
-            this.p24.Location = new System.Drawing.Point(787, 562);
+            this.p24.Location = new System.Drawing.Point(1058, 562);
             this.p24.Name = "p24";
             this.p24.Size = new System.Drawing.Size(118, 14);
             this.p24.TabIndex = 37;
@@ -598,7 +542,7 @@
             this.p23.Controls.Add(this.p23_2);
             this.p23.Controls.Add(this.p23_1);
             this.p23.Controls.Add(this.p23_0);
-            this.p23.Location = new System.Drawing.Point(787, 540);
+            this.p23.Location = new System.Drawing.Point(1058, 540);
             this.p23.Name = "p23";
             this.p23.Size = new System.Drawing.Size(118, 14);
             this.p23.TabIndex = 37;
@@ -660,7 +604,7 @@
             this.p22.Controls.Add(this.p22_2);
             this.p22.Controls.Add(this.p22_1);
             this.p22.Controls.Add(this.p22_0);
-            this.p22.Location = new System.Drawing.Point(787, 518);
+            this.p22.Location = new System.Drawing.Point(1058, 518);
             this.p22.Name = "p22";
             this.p22.Size = new System.Drawing.Size(118, 14);
             this.p22.TabIndex = 37;
@@ -722,7 +666,7 @@
             this.p21.Controls.Add(this.p21_2);
             this.p21.Controls.Add(this.p21_1);
             this.p21.Controls.Add(this.p21_0);
-            this.p21.Location = new System.Drawing.Point(787, 496);
+            this.p21.Location = new System.Drawing.Point(1058, 496);
             this.p21.Name = "p21";
             this.p21.Size = new System.Drawing.Size(118, 14);
             this.p21.TabIndex = 37;
@@ -784,7 +728,7 @@
             this.p20.Controls.Add(this.p20_2);
             this.p20.Controls.Add(this.p20_1);
             this.p20.Controls.Add(this.p20_0);
-            this.p20.Location = new System.Drawing.Point(787, 474);
+            this.p20.Location = new System.Drawing.Point(1058, 474);
             this.p20.Name = "p20";
             this.p20.Size = new System.Drawing.Size(118, 14);
             this.p20.TabIndex = 37;
@@ -846,7 +790,7 @@
             this.p19.Controls.Add(this.p19_2);
             this.p19.Controls.Add(this.p19_1);
             this.p19.Controls.Add(this.p19_0);
-            this.p19.Location = new System.Drawing.Point(787, 452);
+            this.p19.Location = new System.Drawing.Point(1058, 452);
             this.p19.Name = "p19";
             this.p19.Size = new System.Drawing.Size(118, 14);
             this.p19.TabIndex = 37;
@@ -908,7 +852,7 @@
             this.p18.Controls.Add(this.p18_2);
             this.p18.Controls.Add(this.p18_1);
             this.p18.Controls.Add(this.p18_0);
-            this.p18.Location = new System.Drawing.Point(787, 430);
+            this.p18.Location = new System.Drawing.Point(1058, 430);
             this.p18.Name = "p18";
             this.p18.Size = new System.Drawing.Size(118, 14);
             this.p18.TabIndex = 37;
@@ -970,7 +914,7 @@
             this.p17.Controls.Add(this.p17_2);
             this.p17.Controls.Add(this.p17_1);
             this.p17.Controls.Add(this.p17_0);
-            this.p17.Location = new System.Drawing.Point(787, 408);
+            this.p17.Location = new System.Drawing.Point(1058, 408);
             this.p17.Name = "p17";
             this.p17.Size = new System.Drawing.Size(118, 14);
             this.p17.TabIndex = 37;
@@ -1032,7 +976,7 @@
             this.p16.Controls.Add(this.p16_2);
             this.p16.Controls.Add(this.p16_1);
             this.p16.Controls.Add(this.p16_0);
-            this.p16.Location = new System.Drawing.Point(787, 386);
+            this.p16.Location = new System.Drawing.Point(1058, 386);
             this.p16.Name = "p16";
             this.p16.Size = new System.Drawing.Size(118, 14);
             this.p16.TabIndex = 37;
@@ -1094,7 +1038,7 @@
             this.p15.Controls.Add(this.p15_2);
             this.p15.Controls.Add(this.p15_1);
             this.p15.Controls.Add(this.p15_0);
-            this.p15.Location = new System.Drawing.Point(787, 364);
+            this.p15.Location = new System.Drawing.Point(1058, 364);
             this.p15.Name = "p15";
             this.p15.Size = new System.Drawing.Size(118, 14);
             this.p15.TabIndex = 37;
@@ -1156,7 +1100,7 @@
             this.p14.Controls.Add(this.p14_2);
             this.p14.Controls.Add(this.p14_1);
             this.p14.Controls.Add(this.p14_0);
-            this.p14.Location = new System.Drawing.Point(787, 342);
+            this.p14.Location = new System.Drawing.Point(1058, 342);
             this.p14.Name = "p14";
             this.p14.Size = new System.Drawing.Size(118, 14);
             this.p14.TabIndex = 37;
@@ -1218,7 +1162,7 @@
             this.p13.Controls.Add(this.p13_2);
             this.p13.Controls.Add(this.p13_1);
             this.p13.Controls.Add(this.p13_0);
-            this.p13.Location = new System.Drawing.Point(787, 320);
+            this.p13.Location = new System.Drawing.Point(1058, 320);
             this.p13.Name = "p13";
             this.p13.Size = new System.Drawing.Size(118, 14);
             this.p13.TabIndex = 37;
@@ -1281,7 +1225,7 @@
             this.panel11.Controls.Add(this.radioButton58);
             this.panel11.Controls.Add(this.radioButton59);
             this.panel11.Controls.Add(this.radioButton60);
-            this.panel11.Location = new System.Drawing.Point(787, 298);
+            this.panel11.Location = new System.Drawing.Point(1058, 298);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(118, 14);
             this.panel11.TabIndex = 37;
@@ -1405,7 +1349,7 @@
             this.p11.Controls.Add(this.p11_2);
             this.p11.Controls.Add(this.p11_1);
             this.p11.Controls.Add(this.p11_0);
-            this.p11.Location = new System.Drawing.Point(787, 276);
+            this.p11.Location = new System.Drawing.Point(1058, 276);
             this.p11.Name = "p11";
             this.p11.Size = new System.Drawing.Size(118, 14);
             this.p11.TabIndex = 37;
@@ -1467,7 +1411,7 @@
             this.p9.Controls.Add(this.p9_2);
             this.p9.Controls.Add(this.p9_1);
             this.p9.Controls.Add(this.p9_0);
-            this.p9.Location = new System.Drawing.Point(787, 232);
+            this.p9.Location = new System.Drawing.Point(1058, 232);
             this.p9.Name = "p9";
             this.p9.Size = new System.Drawing.Size(118, 14);
             this.p9.TabIndex = 37;
@@ -1529,7 +1473,7 @@
             this.p8.Controls.Add(this.p8_2);
             this.p8.Controls.Add(this.p8_1);
             this.p8.Controls.Add(this.p8_0);
-            this.p8.Location = new System.Drawing.Point(787, 210);
+            this.p8.Location = new System.Drawing.Point(1058, 210);
             this.p8.Name = "p8";
             this.p8.Size = new System.Drawing.Size(118, 14);
             this.p8.TabIndex = 37;
@@ -1591,7 +1535,7 @@
             this.p7.Controls.Add(this.p7_2);
             this.p7.Controls.Add(this.p7_1);
             this.p7.Controls.Add(this.p7_0);
-            this.p7.Location = new System.Drawing.Point(787, 188);
+            this.p7.Location = new System.Drawing.Point(1058, 188);
             this.p7.Name = "p7";
             this.p7.Size = new System.Drawing.Size(118, 14);
             this.p7.TabIndex = 37;
@@ -1653,7 +1597,7 @@
             this.p6.Controls.Add(this.p6_2);
             this.p6.Controls.Add(this.p6_1);
             this.p6.Controls.Add(this.p6_0);
-            this.p6.Location = new System.Drawing.Point(787, 166);
+            this.p6.Location = new System.Drawing.Point(1058, 166);
             this.p6.Name = "p6";
             this.p6.Size = new System.Drawing.Size(118, 14);
             this.p6.TabIndex = 37;
@@ -1715,7 +1659,7 @@
             this.p5.Controls.Add(this.p5_2);
             this.p5.Controls.Add(this.p5_1);
             this.p5.Controls.Add(this.p5_0);
-            this.p5.Location = new System.Drawing.Point(787, 144);
+            this.p5.Location = new System.Drawing.Point(1058, 144);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(118, 14);
             this.p5.TabIndex = 37;
@@ -1777,7 +1721,7 @@
             this.p4.Controls.Add(this.p4_2);
             this.p4.Controls.Add(this.p4_1);
             this.p4.Controls.Add(this.p4_0);
-            this.p4.Location = new System.Drawing.Point(787, 121);
+            this.p4.Location = new System.Drawing.Point(1058, 121);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(118, 14);
             this.p4.TabIndex = 37;
@@ -1839,7 +1783,7 @@
             this.p3.Controls.Add(this.p3_2);
             this.p3.Controls.Add(this.p3_1);
             this.p3.Controls.Add(this.p3_0);
-            this.p3.Location = new System.Drawing.Point(787, 100);
+            this.p3.Location = new System.Drawing.Point(1058, 100);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(118, 13);
             this.p3.TabIndex = 37;
@@ -1913,9 +1857,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(5, 78);
+            this.label2.Location = new System.Drawing.Point(5, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(386, 13);
+            this.label2.Size = new System.Drawing.Size(547, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "2. El envejecimiento de la población tiene un importante impacto en la demanda.";
             // 
@@ -1925,9 +1869,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Location = new System.Drawing.Point(5, 52);
+            this.label4.Location = new System.Drawing.Point(5, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(555, 13);
+            this.label4.Size = new System.Drawing.Size(772, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "1. Los cambios en la composicón étnica de los consumidores de nuestro mercado est" +
     "á teniendo un notable impacto.";
@@ -1938,9 +1882,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Location = new System.Drawing.Point(5, 100);
+            this.label3.Location = new System.Drawing.Point(5, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(433, 13);
+            this.label3.Size = new System.Drawing.Size(589, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "3. Los nuevos estilos de vida y tendencias originan cambios en la oferta de nuest" +
     "ro sector.";
@@ -1951,9 +1895,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(5, 122);
+            this.label1.Location = new System.Drawing.Point(5, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(500, 13);
+            this.label1.Size = new System.Drawing.Size(705, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "4. El envejecimiento de la población tiene un importante impacto en la oferta del" +
     " sector donde operamos.";
@@ -1964,9 +1908,9 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Location = new System.Drawing.Point(5, 144);
+            this.label5.Location = new System.Drawing.Point(5, 142);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(743, 13);
+            this.label5.Size = new System.Drawing.Size(1031, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "5. Las variaciones en el nivel de riqueza de la población impactan considerableme" +
     "nte en la demanda de los productos/servicios del sector donde operamos.";
@@ -1977,9 +1921,9 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Location = new System.Drawing.Point(5, 166);
+            this.label6.Location = new System.Drawing.Point(5, 164);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(541, 13);
+            this.label6.Size = new System.Drawing.Size(748, 17);
             this.label6.TabIndex = 6;
             this.label6.Text = "6. La legislación fiscal afecta muy considerablemente a la economía de las empres" +
     "as del sector donde operamos.";
@@ -1990,9 +1934,9 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label7.Location = new System.Drawing.Point(5, 188);
+            this.label7.Location = new System.Drawing.Point(5, 186);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(465, 13);
+            this.label7.Size = new System.Drawing.Size(652, 17);
             this.label7.TabIndex = 7;
             this.label7.Text = "7. La legislación laboral afecta muy considerablemente a la operativa del sector " +
     "donde actuamos.";
@@ -2003,9 +1947,9 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Location = new System.Drawing.Point(5, 210);
+            this.label8.Location = new System.Drawing.Point(5, 208);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(645, 13);
+            this.label8.Size = new System.Drawing.Size(889, 17);
             this.label8.TabIndex = 8;
             this.label8.Text = "8. Las subvenciones otorgadas por las Administraciones Públicas son claves en el " +
     "desarrollo competitivo del mercado donde operamos.";
@@ -2016,9 +1960,9 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label28.Location = new System.Drawing.Point(787, 16);
+            this.label28.Location = new System.Drawing.Point(1058, 5);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(112, 13);
+            this.label28.Size = new System.Drawing.Size(132, 34);
             this.label28.TabIndex = 28;
             this.label28.Text = "  0      1      2     3      4";
             // 
@@ -2028,9 +1972,9 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Location = new System.Drawing.Point(5, 232);
+            this.label9.Location = new System.Drawing.Point(5, 230);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(628, 13);
+            this.label9.Size = new System.Drawing.Size(872, 17);
             this.label9.TabIndex = 9;
             this.label9.Text = "9. El impacto que tiene la legislación de protección al consumidor, en la manera " +
     "de producir bienes y/o servicios es muy importante. ";
@@ -2041,9 +1985,9 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label10.Location = new System.Drawing.Point(5, 254);
+            this.label10.Location = new System.Drawing.Point(5, 252);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(526, 13);
+            this.label10.Size = new System.Drawing.Size(739, 17);
             this.label10.TabIndex = 10;
             this.label10.Text = "10. La normativa autonómica tiene un impacto considerable en el funcionamiento de" +
     "l sector donde actuamos. ";
@@ -2054,9 +1998,9 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label11.Location = new System.Drawing.Point(5, 276);
+            this.label11.Location = new System.Drawing.Point(5, 274);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(523, 13);
+            this.label11.Size = new System.Drawing.Size(729, 17);
             this.label11.TabIndex = 11;
             this.label11.Text = "11. Las expectativas de crecimiento económico generales afectan crucialmente al m" +
     "ercado donde operamos.";
@@ -2067,9 +2011,9 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label12.Location = new System.Drawing.Point(5, 298);
+            this.label12.Location = new System.Drawing.Point(5, 296);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(563, 13);
+            this.label12.Size = new System.Drawing.Size(776, 17);
             this.label12.TabIndex = 12;
             this.label12.Text = "12. La política de tipos de interés es fundamental en el desarrollo financiero de" +
     "l sector donde trabaja nuestra empresa.";
@@ -2080,9 +2024,9 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label13.Location = new System.Drawing.Point(5, 320);
+            this.label13.Location = new System.Drawing.Point(5, 318);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(506, 13);
+            this.label13.Size = new System.Drawing.Size(703, 17);
             this.label13.TabIndex = 13;
             this.label13.Text = "13. La globalización permite a nuestra industria gozar de importantes oportunidad" +
     "es en  nuevos mercados.";
@@ -2093,9 +2037,9 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label14.Location = new System.Drawing.Point(5, 342);
+            this.label14.Location = new System.Drawing.Point(5, 340);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(526, 13);
+            this.label14.Size = new System.Drawing.Size(726, 17);
             this.label14.TabIndex = 14;
             this.label14.Text = "14. La situación del empleo es fundamental para el desarrollo económico de nuestr" +
     "a empresa y nuestro sector.";
@@ -2106,9 +2050,9 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label15.Location = new System.Drawing.Point(5, 364);
+            this.label15.Location = new System.Drawing.Point(5, 362);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(544, 13);
+            this.label15.Size = new System.Drawing.Size(747, 17);
             this.label15.TabIndex = 15;
             this.label15.Text = "15. Las expectativas del ciclo económico de nuestro sector impactan en la situaci" +
     "ón económica de sus empresas.";
@@ -2119,9 +2063,9 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label16.Location = new System.Drawing.Point(5, 386);
+            this.label16.Location = new System.Drawing.Point(5, 384);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(539, 13);
+            this.label16.Size = new System.Drawing.Size(729, 17);
             this.label16.TabIndex = 16;
             this.label16.Text = "16. Las Administraciones Públicas están incentivando el esfuerzo tecnológico de l" +
     "as empresas de nuestro sector.";
@@ -2132,9 +2076,9 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label17.Location = new System.Drawing.Point(5, 408);
+            this.label17.Location = new System.Drawing.Point(5, 406);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(741, 13);
+            this.label17.Size = new System.Drawing.Size(1015, 17);
             this.label17.TabIndex = 17;
             this.label17.Text = "17. Internet, el comercio electrónico, el wireless y otras NTIC están impactando " +
     "en la demanda de nuestros productos/servicios y en los de la competencia. ";
@@ -2145,9 +2089,9 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label18.Location = new System.Drawing.Point(5, 430);
+            this.label18.Location = new System.Drawing.Point(5, 428);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(347, 13);
+            this.label18.Size = new System.Drawing.Size(472, 17);
             this.label18.TabIndex = 18;
             this.label18.Text = "18. El empleo de NTIC´s es generalizado en el sector donde trabajamos.";
             // 
@@ -2157,9 +2101,9 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label19.Location = new System.Drawing.Point(5, 452);
+            this.label19.Location = new System.Drawing.Point(5, 450);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(536, 13);
+            this.label19.Size = new System.Drawing.Size(736, 17);
             this.label19.TabIndex = 19;
             this.label19.Text = "19. En nuestro sector, es de gran importancia ser pionero o referente en el emple" +
     "o de aplicaciones tecnológicas.";
@@ -2170,9 +2114,9 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label20.Location = new System.Drawing.Point(5, 474);
+            this.label20.Location = new System.Drawing.Point(5, 472);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(532, 13);
+            this.label20.Size = new System.Drawing.Size(726, 17);
             this.label20.TabIndex = 20;
             this.label20.Text = "20. En el sector donde operamos, para ser competitivos, es condición \"sine qua no" +
     "n\" innovar constantemente. ";
@@ -2183,9 +2127,9 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label21.Location = new System.Drawing.Point(5, 496);
+            this.label21.Location = new System.Drawing.Point(5, 494);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(345, 13);
+            this.label21.Size = new System.Drawing.Size(479, 17);
             this.label21.TabIndex = 21;
             this.label21.Text = "21. La legislación medioambiental afecta al desarrollo de nuestro sector.";
             // 
@@ -2195,9 +2139,9 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label22.Location = new System.Drawing.Point(5, 518);
+            this.label22.Location = new System.Drawing.Point(5, 516);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(550, 13);
+            this.label22.Size = new System.Drawing.Size(754, 17);
             this.label22.TabIndex = 22;
             this.label22.Text = "22. Los clientes de nuestro mercado exigen que se seamos socialmente responsables" +
     ", en el plano medioambiental. ";
@@ -2208,9 +2152,9 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label23.Location = new System.Drawing.Point(5, 540);
+            this.label23.Location = new System.Drawing.Point(5, 538);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(452, 13);
+            this.label23.Size = new System.Drawing.Size(620, 17);
             this.label23.TabIndex = 23;
             this.label23.Text = "23. En nuestro sector, la políticas medioambientales son una fuente de ventajas c" +
     "ompetitivas. ";
@@ -2221,9 +2165,9 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label24.Location = new System.Drawing.Point(5, 562);
+            this.label24.Location = new System.Drawing.Point(5, 560);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(726, 13);
+            this.label24.Size = new System.Drawing.Size(1017, 17);
             this.label24.TabIndex = 24;
             this.label24.Text = "24. La creciente preocupación social por el medio ambiente impacta notablemente e" +
     "n la demanda de productos/servicios ofertados en nuestro mercado.";
@@ -2234,9 +2178,9 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label25.Location = new System.Drawing.Point(5, 584);
+            this.label25.Location = new System.Drawing.Point(5, 582);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(496, 13);
+            this.label25.Size = new System.Drawing.Size(681, 17);
             this.label25.TabIndex = 25;
             this.label25.Text = "25. El factor ecológico es una fuente de diferenciación clara en el sector donde " +
     "opera nuestra empresa.";
@@ -2248,7 +2192,7 @@
             this.p1.Controls.Add(this.p1_2);
             this.p1.Controls.Add(this.p1_1);
             this.p1.Controls.Add(this.p1_0);
-            this.p1.Location = new System.Drawing.Point(787, 48);
+            this.p1.Location = new System.Drawing.Point(1058, 48);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(118, 21);
             this.p1.TabIndex = 30;
@@ -2310,7 +2254,7 @@
             this.p2.Controls.Add(this.p2_2);
             this.p2.Controls.Add(this.p2_1);
             this.p2.Controls.Add(this.p2_0);
-            this.p2.Location = new System.Drawing.Point(787, 78);
+            this.p2.Location = new System.Drawing.Point(1058, 78);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(118, 14);
             this.p2.TabIndex = 36;
@@ -2372,7 +2316,7 @@
             this.p10.Controls.Add(this.p10_2);
             this.p10.Controls.Add(this.p10_1);
             this.p10.Controls.Add(this.p10_0);
-            this.p10.Location = new System.Drawing.Point(787, 254);
+            this.p10.Location = new System.Drawing.Point(1058, 254);
             this.p10.Name = "p10";
             this.p10.Size = new System.Drawing.Size(118, 14);
             this.p10.TabIndex = 37;
@@ -2427,74 +2371,224 @@
             this.p10_0.TabStop = true;
             this.p10_0.UseVisualStyleBackColor = true;
             // 
-            // label34
-            // 
-            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label34.Location = new System.Drawing.Point(50, -6);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(836, 26);
-            this.label34.TabIndex = 58;
-            this.label34.Text = resources.GetString("label34.Text");
-            // 
             // txtSociales
             // 
             this.txtSociales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSociales.Location = new System.Drawing.Point(14, 636);
+            this.txtSociales.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSociales.Location = new System.Drawing.Point(20, 1146);
             this.txtSociales.Name = "txtSociales";
-            this.txtSociales.Size = new System.Drawing.Size(783, 20);
+            this.txtSociales.Size = new System.Drawing.Size(1036, 23);
             this.txtSociales.TabIndex = 52;
             // 
             // txtPoliticos
             // 
             this.txtPoliticos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPoliticos.Location = new System.Drawing.Point(14, 655);
+            this.txtPoliticos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPoliticos.Location = new System.Drawing.Point(20, 1165);
             this.txtPoliticos.Name = "txtPoliticos";
-            this.txtPoliticos.Size = new System.Drawing.Size(783, 20);
+            this.txtPoliticos.Size = new System.Drawing.Size(1036, 23);
             this.txtPoliticos.TabIndex = 66;
             // 
             // txtEconomicos
             // 
             this.txtEconomicos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEconomicos.Location = new System.Drawing.Point(14, 674);
+            this.txtEconomicos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEconomicos.Location = new System.Drawing.Point(20, 1184);
             this.txtEconomicos.Name = "txtEconomicos";
-            this.txtEconomicos.Size = new System.Drawing.Size(783, 20);
+            this.txtEconomicos.Size = new System.Drawing.Size(1036, 23);
             this.txtEconomicos.TabIndex = 67;
             // 
             // txtTecnologicos
             // 
             this.txtTecnologicos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTecnologicos.Location = new System.Drawing.Point(14, 693);
+            this.txtTecnologicos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTecnologicos.Location = new System.Drawing.Point(20, 1203);
             this.txtTecnologicos.Name = "txtTecnologicos";
-            this.txtTecnologicos.Size = new System.Drawing.Size(783, 20);
+            this.txtTecnologicos.Size = new System.Drawing.Size(1036, 23);
             this.txtTecnologicos.TabIndex = 68;
             // 
             // txtAmbientales
             // 
             this.txtAmbientales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAmbientales.Location = new System.Drawing.Point(14, 711);
+            this.txtAmbientales.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmbientales.Location = new System.Drawing.Point(20, 1221);
             this.txtAmbientales.Name = "txtAmbientales";
-            this.txtAmbientales.Size = new System.Drawing.Size(783, 20);
+            this.txtAmbientales.Size = new System.Drawing.Size(1036, 23);
             this.txtAmbientales.TabIndex = 69;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(795, 637);
+            this.btnCalcular.BackColor = System.Drawing.Color.Black;
+            this.btnCalcular.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.ForeColor = System.Drawing.Color.White;
+            this.btnCalcular.Location = new System.Drawing.Point(1075, 1154);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(137, 94);
+            this.btnCalcular.Size = new System.Drawing.Size(143, 76);
             this.btnCalcular.TabIndex = 70;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // label26
+            // 
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label26.BackColor = System.Drawing.Color.LightGray;
+            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(20, 407);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(1198, 101);
+            this.label26.TabIndex = 104;
+            this.label26.Text = resources.GetString("label26.Text");
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(899, 147);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(319, 170);
+            this.label34.TabIndex = 671;
+            this.label34.Text = "Leyenda de colores:\r\n\r\nRojo: Impacto alto (≥ 70%)\r\n\r\nNaranja: Impacto medio (40% " +
+    "– 69%)\r\n\r\nVerde: Impacto bajo (< 40%)";
+            // 
+            // chartFactores
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartFactores.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFactores.Legends.Add(legend1);
+            this.chartFactores.Location = new System.Drawing.Point(20, 72);
+            this.chartFactores.Name = "chartFactores";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFactores.Series.Add(series1);
+            this.chartFactores.Size = new System.Drawing.Size(844, 323);
+            this.chartFactores.TabIndex = 670;
+            this.chartFactores.Text = "chartFactores";
+            // 
+            // label36
+            // 
+            this.label36.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(24, 43);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(1194, 26);
+            this.label36.TabIndex = 669;
+            this.label36.Text = "El siguiente gráfico reflejará la valoración obtenida en cada una de las variable" +
+    "s del diagnóstico macro-entorno. \r\n";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Silver;
+            this.groupBox3.Controls.Add(this.label67);
+            this.groupBox3.Controls.Add(this.txtA3);
+            this.groupBox3.Controls.Add(this.txtA4);
+            this.groupBox3.Controls.Add(this.label68);
+            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(631, 1346);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(587, 123);
+            this.groupBox3.TabIndex = 1006;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Amenazas";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(6, 72);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(40, 21);
+            this.label67.TabIndex = 51;
+            this.label67.Text = "A4 :";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(6, 22);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(40, 21);
+            this.label68.TabIndex = 50;
+            this.label68.Text = "A3 :";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Silver;
+            this.groupBox4.Controls.Add(this.label66);
+            this.groupBox4.Controls.Add(this.txtO3);
+            this.groupBox4.Controls.Add(this.txtO4);
+            this.groupBox4.Controls.Add(this.label76);
+            this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(21, 1346);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(551, 123);
+            this.groupBox4.TabIndex = 1005;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Oportnidades";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(6, 72);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(41, 21);
+            this.label66.TabIndex = 51;
+            this.label66.Text = "O4 :";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.Location = new System.Drawing.Point(6, 22);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(41, 21);
+            this.label76.TabIndex = 50;
+            this.label76.Text = "O3 :";
+            // 
+            // label33
+            // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label33.BackColor = System.Drawing.Color.LightGray;
+            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label33.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(20, 1260);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(1198, 63);
+            this.label33.TabIndex = 1007;
+            this.label33.Text = "A partir de la conclusión obtenida en el diagnóstico en cada uno de los factores," +
+    " determine  las oportunidades y amenazas más relevantes que desee que se refleje" +
+    "n en el análisis FODA  ";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label73
+            // 
+            this.label73.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(215, 1557);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(822, 33);
+            this.label73.TabIndex = 1008;
             // 
             // FrmAutoPest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(950, 866);
+            this.ClientSize = new System.Drawing.Size(1266, 866);
+            this.Controls.Add(this.label73);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.chartFactores);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtAmbientales);
             this.Controls.Add(this.txtTecnologicos);
@@ -2502,18 +2596,10 @@
             this.Controls.Add(this.txtPoliticos);
             this.Controls.Add(this.txtSociales);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label30);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.label34);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAutoPest";
             this.Text = "FrmAutoPest";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.p25.ResumeLayout(false);
@@ -2568,6 +2654,11 @@
             this.p2.PerformLayout();
             this.p10.ResumeLayout(false);
             this.p10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFactores)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2576,17 +2667,10 @@
         #endregion
 
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox txtA3;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox txtA4;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox txtO3;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox txtO4;
-        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel p25;
         private System.Windows.Forms.RadioButton p25_4;
@@ -2771,12 +2855,23 @@
         private System.Windows.Forms.RadioButton p10_2;
         private System.Windows.Forms.RadioButton p10_1;
         private System.Windows.Forms.RadioButton p10_0;
-        private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox txtSociales;
         private System.Windows.Forms.TextBox txtPoliticos;
         private System.Windows.Forms.TextBox txtEconomicos;
         private System.Windows.Forms.TextBox txtTecnologicos;
         private System.Windows.Forms.TextBox txtAmbientales;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFactores;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label73;
     }
 }

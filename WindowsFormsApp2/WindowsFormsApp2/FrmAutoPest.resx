@@ -117,12 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label30.Text" xml:space="preserve">
-    <value>A partir de la conclusión obtenida en el diagnóstico en cada uno de los factores, determine  las oportunidades y amenazas más relevantes que desee que se reflejen en el análisis FODA  
-de su Plan Estratégico</value>
-  </data>
-  <data name="label34.Text" xml:space="preserve">
-    <value>A continuación marque con una X para valorar su empresa en función de cada una de las afirmaciones, de tal forma que 0= En total en desacuerdo; 1= No está de acuerdo; 
-2=Está de acuerdo; 3= Está bastante de acuerdo; 4=En total acuerdo. En caso de no cumplimentar una casilla o duplicar su respuesta le aparecerá el mensaje de error ("¡REF!)</value>
+  <data name="label26.Text" xml:space="preserve">
+    <value>A continuación marque con una X para valorar su empresa en función de cada una de las afirmaciones, de tal forma que 0= En total en desacuerdo; 1= No está de acuerdo;  2=Está de acuerdo; 3= Está bastante de acuerdo; 4=En total acuerdo. En caso de no cumplimentar una casilla o duplicar su respuesta le aparecerá el mensaje de error ("¡REF!")</value>
   </data>
 </root>

@@ -74,7 +74,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1001, 100);
+            this.panel1.Size = new System.Drawing.Size(1153, 100);
             this.panel1.TabIndex = 660;
             // 
             // btncerrar
@@ -186,12 +186,13 @@
             this.chartFactores.Size = new System.Drawing.Size(483, 251);
             this.chartFactores.TabIndex = 666;
             this.chartFactores.Text = "chartFactores";
+            this.chartFactores.Click += new System.EventHandler(this.chartFactores_Click);
             this.chartFactores.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chartFactores_MouseMove_1);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.pest;
-            this.pictureBox2.Location = new System.Drawing.Point(673, 106);
+            this.pictureBox2.Location = new System.Drawing.Point(782, 106);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(302, 112);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -213,7 +214,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1018, 1061);
+            this.ClientSize = new System.Drawing.Size(1170, 1061);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.chartFactores);
             this.Controls.Add(this.pictureBox2);

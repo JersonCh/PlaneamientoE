@@ -139,5 +139,10 @@ namespace WindowsFormsApp2
                 tooltip.Hide(chartFactores);
             }
         }
+
+        private void chartFactores_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
