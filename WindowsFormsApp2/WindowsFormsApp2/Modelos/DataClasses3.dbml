@@ -129,13 +129,6 @@
       <Column Name="email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="dbo.SP_ListarEmpresasPorUsuario" Method="SP_ListarEmpresasPorUsuario">
-    <Parameter Name="usuario_id" Type="System.Int32" DbType="Int" />
-    <ElementType Name="SP_ListarEmpresasPorUsuarioResult">
-      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="nombre" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.SP_RegistrarValores" Method="SP_RegistrarValores">
     <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
     <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
@@ -490,5 +483,13 @@
     <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
     <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ListarEmpresasPorUsuario" Method="SP_ListarEmpresasPorUsuario">
+    <Parameter Name="usuario_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ListarEmpresasPorUsuarioResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
   </Function>
 </Database>

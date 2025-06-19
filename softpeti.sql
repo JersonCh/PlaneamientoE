@@ -351,7 +351,7 @@ CREATE PROCEDURE SP_ListarEmpresasPorUsuario
     @usuario_id INT
 AS
 BEGIN
-    SELECT id, nombre
+    SELECT id, nombre, descripcion
     FROM Empresa
     WHERE usuario_id = @usuario_id;
 END;

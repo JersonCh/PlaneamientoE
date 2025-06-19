@@ -23,7 +23,6 @@ namespace WindowsFormsApp2
         }
         private void CargarEmpresas()
         {
-
             try
             {
                 using (var dc = new DataClasses3DataContext())
@@ -37,13 +36,21 @@ namespace WindowsFormsApp2
                     dgvEmpresas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                     dgvEmpresas.MultiSelect = false;
 
-                    if (dgvEmpresas.Columns.Count >= 2)
+                    // *** OCULTAR LA COLUMNA ID Y CONFIGURAR SOLO NOMBRE Y DESCRIPCIÓN ***
+                    if (dgvEmpresas.Columns.Count >= 3)
                     {
-                        dgvEmpresas.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                        dgvEmpresas.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        // Ocultar la columna ID (índice 0) - MANTIENE LA FUNCIONALIDAD
+                        dgvEmpresas.Columns[0].Visible = false;
 
-                        dgvEmpresas.Columns[0].FillWeight = 50;
-                        dgvEmpresas.Columns[1].FillWeight = 50;
+                        // Configurar solo las columnas visibles: nombre y descripción
+                        dgvEmpresas.Columns[1].HeaderText = "Nombre de la Empresa";
+                        dgvEmpresas.Columns[2].HeaderText = "Descripción";
+
+                        dgvEmpresas.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        dgvEmpresas.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                        dgvEmpresas.Columns[1].FillWeight = 40; // 40% para nombre
+                        dgvEmpresas.Columns[2].FillWeight = 60; // 60% para descripción
                     }
                 }
             }
@@ -57,7 +64,8 @@ namespace WindowsFormsApp2
             string textoBusqueda = txtBuscar.Text.Trim().ToLower();
 
             var filtradas = listaEmpresas
-                .Where(emp => emp.nombre.ToLower().Contains(textoBusqueda))
+                .Where(emp => emp.nombre.ToLower().Contains(textoBusqueda) ||
+                             (emp.descripcion != null && emp.descripcion.ToLower().Contains(textoBusqueda)))
                 .ToList();
 
             dgvEmpresas.DataSource = filtradas;
@@ -92,22 +100,35 @@ namespace WindowsFormsApp2
 
         private void dgvEmpresas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
             if (e.RowIndex >= 0)
             {
-                // Obtener la fila seleccionada
-                DataGridViewRow filaSeleccionada = dgvEmpresas.Rows[e.RowIndex];
+                try
+                {
+                    // Obtener la fila seleccionada
+                    DataGridViewRow filaSeleccionada = dgvEmpresas.Rows[e.RowIndex];
 
-                // Obtener el valor de la primera celda (columna ID)
-                int empresaId = Convert.ToInt32(filaSeleccionada.Cells[0].Value);
+                    // *** OBTENER ID (OCULTO) Y NOMBRE (VISIBLE) ***
+                    int empresaId = Convert.ToInt32(filaSeleccionada.Cells[0].Value); // ID (columna oculta)
+                    string nombreEmpresa = filaSeleccionada.Cells[1].Value?.ToString() ?? "Sin nombre"; // Nombre
 
-                // Guardar en la sesión
-                Sesion.EmpresaId = empresaId;
+                    // Guardar en la sesión (funcionalidad interna intacta)
+                    Sesion.EmpresaId = empresaId;
 
-                // Abrir el formulario y ocultar este
-                FrmResumen frmResumen = new FrmResumen();
-                frmResumen.Show();
-                this.Hide();
+                    // *** MENSAJE PROTEGIDO - SIN MOSTRAR ID ***
+                    MessageBox.Show($"Empresa seleccionada: {nombreEmpresa}",
+                                   "Empresa Seleccionada",
+                                   MessageBoxButtons.OK,
+                                   MessageBoxIcon.Information);
+
+                    // *** ABRIR FORMULARIO SIN BeginInvoke ***
+                    FrmResumen frmResumen = new FrmResumen();
+                    frmResumen.Show();
+                    this.Hide();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al seleccionar empresa: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -131,7 +152,8 @@ namespace WindowsFormsApp2
             string textoBusqueda = txtBuscar.Text.Trim().ToLower();
 
             var filtradas = listaEmpresas
-                .Where(emp => emp.nombre.ToLower().Contains(textoBusqueda))
+                .Where(emp => emp.nombre.ToLower().Contains(textoBusqueda) ||
+                             (emp.descripcion != null && emp.descripcion.ToLower().Contains(textoBusqueda)))
                 .ToList();
 
             dgvEmpresas.DataSource = filtradas;

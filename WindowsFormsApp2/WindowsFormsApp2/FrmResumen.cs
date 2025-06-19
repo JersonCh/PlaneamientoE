@@ -33,7 +33,6 @@ namespace WindowsFormsApp2
             {
                 int usuarioId = Sesion.UsuarioId;
                 int empresaId = Sesion.EmpresaId;
-                MessageBox.Show("ID de empresa registrado: " + empresaId, "ID Generado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 using (var dc = new DataClasses3DataContext())
                 {
                     var mision = dc.SP_ListarMisionPorUsuario(empresaId).FirstOrDefault();

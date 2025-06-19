@@ -1,29 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\",
+  "WorkspaceRootPath": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\biblioteca\\musica\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\biblioteca\\musica\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmempresas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmempresas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\biblioteca\\musica\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmempresas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmempresas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\biblioteca\\musica\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\modelos\\dataclasses3.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\modelos\\dataclasses3.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\biblioteca\\musica\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,11 +54,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FrmResumen.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmResumen.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
               "RelativeToolTip": "WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T19:20:43.017Z",
@@ -72,45 +88,94 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FrmResumen.cs",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmResumen.cs",
+              "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmResumen.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:06:00.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmEmpresas.cs",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmEmpresas.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmEmpresas.cs",
+              "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmEmpresas.cs",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmEmpresas.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwJ4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:03:22.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmEmpresas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmEmpresas.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmEmpresas.cs",
+              "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmEmpresas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmEmpresas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:03:20.993Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataClasses3.dbml",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
+              "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
+              "RelativeToolTip": "WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2025-06-19T21:02:05.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FrmDashBoard2.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmDashBoard2.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
+              "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmDashBoard2.cs",
-              "ViewState": "AgIAAFoBAAAAAAAAAAAqwMoBAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAqwGoBAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T19:52:18.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "FrmAutoPest.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmAutoPest.cs",
               "ToolTip": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp2\\FrmAutoPest.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T20:22:15.827Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-06-19T20:22:15.827Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "FrmPest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmPest.cs",
               "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmPest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T19:02:09.115Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "FrmPest.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmPest.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs",
+              "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmPest.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAswCQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -118,11 +183,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "FrmDashBoard2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
+              "DocumentMoniker": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmDashBoard2.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\fififi\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\Biblioteca\\Musica\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs [Dise\u00F1o]",
               "RelativeToolTip": "WindowsFormsApp2\\FrmDashBoard2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T10:36:02.397Z",

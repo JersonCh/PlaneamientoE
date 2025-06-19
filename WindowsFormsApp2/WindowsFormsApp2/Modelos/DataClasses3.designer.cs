@@ -201,13 +201,6 @@ namespace WindowsFormsApp2.Modelos
 			return ((ISingleResult<SP_AutenticarResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarEmpresasPorUsuario")]
-		public ISingleResult<SP_ListarEmpresasPorUsuarioResult> SP_ListarEmpresasPorUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuario_id);
-			return ((ISingleResult<SP_ListarEmpresasPorUsuarioResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarValores")]
 		public int SP_RegistrarValores([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
 		{
@@ -525,6 +518,13 @@ namespace WindowsFormsApp2.Modelos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarEmpresasPorUsuario")]
+		public ISingleResult<SP_ListarEmpresasPorUsuarioResult> SP_ListarEmpresasPorUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> usuario_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuario_id);
+			return ((ISingleResult<SP_ListarEmpresasPorUsuarioResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -2978,50 +2978,6 @@ namespace WindowsFormsApp2.Modelos
 		}
 	}
 	
-	public partial class SP_ListarEmpresasPorUsuarioResult
-	{
-		
-		private int _id;
-		
-		private string _nombre;
-		
-		public SP_ListarEmpresasPorUsuarioResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this._id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(200)")]
-		public string nombre
-		{
-			get
-			{
-				return this._nombre;
-			}
-			set
-			{
-				if ((this._nombre != value))
-				{
-					this._nombre = value;
-				}
-			}
-		}
-	}
-	
 	public partial class SP_ListarValoresResult
 	{
 		
@@ -4941,6 +4897,68 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._Resultado != value))
 				{
 					this._Resultado = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarEmpresasPorUsuarioResult
+	{
+		
+		private int _id;
+		
+		private string _nombre;
+		
+		private string _descripcion;
+		
+		public SP_ListarEmpresasPorUsuarioResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this._id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="NVarChar(200)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this._nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
 				}
 			}
 		}
