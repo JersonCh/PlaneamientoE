@@ -300,7 +300,7 @@ BEGIN
 END;
 GO
 
--- SP: Registrar Visión
+-- SP: Registrar/Actualizar Visión
 IF OBJECT_ID('SP_RegistrarVision') IS NOT NULL
     DROP PROCEDURE SP_RegistrarVision;
 GO
@@ -310,8 +310,23 @@ CREATE PROCEDURE SP_RegistrarVision
     @empresa_id INT
 AS
 BEGIN
-    INSERT INTO Vision (descripcion, empresa_id)
-    VALUES (@descripcion, @empresa_id);
+    SET NOCOUNT ON;
+    
+    -- Verificar si ya existe una visión para esta empresa
+    IF EXISTS (SELECT 1 FROM Vision WHERE empresa_id = @empresa_id)
+    BEGIN
+        -- Si existe, actualizar
+        UPDATE Vision 
+        SET descripcion = @descripcion,
+            fecha_registro = GETDATE()  -- Actualizar también la fecha
+        WHERE empresa_id = @empresa_id;
+    END
+    ELSE
+    BEGIN
+        -- Si no existe, insertar nueva
+        INSERT INTO Vision (descripcion, empresa_id)
+        VALUES (@descripcion, @empresa_id);
+    END
 END;
 GO
 
@@ -830,6 +845,18 @@ BEGIN
 END
 GO
 
+-- Procedimiento para obtener solo la descripción de la visión
+CREATE OR ALTER PROCEDURE SP_ObtenerVision
+    @empresa_id INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    SELECT descripcion
+    FROM Vision 
+    WHERE empresa_id = @empresa_id;
+END
+GO
 
 
 

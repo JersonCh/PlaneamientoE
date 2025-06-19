@@ -418,6 +418,13 @@ namespace WindowsFormsApp2.Modelos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ObtenerVision")]
+		public ISingleResult<SP_ObtenerVisionResult> SP_ObtenerVision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ObtenerVisionResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USUARIO")]
@@ -2810,6 +2817,32 @@ namespace WindowsFormsApp2.Modelos
 		private string _descripcion;
 		
 		public SP_ObtenerMisionResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ObtenerVisionResult
+	{
+		
+		private string _descripcion;
+		
+		public SP_ObtenerVisionResult()
 		{
 		}
 		

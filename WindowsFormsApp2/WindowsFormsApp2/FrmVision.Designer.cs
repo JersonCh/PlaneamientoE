@@ -68,6 +68,7 @@
             this.txtVision.Name = "txtVision";
             this.txtVision.Size = new System.Drawing.Size(917, 216);
             this.txtVision.TabIndex = 16;
+            this.txtVision.TextChanged += new System.EventHandler(this.txtVision_TextChanged);
             // 
             // btnRegistrar
             // 
@@ -196,6 +197,7 @@
             this.Name = "Vision";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVision";
+            this.Load += new System.EventHandler(this.Vision_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimisar)).EndInit();
             this.panel1.ResumeLayout(false);

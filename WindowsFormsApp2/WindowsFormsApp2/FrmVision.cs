@@ -17,9 +17,33 @@ namespace WindowsFormsApp2
         public Vision()
         {
             InitializeComponent();
+            CargarVisionExistente();
         }
 
+        private void CargarVisionExistente()
+        {
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    var resultado = dc.SP_ObtenerVision(Sesion.EmpresaId);
 
+                    foreach (var vision in resultado)
+                    {
+                        txtVision.Text = vision.descripcion;
+                        return; // Solo tomar el primero
+                    }
+
+                    // Si no encontró nada
+                    txtVision.Text = string.Empty;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar la visión: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -89,6 +113,16 @@ namespace WindowsFormsApp2
         private void btncerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Vision_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtVision_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
