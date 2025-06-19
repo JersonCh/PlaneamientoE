@@ -83,15 +83,15 @@ namespace WindowsFormsApp2
                     if (debilidades.Count > 2) txtD3.Text = debilidades.ElementAtOrDefault(2)?.Debilidad_Descripcion ?? "";
                     if (debilidades.Count > 3) txtD4.Text = debilidades.ElementAtOrDefault(3)?.Debilidad_Descripcion ?? "";
                     var oportunidades = dc.SP_ListarOportunidades(empresaId).ToList();
-                    if (oportunidades.Count > 0) txtO1.Text = oportunidades.ElementAtOrDefault(0)?.Oportunidad_Descripcion ?? "";
-                    if (oportunidades.Count > 1) txtO2.Text = oportunidades.ElementAtOrDefault(1)?.Oportunidad_Descripcion ?? "";
-                    if (oportunidades.Count > 2) txtO3.Text = oportunidades.ElementAtOrDefault(2)?.Oportunidad_Descripcion ?? "";
-                    if (oportunidades.Count > 3) txtO4.Text = oportunidades.ElementAtOrDefault(3)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 0) txtO3.Text = oportunidades.ElementAtOrDefault(0)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 1) txtO4.Text = oportunidades.ElementAtOrDefault(1)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 2) txtO1.Text = oportunidades.ElementAtOrDefault(2)?.Oportunidad_Descripcion ?? "";
+                    if (oportunidades.Count > 3) txtO2.Text = oportunidades.ElementAtOrDefault(3)?.Oportunidad_Descripcion ?? "";
                     var amenazas = dc.SP_ListarAmenazas(empresaId).ToList();
-                    if (amenazas.Count > 0) txtA1.Text = amenazas.ElementAtOrDefault(0)?.Amenaza_Descripcion ?? "";
-                    if (amenazas.Count > 1) txtA2.Text = amenazas.ElementAtOrDefault(1)?.Amenaza_Descripcion ?? "";
-                    if (amenazas.Count > 2) txtA3.Text = amenazas.ElementAtOrDefault(2)?.Amenaza_Descripcion ?? "";
-                    if (amenazas.Count > 3) txtA4.Text = amenazas.ElementAtOrDefault(3)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 0) txtA3.Text = amenazas.ElementAtOrDefault(0)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 1) txtA4.Text = amenazas.ElementAtOrDefault(1)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 2) txtA1.Text = amenazas.ElementAtOrDefault(2)?.Amenaza_Descripcion ?? "";
+                    if (amenazas.Count > 3) txtA2.Text = amenazas.ElementAtOrDefault(3)?.Amenaza_Descripcion ?? "";
                     var came = dc.SP_ListarMatrizCAME(empresaId).ToList();
                     if (came.Count > 0) txtt1.Text = came.ElementAtOrDefault(0)?.descripcion ?? "";
                     if (came.Count > 1) txtt2.Text = came.ElementAtOrDefault(1)?.descripcion ?? "";
@@ -200,17 +200,17 @@ namespace WindowsFormsApp2
                 linesToPrint.Add("");
 
                 linesToPrint.Add("Oportunidades");
-                linesToPrint.Add("  1. " + txtO1.Text);
-                linesToPrint.Add("  2. " + txtO2.Text);
-                linesToPrint.Add("  3. " + txtO3.Text);
-                linesToPrint.Add("  4. " + txtO4.Text);
+                linesToPrint.Add("  1. " + txtO3.Text);
+                linesToPrint.Add("  2. " + txtO4.Text);
+                linesToPrint.Add("  3. " + txtO1.Text);
+                linesToPrint.Add("  4. " + txtO2.Text);
                 linesToPrint.Add("");
 
                 linesToPrint.Add("Amenazas");
-                linesToPrint.Add("  1. " + txtA1.Text);
-                linesToPrint.Add("  2. " + txtA2.Text);
-                linesToPrint.Add("  3. " + txtA3.Text);
-                linesToPrint.Add("  4. " + txtA4.Text);
+                linesToPrint.Add("  1. " + txtA3.Text);
+                linesToPrint.Add("  2. " + txtA4.Text);
+                linesToPrint.Add("  3. " + txtA1.Text);
+                linesToPrint.Add("  4. " + txtA2.Text);
                 linesToPrint.Add("");
 
                 linesToPrint.Add("Matriz CAME");

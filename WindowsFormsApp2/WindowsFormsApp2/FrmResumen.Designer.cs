@@ -136,10 +136,9 @@
             // 
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(108, 98);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(81, 80);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(429, 33);
+            this.label9.Size = new System.Drawing.Size(322, 27);
             this.label9.TabIndex = 60;
             this.label9.Text = "Nombre de la empresa / proyecto:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -148,21 +147,20 @@
             // 
             this.txtEmpresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmpresa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmpresa.Location = new System.Drawing.Point(112, 133);
-            this.txtEmpresa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmpresa.Location = new System.Drawing.Point(84, 108);
+            this.txtEmpresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmpresa.Multiline = true;
             this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(434, 32);
+            this.txtEmpresa.Size = new System.Drawing.Size(326, 26);
             this.txtEmpresa.TabIndex = 70;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(712, 95);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(534, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 37);
+            this.label1.Size = new System.Drawing.Size(209, 30);
             this.label1.TabIndex = 71;
             this.label1.Text = "Fecha de elaboración:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -171,21 +169,20 @@
             // 
             this.txtFecha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha.Location = new System.Drawing.Point(711, 135);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFecha.Location = new System.Drawing.Point(533, 110);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFecha.Multiline = true;
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(350, 32);
+            this.txtFecha.Size = new System.Drawing.Size(263, 26);
             this.txtFecha.TabIndex = 72;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1230, 99);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(922, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(380, 33);
+            this.label3.Size = new System.Drawing.Size(285, 27);
             this.label3.TabIndex = 73;
             this.label3.Text = "Emprendedores / promotores:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,55 +191,55 @@
             // 
             this.txtEmprendedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmprendedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmprendedor.Location = new System.Drawing.Point(1234, 135);
-            this.txtEmprendedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmprendedor.Location = new System.Drawing.Point(926, 110);
+            this.txtEmprendedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmprendedor.Multiline = true;
             this.txtEmprendedor.Name = "txtEmprendedor";
-            this.txtEmprendedor.Size = new System.Drawing.Size(375, 32);
+            this.txtEmprendedor.Size = new System.Drawing.Size(282, 26);
             this.txtEmprendedor.TabIndex = 74;
             // 
             // txtMision
             // 
             this.txtMision.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMision.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMision.Location = new System.Drawing.Point(35, 237);
-            this.txtMision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMision.Location = new System.Drawing.Point(26, 193);
+            this.txtMision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMision.Multiline = true;
             this.txtMision.Name = "txtMision";
-            this.txtMision.Size = new System.Drawing.Size(778, 78);
+            this.txtMision.Size = new System.Drawing.Size(584, 64);
             this.txtMision.TabIndex = 76;
             // 
             // txtVision
             // 
             this.txtVision.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtVision.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVision.Location = new System.Drawing.Point(827, 237);
-            this.txtVision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtVision.Location = new System.Drawing.Point(620, 193);
+            this.txtVision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtVision.Multiline = true;
             this.txtVision.Name = "txtVision";
-            this.txtVision.Size = new System.Drawing.Size(782, 78);
+            this.txtVision.Size = new System.Drawing.Size(587, 64);
             this.txtVision.TabIndex = 78;
             // 
             // txtValores
             // 
             this.txtValores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtValores.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValores.Location = new System.Drawing.Point(35, 389);
-            this.txtValores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtValores.Location = new System.Drawing.Point(26, 316);
+            this.txtValores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtValores.Multiline = true;
             this.txtValores.Name = "txtValores";
-            this.txtValores.Size = new System.Drawing.Size(778, 72);
+            this.txtValores.Size = new System.Drawing.Size(584, 59);
             this.txtValores.TabIndex = 80;
             // 
             // txtUnidadEstrategica
             // 
             this.txtUnidadEstrategica.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUnidadEstrategica.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnidadEstrategica.Location = new System.Drawing.Point(827, 389);
-            this.txtUnidadEstrategica.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUnidadEstrategica.Location = new System.Drawing.Point(620, 316);
+            this.txtUnidadEstrategica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUnidadEstrategica.Multiline = true;
             this.txtUnidadEstrategica.Name = "txtUnidadEstrategica";
-            this.txtUnidadEstrategica.Size = new System.Drawing.Size(782, 72);
+            this.txtUnidadEstrategica.Size = new System.Drawing.Size(587, 59);
             this.txtUnidadEstrategica.TabIndex = 82;
             // 
             // txtMisionO
@@ -250,352 +247,352 @@
             this.txtMisionO.BackColor = System.Drawing.Color.White;
             this.txtMisionO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMisionO.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMisionO.Location = new System.Drawing.Point(30, 70);
-            this.txtMisionO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMisionO.Location = new System.Drawing.Point(22, 57);
+            this.txtMisionO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMisionO.Multiline = true;
             this.txtMisionO.Name = "txtMisionO";
             this.txtMisionO.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtMisionO.Size = new System.Drawing.Size(330, 334);
+            this.txtMisionO.Size = new System.Drawing.Size(248, 272);
             this.txtMisionO.TabIndex = 83;
             // 
             // textBox27
             // 
             this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox27.Location = new System.Drawing.Point(39, 1623);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox27.Location = new System.Drawing.Point(29, 1319);
+            this.textBox27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox27.Multiline = true;
             this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(725, 206);
+            this.textBox27.Size = new System.Drawing.Size(544, 168);
             this.textBox27.TabIndex = 102;
             // 
             // textBox31
             // 
             this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox31.Location = new System.Drawing.Point(803, 1621);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox31.Location = new System.Drawing.Point(602, 1317);
+            this.textBox31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox31.Multiline = true;
             this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(801, 206);
+            this.textBox31.Size = new System.Drawing.Size(601, 168);
             this.textBox31.TabIndex = 106;
             // 
             // txtD1
             // 
             this.txtD1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtD1.Location = new System.Drawing.Point(227, 493);
-            this.txtD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD1.Location = new System.Drawing.Point(170, 401);
+            this.txtD1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtD1.Multiline = true;
             this.txtD1.Name = "txtD1";
-            this.txtD1.Size = new System.Drawing.Size(537, 56);
+            this.txtD1.Size = new System.Drawing.Size(403, 46);
             this.txtD1.TabIndex = 114;
             // 
             // txtt8
             // 
             this.txtt8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt8.Location = new System.Drawing.Point(814, 944);
-            this.txtt8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt8.Location = new System.Drawing.Point(610, 767);
+            this.txtt8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt8.Multiline = true;
             this.txtt8.Name = "txtt8";
-            this.txtt8.Size = new System.Drawing.Size(790, 62);
+            this.txtt8.Size = new System.Drawing.Size(593, 51);
             this.txtt8.TabIndex = 113;
             // 
             // txtt7
             // 
             this.txtt7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt7.Location = new System.Drawing.Point(814, 881);
-            this.txtt7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt7.Location = new System.Drawing.Point(610, 716);
+            this.txtt7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt7.Multiline = true;
             this.txtt7.Name = "txtt7";
-            this.txtt7.Size = new System.Drawing.Size(790, 56);
+            this.txtt7.Size = new System.Drawing.Size(593, 46);
             this.txtt7.TabIndex = 112;
             // 
             // txtt6
             // 
             this.txtt6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt6.Location = new System.Drawing.Point(814, 813);
-            this.txtt6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt6.Location = new System.Drawing.Point(610, 661);
+            this.txtt6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt6.Multiline = true;
             this.txtt6.Name = "txtt6";
-            this.txtt6.Size = new System.Drawing.Size(790, 62);
+            this.txtt6.Size = new System.Drawing.Size(593, 51);
             this.txtt6.TabIndex = 111;
             // 
             // txtt5
             // 
             this.txtt5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt5.Location = new System.Drawing.Point(814, 748);
-            this.txtt5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt5.Location = new System.Drawing.Point(610, 608);
+            this.txtt5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt5.Multiline = true;
             this.txtt5.Name = "txtt5";
-            this.txtt5.Size = new System.Drawing.Size(790, 60);
+            this.txtt5.Size = new System.Drawing.Size(593, 49);
             this.txtt5.TabIndex = 110;
             // 
             // txtt4
             // 
             this.txtt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt4.Location = new System.Drawing.Point(814, 680);
-            this.txtt4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt4.Location = new System.Drawing.Point(610, 552);
+            this.txtt4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt4.Multiline = true;
             this.txtt4.Name = "txtt4";
-            this.txtt4.Size = new System.Drawing.Size(790, 62);
+            this.txtt4.Size = new System.Drawing.Size(593, 51);
             this.txtt4.TabIndex = 109;
             // 
             // txtt3
             // 
             this.txtt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt3.Location = new System.Drawing.Point(814, 616);
-            this.txtt3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt3.Location = new System.Drawing.Point(610, 500);
+            this.txtt3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt3.Multiline = true;
             this.txtt3.Name = "txtt3";
-            this.txtt3.Size = new System.Drawing.Size(790, 59);
+            this.txtt3.Size = new System.Drawing.Size(593, 48);
             this.txtt3.TabIndex = 108;
             // 
             // txtt2
             // 
             this.txtt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt2.Location = new System.Drawing.Point(814, 555);
-            this.txtt2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt2.Location = new System.Drawing.Point(610, 451);
+            this.txtt2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt2.Multiline = true;
             this.txtt2.Name = "txtt2";
-            this.txtt2.Size = new System.Drawing.Size(790, 56);
+            this.txtt2.Size = new System.Drawing.Size(593, 46);
             this.txtt2.TabIndex = 107;
             // 
             // txtt1
             // 
             this.txtt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt1.Location = new System.Drawing.Point(814, 493);
-            this.txtt1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt1.Location = new System.Drawing.Point(610, 401);
+            this.txtt1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt1.Multiline = true;
             this.txtt1.Name = "txtt1";
-            this.txtt1.Size = new System.Drawing.Size(790, 56);
+            this.txtt1.Size = new System.Drawing.Size(593, 46);
             this.txtt1.TabIndex = 104;
             // 
             // txtA4
             // 
             this.txtA4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA4.Location = new System.Drawing.Point(227, 943);
-            this.txtA4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtA4.Location = new System.Drawing.Point(170, 766);
+            this.txtA4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtA4.Multiline = true;
             this.txtA4.Name = "txtA4";
-            this.txtA4.Size = new System.Drawing.Size(537, 62);
+            this.txtA4.Size = new System.Drawing.Size(403, 51);
             this.txtA4.TabIndex = 121;
             // 
             // txtA3
             // 
             this.txtA3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA3.Location = new System.Drawing.Point(227, 877);
-            this.txtA3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtA3.Location = new System.Drawing.Point(170, 713);
+            this.txtA3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtA3.Multiline = true;
             this.txtA3.Name = "txtA3";
-            this.txtA3.Size = new System.Drawing.Size(537, 60);
+            this.txtA3.Size = new System.Drawing.Size(403, 49);
             this.txtA3.TabIndex = 120;
             // 
             // txtA2
             // 
             this.txtA2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA2.Location = new System.Drawing.Point(227, 813);
-            this.txtA2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtA2.Location = new System.Drawing.Point(170, 661);
+            this.txtA2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtA2.Multiline = true;
             this.txtA2.Name = "txtA2";
-            this.txtA2.Size = new System.Drawing.Size(537, 59);
+            this.txtA2.Size = new System.Drawing.Size(403, 48);
             this.txtA2.TabIndex = 119;
             // 
             // txtA1
             // 
             this.txtA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA1.Location = new System.Drawing.Point(227, 747);
-            this.txtA1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtA1.Location = new System.Drawing.Point(170, 607);
+            this.txtA1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtA1.Multiline = true;
             this.txtA1.Name = "txtA1";
-            this.txtA1.Size = new System.Drawing.Size(537, 61);
+            this.txtA1.Size = new System.Drawing.Size(403, 50);
             this.txtA1.TabIndex = 118;
             // 
             // txtD4
             // 
             this.txtD4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtD4.Location = new System.Drawing.Point(227, 682);
-            this.txtD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD4.Location = new System.Drawing.Point(170, 554);
+            this.txtD4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtD4.Multiline = true;
             this.txtD4.Name = "txtD4";
-            this.txtD4.Size = new System.Drawing.Size(537, 59);
+            this.txtD4.Size = new System.Drawing.Size(403, 48);
             this.txtD4.TabIndex = 117;
             // 
             // txtD3
             // 
             this.txtD3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtD3.Location = new System.Drawing.Point(227, 616);
-            this.txtD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD3.Location = new System.Drawing.Point(170, 500);
+            this.txtD3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtD3.Multiline = true;
             this.txtD3.Name = "txtD3";
-            this.txtD3.Size = new System.Drawing.Size(537, 59);
+            this.txtD3.Size = new System.Drawing.Size(403, 48);
             this.txtD3.TabIndex = 116;
             // 
             // txtD2
             // 
             this.txtD2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtD2.Location = new System.Drawing.Point(227, 555);
-            this.txtD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtD2.Location = new System.Drawing.Point(170, 451);
+            this.txtD2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtD2.Multiline = true;
             this.txtD2.Name = "txtD2";
-            this.txtD2.Size = new System.Drawing.Size(537, 54);
+            this.txtD2.Size = new System.Drawing.Size(403, 44);
             this.txtD2.TabIndex = 115;
             // 
             // txtF4
             // 
             this.txtF4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtF4.Location = new System.Drawing.Point(227, 1208);
-            this.txtF4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtF4.Location = new System.Drawing.Point(170, 982);
+            this.txtF4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtF4.Multiline = true;
             this.txtF4.Name = "txtF4";
-            this.txtF4.Size = new System.Drawing.Size(537, 62);
+            this.txtF4.Size = new System.Drawing.Size(403, 51);
             this.txtF4.TabIndex = 174;
             // 
             // txtF3
             // 
             this.txtF3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtF3.Location = new System.Drawing.Point(227, 1142);
-            this.txtF3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtF3.Location = new System.Drawing.Point(170, 928);
+            this.txtF3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtF3.Multiline = true;
             this.txtF3.Name = "txtF3";
-            this.txtF3.Size = new System.Drawing.Size(537, 60);
+            this.txtF3.Size = new System.Drawing.Size(403, 49);
             this.txtF3.TabIndex = 173;
             // 
             // txtF2
             // 
             this.txtF2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtF2.Location = new System.Drawing.Point(227, 1078);
-            this.txtF2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtF2.Location = new System.Drawing.Point(170, 876);
+            this.txtF2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtF2.Multiline = true;
             this.txtF2.Name = "txtF2";
-            this.txtF2.Size = new System.Drawing.Size(537, 59);
+            this.txtF2.Size = new System.Drawing.Size(403, 48);
             this.txtF2.TabIndex = 172;
             // 
             // txtF1
             // 
             this.txtF1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtF1.Location = new System.Drawing.Point(227, 1011);
-            this.txtF1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtF1.Location = new System.Drawing.Point(170, 821);
+            this.txtF1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtF1.Multiline = true;
             this.txtF1.Name = "txtF1";
-            this.txtF1.Size = new System.Drawing.Size(537, 61);
+            this.txtF1.Size = new System.Drawing.Size(403, 50);
             this.txtF1.TabIndex = 171;
             // 
             // txtt12
             // 
             this.txtt12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt12.Location = new System.Drawing.Point(814, 1208);
-            this.txtt12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt12.Location = new System.Drawing.Point(610, 982);
+            this.txtt12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt12.Multiline = true;
             this.txtt12.Name = "txtt12";
-            this.txtt12.Size = new System.Drawing.Size(790, 62);
+            this.txtt12.Size = new System.Drawing.Size(593, 51);
             this.txtt12.TabIndex = 170;
             // 
             // txtt11
             // 
             this.txtt11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt11.Location = new System.Drawing.Point(814, 1146);
-            this.txtt11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt11.Location = new System.Drawing.Point(610, 931);
+            this.txtt11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt11.Multiline = true;
             this.txtt11.Name = "txtt11";
-            this.txtt11.Size = new System.Drawing.Size(790, 56);
+            this.txtt11.Size = new System.Drawing.Size(593, 46);
             this.txtt11.TabIndex = 169;
             // 
             // txtt10
             // 
             this.txtt10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt10.Location = new System.Drawing.Point(814, 1078);
-            this.txtt10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt10.Location = new System.Drawing.Point(610, 876);
+            this.txtt10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt10.Multiline = true;
             this.txtt10.Name = "txtt10";
-            this.txtt10.Size = new System.Drawing.Size(790, 62);
+            this.txtt10.Size = new System.Drawing.Size(593, 51);
             this.txtt10.TabIndex = 168;
             // 
             // txtt9
             // 
             this.txtt9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt9.Location = new System.Drawing.Point(814, 1013);
-            this.txtt9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt9.Location = new System.Drawing.Point(610, 823);
+            this.txtt9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt9.Multiline = true;
             this.txtt9.Name = "txtt9";
-            this.txtt9.Size = new System.Drawing.Size(790, 60);
+            this.txtt9.Size = new System.Drawing.Size(593, 49);
             this.txtt9.TabIndex = 167;
             // 
             // txtO4
             // 
             this.txtO4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO4.Location = new System.Drawing.Point(227, 1475);
-            this.txtO4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtO4.Location = new System.Drawing.Point(170, 1198);
+            this.txtO4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtO4.Multiline = true;
             this.txtO4.Name = "txtO4";
-            this.txtO4.Size = new System.Drawing.Size(537, 62);
+            this.txtO4.Size = new System.Drawing.Size(403, 51);
             this.txtO4.TabIndex = 182;
             // 
             // txtO3
             // 
             this.txtO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO3.Location = new System.Drawing.Point(227, 1409);
-            this.txtO3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtO3.Location = new System.Drawing.Point(170, 1145);
+            this.txtO3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtO3.Multiline = true;
             this.txtO3.Name = "txtO3";
-            this.txtO3.Size = new System.Drawing.Size(537, 60);
+            this.txtO3.Size = new System.Drawing.Size(403, 49);
             this.txtO3.TabIndex = 181;
             // 
             // txtO2
             // 
             this.txtO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO2.Location = new System.Drawing.Point(227, 1344);
-            this.txtO2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtO2.Location = new System.Drawing.Point(170, 1092);
+            this.txtO2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtO2.Multiline = true;
             this.txtO2.Name = "txtO2";
-            this.txtO2.Size = new System.Drawing.Size(537, 59);
+            this.txtO2.Size = new System.Drawing.Size(403, 48);
             this.txtO2.TabIndex = 180;
             // 
             // txtO1
             // 
             this.txtO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO1.Location = new System.Drawing.Point(227, 1277);
-            this.txtO1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtO1.Location = new System.Drawing.Point(170, 1038);
+            this.txtO1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtO1.Multiline = true;
             this.txtO1.Name = "txtO1";
-            this.txtO1.Size = new System.Drawing.Size(537, 61);
+            this.txtO1.Size = new System.Drawing.Size(403, 50);
             this.txtO1.TabIndex = 179;
             // 
             // txtt16
             // 
             this.txtt16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt16.Location = new System.Drawing.Point(814, 1473);
-            this.txtt16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt16.Location = new System.Drawing.Point(610, 1197);
+            this.txtt16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt16.Multiline = true;
             this.txtt16.Name = "txtt16";
-            this.txtt16.Size = new System.Drawing.Size(790, 62);
+            this.txtt16.Size = new System.Drawing.Size(593, 51);
             this.txtt16.TabIndex = 178;
             // 
             // txtt15
             // 
             this.txtt15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt15.Location = new System.Drawing.Point(814, 1410);
-            this.txtt15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt15.Location = new System.Drawing.Point(610, 1146);
+            this.txtt15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt15.Multiline = true;
             this.txtt15.Name = "txtt15";
-            this.txtt15.Size = new System.Drawing.Size(790, 56);
+            this.txtt15.Size = new System.Drawing.Size(593, 46);
             this.txtt15.TabIndex = 177;
             // 
             // txtt14
             // 
             this.txtt14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt14.Location = new System.Drawing.Point(814, 1343);
-            this.txtt14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt14.Location = new System.Drawing.Point(610, 1091);
+            this.txtt14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt14.Multiline = true;
             this.txtt14.Name = "txtt14";
-            this.txtt14.Size = new System.Drawing.Size(790, 62);
+            this.txtt14.Size = new System.Drawing.Size(593, 51);
             this.txtt14.TabIndex = 176;
             // 
             // txtt13
             // 
             this.txtt13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtt13.Location = new System.Drawing.Point(814, 1277);
-            this.txtt13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt13.Location = new System.Drawing.Point(610, 1038);
+            this.txtt13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt13.Multiline = true;
             this.txtt13.Name = "txtt13";
-            this.txtt13.Size = new System.Drawing.Size(790, 60);
+            this.txtt13.Size = new System.Drawing.Size(593, 49);
             this.txtt13.TabIndex = 175;
             // 
             // label26
@@ -605,9 +602,10 @@
             this.label26.BackColor = System.Drawing.Color.LightGray;
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label26.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(35, 19);
+            this.label26.Location = new System.Drawing.Point(26, 15);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(1521, 71);
+            this.label26.Size = new System.Drawing.Size(1124, 58);
             this.label26.TabIndex = 185;
             this.label26.Text = "RESUMEN EJECUTIVO DEL PLAN ESTRATÉGICO";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -619,11 +617,10 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.BuildingCircleCheck;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 57;
-            this.iconPictureBox1.Location = new System.Drawing.Point(36, 109);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox1.IconSize = 44;
+            this.iconPictureBox1.Location = new System.Drawing.Point(27, 89);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox1.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox1.TabIndex = 186;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -634,11 +631,10 @@
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 57;
-            this.iconPictureBox2.Location = new System.Drawing.Point(646, 109);
-            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox2.IconSize = 44;
+            this.iconPictureBox2.Location = new System.Drawing.Point(484, 89);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox2.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox2.TabIndex = 187;
             this.iconPictureBox2.TabStop = false;
             // 
@@ -649,11 +645,10 @@
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
             this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 57;
-            this.iconPictureBox3.Location = new System.Drawing.Point(1168, 110);
-            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox3.IconSize = 44;
+            this.iconPictureBox3.Location = new System.Drawing.Point(876, 89);
             this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox3.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox3.TabIndex = 188;
             this.iconPictureBox3.TabStop = false;
             // 
@@ -664,11 +659,10 @@
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Bullseye;
             this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 57;
-            this.iconPictureBox4.Location = new System.Drawing.Point(35, 179);
-            this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox4.IconSize = 44;
+            this.iconPictureBox4.Location = new System.Drawing.Point(26, 145);
             this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox4.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox4.TabIndex = 189;
             this.iconPictureBox4.TabStop = false;
             // 
@@ -676,10 +670,9 @@
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(102, 195);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(76, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 33);
+            this.label4.Size = new System.Drawing.Size(64, 27);
             this.label4.TabIndex = 190;
             this.label4.Text = "Mision:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -688,10 +681,9 @@
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(892, 195);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(669, 158);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 33);
+            this.label2.Size = new System.Drawing.Size(64, 27);
             this.label2.TabIndex = 192;
             this.label2.Text = "Vision:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -703,11 +695,10 @@
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 57;
-            this.iconPictureBox5.Location = new System.Drawing.Point(826, 179);
-            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox5.IconSize = 44;
+            this.iconPictureBox5.Location = new System.Drawing.Point(620, 145);
             this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox5.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox5.TabIndex = 191;
             this.iconPictureBox5.TabStop = false;
             // 
@@ -718,11 +709,10 @@
             this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.Heart;
             this.iconPictureBox6.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 57;
-            this.iconPictureBox6.Location = new System.Drawing.Point(35, 327);
-            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox6.IconSize = 44;
+            this.iconPictureBox6.Location = new System.Drawing.Point(26, 266);
             this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox6.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox6.TabIndex = 193;
             this.iconPictureBox6.TabStop = false;
             // 
@@ -730,10 +720,9 @@
             // 
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(102, 340);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(76, 276);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 33);
+            this.label5.Size = new System.Drawing.Size(64, 27);
             this.label5.TabIndex = 194;
             this.label5.Text = "Valores:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -742,10 +731,9 @@
             // 
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(892, 340);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(669, 276);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(280, 33);
+            this.label7.Size = new System.Drawing.Size(210, 27);
             this.label7.TabIndex = 196;
             this.label7.Text = "Unidades Estrategicas:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -757,11 +745,10 @@
             this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
             this.iconPictureBox7.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox7.IconSize = 57;
-            this.iconPictureBox7.Location = new System.Drawing.Point(826, 327);
-            this.iconPictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox7.IconSize = 44;
+            this.iconPictureBox7.Location = new System.Drawing.Point(620, 266);
             this.iconPictureBox7.Name = "iconPictureBox7";
-            this.iconPictureBox7.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox7.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox7.TabIndex = 195;
             this.iconPictureBox7.TabStop = false;
             // 
@@ -769,10 +756,9 @@
             // 
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(97, 24);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(73, 20);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 33);
+            this.label6.Size = new System.Drawing.Size(64, 27);
             this.label6.TabIndex = 198;
             this.label6.Text = "Mision:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -784,11 +770,10 @@
             this.iconPictureBox8.IconChar = FontAwesome.Sharp.IconChar.Bullseye;
             this.iconPictureBox8.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox8.IconSize = 57;
-            this.iconPictureBox8.Location = new System.Drawing.Point(31, 12);
-            this.iconPictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox8.IconSize = 44;
+            this.iconPictureBox8.Location = new System.Drawing.Point(23, 10);
             this.iconPictureBox8.Name = "iconPictureBox8";
-            this.iconPictureBox8.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox8.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox8.TabIndex = 197;
             this.iconPictureBox8.TabStop = false;
             // 
@@ -796,10 +781,9 @@
             // 
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(433, 24);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(325, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(356, 33);
+            this.label8.Size = new System.Drawing.Size(267, 27);
             this.label8.TabIndex = 200;
             this.label8.Text = "Objetivos Generales o Estrategicos:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -811,11 +795,10 @@
             this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.Bell;
             this.iconPictureBox9.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox9.IconSize = 57;
-            this.iconPictureBox9.Location = new System.Drawing.Point(367, 12);
-            this.iconPictureBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox9.IconSize = 44;
+            this.iconPictureBox9.Location = new System.Drawing.Point(275, 10);
             this.iconPictureBox9.Name = "iconPictureBox9";
-            this.iconPictureBox9.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox9.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox9.TabIndex = 199;
             this.iconPictureBox9.TabStop = false;
             // 
@@ -823,10 +806,9 @@
             // 
             this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(889, 24);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(667, 20);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(356, 33);
+            this.label10.Size = new System.Drawing.Size(267, 27);
             this.label10.TabIndex = 202;
             this.label10.Text = "Objetivos Especificos";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -838,11 +820,10 @@
             this.iconPictureBox10.IconChar = FontAwesome.Sharp.IconChar.Bilibili;
             this.iconPictureBox10.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox10.IconSize = 57;
-            this.iconPictureBox10.Location = new System.Drawing.Point(822, 12);
-            this.iconPictureBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox10.IconSize = 44;
+            this.iconPictureBox10.Location = new System.Drawing.Point(616, 10);
             this.iconPictureBox10.Name = "iconPictureBox10";
-            this.iconPictureBox10.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox10.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox10.TabIndex = 201;
             this.iconPictureBox10.TabStop = false;
             // 
@@ -850,10 +831,9 @@
             // 
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(99, 434);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(74, 353);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(287, 33);
+            this.label11.Size = new System.Drawing.Size(215, 27);
             this.label11.TabIndex = 204;
             this.label11.Text = "Analisis FODA:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -865,11 +845,10 @@
             this.iconPictureBox11.IconChar = FontAwesome.Sharp.IconChar.RectangleList;
             this.iconPictureBox11.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox11.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox11.IconSize = 57;
-            this.iconPictureBox11.Location = new System.Drawing.Point(34, 422);
-            this.iconPictureBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox11.IconSize = 44;
+            this.iconPictureBox11.Location = new System.Drawing.Point(26, 343);
             this.iconPictureBox11.Name = "iconPictureBox11";
-            this.iconPictureBox11.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox11.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox11.TabIndex = 203;
             this.iconPictureBox11.TabStop = false;
             // 
@@ -877,10 +856,9 @@
             // 
             this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(879, 434);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(659, 353);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(287, 33);
+            this.label12.Size = new System.Drawing.Size(215, 27);
             this.label12.TabIndex = 206;
             this.label12.Text = "Acciones Competitivas:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -892,11 +870,10 @@
             this.iconPictureBox12.IconChar = FontAwesome.Sharp.IconChar.CalendarPlus;
             this.iconPictureBox12.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox12.IconSize = 57;
-            this.iconPictureBox12.Location = new System.Drawing.Point(814, 422);
-            this.iconPictureBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox12.IconSize = 44;
+            this.iconPictureBox12.Location = new System.Drawing.Point(610, 343);
             this.iconPictureBox12.Name = "iconPictureBox12";
-            this.iconPictureBox12.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox12.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox12.TabIndex = 205;
             this.iconPictureBox12.TabStop = false;
             // 
@@ -904,10 +881,9 @@
             // 
             this.label18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(107, 1571);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(80, 1276);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(636, 33);
+            this.label18.Size = new System.Drawing.Size(477, 27);
             this.label18.TabIndex = 208;
             this.label18.Text = "Identificacion de Estrategia:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -919,11 +895,10 @@
             this.iconPictureBox13.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
             this.iconPictureBox13.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox13.IconSize = 57;
-            this.iconPictureBox13.Location = new System.Drawing.Point(41, 1558);
-            this.iconPictureBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox13.IconSize = 44;
+            this.iconPictureBox13.Location = new System.Drawing.Point(31, 1266);
             this.iconPictureBox13.Name = "iconPictureBox13";
-            this.iconPictureBox13.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox13.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox13.TabIndex = 207;
             this.iconPictureBox13.TabStop = false;
             // 
@@ -931,10 +906,9 @@
             // 
             this.label13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(870, 1571);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(652, 1276);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(636, 33);
+            this.label13.Size = new System.Drawing.Size(477, 27);
             this.label13.TabIndex = 210;
             this.label13.Text = "Conclusiones:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -946,11 +920,10 @@
             this.iconPictureBox14.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
             this.iconPictureBox14.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox14.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox14.IconSize = 57;
-            this.iconPictureBox14.Location = new System.Drawing.Point(803, 1558);
-            this.iconPictureBox14.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox14.IconSize = 44;
+            this.iconPictureBox14.Location = new System.Drawing.Point(602, 1266);
             this.iconPictureBox14.Name = "iconPictureBox14";
-            this.iconPictureBox14.Size = new System.Drawing.Size(59, 57);
+            this.iconPictureBox14.Size = new System.Drawing.Size(44, 46);
             this.iconPictureBox14.TabIndex = 209;
             this.iconPictureBox14.TabStop = false;
             // 
@@ -964,10 +937,9 @@
             this.btnImprimir1.IconColor = System.Drawing.Color.White;
             this.btnImprimir1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnImprimir1.IconSize = 45;
-            this.btnImprimir1.Location = new System.Drawing.Point(803, 1851);
-            this.btnImprimir1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnImprimir1.Location = new System.Drawing.Point(602, 1504);
             this.btnImprimir1.Name = "btnImprimir1";
-            this.btnImprimir1.Size = new System.Drawing.Size(277, 59);
+            this.btnImprimir1.Size = new System.Drawing.Size(208, 48);
             this.btnImprimir1.TabIndex = 211;
             this.btnImprimir1.Text = "DESCARGAR";
             this.btnImprimir1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -985,10 +957,9 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 45;
-            this.iconButton1.Location = new System.Drawing.Point(509, 1851);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton1.Location = new System.Drawing.Point(382, 1504);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(277, 59);
+            this.iconButton1.Size = new System.Drawing.Size(208, 48);
             this.iconButton1.TabIndex = 212;
             this.iconButton1.Text = "PREVISUALIZAR";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -999,10 +970,9 @@
             // label73
             // 
             this.label73.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(281, 1914);
-            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label73.Location = new System.Drawing.Point(211, 1555);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(1096, 41);
+            this.label73.Size = new System.Drawing.Size(822, 33);
             this.label73.TabIndex = 1009;
             // 
             // label19
@@ -1011,9 +981,10 @@
             this.label19.BackColor = System.Drawing.Color.LightGray;
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(-9, 4442);
+            this.label19.Location = new System.Drawing.Point(-7, 3609);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(186, 247);
+            this.label19.Size = new System.Drawing.Size(140, 201);
             this.label19.TabIndex = 1010;
             this.label19.Text = "DEBILIDADES";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1024,9 +995,10 @@
             this.label14.BackColor = System.Drawing.Color.LightGray;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(-9, 4697);
+            this.label14.Location = new System.Drawing.Point(-7, 3816);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(186, 257);
+            this.label14.Size = new System.Drawing.Size(140, 209);
             this.label14.TabIndex = 1011;
             this.label14.Text = "AMENAZAS";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1037,9 +1009,10 @@
             this.label15.BackColor = System.Drawing.Color.LightGray;
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(-8, 4960);
+            this.label15.Location = new System.Drawing.Point(-6, 4030);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(186, 257);
+            this.label15.Size = new System.Drawing.Size(140, 209);
             this.label15.TabIndex = 1012;
             this.label15.Text = "FORTALEZAS";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1050,9 +1023,10 @@
             this.label16.BackColor = System.Drawing.Color.LightGray;
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(-9, 5227);
+            this.label16.Location = new System.Drawing.Point(-7, 4247);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(186, 257);
+            this.label16.Size = new System.Drawing.Size(140, 209);
             this.label16.TabIndex = 1013;
             this.label16.Text = "OPORTUNIDADES";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1060,21 +1034,19 @@
             // dgvObjE
             // 
             this.dgvObjE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvObjE.Location = new System.Drawing.Point(842, 87);
-            this.dgvObjE.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvObjE.Location = new System.Drawing.Point(632, 71);
             this.dgvObjE.Name = "dgvObjE";
             this.dgvObjE.RowHeadersWidth = 51;
-            this.dgvObjE.Size = new System.Drawing.Size(467, 311);
+            this.dgvObjE.Size = new System.Drawing.Size(350, 253);
             this.dgvObjE.TabIndex = 1015;
             // 
             // dgvObjG
             // 
             this.dgvObjG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvObjG.Location = new System.Drawing.Point(367, 88);
-            this.dgvObjG.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvObjG.Location = new System.Drawing.Point(275, 72);
             this.dgvObjG.Name = "dgvObjG";
             this.dgvObjG.RowHeadersWidth = 51;
-            this.dgvObjG.Size = new System.Drawing.Size(467, 311);
+            this.dgvObjG.Size = new System.Drawing.Size(350, 253);
             this.dgvObjG.TabIndex = 1014;
             this.dgvObjG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvObjG_CellClick);
             // 
@@ -1142,9 +1114,10 @@
             this.panelAbajo.Controls.Add(this.txtO2);
             this.panelAbajo.Controls.Add(this.txtO3);
             this.panelAbajo.Controls.Add(this.txtO4);
-            this.panelAbajo.Location = new System.Drawing.Point(11, 466);
+            this.panelAbajo.Location = new System.Drawing.Point(8, 379);
+            this.panelAbajo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelAbajo.Name = "panelAbajo";
-            this.panelAbajo.Size = new System.Drawing.Size(1630, 2006);
+            this.panelAbajo.Size = new System.Drawing.Size(1222, 1630);
             this.panelAbajo.TabIndex = 1016;
             // 
             // label17
@@ -1153,9 +1126,10 @@
             this.label17.BackColor = System.Drawing.Color.LightGray;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(33, 1280);
+            this.label17.Location = new System.Drawing.Point(25, 1040);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(186, 257);
+            this.label17.Size = new System.Drawing.Size(140, 209);
             this.label17.TabIndex = 1019;
             this.label17.Text = "OPORTUNIDADES";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1166,9 +1140,10 @@
             this.label20.BackColor = System.Drawing.Color.LightGray;
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(34, 1012);
+            this.label20.Location = new System.Drawing.Point(26, 822);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(186, 257);
+            this.label20.Size = new System.Drawing.Size(140, 209);
             this.label20.TabIndex = 1018;
             this.label20.Text = "FORTALEZAS";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1179,9 +1154,10 @@
             this.label21.BackColor = System.Drawing.Color.LightGray;
             this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(33, 749);
+            this.label21.Location = new System.Drawing.Point(25, 609);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(186, 257);
+            this.label21.Size = new System.Drawing.Size(140, 209);
             this.label21.TabIndex = 1017;
             this.label21.Text = "AMENAZAS";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1192,20 +1168,21 @@
             this.label22.BackColor = System.Drawing.Color.LightGray;
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(33, 494);
+            this.label22.Location = new System.Drawing.Point(25, 401);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(186, 247);
+            this.label22.Size = new System.Drawing.Size(140, 201);
             this.label22.TabIndex = 1016;
             this.label22.Text = "DEBILIDADES";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmResumen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1676, 880);
+            this.ClientSize = new System.Drawing.Size(1257, 715);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.iconPictureBox7);
             this.Controls.Add(this.label5);
@@ -1230,7 +1207,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panelAbajo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmResumen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmResumen";

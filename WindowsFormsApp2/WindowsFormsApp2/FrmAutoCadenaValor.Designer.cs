@@ -2419,7 +2419,7 @@
             this.label34.Location = new System.Drawing.Point(11, 738);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(1002, 50);
+            this.label34.Size = new System.Drawing.Size(985, 50);
             this.label34.TabIndex = 106;
             this.label34.Text = "Reflexione sobre el resultado obtenido. Anote aquellas observaciones que puedan s" +
     "er de su interés. Identifique sus fortalezas y debilidades respecto a su cadena " +
@@ -2436,7 +2436,7 @@
             this.label33.Location = new System.Drawing.Point(11, 9);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(1178, 75);
+            this.label33.Size = new System.Drawing.Size(1161, 75);
             this.label33.TabIndex = 105;
             this.label33.Text = resources.GetString("label33.Text");
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

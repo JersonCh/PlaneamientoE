@@ -32,7 +32,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIngresar = new System.Windows.Forms.Button();
-            this.btnRecuperarPass = new System.Windows.Forms.Button();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.btnminimisar = new System.Windows.Forms.PictureBox();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -86,28 +85,11 @@
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
             this.btnIngresar.Location = new System.Drawing.Point(367, 322);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(236, 39);
+            this.btnIngresar.Size = new System.Drawing.Size(473, 39);
             this.btnIngresar.TabIndex = 0;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
-            // 
-            // btnRecuperarPass
-            // 
-            this.btnRecuperarPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRecuperarPass.FlatAppearance.BorderSize = 0;
-            this.btnRecuperarPass.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRecuperarPass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnRecuperarPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecuperarPass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecuperarPass.ForeColor = System.Drawing.Color.White;
-            this.btnRecuperarPass.Location = new System.Drawing.Point(625, 322);
-            this.btnRecuperarPass.Name = "btnRecuperarPass";
-            this.btnRecuperarPass.Size = new System.Drawing.Size(236, 39);
-            this.btnRecuperarPass.TabIndex = 80;
-            this.btnRecuperarPass.Text = "RECUPERAR CONTRASEÑA";
-            this.btnRecuperarPass.UseVisualStyleBackColor = false;
-            this.btnRecuperarPass.Click += new System.EventHandler(this.btnRecuperarPass_Click);
             // 
             // btncerrar
             // 
@@ -241,7 +223,6 @@
             this.ClientSize = new System.Drawing.Size(900, 424);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTitleChildForm);
-            this.Controls.Add(this.btnRecuperarPass);
             this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.btnminimisar);
             this.Controls.Add(this.label2);
@@ -277,7 +258,6 @@
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.PictureBox btnminimisar;
         private System.Windows.Forms.PictureBox btncerrar;
-        private System.Windows.Forms.Button btnRecuperarPass;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
