@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using WindowsFormsApp2.Clases;
 using WindowsFormsApp2.Modelos;
 
@@ -14,20 +11,16 @@ namespace WindowsFormsApp2
 {
     public partial class FrmAutoPest : Form
     {
+        private ToolTip tooltip = new ToolTip();
+
         public FrmAutoPest()
         {
             InitializeComponent();
+            ConfigurarGrafico();
         }
-
-        // Definimos un tipo para el evento que enviará los totales
-        public delegate void TotalesCalculadosHandler(object sender, List<(string factor, double porcentaje)> totales);
-
-        // Evento que se dispara cuando se calculan los totales
-        public event TotalesCalculadosHandler TotalesCalculados;
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            // Validar que los campos de Oportunidades y Amenazas no estén vacíos
             if (string.IsNullOrWhiteSpace(txtO3.Text) || string.IsNullOrWhiteSpace(txtO4.Text) ||
                 string.IsNullOrWhiteSpace(txtA3.Text) || string.IsNullOrWhiteSpace(txtA4.Text))
             {
@@ -41,13 +34,11 @@ namespace WindowsFormsApp2
                 {
                     string o3 = txtO3.Text.Trim();
                     string o4 = txtO4.Text.Trim();
-
                     string a3 = txtA3.Text.Trim();
                     string a4 = txtA4.Text.Trim();
 
                     dc.SP_RegistrarOportunidad(o3, Sesion.EmpresaId);
                     dc.SP_RegistrarOportunidad(o4, Sesion.EmpresaId);
-
                     dc.SP_RegistrarAmenaza(a3, Sesion.EmpresaId);
                     dc.SP_RegistrarAmenaza(a4, Sesion.EmpresaId);
                 }
@@ -62,10 +53,8 @@ namespace WindowsFormsApp2
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            // Array para almacenar los valores de cada pregunta
             int[] valoresPreguntas = new int[25];
 
-            // Capturar todos los valores individuales
             for (int i = 1; i <= 25; i++)
             {
                 Panel panel = this.Controls.Find($"p{i}", true).FirstOrDefault() as Panel;
@@ -86,7 +75,6 @@ namespace WindowsFormsApp2
                 }
             }
 
-            // Calcular resultados y preparar lista para el evento
             var resultados = new List<(string factor, double porcentaje)>
             {
                 ("Factores Sociales y Demográficos", CalcularFactor(1, 5)),
@@ -96,22 +84,19 @@ namespace WindowsFormsApp2
                 ("Factores Medio Ambientales", CalcularFactor(21, 25))
             };
 
-            // Mostrar resultados en los TextBoxes
             MostrarResultado(txtSociales, resultados[0].porcentaje, resultados[0].factor);
             MostrarResultado(txtPoliticos, resultados[1].porcentaje, resultados[1].factor);
             MostrarResultado(txtEconomicos, resultados[2].porcentaje, resultados[2].factor);
             MostrarResultado(txtTecnologicos, resultados[3].porcentaje, resultados[3].factor);
             MostrarResultado(txtAmbientales, resultados[4].porcentaje, resultados[4].factor);
 
-            // Guardar en base de datos (solo los primeros 4 resultados según tu tabla)
             GuardarAutoPEST(valoresPreguntas,
                 GenerarMensajeResultados(resultados[0]),
                 GenerarMensajeResultados(resultados[1]),
                 GenerarMensajeResultados(resultados[2]),
                 GenerarMensajeResultados(resultados[3]));
 
-            // Disparar evento para avisar al padre
-            TotalesCalculados?.Invoke(this, resultados);
+            ActualizarGrafico(resultados);
         }
 
         private double CalcularFactor(int inicio, int fin)
@@ -141,23 +126,18 @@ namespace WindowsFormsApp2
 
         private void MostrarResultado(TextBox txt, double porcentaje, string factorNombre)
         {
-            string mensaje;
-
-            if (porcentaje >= 70)
-                mensaje = $"HAY UN NOTABLE IMPACTO DE {factorNombre.ToUpper()} EN EL FUNCIONAMIENTO DE LA EMPRESA";
-            else
-                mensaje = $"NO HAY UN NOTABLE IMPACTO DE {factorNombre.ToUpper()} EN EL FUNCIONAMIENTO DE LA EMPRESA";
+            string mensaje = porcentaje >= 70
+                ? $"HAY UN NOTABLE IMPACTO DE {factorNombre.ToUpper()} EN EL FUNCIONAMIENTO DE LA EMPRESA"
+                : $"NO HAY UN NOTABLE IMPACTO DE {factorNombre.ToUpper()} EN EL FUNCIONAMIENTO DE LA EMPRESA";
 
             txt.Text = $"{porcentaje:0.##}% - {mensaje}";
         }
 
         private string GenerarMensajeResultados((string factor, double porcentaje) resultado)
         {
-            string mensaje;
-            if (resultado.porcentaje >= 70)
-                mensaje = $"HAY UN NOTABLE IMPACTO DE {resultado.factor.ToUpper()} EN EL FUNCIONAMIENTO DE LA EMPRESA";
-            else
-                mensaje = $"NO HAY UN NOTABLE IMPACTO DE {resultado.factor.ToUpper()} EN EL FUNCIONAMIENTO DE LA EMPRESA";
+            string mensaje = resultado.porcentaje >= 70
+                ? $"HAY UN NOTABLE IMPACTO DE {resultado.factor.ToUpper()} EN EL FUNCIONAMIENTO DE LA EMPRESA"
+                : $"NO HAY UN NOTABLE IMPACTO DE {resultado.factor.ToUpper()} EN EL FUNCIONAMIENTO DE LA EMPRESA";
 
             return $"{resultado.porcentaje:0.##}% - {mensaje}";
         }
@@ -168,55 +148,23 @@ namespace WindowsFormsApp2
             {
                 using (DataClasses3DataContext dc = new DataClasses3DataContext())
                 {
-                    // Llamar al procedimiento almacenado
                     var resultado = dc.SP_InsertarOActualizarAutoPEST(
-                        Sesion.EmpresaId,  // empresa_id
-                        valores[0],   // p1
-                        valores[1],   // p2
-                        valores[2],   // p3
-                        valores[3],   // p4
-                        valores[4],   // p5
-                        valores[5],   // p6
-                        valores[6],   // p7
-                        valores[7],   // p8
-                        valores[8],   // p9
-                        valores[9],   // p10
-                        valores[10],  // p11
-                        valores[11],  // p12
-                        valores[12],  // p13
-                        valores[13],  // p14
-                        valores[14],  // p15
-                        valores[15],  // p16
-                        valores[16],  // p17
-                        valores[17],  // p18
-                        valores[18],  // p19
-                        valores[19],  // p20
-                        valores[20],  // p21
-                        valores[21],  // p22
-                        valores[22],  // p23
-                        valores[23],  // p24
-                        valores[24],  // p25
-                        r1,           // R1 - Factores Sociales
-                        r2,           // R2 - Factores Políticos  
-                        r3,           // R3 - Factores Económicos
-                        r4            // R4 - Factores Tecnológicos
-                    );
+                        Sesion.EmpresaId,
+                        valores[0], valores[1], valores[2], valores[3], valores[4],
+                        valores[5], valores[6], valores[7], valores[8], valores[9],
+                        valores[10], valores[11], valores[12], valores[13], valores[14],
+                        valores[15], valores[16], valores[17], valores[18], valores[19],
+                        valores[20], valores[21], valores[22], valores[23], valores[24],
+                        r1, r2, r3, r4);
 
-                    // Mostrar mensaje según el resultado
                     var primerResultado = resultado.FirstOrDefault();
                     if (primerResultado != null)
                     {
                         string accion = primerResultado.Resultado;
-                        if (accion == "INSERTADO")
-                        {
-                            MessageBox.Show("Análisis PEST registrado correctamente.", "Éxito",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        else if (accion == "ACTUALIZADO")
-                        {
-                            MessageBox.Show("Análisis PEST actualizado correctamente.", "Éxito",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                        MessageBox.Show(accion == "INSERTADO"
+                            ? "Análisis PEST registrado correctamente."
+                            : "Análisis PEST actualizado correctamente.",
+                            "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
@@ -227,9 +175,44 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void txtO3_TextChanged(object sender, EventArgs e)
+        private void ConfigurarGrafico()
         {
-            // Puedes dejarlo vacío o manejar cambios en los textos aquí si lo necesitas
+            chartFactores.Series.Clear();
+            chartFactores.ChartAreas.Clear();
+
+            ChartArea area = new ChartArea();
+            chartFactores.ChartAreas.Add(area);
+
+            chartFactores.ChartAreas[0].AxisX.Title = "Factores";
+            chartFactores.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
+            chartFactores.ChartAreas[0].AxisX.Interval = 1;
+            chartFactores.ChartAreas[0].AxisY.Title = "Porcentaje (%)";
+            chartFactores.ChartAreas[0].AxisY.Minimum = 0;
+            chartFactores.ChartAreas[0].AxisY.Maximum = 100;
+        }
+
+        private void ActualizarGrafico(List<(string factor, double porcentaje)> totales)
+        {
+            chartFactores.Series.Clear();
+
+            Series serie = new Series("Impacto")
+            {
+                ChartType = SeriesChartType.Column,
+                IsValueShownAsLabel = true
+            };
+
+            foreach (var item in totales)
+            {
+                int index = serie.Points.AddXY(item.factor, item.porcentaje);
+
+                serie.Points[index].Color = item.porcentaje >= 70 ? Color.Red :
+                    item.porcentaje >= 40 ? Color.Orange : Color.Green;
+
+                string mensaje = GenerarMensajeResultados(item);
+                serie.Points[index].ToolTip = mensaje;
+            }
+
+            chartFactores.Series.Add(serie);
         }
     }
 }

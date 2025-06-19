@@ -309,7 +309,7 @@
             this.txtO3.Name = "txtO3";
             this.txtO3.Size = new System.Drawing.Size(481, 27);
             this.txtO3.TabIndex = 45;
-            this.txtO3.TextChanged += new System.EventHandler(this.txtO3_TextChanged);
+        //    this.txtO3.TextChanged += new System.EventHandler(this.txtO3_TextChanged);
             // 
             // txtO4
             // 
@@ -2439,7 +2439,7 @@
             this.label26.Location = new System.Drawing.Point(20, 407);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(1164, 101);
+            this.label26.Size = new System.Drawing.Size(1147, 101);
             this.label26.TabIndex = 104;
             this.label26.Text = resources.GetString("label26.Text");
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2560,7 +2560,7 @@
             this.label33.Location = new System.Drawing.Point(20, 1260);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(1164, 63);
+            this.label33.Size = new System.Drawing.Size(1147, 63);
             this.label33.TabIndex = 1007;
             this.label33.Text = "A partir de la conclusión obtenida en el diagnóstico en cada uno de los factores," +
     " determine  las oportunidades y amenazas más relevantes que desee que se refleje" +

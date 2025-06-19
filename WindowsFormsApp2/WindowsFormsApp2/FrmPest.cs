@@ -34,7 +34,7 @@ namespace WindowsFormsApp2
             // Suscribirse al evento si es FrmAutoPest
             if (formularioHijo is FrmAutoPest frmAutoPest)
             {
-                frmAutoPest.TotalesCalculados += FrmAutoPest_TotalesCalculados;
+                
             }
 
             formularioHijo.TopLevel = false;

@@ -182,6 +182,53 @@ namespace WindowsFormsApp2
                     }
                 }
 
+                // Agregar fortalezas, debilidades, oportunidades, amenazas y matriz CAME
+                linesToPrint.Add("Fortalezas");
+                linesToPrint.Add("  1. " + txtF1.Text);
+                linesToPrint.Add("  2. " + txtF2.Text);
+                linesToPrint.Add("  3. " + txtF3.Text);
+                linesToPrint.Add("  4. " + txtF4.Text);
+                linesToPrint.Add("");
+
+                linesToPrint.Add("Debilidades");
+                linesToPrint.Add("  1. " + txtD1.Text);
+                linesToPrint.Add("  2. " + txtD2.Text);
+                linesToPrint.Add("  3. " + txtD3.Text);
+                linesToPrint.Add("  4. " + txtD4.Text);
+                linesToPrint.Add("");
+
+                linesToPrint.Add("Oportunidades");
+                linesToPrint.Add("  1. " + txtO1.Text);
+                linesToPrint.Add("  2. " + txtO2.Text);
+                linesToPrint.Add("  3. " + txtO3.Text);
+                linesToPrint.Add("  4. " + txtO4.Text);
+                linesToPrint.Add("");
+
+                linesToPrint.Add("Amenazas");
+                linesToPrint.Add("  1. " + txtA1.Text);
+                linesToPrint.Add("  2. " + txtA2.Text);
+                linesToPrint.Add("  3. " + txtA3.Text);
+                linesToPrint.Add("  4. " + txtA4.Text);
+                linesToPrint.Add("");
+
+                linesToPrint.Add("Matriz CAME");
+                linesToPrint.Add("  1. " + txtt1.Text);
+                linesToPrint.Add("  2. " + txtt2.Text);
+                linesToPrint.Add("  3. " + txtt3.Text);
+                linesToPrint.Add("  4. " + txtt4.Text);
+                linesToPrint.Add("  5. " + txtt5.Text);
+                linesToPrint.Add("  6. " + txtt6.Text);
+                linesToPrint.Add("  7. " + txtt7.Text);
+                linesToPrint.Add("  8. " + txtt8.Text);
+                linesToPrint.Add("  9. " + txtt9.Text);
+                linesToPrint.Add(" 10. " + txtt10.Text);
+                linesToPrint.Add(" 11. " + txtt11.Text);
+                linesToPrint.Add(" 12. " + txtt12.Text);
+                linesToPrint.Add(" 13. " + txtt13.Text);
+                linesToPrint.Add(" 14. " + txtt14.Text);
+                linesToPrint.Add(" 15. " + txtt15.Text);
+                linesToPrint.Add(" 16. " + txtt16.Text);
+
                 lineFonts = new List<Font>();
                 lineBrushes = new List<Brush>();
                 Font titleFont = new Font("Arial", 16, FontStyle.Bold);
@@ -200,21 +247,13 @@ namespace WindowsFormsApp2
                     }
                     else if (
                         line == "Misión" || line == "Visión" || line == "Valores" ||
-                        line == "Unidad Estratégica" || line == "Objetivos Generales y Específicos"
+                        line == "Unidad Estratégica" || line == "Objetivos Generales y Específicos" ||
+                        line == "Fortalezas" || line == "Debilidades" || line == "Oportunidades" ||
+                        line == "Amenazas" || line == "Matriz CAME"
                     )
                     {
                         lineFonts.Add(sectionFont);
                         lineBrushes.Add(sectionBrush);
-                    }
-                    else if (line.StartsWith("Objetivo General:"))
-                    {
-                        lineFonts.Add(sectionFont);
-                        lineBrushes.Add(sectionBrush);
-                    }
-                    else if (line.StartsWith("  - Objetivo Específico:"))
-                    {
-                        lineFonts.Add(normalFont);
-                        lineBrushes.Add(normalBrush);
                     }
                     else
                     {
