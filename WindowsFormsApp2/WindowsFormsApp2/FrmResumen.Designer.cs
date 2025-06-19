@@ -109,11 +109,11 @@
             this.dgvObjE = new System.Windows.Forms.DataGridView();
             this.dgvObjG = new System.Windows.Forms.DataGridView();
             this.panelAbajo = new System.Windows.Forms.Panel();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.btnRegistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -606,7 +606,7 @@
             this.label26.Location = new System.Drawing.Point(26, 15);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(1186, 58);
+            this.label26.Size = new System.Drawing.Size(1169, 58);
             this.label26.TabIndex = 185;
             this.label26.Text = "RESUMEN EJECUTIVO DEL PLAN ESTRATÉGICO";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1122,6 +1122,23 @@
             this.panelAbajo.Size = new System.Drawing.Size(1222, 1591);
             this.panelAbajo.TabIndex = 1016;
             // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.BackColor = System.Drawing.Color.Black;
+            this.btnRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrar.Location = new System.Drawing.Point(934, 1507);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(240, 46);
+            this.btnRegistrar.TabIndex = 1021;
+            this.btnRegistrar.Text = "REGISTRAR CONCLUSION";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
             // label17
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1177,23 +1194,6 @@
             this.label22.TabIndex = 1016;
             this.label22.Text = "DEBILIDADES";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.Black;
-            this.btnRegistrar.FlatAppearance.BorderSize = 0;
-            this.btnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(934, 1507);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(240, 46);
-            this.btnRegistrar.TabIndex = 1021;
-            this.btnRegistrar.Text = "REGISTRAR CONCLUSION";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // FrmResumen
             // 

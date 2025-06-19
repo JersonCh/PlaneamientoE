@@ -403,59 +403,59 @@ namespace WindowsFormsApp2
                 btnMision.Enabled = true;
             }
 
-            if (isMisionCompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnVision.Enabled = true;
             }
 
-            if (isVisionCompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnValores.Enabled = true;
             }
 
-            if (isValoresCompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnAnalisisIyE.Enabled = true;
             }
 
-            if (isAnalisisIyECompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnObjetivos.Enabled = true;
             }
 
-            if (isObjetivosCompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnCadenaValor.Enabled = true;
             }
 
-            if (isCadenaValorCompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnMatriz.Enabled = true;
             }
 
-            if (isMatrizCompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btn5fuerzas.Enabled = true;
             }
 
-            if (is5FuerzasCompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnPest.Enabled = true;
             }
 
-            if (isPestCompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnIdentificacionE.Enabled = true;
             }
 
-            if (isIdentificacionECompleted)
+            if (isInformacionEmpresaCompleted)
             {
                 btnMatrizCame.Enabled = true;
             }
 
             //if (isMatrizCameCompleted)
             //{
-               // iconButton1.Enabled = true;
+            // iconButton1.Enabled = true;
             //}
         }
 
