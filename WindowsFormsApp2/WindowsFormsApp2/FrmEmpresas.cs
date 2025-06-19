@@ -120,9 +120,9 @@ namespace WindowsFormsApp2
                                    MessageBoxButtons.OK,
                                    MessageBoxIcon.Information);
 
-                    // *** ABRIR FORMULARIO SIN BeginInvoke ***
-                    FrmResumen frmResumen = new FrmResumen();
-                    frmResumen.Show();
+                    //// *** ABRIR FORMULARIO SIN BeginInvoke ***
+                    //FrmResumen frmResumen = new FrmResumen();
+                    //frmResumen.Show();
                     this.Hide();
                 }
                 catch (Exception ex)
