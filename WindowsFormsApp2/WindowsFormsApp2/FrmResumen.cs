@@ -292,5 +292,24 @@ namespace WindowsFormsApp2
             previewDlg.Height = 700;
             previewDlg.ShowDialog();
         }
+
+        private void btnImprimir1_Click(object sender, EventArgs e)
+        {
+            var printDoc = CrearPrintDocument();
+            PrintDialog printDlg = new PrintDialog();
+            printDlg.Document = printDoc;
+            if (printDlg.ShowDialog() == DialogResult.OK)
+                printDoc.Print();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            var printDoc = CrearPrintDocument();
+            PrintPreviewDialog previewDlg = new PrintPreviewDialog();
+            previewDlg.Document = printDoc;
+            previewDlg.Width = 900;
+            previewDlg.Height = 700;
+            previewDlg.ShowDialog();
+        }
     }
 }
