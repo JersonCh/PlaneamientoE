@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label119.Text" xml:space="preserve">
+  <data name="label74.Text" xml:space="preserve">
     <value>A continuación marque con una X en las casillas que estime conveniente según el estado actual de su empresa. Valore su perfil competitivo en la escala Hostil-Favorable. Al finalizar lea la conclusión, para su caso particular, relativa al análisis del entorno próximo.</value>
   </data>
-  <data name="label66.Text" xml:space="preserve">
+  <data name="label75.Text" xml:space="preserve">
     <value>Una vez analizado el entorno próximo de su empresa, es decir análisis externo de su microentorno, identifique  las oportunidades y amenazas más relevantes que desee que se reflejen en el análisis FODA de de su Plan Estratégico. </value>
   </data>
 </root>

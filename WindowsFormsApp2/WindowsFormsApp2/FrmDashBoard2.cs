@@ -266,7 +266,7 @@ namespace WindowsFormsApp2
         private void btn5fuerzas_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FrmMatrizDePorter());
+            OpenChildForm(new FrmAutodiagosticoPorter());
         }
 
         private void btnPest_Click(object sender, EventArgs e)
