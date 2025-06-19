@@ -2328,7 +2328,7 @@ namespace WindowsFormsApp2
             this.label74.Location = new System.Drawing.Point(16, 9);
             this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(1198, 85);
+            this.label74.Size = new System.Drawing.Size(1181, 85);
             this.label74.TabIndex = 1001;
             this.label74.Text = resources.GetString("label74.Text");
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2343,7 +2343,7 @@ namespace WindowsFormsApp2
             this.label75.Location = new System.Drawing.Point(11, 1379);
             this.label75.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(1198, 67);
+            this.label75.Size = new System.Drawing.Size(1181, 67);
             this.label75.TabIndex = 1002;
             this.label75.Text = resources.GetString("label75.Text");
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
