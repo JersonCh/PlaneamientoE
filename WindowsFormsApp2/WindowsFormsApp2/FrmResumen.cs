@@ -83,9 +83,13 @@ namespace WindowsFormsApp2
                     var fortalezas = dc.SP_ListarFortalezas(empresaId).ToList();
                     if (fortalezas.Count > 0) txtF1.Text = fortalezas.ElementAtOrDefault(0)?.Fortaleza_Descripcion ?? "";
                     if (fortalezas.Count > 1) txtF2.Text = fortalezas.ElementAtOrDefault(1)?.Fortaleza_Descripcion ?? "";
+                    if (fortalezas.Count > 2) txtF3.Text = fortalezas.ElementAtOrDefault(2)?.Fortaleza_Descripcion ?? "";
+                    if (fortalezas.Count > 3) txtF4.Text = fortalezas.ElementAtOrDefault(3)?.Fortaleza_Descripcion ?? "";
                     var debilidades = dc.SP_ListarDebilidades(empresaId).ToList();
                     if (debilidades.Count > 0) txtD1.Text = debilidades.ElementAtOrDefault(0)?.Debilidad_Descripcion ?? "";
                     if (debilidades.Count > 1) txtD2.Text = debilidades.ElementAtOrDefault(1)?.Debilidad_Descripcion ?? "";
+                    if (debilidades.Count > 2) txtD3.Text = debilidades.ElementAtOrDefault(2)?.Debilidad_Descripcion ?? "";
+                    if (debilidades.Count > 3) txtD4.Text = debilidades.ElementAtOrDefault(3)?.Debilidad_Descripcion ?? "";
                     var oportunidades = dc.SP_ListarOportunidades(empresaId).ToList();
                     if (oportunidades.Count > 0) txtO1.Text = oportunidades.ElementAtOrDefault(0)?.Oportunidad_Descripcion ?? "";
                     if (oportunidades.Count > 1) txtO2.Text = oportunidades.ElementAtOrDefault(1)?.Oportunidad_Descripcion ?? "";
@@ -160,10 +164,14 @@ namespace WindowsFormsApp2
                 "Fortalezas",
                 "  1. " + txtF1.Text,
                 "  2. " + txtF2.Text,
+                "  3. " + txtF3.Text,
+                "  4. " + txtF4.Text,
                 "",
                 "Debilidades",
                 "  1. " + txtD1.Text,
                 "  2. " + txtD2.Text,
+                "  3. " + txtD3.Text,
+                "  4. " + txtD4.Text,
                 "",
                 "Oportunidades",
                 "  1. " + txtO1.Text,

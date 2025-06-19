@@ -618,7 +618,7 @@
             // txtA4
             // 
             this.txtA4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA4.Location = new System.Drawing.Point(159, 1042);
+            this.txtA4.Location = new System.Drawing.Point(159, 1148);
             this.txtA4.Margin = new System.Windows.Forms.Padding(2);
             this.txtA4.Multiline = true;
             this.txtA4.Name = "txtA4";
@@ -628,7 +628,7 @@
             // txtA3
             // 
             this.txtA3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA3.Location = new System.Drawing.Point(159, 988);
+            this.txtA3.Location = new System.Drawing.Point(159, 1095);
             this.txtA3.Margin = new System.Windows.Forms.Padding(2);
             this.txtA3.Multiline = true;
             this.txtA3.Name = "txtA3";
@@ -638,7 +638,7 @@
             // txtA2
             // 
             this.txtA2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA2.Location = new System.Drawing.Point(159, 1152);
+            this.txtA2.Location = new System.Drawing.Point(159, 1043);
             this.txtA2.Margin = new System.Windows.Forms.Padding(2);
             this.txtA2.Multiline = true;
             this.txtA2.Name = "txtA2";
@@ -648,7 +648,7 @@
             // txtA1
             // 
             this.txtA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtA1.Location = new System.Drawing.Point(159, 1098);
+            this.txtA1.Location = new System.Drawing.Point(159, 989);
             this.txtA1.Margin = new System.Windows.Forms.Padding(2);
             this.txtA1.Multiline = true;
             this.txtA1.Name = "txtA1";
@@ -864,7 +864,7 @@
             // txtO4
             // 
             this.txtO4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO4.Location = new System.Drawing.Point(159, 1474);
+            this.txtO4.Location = new System.Drawing.Point(159, 1581);
             this.txtO4.Margin = new System.Windows.Forms.Padding(2);
             this.txtO4.Multiline = true;
             this.txtO4.Name = "txtO4";
@@ -874,7 +874,7 @@
             // txtO3
             // 
             this.txtO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO3.Location = new System.Drawing.Point(159, 1420);
+            this.txtO3.Location = new System.Drawing.Point(159, 1527);
             this.txtO3.Margin = new System.Windows.Forms.Padding(2);
             this.txtO3.Multiline = true;
             this.txtO3.Name = "txtO3";
@@ -884,7 +884,7 @@
             // txtO2
             // 
             this.txtO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO2.Location = new System.Drawing.Point(159, 1582);
+            this.txtO2.Location = new System.Drawing.Point(159, 1474);
             this.txtO2.Margin = new System.Windows.Forms.Padding(2);
             this.txtO2.Multiline = true;
             this.txtO2.Name = "txtO2";
@@ -894,7 +894,7 @@
             // txtO1
             // 
             this.txtO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtO1.Location = new System.Drawing.Point(159, 1528);
+            this.txtO1.Location = new System.Drawing.Point(159, 1420);
             this.txtO1.Margin = new System.Windows.Forms.Padding(2);
             this.txtO1.Multiline = true;
             this.txtO1.Name = "txtO1";

@@ -37,12 +37,16 @@ namespace WindowsFormsApp2
 
                     if (fortalezas.Count > 0) txtF1.Text = fortalezas.ElementAtOrDefault(0)?.Fortaleza_Descripcion ?? "";
                     if (fortalezas.Count > 1) txtF2.Text = fortalezas.ElementAtOrDefault(1)?.Fortaleza_Descripcion ?? "";
+                    if (fortalezas.Count > 2) txtF3.Text = fortalezas.ElementAtOrDefault(2)?.Fortaleza_Descripcion ?? "";
+                    if (fortalezas.Count > 3) txtF4.Text = fortalezas.ElementAtOrDefault(3)?.Fortaleza_Descripcion ?? "";
 
                     //Obtener las Debilidades
                     var debilidades = dc.SP_ListarDebilidades(empresaId).ToList();
 
                     if (debilidades.Count > 0) txtD1.Text = debilidades.ElementAtOrDefault(0)?.Debilidad_Descripcion ?? "";
                     if (debilidades.Count > 1) txtD2.Text = debilidades.ElementAtOrDefault(1)?.Debilidad_Descripcion ?? "";
+                    if (debilidades.Count > 2) txtD3.Text = debilidades.ElementAtOrDefault(2)?.Debilidad_Descripcion ?? "";
+                    if (debilidades.Count > 3) txtD4.Text = debilidades.ElementAtOrDefault(3)?.Debilidad_Descripcion ?? "";
 
                     // Obtener las Oportunidades
                     var oportunidades = dc.SP_ListarOportunidades(empresaId).ToList();

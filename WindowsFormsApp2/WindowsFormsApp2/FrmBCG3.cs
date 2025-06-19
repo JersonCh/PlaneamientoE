@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using WindowsFormsApp2.Clases;
+using WindowsFormsApp2.Modelos;
 
 namespace WindowsFormsApp2
 {
@@ -838,5 +840,56 @@ namespace WindowsFormsApp2
             this.Show(); 
             this.TopMost = true;
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtF3.Text) || string.IsNullOrWhiteSpace(txtF4.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    string f3 = txtF3.Text.Trim();
+                    string f4 = txtF4.Text.Trim();
+
+                    dc.SP_RegistrarFortaleza(f3, Sesion.EmpresaId);
+                    dc.SP_RegistrarFortaleza(f4, Sesion.EmpresaId);
+                }
+
+                MessageBox.Show("Fortalezas registradas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar las Fortalezas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (string.IsNullOrWhiteSpace(txtD3.Text) || string.IsNullOrWhiteSpace(txtD4.Text))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    string D3 = txtD3.Text.Trim();
+                    string D4 = txtD4.Text.Trim();
+
+                    dc.SP_RegistrarDebilidad(D3, Sesion.EmpresaId);
+                    dc.SP_RegistrarDebilidad(D4, Sesion.EmpresaId);
+                }
+
+                MessageBox.Show("Debilidades registradas correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar las debilidades: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
