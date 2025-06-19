@@ -199,6 +199,7 @@ namespace WindowsFormsApp2
             this.Name = "FrmEmpresas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEmpresas";
+            this.Load += new System.EventHandler(this.FrmEmpresas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpresas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -141,6 +141,12 @@ namespace WindowsFormsApp2
         {
             FrmInformacion formularioEmergente = new FrmInformacion();
             formularioEmergente.ShowDialog();
+            CargarEmpresas();
+        }
+
+        private void FrmEmpresas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
