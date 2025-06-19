@@ -254,7 +254,7 @@ namespace WindowsFormsApp2
         private void btnCadenaValor_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FrmCadenaValor());
+            OpenChildForm(new FrmAutoCadenaValor());
         }
 
         private void btnMatriz_Click(object sender, EventArgs e)

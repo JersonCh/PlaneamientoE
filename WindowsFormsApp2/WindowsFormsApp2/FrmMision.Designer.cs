@@ -68,6 +68,7 @@
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.BackColor = System.Drawing.Color.LightGray;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(15, 9);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
