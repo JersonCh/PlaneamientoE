@@ -270,7 +270,7 @@ BEGIN
 END;
 GO
 
--- SP: Registrar Misión
+-- SP: Registrar o actualizar  Misión
 IF OBJECT_ID('SP_RegistrarMision') IS NOT NULL
     DROP PROCEDURE SP_RegistrarMision;
 GO
@@ -280,8 +280,23 @@ CREATE PROCEDURE SP_RegistrarMision
     @empresa_id INT
 AS
 BEGIN
-    INSERT INTO Mision (descripcion, empresa_id)
-    VALUES (@descripcion, @empresa_id);
+    SET NOCOUNT ON;
+    
+    -- Verificar si ya existe una misión para esta empresa
+    IF EXISTS (SELECT 1 FROM Mision WHERE empresa_id = @empresa_id)
+    BEGIN
+        -- Si existe, actualizar
+        UPDATE Mision 
+        SET descripcion = @descripcion,
+            fecha_registro = GETDATE()  -- Actualizar también la fecha
+        WHERE empresa_id = @empresa_id;
+    END
+    ELSE
+    BEGIN
+        -- Si no existe, insertar nueva
+        INSERT INTO Mision (descripcion, empresa_id)
+        VALUES (@descripcion, @empresa_id);
+    END
 END;
 GO
 
@@ -801,6 +816,20 @@ BEGIN
     WHERE empresa_id = @empresa_id;
 END;
 GO
+
+-- Procedimiento para obtener solo la descripción de la misión
+CREATE OR ALTER PROCEDURE SP_ObtenerMision
+    @empresa_id INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    SELECT descripcion
+    FROM Mision 
+    WHERE empresa_id = @empresa_id;
+END
+GO
+
 
 
 

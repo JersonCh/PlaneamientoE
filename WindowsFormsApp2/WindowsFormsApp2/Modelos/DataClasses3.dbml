@@ -124,11 +124,6 @@
       <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.SP_RegistrarMision" Method="SP_RegistrarMision">
-    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.SP_RegistrarVision" Method="SP_RegistrarVision">
     <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
     <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
@@ -331,5 +326,16 @@
     <ElementType Name="SP_InsertarOActualizarAutoPESTResult">
       <Column Name="Resultado" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ObtenerMision" Method="SP_ObtenerMision">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ObtenerMisionResult">
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_RegistrarMision" Method="SP_RegistrarMision">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

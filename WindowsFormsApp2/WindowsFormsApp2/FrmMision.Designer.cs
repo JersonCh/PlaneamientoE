@@ -107,6 +107,7 @@
             this.Name = "Mision";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmMision";
+            this.Load += new System.EventHandler(this.Mision_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

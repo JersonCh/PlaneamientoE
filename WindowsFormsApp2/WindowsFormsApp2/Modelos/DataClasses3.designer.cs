@@ -193,13 +193,6 @@ namespace WindowsFormsApp2.Modelos
 			return ((ISingleResult<SP_ListarMisionPorUsuarioResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarMision")]
-		public int SP_RegistrarMision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarVision")]
 		public int SP_RegistrarVision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
 		{
@@ -410,6 +403,20 @@ namespace WindowsFormsApp2.Modelos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, r1, r2, r3, r4);
 			return ((ISingleResult<SP_InsertarOActualizarAutoPESTResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ObtenerMision")]
+		public ISingleResult<SP_ObtenerMisionResult> SP_ObtenerMision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ObtenerMisionResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_RegistrarMision")]
+		public int SP_RegistrarMision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(MAX)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	
@@ -2792,6 +2799,32 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._Resultado != value))
 				{
 					this._Resultado = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ObtenerMisionResult
+	{
+		
+		private string _descripcion;
+		
+		public SP_ObtenerMisionResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="NVarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this._descripcion = value;
 				}
 			}
 		}

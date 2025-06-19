@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using CustomMessageBox;
 using WindowsFormsApp2.Clases;
 using WindowsFormsApp2.Modelos;
+using System.Linq;
 
 namespace WindowsFormsApp2
 {
@@ -13,8 +14,34 @@ namespace WindowsFormsApp2
         public Mision()
         {
             InitializeComponent();
+            CargarMisionExistente();
         }
 
+        private void CargarMisionExistente()
+        {
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    var resultado = dc.SP_ObtenerMision(Sesion.EmpresaId);
+                    var mision = resultado.FirstOrDefault();
+
+                    if (mision != null)
+                    {
+                        txtMision.Text = mision.descripcion;
+                    }
+                    else
+                    {
+                        txtMision.Text = string.Empty;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar la misión: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             string descripcion = txtMision.Text.Trim();
@@ -87,6 +114,11 @@ namespace WindowsFormsApp2
             Vision frmVision = new Vision();
             frmVision.Show();
             this.Hide();
+        }
+
+        private void Mision_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

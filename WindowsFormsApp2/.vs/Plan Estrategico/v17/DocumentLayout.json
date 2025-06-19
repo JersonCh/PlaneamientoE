@@ -1,81 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\",
+  "WorkspaceRootPath": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\disco d completo\\upt\\ciclo 8\\planeamiento estrategico\\jaime\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\disco d completo\\upt\\ciclo 8\\planeamiento estrategico\\jaime\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\modelos\\dataclasses3.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\modelos\\dataclasses3.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\modelos\\dataclasses3.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\disco d completo\\upt\\ciclo 8\\planeamiento estrategico\\jaime\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\disco d completo\\upt\\ciclo 8\\planeamiento estrategico\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmmision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmmision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\disco d completo\\upt\\ciclo 8\\planeamiento estrategico\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmmision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmmision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\disco d completo\\upt\\ciclo 8\\planeamiento estrategico\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmautopest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|d:\\disco d completo\\upt\\ciclo 8\\planeamiento estrategico\\jaime\\planeamientoe\\windowsformsapp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmdafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmdafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmresumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmbcg3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmbcg3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmbcg3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmbcg3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmbcg3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmbcg3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmautocadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmautocadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmautocadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmautocadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmautocadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmautocadenavalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmvalores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmvalores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmvalores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmidentif_estrategia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmidentif_estrategia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmidentif_estrategia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmbcg2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmbcg2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmbcg2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmresumen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmresumen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmresumen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmdashboard2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmbcg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmbcg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmbcg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0F50F7C-9F9B-445B-9D49-41A5A980F079}|WindowsFormsApp2\\Plan Estrategico.csproj|solutionrelative:windowsformsapp2\\frmpest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -93,16 +101,37 @@
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmMision.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmMision.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmMision.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmMision.cs",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmMision.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAA0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T05:13:06.343Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "FrmMision.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmMision.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmMision.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmMision.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp2\\FrmMision.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T05:12:59.916Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "DataClasses3.dbml",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
               "RelativeToolTip": "WindowsFormsApp2\\Modelos\\DataClasses3.dbml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
               "WhenOpened": "2025-06-19T04:12:38.339Z",
@@ -110,24 +139,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FrmAutoPest.cs",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmAutoPest.cs",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmAutoPest.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAAAK8AAAArAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAAF0AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T04:12:10.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FrmAutoPest.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmAutoPest.cs",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoPest.cs [Dise\u00F1o]",
               "RelativeToolTip": "WindowsFormsApp2\\FrmAutoPest.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T04:12:09.444Z",
@@ -135,11 +164,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FrmDAFO.cs",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmDAFO.cs",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmDAFO.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAswDAAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -147,22 +176,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FrmDAFO.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmDAFO.cs",
               "ToolTip": "D:\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDAFO.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T02:59:25.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "FrmAutoCadenaValor.cs",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmAutoCadenaValor.cs",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmAutoCadenaValor.cs",
               "ViewState": "AgIAAI8AAAAAAAAAAAAuwLMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -170,34 +199,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FrmResumen.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmResumen.cs",
               "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T22:35:30.222Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-06-18T22:35:30.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "FrmAutoCadenaValor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmAutoCadenaValor.cs",
               "ToolTip": "D:\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmAutoCadenaValor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T02:52:30.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "FrmBCG3.cs",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmBCG3.cs",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmBCG3.cs",
               "ViewState": "AgIAAFsDAAAAAAAAAAAAwFkDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -205,56 +233,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "FrmBCG3.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmBCG3.cs",
               "ToolTip": "D:\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG3.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T19:40:17.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "FrmResumen.cs",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmResumen.cs",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmResumen.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T22:25:35.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T22:25:35.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "FrmValores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmValores.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmValores.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmValores.cs",
               "ToolTip": "D:\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmValores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmValores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmValores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T02:51:31.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "FrmIdentif_Estrategia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmIdentif_Estrategia.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmIdentif_Estrategia.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmIdentif_Estrategia.cs",
               "ToolTip": "D:\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmIdentif_Estrategia.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmIdentif_Estrategia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmIdentif_Estrategia.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T02:51:10.751Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "FrmDashBoard2.cs",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmDashBoard2.cs",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmDashBoard2.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAADgv24AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -262,21 +289,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "FrmResumen.Designer.cs",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.Designer.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmResumen.Designer.cs",
-              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.Designer.cs",
+              "ToolTip": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmResumen.Designer.cs",
               "RelativeToolTip": "WindowsFormsApp2\\FrmResumen.Designer.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T22:34:52.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T22:34:52.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "FrmBCG.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmBCG.cs",
               "ToolTip": "C:\\Users\\andre\\Desktop\\qqqqqq\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -284,20 +310,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "FrmBCG2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG2.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmBCG2.cs",
               "ToolTip": "D:\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Biblioteca\\Videos\\Planeamiento\\final\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmBCG2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T19:39:49.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "FrmDashBoard2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmDashBoard2.cs",
               "ToolTip": "C:\\Users\\HP\\3D Objects\\peti\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmDashBoard2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -305,9 +331,9 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "FrmPest.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\jaime\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs",
+              "DocumentMoniker": "D:\\DISCO D COMPLETO\\UPT\\ciclo 8\\Planeamiento Estrategico\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp2\\FrmPest.cs",
               "ToolTip": "C:\\Users\\andre\\Desktop\\qqqqqq\\PlaneamientoE\\WindowsFormsApp2\\WindowsFormsApp2\\FrmPest.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
