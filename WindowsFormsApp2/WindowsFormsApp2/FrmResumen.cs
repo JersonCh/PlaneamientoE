@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using WindowsFormsApp2.Clases;
 using WindowsFormsApp2.Modelos;
 using System.Collections.Generic;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WindowsFormsApp2
 {
@@ -114,6 +115,7 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show("Error al cargar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            AjustarTamañoYPosiciones();
         }
 
 
@@ -434,6 +436,57 @@ namespace WindowsFormsApp2
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar objetivos específicos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //Implementacion Elvicito
+
+        private void AjustarTamañoYPosiciones()
+        {
+            // Altura base inicial
+            int alturaBase = 60;
+
+            // Calcular la altura necesaria para el contenido
+            int alturaContenido = CalcularAlturaTexto(txtValores);
+
+            // La nueva altura será la mayor entre la base y el contenido
+            int nuevaAltura = Math.Max(alturaBase, alturaContenido);
+
+            // Solo proceder si hay una diferencia significativa
+            if (Math.Abs(nuevaAltura - txtValores.Height) > 3)
+            {
+                // Ajustar la altura de txtValores
+                txtValores.Height = nuevaAltura;
+
+                // Mover el panel de abajo
+                //int margen = 20;
+                //panelAbajo.Top = txtValores.Bottom + margen;
+                panelAbajo.Top = txtValores.Bottom;
+            }
+        }
+
+        private int CalcularAlturaTexto(TextBox textBox)
+        {
+            if (string.IsNullOrEmpty(textBox.Text))
+                return 60; // Retornar altura base si está vacío
+
+            // Contar líneas reales (eliminar líneas vacías)
+            string[] lineas = textBox.Text.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            int numeroLineas = lineas.Length;
+
+            if (numeroLineas == 0)
+                return 60; // Si no hay líneas válidas, usar altura base
+
+            using (Graphics g = textBox.CreateGraphics())
+            {
+                // Medir altura de una línea
+                float alturaLinea = g.MeasureString("Ag", textBox.Font).Height;
+
+                // Calcular altura exacta: líneas × altura + padding mínimo del TextBox
+                int alturaCalculada = (int)(numeroLineas * alturaLinea);
+
+                // Asegurar que no sea menor que la altura base
+                return Math.Max(60, alturaCalculada);
             }
         }
     }

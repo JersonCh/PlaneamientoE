@@ -17,6 +17,7 @@ namespace WindowsFormsApp2
         public FrmValores()
         {
             InitializeComponent();
+            CargarValoresExistentes();
         }
         private int ObtenerEmpresaIdDeUsuario(int usuarioId)
         {
@@ -74,6 +75,48 @@ namespace WindowsFormsApp2
             FrmObjetivos objFrmObjetivos = new FrmObjetivos();
             objFrmObjetivos.Show();
             this.Hide();
+        }
+
+        //Implementacion Elvicito
+
+        private void CargarValoresExistentes()
+        {
+            try
+            {
+                // Obtener la empresa ID de la sesión
+                int empresaId = Sesion.EmpresaId;
+
+                if (empresaId <= 0)
+                {
+                    // Si no hay empresa en sesión, intentar obtenerla del usuario
+                    empresaId = ObtenerEmpresaIdDeUsuario(Sesion.UsuarioId);
+                }
+
+                if (empresaId > 0)
+                {
+                    using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                    {
+                        // Usar el procedimiento almacenado que ya tienes
+                        var valoresExistentes = dc.SP_ListarValores(empresaId).FirstOrDefault();
+
+                        if (valoresExistentes != null && !string.IsNullOrWhiteSpace(valoresExistentes.descripcion))
+                        {
+                            // Cargar los valores en el TextBox
+                            txtValores.Text = valoresExistentes.descripcion;
+                        }
+                        else
+                        {
+                            // Si no hay valores, dejar el TextBox vacío
+                            txtValores.Text = "";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los valores existentes: {ex.Message}",
+                               "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
