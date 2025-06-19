@@ -23,6 +23,7 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
             CargarDatos();
+            CargarObjetivos();
         }
 
         private void CargarDatos()
@@ -70,16 +71,6 @@ namespace WindowsFormsApp2
                         txtUnidadEstrategica.Text = unid_estrat.descripcion;
                     }
                     var objetivosGenerales = dc.SP_ListarObjetivosGenerales(empresaId).ToList();
-                    if (objetivosGenerales.Count > 0) txtObjetivoG1.Text = objetivosGenerales.ElementAtOrDefault(0)?.ObjetivoG_Descripcion ?? "";
-                    if (objetivosGenerales.Count > 1) txtObjetivoG2.Text = objetivosGenerales.ElementAtOrDefault(1)?.ObjetivoG_Descripcion ?? "";
-                    if (objetivosGenerales.Count > 2) txtObjetivoG3.Text = objetivosGenerales.ElementAtOrDefault(2)?.ObjetivoG_Descripcion ?? "";
-                    var objetivosEspecificos = dc.SP_ListarObjetivosEspecificos(empresaId).ToList();
-                    if (objetivosEspecificos.Count > 0) txtObjetivoE1.Text = objetivosEspecificos.ElementAtOrDefault(0)?.ObjetivoE_Descripcion ?? "";
-                    if (objetivosEspecificos.Count > 1) txtObjetivoE2.Text = objetivosEspecificos.ElementAtOrDefault(1)?.ObjetivoE_Descripcion ?? "";
-                    if (objetivosEspecificos.Count > 2) txtObjetivoE3.Text = objetivosEspecificos.ElementAtOrDefault(2)?.ObjetivoE_Descripcion ?? "";
-                    if (objetivosEspecificos.Count > 3) txtObjetivoE4.Text = objetivosEspecificos.ElementAtOrDefault(3)?.ObjetivoE_Descripcion ?? "";
-                    if (objetivosEspecificos.Count > 4) txtObjetivoE5.Text = objetivosEspecificos.ElementAtOrDefault(4)?.ObjetivoE_Descripcion ?? "";
-                    if (objetivosEspecificos.Count > 5) txtObjetivoE6.Text = objetivosEspecificos.ElementAtOrDefault(5)?.ObjetivoE_Descripcion ?? "";
                     var fortalezas = dc.SP_ListarFortalezas(empresaId).ToList();
                     if (fortalezas.Count > 0) txtF1.Text = fortalezas.ElementAtOrDefault(0)?.Fortaleza_Descripcion ?? "";
                     if (fortalezas.Count > 1) txtF2.Text = fortalezas.ElementAtOrDefault(1)?.Fortaleza_Descripcion ?? "";
@@ -125,6 +116,7 @@ namespace WindowsFormsApp2
             }
         }
 
+
         // Método para preparar PrintDocument 
         private PrintDocument CrearPrintDocument()
         {
@@ -149,17 +141,8 @@ namespace WindowsFormsApp2
                 txtUnidadEstrategica.Text,
                 "",
                 "Objetivos Generales",
-                "  1. " + txtObjetivoG1.Text,
-                "  2. " + txtObjetivoG2.Text,
-                "  3. " + txtObjetivoG3.Text,
                 "",
                 "Objetivos Específicos",
-                "  1. " + txtObjetivoE1.Text,
-                "  2. " + txtObjetivoE2.Text,
-                "  3. " + txtObjetivoE3.Text,
-                "  4. " + txtObjetivoE4.Text,
-                "  5. " + txtObjetivoE5.Text,
-                "  6. " + txtObjetivoE6.Text,
                 "",
                 "Fortalezas",
                 "  1. " + txtF1.Text,
@@ -244,6 +227,61 @@ namespace WindowsFormsApp2
             return printDoc;
         }
 
+        private void CargarObjetivos()
+        {
+            try
+            {
+                int empresaId = Sesion.EmpresaId;
+
+                using (var dc = new DataClasses3DataContext())
+                {
+                    // Listar objetivos generales
+                    var objetivosGenerales = dc.ObjetivoG
+                        .Where(og => og.empresa_id == empresaId)
+                        .Select(og => new
+                        {
+                            og.id,
+                            og.descripcion
+                        })
+                        .ToList();
+
+                    // Configurar dgvObjG para visualización
+                    dgvObjG.Columns.Clear();
+                    dgvObjG.Columns.Add("IdGeneral", "ID");
+                    dgvObjG.Columns.Add("DescripcionGeneral", "Descripción del Objetivo General");
+                    dgvObjG.Columns["IdGeneral"].Visible = false; // Ocultar columna de ID
+                    dgvObjG.Columns[1].Width = 300; // Ajustar ancho de columna para la descripción
+                    dgvObjG.ReadOnly = true; // Solo lectura
+                    dgvObjG.AllowUserToAddRows = false; // Deshabilitar añadir filas
+                    dgvObjG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                    // Limpiar y cargar datos en dgvObjG
+                    dgvObjG.Rows.Clear();
+                    foreach (var objetivo in objetivosGenerales)
+                    {
+                        dgvObjG.Rows.Add(objetivo.id, objetivo.descripcion);
+                    }
+
+                    // Configurar evento para mostrar objetivos específicos relacionados
+                    dgvObjG.CellClick += dgvObjG_CellClick;
+
+                    // Configurar dgvObjE para visualización
+                    dgvObjE.Columns.Clear();
+                    dgvObjE.Columns.Add("ObjetivoEspecificoID", "ID del Objetivo Específico");
+                    dgvObjE.Columns.Add("DescripcionEspecifica", "Descripción del Objetivo Específico");
+                    dgvObjE.Columns["ObjetivoEspecificoID"].Visible = false; // Ocultar columna de ID
+                    dgvObjE.Columns[1].Width = 300; // Ajustar ancho de columna para la descripción
+                    dgvObjE.ReadOnly = true; // Solo lectura
+                    dgvObjE.AllowUserToAddRows = false; // Deshabilitar añadir filas
+                    dgvObjE.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los objetivos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void PrintDoc_PrintPage_Text(object sender, PrintPageEventArgs e)
         {
             int y = e.MarginBounds.Top;
@@ -310,6 +348,47 @@ namespace WindowsFormsApp2
             previewDlg.Width = 900;
             previewDlg.Height = 700;
             previewDlg.ShowDialog();
+        }
+
+        private void FrmResumen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvObjG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                // Verificar que la fila seleccionada sea válida
+                if (e.RowIndex >= 0 && dgvObjG.Rows[e.RowIndex].Cells["IdGeneral"].Value != null)
+                {
+                    int objetivoGeneralId = Convert.ToInt32(dgvObjG.Rows[e.RowIndex].Cells["IdGeneral"].Value);
+
+                    using (var dc = new DataClasses3DataContext())
+                    {
+                        // Listar objetivos específicos relacionados
+                        var objetivosEspecificos = dc.ObjetivoE
+                            .Where(oe => oe.objetivo_id == objetivoGeneralId)
+                            .Select(oe => new
+                            {
+                                oe.id,
+                                oe.descripcion
+                            })
+                            .ToList();
+
+                        // Limpiar y cargar datos en dgvObjE
+                        dgvObjE.Rows.Clear();
+                        foreach (var objetivo in objetivosEspecificos)
+                        {
+                            dgvObjE.Rows.Add(objetivo.id, objetivo.descripcion);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar objetivos específicos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

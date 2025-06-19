@@ -38,16 +38,7 @@
             this.txtVision = new System.Windows.Forms.TextBox();
             this.txtValores = new System.Windows.Forms.TextBox();
             this.txtUnidadEstrategica = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE4 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE6 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE5 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE3 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE2 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE1 = new System.Windows.Forms.TextBox();
             this.txtMisionO = new System.Windows.Forms.TextBox();
-            this.txtObjetivoG3 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoG2 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoG1 = new System.Windows.Forms.TextBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.txtD1 = new System.Windows.Forms.TextBox();
@@ -117,6 +108,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.dgvObjE = new System.Windows.Forms.DataGridView();
+            this.dgvObjG = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -131,6 +124,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvObjE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvObjG)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -243,78 +238,6 @@
             this.txtUnidadEstrategica.Size = new System.Drawing.Size(587, 59);
             this.txtUnidadEstrategica.TabIndex = 82;
             // 
-            // txtObjetivoE4
-            // 
-            this.txtObjetivoE4.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE4.Location = new System.Drawing.Point(615, 570);
-            this.txtObjetivoE4.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE4.Multiline = true;
-            this.txtObjetivoE4.Name = "txtObjetivoE4";
-            this.txtObjetivoE4.Size = new System.Drawing.Size(593, 43);
-            this.txtObjetivoE4.TabIndex = 95;
-            // 
-            // txtObjetivoE6
-            // 
-            this.txtObjetivoE6.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE6.Location = new System.Drawing.Point(615, 660);
-            this.txtObjetivoE6.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE6.Multiline = true;
-            this.txtObjetivoE6.Name = "txtObjetivoE6";
-            this.txtObjetivoE6.Size = new System.Drawing.Size(593, 45);
-            this.txtObjetivoE6.TabIndex = 94;
-            // 
-            // txtObjetivoE5
-            // 
-            this.txtObjetivoE5.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE5.Location = new System.Drawing.Point(615, 617);
-            this.txtObjetivoE5.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE5.Multiline = true;
-            this.txtObjetivoE5.Name = "txtObjetivoE5";
-            this.txtObjetivoE5.Size = new System.Drawing.Size(593, 39);
-            this.txtObjetivoE5.TabIndex = 93;
-            // 
-            // txtObjetivoE3
-            // 
-            this.txtObjetivoE3.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE3.Location = new System.Drawing.Point(615, 525);
-            this.txtObjetivoE3.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE3.Multiline = true;
-            this.txtObjetivoE3.Name = "txtObjetivoE3";
-            this.txtObjetivoE3.Size = new System.Drawing.Size(593, 43);
-            this.txtObjetivoE3.TabIndex = 92;
-            // 
-            // txtObjetivoE2
-            // 
-            this.txtObjetivoE2.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE2.Location = new System.Drawing.Point(615, 478);
-            this.txtObjetivoE2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE2.Multiline = true;
-            this.txtObjetivoE2.Name = "txtObjetivoE2";
-            this.txtObjetivoE2.Size = new System.Drawing.Size(593, 43);
-            this.txtObjetivoE2.TabIndex = 91;
-            // 
-            // txtObjetivoE1
-            // 
-            this.txtObjetivoE1.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE1.Location = new System.Drawing.Point(615, 433);
-            this.txtObjetivoE1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE1.Multiline = true;
-            this.txtObjetivoE1.Name = "txtObjetivoE1";
-            this.txtObjetivoE1.Size = new System.Drawing.Size(593, 43);
-            this.txtObjetivoE1.TabIndex = 86;
-            // 
             // txtMisionO
             // 
             this.txtMisionO.BackColor = System.Drawing.Color.White;
@@ -327,42 +250,6 @@
             this.txtMisionO.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtMisionO.Size = new System.Drawing.Size(248, 272);
             this.txtMisionO.TabIndex = 83;
-            // 
-            // txtObjetivoG3
-            // 
-            this.txtObjetivoG3.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoG3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoG3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoG3.Location = new System.Drawing.Point(281, 617);
-            this.txtObjetivoG3.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoG3.Multiline = true;
-            this.txtObjetivoG3.Name = "txtObjetivoG3";
-            this.txtObjetivoG3.Size = new System.Drawing.Size(330, 88);
-            this.txtObjetivoG3.TabIndex = 98;
-            // 
-            // txtObjetivoG2
-            // 
-            this.txtObjetivoG2.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoG2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoG2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoG2.Location = new System.Drawing.Point(281, 525);
-            this.txtObjetivoG2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoG2.Multiline = true;
-            this.txtObjetivoG2.Name = "txtObjetivoG2";
-            this.txtObjetivoG2.Size = new System.Drawing.Size(330, 88);
-            this.txtObjetivoG2.TabIndex = 97;
-            // 
-            // txtObjetivoG1
-            // 
-            this.txtObjetivoG1.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoG1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoG1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoG1.Location = new System.Drawing.Point(281, 433);
-            this.txtObjetivoG1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoG1.Multiline = true;
-            this.txtObjetivoG1.Name = "txtObjetivoG1";
-            this.txtObjetivoG1.Size = new System.Drawing.Size(330, 88);
-            this.txtObjetivoG1.TabIndex = 96;
             // 
             // textBox27
             // 
@@ -740,7 +627,7 @@
             this.label26.Location = new System.Drawing.Point(27, 17);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(1192, 58);
+            this.label26.Size = new System.Drawing.Size(1175, 58);
             this.label26.TabIndex = 185;
             this.label26.Text = "RESUMEN EJECUTIVO DEL PLAN ESTRATÉGICO";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -941,7 +828,7 @@
             // 
             this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(670, 396);
+            this.label10.Location = new System.Drawing.Point(671, 396);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(267, 27);
             this.label10.TabIndex = 202;
@@ -1116,7 +1003,7 @@
             this.label19.BackColor = System.Drawing.Color.LightGray;
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(30, 777);
+            this.label19.Location = new System.Drawing.Point(22, 1402);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(140, 201);
@@ -1130,7 +1017,7 @@
             this.label14.BackColor = System.Drawing.Color.LightGray;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(30, 984);
+            this.label14.Location = new System.Drawing.Point(22, 1609);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(140, 209);
@@ -1144,7 +1031,7 @@
             this.label15.BackColor = System.Drawing.Color.LightGray;
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(31, 1198);
+            this.label15.Location = new System.Drawing.Point(23, 1823);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(140, 209);
@@ -1158,13 +1045,30 @@
             this.label16.BackColor = System.Drawing.Color.LightGray;
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(30, 1415);
+            this.label16.Location = new System.Drawing.Point(22, 2040);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(140, 209);
             this.label16.TabIndex = 1013;
             this.label16.Text = "OPORTUNIDADES";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dgvObjE
+            // 
+            this.dgvObjE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvObjE.Location = new System.Drawing.Point(636, 437);
+            this.dgvObjE.Name = "dgvObjE";
+            this.dgvObjE.Size = new System.Drawing.Size(350, 253);
+            this.dgvObjE.TabIndex = 1015;
+            // 
+            // dgvObjG
+            // 
+            this.dgvObjG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvObjG.Location = new System.Drawing.Point(280, 438);
+            this.dgvObjG.Name = "dgvObjG";
+            this.dgvObjG.Size = new System.Drawing.Size(350, 253);
+            this.dgvObjG.TabIndex = 1014;
+            this.dgvObjG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvObjG_CellClick);
             // 
             // FrmResumen
             // 
@@ -1173,6 +1077,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1257, 715);
+            this.Controls.Add(this.dgvObjE);
+            this.Controls.Add(this.dgvObjG);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -1242,15 +1148,6 @@
             this.Controls.Add(this.textBox31);
             this.Controls.Add(this.txtt1);
             this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.txtObjetivoG3);
-            this.Controls.Add(this.txtObjetivoG2);
-            this.Controls.Add(this.txtObjetivoG1);
-            this.Controls.Add(this.txtObjetivoE4);
-            this.Controls.Add(this.txtObjetivoE6);
-            this.Controls.Add(this.txtObjetivoE5);
-            this.Controls.Add(this.txtObjetivoE3);
-            this.Controls.Add(this.txtObjetivoE2);
-            this.Controls.Add(this.txtObjetivoE1);
             this.Controls.Add(this.txtMisionO);
             this.Controls.Add(this.txtUnidadEstrategica);
             this.Controls.Add(this.txtValores);
@@ -1266,6 +1163,7 @@
             this.Name = "FrmResumen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmResumen";
+            this.Load += new System.EventHandler(this.FrmResumen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
@@ -1280,6 +1178,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvObjE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvObjG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1296,16 +1196,7 @@
         private System.Windows.Forms.TextBox txtVision;
         private System.Windows.Forms.TextBox txtValores;
         private System.Windows.Forms.TextBox txtUnidadEstrategica;
-        private System.Windows.Forms.TextBox txtObjetivoE4;
-        private System.Windows.Forms.TextBox txtObjetivoE6;
-        private System.Windows.Forms.TextBox txtObjetivoE5;
-        private System.Windows.Forms.TextBox txtObjetivoE3;
-        private System.Windows.Forms.TextBox txtObjetivoE2;
-        private System.Windows.Forms.TextBox txtObjetivoE1;
         private System.Windows.Forms.TextBox txtMisionO;
-        private System.Windows.Forms.TextBox txtObjetivoG3;
-        private System.Windows.Forms.TextBox txtObjetivoG2;
-        private System.Windows.Forms.TextBox txtObjetivoG1;
         private System.Windows.Forms.TextBox textBox27;
         private System.Windows.Forms.TextBox textBox31;
         private System.Windows.Forms.TextBox txtD1;
@@ -1375,5 +1266,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DataGridView dgvObjE;
+        private System.Windows.Forms.DataGridView dgvObjG;
     }
 }

@@ -21,6 +21,7 @@
       <Association Name="Empresa_Valores" Member="Valores" ThisKey="id" OtherKey="empresa_id" Type="Valores" />
       <Association Name="Empresa_ObjetivoG" Member="ObjetivoG" ThisKey="id" OtherKey="empresa_id" Type="ObjetivoG" />
       <Association Name="Empresa_BCG" Member="BCG" ThisKey="id" OtherKey="empresa_id" Type="BCG" />
+      <Association Name="Empresa_UNID_ESTRA" Member="UNID_ESTRA" ThisKey="id" OtherKey="empresa_id" Type="UNID_ESTRA" />
       <Association Name="USUARIO_Empresa" Member="USUARIO" ThisKey="usuario_id" OtherKey="id" Type="USUARIO" IsForeignKey="true" />
     </Type>
   </Table>
@@ -87,6 +88,15 @@
       <Column Name="tasa_crecimiento" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
       <Column Name="cuadrante" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
       <Association Name="Empresa_BCG" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UNID_ESTRA" Member="UNID_ESTRA">
+    <Type Name="UNID_ESTRA">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Empresa_UNID_ESTRA" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.SP_Autenticar" Method="SP_Autenticar">
@@ -404,5 +414,15 @@
       <Column Name="tasa_crecimiento" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
       <Column Name="cuadrante" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.SP_InsertarObjetivoE" Method="SP_InsertarObjetivoE">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="objetivo_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_InsertarObjetivoG" Method="SP_InsertarObjetivoG">
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

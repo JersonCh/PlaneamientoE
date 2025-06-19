@@ -30,22 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmObjetivos));
             this.txtUnidadEstrategica = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE1 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoG1 = new System.Windows.Forms.TextBox();
             this.txtMision = new System.Windows.Forms.TextBox();
-            this.txtObjetivoG2 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoG3 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE2 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE3 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE4 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE5 = new System.Windows.Forms.TextBox();
-            this.txtObjetivoE6 = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.dgvObjE = new System.Windows.Forms.DataGridView();
+            this.dgvObjG = new System.Windows.Forms.DataGridView();
+            this.btnGuardarGenerales = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvObjE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvObjG)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUnidadEstrategica
@@ -61,30 +57,6 @@
             this.txtUnidadEstrategica.Size = new System.Drawing.Size(1124, 165);
             this.txtUnidadEstrategica.TabIndex = 58;
             // 
-            // txtObjetivoE1
-            // 
-            this.txtObjetivoE1.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE1.Location = new System.Drawing.Point(742, 409);
-            this.txtObjetivoE1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE1.Multiline = true;
-            this.txtObjetivoE1.Name = "txtObjetivoE1";
-            this.txtObjetivoE1.Size = new System.Drawing.Size(329, 38);
-            this.txtObjetivoE1.TabIndex = 69;
-            // 
-            // txtObjetivoG1
-            // 
-            this.txtObjetivoG1.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoG1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoG1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoG1.Location = new System.Drawing.Point(387, 409);
-            this.txtObjetivoG1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoG1.Multiline = true;
-            this.txtObjetivoG1.Name = "txtObjetivoG1";
-            this.txtObjetivoG1.Size = new System.Drawing.Size(351, 80);
-            this.txtObjetivoG1.TabIndex = 64;
-            // 
             // txtMision
             // 
             this.txtMision.BackColor = System.Drawing.Color.White;
@@ -98,90 +70,6 @@
             this.txtMision.Size = new System.Drawing.Size(247, 253);
             this.txtMision.TabIndex = 61;
             // 
-            // txtObjetivoG2
-            // 
-            this.txtObjetivoG2.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoG2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoG2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoG2.Location = new System.Drawing.Point(387, 493);
-            this.txtObjetivoG2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoG2.Multiline = true;
-            this.txtObjetivoG2.Name = "txtObjetivoG2";
-            this.txtObjetivoG2.Size = new System.Drawing.Size(351, 80);
-            this.txtObjetivoG2.TabIndex = 99;
-            // 
-            // txtObjetivoG3
-            // 
-            this.txtObjetivoG3.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoG3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoG3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoG3.Location = new System.Drawing.Point(387, 577);
-            this.txtObjetivoG3.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoG3.Multiline = true;
-            this.txtObjetivoG3.Name = "txtObjetivoG3";
-            this.txtObjetivoG3.Size = new System.Drawing.Size(351, 85);
-            this.txtObjetivoG3.TabIndex = 100;
-            // 
-            // txtObjetivoE2
-            // 
-            this.txtObjetivoE2.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE2.Location = new System.Drawing.Point(742, 451);
-            this.txtObjetivoE2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE2.Multiline = true;
-            this.txtObjetivoE2.Name = "txtObjetivoE2";
-            this.txtObjetivoE2.Size = new System.Drawing.Size(329, 38);
-            this.txtObjetivoE2.TabIndex = 101;
-            // 
-            // txtObjetivoE3
-            // 
-            this.txtObjetivoE3.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE3.Location = new System.Drawing.Point(742, 493);
-            this.txtObjetivoE3.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE3.Multiline = true;
-            this.txtObjetivoE3.Name = "txtObjetivoE3";
-            this.txtObjetivoE3.Size = new System.Drawing.Size(329, 38);
-            this.txtObjetivoE3.TabIndex = 102;
-            // 
-            // txtObjetivoE4
-            // 
-            this.txtObjetivoE4.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE4.Location = new System.Drawing.Point(742, 535);
-            this.txtObjetivoE4.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE4.Multiline = true;
-            this.txtObjetivoE4.Name = "txtObjetivoE4";
-            this.txtObjetivoE4.Size = new System.Drawing.Size(329, 38);
-            this.txtObjetivoE4.TabIndex = 103;
-            // 
-            // txtObjetivoE5
-            // 
-            this.txtObjetivoE5.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE5.Location = new System.Drawing.Point(742, 577);
-            this.txtObjetivoE5.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE5.Multiline = true;
-            this.txtObjetivoE5.Name = "txtObjetivoE5";
-            this.txtObjetivoE5.Size = new System.Drawing.Size(329, 38);
-            this.txtObjetivoE5.TabIndex = 104;
-            // 
-            // txtObjetivoE6
-            // 
-            this.txtObjetivoE6.BackColor = System.Drawing.Color.White;
-            this.txtObjetivoE6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObjetivoE6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjetivoE6.Location = new System.Drawing.Point(742, 619);
-            this.txtObjetivoE6.Margin = new System.Windows.Forms.Padding(2);
-            this.txtObjetivoE6.Multiline = true;
-            this.txtObjetivoE6.Name = "txtObjetivoE6";
-            this.txtObjetivoE6.Size = new System.Drawing.Size(329, 43);
-            this.txtObjetivoE6.TabIndex = 105;
-            // 
             // btnRegistrar
             // 
             this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -192,11 +80,11 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(365, 704);
+            this.btnRegistrar.Location = new System.Drawing.Point(658, 689);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(484, 42);
+            this.btnRegistrar.Size = new System.Drawing.Size(264, 42);
             this.btnRegistrar.TabIndex = 106;
-            this.btnRegistrar.Text = "REGISTRAR OBJETIVOS";
+            this.btnRegistrar.Text = "REGISTRAR ESPECIFICO";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
@@ -231,7 +119,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(744, 363);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(327, 42);
+            this.label7.Size = new System.Drawing.Size(350, 42);
             this.label7.TabIndex = 109;
             this.label7.Text = "OBJETIVOS ESPECÍFICOS";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,6 +154,39 @@
             this.label4.Text = resources.GetString("label4.Text");
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // dgvObjE
+            // 
+            this.dgvObjE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvObjE.Location = new System.Drawing.Point(744, 409);
+            this.dgvObjE.Name = "dgvObjE";
+            this.dgvObjE.Size = new System.Drawing.Size(350, 253);
+            this.dgvObjE.TabIndex = 113;
+            // 
+            // dgvObjG
+            // 
+            this.dgvObjG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvObjG.Location = new System.Drawing.Point(388, 410);
+            this.dgvObjG.Name = "dgvObjG";
+            this.dgvObjG.Size = new System.Drawing.Size(350, 253);
+            this.dgvObjG.TabIndex = 112;
+            // 
+            // btnGuardarGenerales
+            // 
+            this.btnGuardarGenerales.BackColor = System.Drawing.Color.Black;
+            this.btnGuardarGenerales.FlatAppearance.BorderSize = 0;
+            this.btnGuardarGenerales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGuardarGenerales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnGuardarGenerales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarGenerales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarGenerales.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarGenerales.Location = new System.Drawing.Point(301, 689);
+            this.btnGuardarGenerales.Name = "btnGuardarGenerales";
+            this.btnGuardarGenerales.Size = new System.Drawing.Size(265, 42);
+            this.btnGuardarGenerales.TabIndex = 114;
+            this.btnGuardarGenerales.Text = "REGISTRAR GENERAL";
+            this.btnGuardarGenerales.UseVisualStyleBackColor = false;
+            this.btnGuardarGenerales.Click += new System.EventHandler(this.btnGuardarGenerales_Click);
+            // 
             // FrmObjetivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,26 +194,22 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1175, 802);
+            this.Controls.Add(this.btnGuardarGenerales);
+            this.Controls.Add(this.dgvObjE);
+            this.Controls.Add(this.dgvObjG);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.txtObjetivoE6);
-            this.Controls.Add(this.txtObjetivoE5);
-            this.Controls.Add(this.txtObjetivoE4);
-            this.Controls.Add(this.txtObjetivoE3);
-            this.Controls.Add(this.txtObjetivoE2);
-            this.Controls.Add(this.txtObjetivoG3);
-            this.Controls.Add(this.txtObjetivoG2);
-            this.Controls.Add(this.txtObjetivoE1);
-            this.Controls.Add(this.txtObjetivoG1);
             this.Controls.Add(this.txtMision);
             this.Controls.Add(this.txtUnidadEstrategica);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmObjetivos";
             this.Text = "FrmObjetivos";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvObjE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvObjG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,21 +217,15 @@
 
         #endregion
         private System.Windows.Forms.TextBox txtUnidadEstrategica;
-        private System.Windows.Forms.TextBox txtObjetivoE1;
-        private System.Windows.Forms.TextBox txtObjetivoG1;
         private System.Windows.Forms.TextBox txtMision;
-        private System.Windows.Forms.TextBox txtObjetivoG2;
-        private System.Windows.Forms.TextBox txtObjetivoG3;
-        private System.Windows.Forms.TextBox txtObjetivoE2;
-        private System.Windows.Forms.TextBox txtObjetivoE3;
-        private System.Windows.Forms.TextBox txtObjetivoE4;
-        private System.Windows.Forms.TextBox txtObjetivoE5;
-        private System.Windows.Forms.TextBox txtObjetivoE6;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dgvObjE;
+        private System.Windows.Forms.DataGridView dgvObjG;
+        private System.Windows.Forms.Button btnGuardarGenerales;
     }
 }

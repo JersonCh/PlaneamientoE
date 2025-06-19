@@ -921,6 +921,7 @@ END
 GO
 
 
+
 -- Procedimiento para obtener AutoCadenaValor de una empresa
 CREATE OR ALTER PROCEDURE SP_ObtenerAutoCadenaValor
     @empresa_id INT
@@ -936,6 +937,29 @@ BEGIN
     WHERE empresa_id = @empresa_id;
 END
 GO
+
+-- SP PARA REGISTRAR OBJ GENERAL Y ESPECIFICO con dgv
+
+CREATE PROCEDURE SP_InsertarObjetivoG
+    @descripcion NVARCHAR(MAX),
+    @empresa_id INT
+AS
+BEGIN
+    INSERT INTO ObjetivoG (descripcion, fecha_registro, empresa_id)
+    VALUES (@descripcion, GETDATE(), @empresa_id);
+END
+GO
+
+CREATE PROCEDURE SP_InsertarObjetivoE
+    @descripcion NVARCHAR(MAX),
+    @objetivo_id INT
+AS
+BEGIN
+    INSERT INTO ObjetivoE (descripcion, fecha_registro, objetivo_id)
+    VALUES (@descripcion, GETDATE(), @objetivo_id);
+END
+GO
+--------------
 
 
 ----------------------------I N S E R C I O N E S  --------------------------------------
