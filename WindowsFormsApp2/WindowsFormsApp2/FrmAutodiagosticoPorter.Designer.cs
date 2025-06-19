@@ -237,7 +237,6 @@ namespace WindowsFormsApp2
             this.txtA2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtA2.Size = new System.Drawing.Size(496, 33);
             this.txtA2.TabIndex = 993;
-            this.txtA2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtA1
             // 
@@ -251,7 +250,6 @@ namespace WindowsFormsApp2
             this.txtA1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtA1.Size = new System.Drawing.Size(496, 35);
             this.txtA1.TabIndex = 991;
-            this.txtA1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtO2
             // 
@@ -265,7 +263,6 @@ namespace WindowsFormsApp2
             this.txtO2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtO2.Size = new System.Drawing.Size(482, 33);
             this.txtO2.TabIndex = 990;
-            this.txtO2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtO1
             // 
@@ -279,7 +276,6 @@ namespace WindowsFormsApp2
             this.txtO1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtO1.Size = new System.Drawing.Size(482, 35);
             this.txtO1.TabIndex = 988;
-            this.txtO1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotal
             // 
@@ -2332,7 +2328,7 @@ namespace WindowsFormsApp2
             this.label74.Location = new System.Drawing.Point(16, 9);
             this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(1197, 85);
+            this.label74.Size = new System.Drawing.Size(1163, 85);
             this.label74.TabIndex = 1001;
             this.label74.Text = resources.GetString("label74.Text");
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2347,7 +2343,7 @@ namespace WindowsFormsApp2
             this.label75.Location = new System.Drawing.Point(11, 1379);
             this.label75.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(1198, 67);
+            this.label75.Size = new System.Drawing.Size(1164, 67);
             this.label75.TabIndex = 1002;
             this.label75.Text = resources.GetString("label75.Text");
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
