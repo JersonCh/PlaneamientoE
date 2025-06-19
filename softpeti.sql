@@ -232,6 +232,7 @@ GO
 		R2 VARCHAR(250) NOT NULL,
 		R3 VARCHAR(250) NOT NULL,
 		R4 VARCHAR(250) NOT NULL,
+		R5 VARCHAR(250) NOT NULL,
 		FOREIGN KEY (empresa_id) REFERENCES Empresa(id) 
 	);
 	
@@ -828,7 +829,9 @@ CREATE PROCEDURE SP_InsertarOActualizarAutoPEST
     @R1 VARCHAR(250),
     @R2 VARCHAR(250),
     @R3 VARCHAR(250),
-    @R4 VARCHAR(250)
+    @R4 VARCHAR(250),
+	@R5 VARCHAR(250)
+
 AS
 BEGIN
     -- Verificar si ya existe un registro para esta empresa
@@ -842,7 +845,7 @@ BEGIN
             p11 = @p11, p12 = @p12, p13 = @p13, p14 = @p14, p15 = @p15,
             p16 = @p16, p17 = @p17, p18 = @p18, p19 = @p19, p20 = @p20,
             p21 = @p21, p22 = @p22, p23 = @p23, p24 = @p24, p25 = @p25,
-            R1 = @R1, R2 = @R2, R3 = @R3, R4 = @R4
+            R1 = @R1, R2 = @R2, R3 = @R3, R4 = @R4,R5 = @R5
         WHERE empresa_id = @empresa_id;
         
         SELECT 'ACTUALIZADO' AS Resultado;
@@ -856,7 +859,7 @@ BEGIN
             p11, p12, p13, p14, p15,
             p16, p17, p18, p19, p20,
             p21, p22, p23, p24, p25,
-            R1, R2, R3, R4
+            R1, R2, R3, R4,R5
         )
         VALUES (
             @empresa_id, @p1, @p2, @p3, @p4, @p5,
@@ -864,7 +867,7 @@ BEGIN
             @p11, @p12, @p13, @p14, @p15,
             @p16, @p17, @p18, @p19, @p20,
             @p21, @p22, @p23, @p24, @p25,
-            @R1, @R2, @R3, @R4
+            @R1, @R2, @R3, @R4,@R5
         );
         
         SELECT 'INSERTADO' AS Resultado;
@@ -960,6 +963,23 @@ BEGIN
 END
 GO
 --------------
+
+-- Obtener valores de autopest
+CREATE OR ALTER PROCEDURE SP_ObtenerAutoPEST
+    @empresa_id INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    SELECT 
+        p1, p2, p3, p4, p5, p6, p7, p8, p9, p10,
+        p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
+        p21, p22, p23, p24, p25,
+        R1, R2, R3, R4, R5
+    FROM AutoPEST 
+    WHERE empresa_id = @empresa_id;
+END
+GO
 
 
 ----------------------------I N S E R C I O N E S  --------------------------------------

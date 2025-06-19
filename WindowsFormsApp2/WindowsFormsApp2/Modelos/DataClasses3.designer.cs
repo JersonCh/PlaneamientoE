@@ -390,43 +390,6 @@ namespace WindowsFormsApp2.Modelos
 			return ((ISingleResult<SP_InsertarOActualizarAutoCadenaValorResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_InsertarOActualizarAutoPEST")]
-		public ISingleResult<SP_InsertarOActualizarAutoPESTResult> SP_InsertarOActualizarAutoPEST(
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p1, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p2, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p3, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p4, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p5, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p6, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p7, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p8, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p9, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p10, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p11, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p12, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p13, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p14, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p15, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p16, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p17, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p18, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p19, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p20, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p21, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p22, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p23, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p24, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p25, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R1", DbType="VarChar(250)")] string r1, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R2", DbType="VarChar(250)")] string r2, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R3", DbType="VarChar(250)")] string r3, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R4", DbType="VarChar(250)")] string r4)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, r1, r2, r3, r4);
-			return ((ISingleResult<SP_InsertarOActualizarAutoPESTResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ObtenerMision")]
 		public ISingleResult<SP_ObtenerMisionResult> SP_ObtenerMision([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
 		{
@@ -481,6 +444,51 @@ namespace WindowsFormsApp2.Modelos
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), descripcion, empresa_id);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ObtenerAutoPEST")]
+		public ISingleResult<SP_ObtenerAutoPESTResult> SP_ObtenerAutoPEST([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ObtenerAutoPESTResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_InsertarOActualizarAutoPEST")]
+		public ISingleResult<SP_InsertarOActualizarAutoPESTResult> SP_InsertarOActualizarAutoPEST(
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p1, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p2, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p3, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p4, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p5, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p6, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p7, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p8, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p9, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p10, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p11, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p12, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p13, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p14, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p15, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p16, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p17, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p18, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p19, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p20, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p21, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p22, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p23, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p24, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p25, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R1", DbType="VarChar(250)")] string r1, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R2", DbType="VarChar(250)")] string r2, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R3", DbType="VarChar(250)")] string r3, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R4", DbType="VarChar(250)")] string r4, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="R5", DbType="VarChar(250)")] string r5)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, r1, r2, r3, r4, r5);
+			return ((ISingleResult<SP_InsertarOActualizarAutoPESTResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -3296,32 +3304,6 @@ namespace WindowsFormsApp2.Modelos
 		}
 	}
 	
-	public partial class SP_InsertarOActualizarAutoPESTResult
-	{
-		
-		private string _Resultado;
-		
-		public SP_InsertarOActualizarAutoPESTResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Resultado", DbType="VarChar(11) NOT NULL", CanBeNull=false)]
-		public string Resultado
-		{
-			get
-			{
-				return this._Resultado;
-			}
-			set
-			{
-				if ((this._Resultado != value))
-				{
-					this._Resultado = value;
-				}
-			}
-		}
-	}
-	
 	public partial class SP_ObtenerMisionResult
 	{
 		
@@ -3943,6 +3925,580 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._cuadrante != value))
 				{
 					this._cuadrante = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ObtenerAutoPESTResult
+	{
+		
+		private int _p1;
+		
+		private int _p2;
+		
+		private int _p3;
+		
+		private int _p4;
+		
+		private int _p5;
+		
+		private int _p6;
+		
+		private int _p7;
+		
+		private int _p8;
+		
+		private int _p9;
+		
+		private int _p10;
+		
+		private int _p11;
+		
+		private int _p12;
+		
+		private int _p13;
+		
+		private int _p14;
+		
+		private int _p15;
+		
+		private int _p16;
+		
+		private int _p17;
+		
+		private int _p18;
+		
+		private int _p19;
+		
+		private int _p20;
+		
+		private int _p21;
+		
+		private int _p22;
+		
+		private int _p23;
+		
+		private int _p24;
+		
+		private int _p25;
+		
+		private string _R1;
+		
+		private string _R2;
+		
+		private string _R3;
+		
+		private string _R4;
+		
+		private string _R5;
+		
+		public SP_ObtenerAutoPESTResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p1", DbType="Int NOT NULL")]
+		public int p1
+		{
+			get
+			{
+				return this._p1;
+			}
+			set
+			{
+				if ((this._p1 != value))
+				{
+					this._p1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p2", DbType="Int NOT NULL")]
+		public int p2
+		{
+			get
+			{
+				return this._p2;
+			}
+			set
+			{
+				if ((this._p2 != value))
+				{
+					this._p2 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p3", DbType="Int NOT NULL")]
+		public int p3
+		{
+			get
+			{
+				return this._p3;
+			}
+			set
+			{
+				if ((this._p3 != value))
+				{
+					this._p3 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p4", DbType="Int NOT NULL")]
+		public int p4
+		{
+			get
+			{
+				return this._p4;
+			}
+			set
+			{
+				if ((this._p4 != value))
+				{
+					this._p4 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p5", DbType="Int NOT NULL")]
+		public int p5
+		{
+			get
+			{
+				return this._p5;
+			}
+			set
+			{
+				if ((this._p5 != value))
+				{
+					this._p5 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p6", DbType="Int NOT NULL")]
+		public int p6
+		{
+			get
+			{
+				return this._p6;
+			}
+			set
+			{
+				if ((this._p6 != value))
+				{
+					this._p6 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p7", DbType="Int NOT NULL")]
+		public int p7
+		{
+			get
+			{
+				return this._p7;
+			}
+			set
+			{
+				if ((this._p7 != value))
+				{
+					this._p7 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p8", DbType="Int NOT NULL")]
+		public int p8
+		{
+			get
+			{
+				return this._p8;
+			}
+			set
+			{
+				if ((this._p8 != value))
+				{
+					this._p8 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p9", DbType="Int NOT NULL")]
+		public int p9
+		{
+			get
+			{
+				return this._p9;
+			}
+			set
+			{
+				if ((this._p9 != value))
+				{
+					this._p9 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p10", DbType="Int NOT NULL")]
+		public int p10
+		{
+			get
+			{
+				return this._p10;
+			}
+			set
+			{
+				if ((this._p10 != value))
+				{
+					this._p10 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p11", DbType="Int NOT NULL")]
+		public int p11
+		{
+			get
+			{
+				return this._p11;
+			}
+			set
+			{
+				if ((this._p11 != value))
+				{
+					this._p11 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p12", DbType="Int NOT NULL")]
+		public int p12
+		{
+			get
+			{
+				return this._p12;
+			}
+			set
+			{
+				if ((this._p12 != value))
+				{
+					this._p12 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p13", DbType="Int NOT NULL")]
+		public int p13
+		{
+			get
+			{
+				return this._p13;
+			}
+			set
+			{
+				if ((this._p13 != value))
+				{
+					this._p13 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p14", DbType="Int NOT NULL")]
+		public int p14
+		{
+			get
+			{
+				return this._p14;
+			}
+			set
+			{
+				if ((this._p14 != value))
+				{
+					this._p14 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p15", DbType="Int NOT NULL")]
+		public int p15
+		{
+			get
+			{
+				return this._p15;
+			}
+			set
+			{
+				if ((this._p15 != value))
+				{
+					this._p15 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p16", DbType="Int NOT NULL")]
+		public int p16
+		{
+			get
+			{
+				return this._p16;
+			}
+			set
+			{
+				if ((this._p16 != value))
+				{
+					this._p16 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p17", DbType="Int NOT NULL")]
+		public int p17
+		{
+			get
+			{
+				return this._p17;
+			}
+			set
+			{
+				if ((this._p17 != value))
+				{
+					this._p17 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p18", DbType="Int NOT NULL")]
+		public int p18
+		{
+			get
+			{
+				return this._p18;
+			}
+			set
+			{
+				if ((this._p18 != value))
+				{
+					this._p18 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p19", DbType="Int NOT NULL")]
+		public int p19
+		{
+			get
+			{
+				return this._p19;
+			}
+			set
+			{
+				if ((this._p19 != value))
+				{
+					this._p19 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p20", DbType="Int NOT NULL")]
+		public int p20
+		{
+			get
+			{
+				return this._p20;
+			}
+			set
+			{
+				if ((this._p20 != value))
+				{
+					this._p20 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p21", DbType="Int NOT NULL")]
+		public int p21
+		{
+			get
+			{
+				return this._p21;
+			}
+			set
+			{
+				if ((this._p21 != value))
+				{
+					this._p21 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p22", DbType="Int NOT NULL")]
+		public int p22
+		{
+			get
+			{
+				return this._p22;
+			}
+			set
+			{
+				if ((this._p22 != value))
+				{
+					this._p22 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p23", DbType="Int NOT NULL")]
+		public int p23
+		{
+			get
+			{
+				return this._p23;
+			}
+			set
+			{
+				if ((this._p23 != value))
+				{
+					this._p23 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p24", DbType="Int NOT NULL")]
+		public int p24
+		{
+			get
+			{
+				return this._p24;
+			}
+			set
+			{
+				if ((this._p24 != value))
+				{
+					this._p24 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_p25", DbType="Int NOT NULL")]
+		public int p25
+		{
+			get
+			{
+				return this._p25;
+			}
+			set
+			{
+				if ((this._p25 != value))
+				{
+					this._p25 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_R1", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		public string R1
+		{
+			get
+			{
+				return this._R1;
+			}
+			set
+			{
+				if ((this._R1 != value))
+				{
+					this._R1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_R2", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		public string R2
+		{
+			get
+			{
+				return this._R2;
+			}
+			set
+			{
+				if ((this._R2 != value))
+				{
+					this._R2 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_R3", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		public string R3
+		{
+			get
+			{
+				return this._R3;
+			}
+			set
+			{
+				if ((this._R3 != value))
+				{
+					this._R3 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_R4", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		public string R4
+		{
+			get
+			{
+				return this._R4;
+			}
+			set
+			{
+				if ((this._R4 != value))
+				{
+					this._R4 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_R5", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		public string R5
+		{
+			get
+			{
+				return this._R5;
+			}
+			set
+			{
+				if ((this._R5 != value))
+				{
+					this._R5 = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_InsertarOActualizarAutoPESTResult
+	{
+		
+		private string _Resultado;
+		
+		public SP_InsertarOActualizarAutoPESTResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Resultado", DbType="VarChar(11) NOT NULL", CanBeNull=false)]
+		public string Resultado
+		{
+			get
+			{
+				return this._Resultado;
+			}
+			set
+			{
+				if ((this._Resultado != value))
+				{
+					this._Resultado = value;
 				}
 			}
 		}

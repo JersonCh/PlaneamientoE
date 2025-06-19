@@ -314,41 +314,6 @@
       <Column Name="Resultado" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="dbo.SP_InsertarOActualizarAutoPEST" Method="SP_InsertarOActualizarAutoPEST">
-    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p1" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p2" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p3" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p4" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p5" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p6" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p7" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p8" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p9" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p10" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p11" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p12" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p13" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p14" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p15" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p16" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p17" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p18" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p19" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p20" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p21" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p22" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p23" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p24" Type="System.Int32" DbType="Int" />
-    <Parameter Name="p25" Type="System.Int32" DbType="Int" />
-    <Parameter Name="R1" Parameter="r1" Type="System.String" DbType="VarChar(250)" />
-    <Parameter Name="R2" Parameter="r2" Type="System.String" DbType="VarChar(250)" />
-    <Parameter Name="R3" Parameter="r3" Type="System.String" DbType="VarChar(250)" />
-    <Parameter Name="R4" Parameter="r4" Type="System.String" DbType="VarChar(250)" />
-    <ElementType Name="SP_InsertarOActualizarAutoPESTResult">
-      <Column Name="Resultado" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.SP_ObtenerMision" Method="SP_ObtenerMision">
     <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
     <ElementType Name="SP_ObtenerMisionResult">
@@ -424,5 +389,76 @@
     <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" />
     <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ObtenerAutoPEST" Method="SP_ObtenerAutoPEST">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ObtenerAutoPESTResult">
+      <Column Name="p1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p3" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p4" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p5" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p6" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p7" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p8" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p9" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p10" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p11" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p12" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p13" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p14" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p15" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p16" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p17" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p18" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p19" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p20" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p21" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p22" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p23" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p24" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p25" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="R1" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="R2" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="R3" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="R4" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="R5" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_InsertarOActualizarAutoPEST" Method="SP_InsertarOActualizarAutoPEST">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p1" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p2" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p3" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p4" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p5" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p6" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p7" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p8" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p9" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p10" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p11" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p12" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p13" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p14" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p15" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p16" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p17" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p18" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p19" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p20" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p21" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p22" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p23" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p24" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p25" Type="System.Int32" DbType="Int" />
+    <Parameter Name="R1" Parameter="r1" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="R2" Parameter="r2" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="R3" Parameter="r3" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="R4" Parameter="r4" Type="System.String" DbType="VarChar(250)" />
+    <Parameter Name="R5" Parameter="r5" Type="System.String" DbType="VarChar(250)" />
+    <ElementType Name="SP_InsertarOActualizarAutoPESTResult">
+      <Column Name="Resultado" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+    </ElementType>
   </Function>
 </Database>
