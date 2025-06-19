@@ -117,116 +117,123 @@ namespace WindowsFormsApp2
         }
 
 
-        // Método para preparar PrintDocument 
         private PrintDocument CrearPrintDocument()
         {
-            linesToPrint = new List<string>
+            try
             {
-                "RESUMEN DE PLAN ESTRATÉGICO",
-                "Fecha: " + txtFecha.Text,
-                "",
-                "Empresa: " + txtEmpresa.Text,
-                "Emprendedor: " + txtEmprendedor.Text,
-                "",
-                "Misión",
-                txtMision.Text,
-                "",
-                "Visión",
-                txtVision.Text,
-                "",
-                "Valores",
-                txtValores.Text,
-                "",
-                "Unidad Estratégica",
-                txtUnidadEstrategica.Text,
-                "",
-                "Objetivos Generales",
-                "",
-                "Objetivos Específicos",
-                "",
-                "Fortalezas",
-                "  1. " + txtF1.Text,
-                "  2. " + txtF2.Text,
-                "  3. " + txtF3.Text,
-                "  4. " + txtF4.Text,
-                "",
-                "Debilidades",
-                "  1. " + txtD1.Text,
-                "  2. " + txtD2.Text,
-                "  3. " + txtD3.Text,
-                "  4. " + txtD4.Text,
-                "",
-                "Oportunidades",
-                "  1. " + txtO1.Text,
-                "  2. " + txtO2.Text,
-                "  3. " + txtO3.Text,
-                "  4. " + txtO4.Text,
-                "",
-                "Amenazas",
-                "  1. " + txtA1.Text,
-                "  2. " + txtA2.Text,
-                "  3. " + txtA3.Text,
-                "  4. " + txtA4.Text,
-                "",
-                "Matriz CAME",
-                "  1. " + txtt1.Text,
-                "  2. " + txtt2.Text,
-                "  3. " + txtt3.Text,
-                "  4. " + txtt4.Text,
-                "  5. " + txtt5.Text,
-                "  6. " + txtt6.Text,
-                "  7. " + txtt7.Text,
-                "  8. " + txtt8.Text,
-                "  9. " + txtt9.Text,
-                " 10. " + txtt10.Text,
-                " 11. " + txtt11.Text,
-                " 12. " + txtt12.Text,
-                " 13. " + txtt13.Text,
-                " 14. " + txtt14.Text,
-                " 15. " + txtt15.Text,
-                " 16. " + txtt16.Text,
-            };
+                int empresaId = Sesion.EmpresaId;
 
-            lineFonts = new List<Font>();
-            lineBrushes = new List<Brush>();
-            Font titleFont = new Font("Arial", 16, FontStyle.Bold);
-            Font sectionFont = new Font("Arial", 12, FontStyle.Bold);
-            Font normalFont = new Font("Arial", 11, FontStyle.Regular);
-            Brush titleBrush = Brushes.DarkBlue;
-            Brush sectionBrush = Brushes.DarkGreen;
-            Brush normalBrush = Brushes.Black;
+                linesToPrint = new List<string>
+        {
+            "RESUMEN DE PLAN ESTRATÉGICO",
+            "Fecha: " + txtFecha.Text,
+            "",
+            "Empresa: " + txtEmpresa.Text,
+            "Emprendedor: " + txtEmprendedor.Text,
+            "",
+            "Misión",
+            txtMision.Text,
+            "",
+            "Visión",
+            txtVision.Text,
+            "",
+            "Valores",
+            txtValores.Text,
+            "",
+            "Unidad Estratégica",
+            txtUnidadEstrategica.Text,
+            "",
+            "Objetivos Generales y Específicos",
+        };
 
-            foreach (var line in linesToPrint)
-            {
-                if (line == "RESUMEN DE PLAN ESTRATÉGICO")
+                using (var dc = new DataClasses3DataContext())
                 {
-                    lineFonts.Add(titleFont);
-                    lineBrushes.Add(titleBrush);
+                    // Obtener objetivos generales
+                    var objetivosGenerales = dc.ObjetivoG
+                        .Where(og => og.empresa_id == empresaId)
+                        .Select(og => new
+                        {
+                            og.id,
+                            og.descripcion
+                        })
+                        .ToList();
+
+                    foreach (var objetivoGeneral in objetivosGenerales)
+                    {
+                        // Agregar descripción del objetivo general
+                        linesToPrint.Add("Objetivo General: " + objetivoGeneral.descripcion);
+
+                        // Obtener objetivos específicos relacionados
+                        var objetivosEspecificos = dc.ObjetivoE
+                            .Where(oe => oe.objetivo_id == objetivoGeneral.id)
+                            .Select(oe => new
+                            {
+                                oe.descripcion
+                            })
+                            .ToList();
+
+                        foreach (var objetivoEspecifico in objetivosEspecificos)
+                        {
+                            // Agregar descripción del objetivo específico
+                            linesToPrint.Add("  - Objetivo Específico: " + objetivoEspecifico.descripcion);
+                        }
+
+                        linesToPrint.Add(""); // Espaciado entre objetivos generales
+                    }
                 }
-                else if (
-                    line == "Misión" || line == "Visión" || line == "Valores" ||
-                    line == "Unidad Estratégica" || line == "Objetivos Generales" ||
-                    line == "Objetivos Específicos" || line == "Fortalezas" ||
-                    line == "Debilidades" || line == "Oportunidades" ||
-                    line == "Amenazas" || line == "Matriz CAME"
-                )
+
+                lineFonts = new List<Font>();
+                lineBrushes = new List<Brush>();
+                Font titleFont = new Font("Arial", 16, FontStyle.Bold);
+                Font sectionFont = new Font("Arial", 12, FontStyle.Bold);
+                Font normalFont = new Font("Arial", 11, FontStyle.Regular);
+                Brush titleBrush = Brushes.DarkBlue;
+                Brush sectionBrush = Brushes.DarkGreen;
+                Brush normalBrush = Brushes.Black;
+
+                foreach (var line in linesToPrint)
                 {
-                    lineFonts.Add(sectionFont);
-                    lineBrushes.Add(sectionBrush);
+                    if (line == "RESUMEN DE PLAN ESTRATÉGICO")
+                    {
+                        lineFonts.Add(titleFont);
+                        lineBrushes.Add(titleBrush);
+                    }
+                    else if (
+                        line == "Misión" || line == "Visión" || line == "Valores" ||
+                        line == "Unidad Estratégica" || line == "Objetivos Generales y Específicos"
+                    )
+                    {
+                        lineFonts.Add(sectionFont);
+                        lineBrushes.Add(sectionBrush);
+                    }
+                    else if (line.StartsWith("Objetivo General:"))
+                    {
+                        lineFonts.Add(sectionFont);
+                        lineBrushes.Add(sectionBrush);
+                    }
+                    else if (line.StartsWith("  - Objetivo Específico:"))
+                    {
+                        lineFonts.Add(normalFont);
+                        lineBrushes.Add(normalBrush);
+                    }
+                    else
+                    {
+                        lineFonts.Add(normalFont);
+                        lineBrushes.Add(normalBrush);
+                    }
                 }
-                else
-                {
-                    lineFonts.Add(normalFont);
-                    lineBrushes.Add(normalBrush);
-                }
+
+                currentLine = 0; // ¡Siempre reinicia aquí!
+                PrintDocument printDoc = new PrintDocument();
+                printDoc.PrintPage += PrintDoc_PrintPage_Text;
+                return printDoc;
             }
-
-            currentLine = 0; // ¡Siempre reinicia aquí!
-            PrintDocument printDoc = new PrintDocument();
-            printDoc.PrintPage += PrintDoc_PrintPage_Text;
-            return printDoc;
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al preparar el documento para impresión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null; // Retorna null en caso de error
+            }
         }
-
         private void CargarObjetivos()
         {
             try

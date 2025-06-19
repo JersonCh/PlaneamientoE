@@ -73,8 +73,6 @@
             this.txtt15 = new System.Windows.Forms.TextBox();
             this.txtt14 = new System.Windows.Forms.TextBox();
             this.txtt13 = new System.Windows.Forms.TextBox();
-            this.btnImprimir = new System.Windows.Forms.Label();
-            this.btnPrevisualizar = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
@@ -591,32 +589,6 @@
             this.txtt13.Size = new System.Drawing.Size(593, 49);
             this.txtt13.TabIndex = 175;
             // 
-            // btnImprimir
-            // 
-            this.btnImprimir.BackColor = System.Drawing.Color.Black;
-            this.btnImprimir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.ForeColor = System.Drawing.Color.White;
-            this.btnImprimir.Location = new System.Drawing.Point(845, 1886);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(209, 33);
-            this.btnImprimir.TabIndex = 183;
-            this.btnImprimir.Text = "IMPRIMIR";
-            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // btnPrevisualizar
-            // 
-            this.btnPrevisualizar.BackColor = System.Drawing.Color.Black;
-            this.btnPrevisualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevisualizar.ForeColor = System.Drawing.Color.White;
-            this.btnPrevisualizar.Location = new System.Drawing.Point(153, 1886);
-            this.btnPrevisualizar.Name = "btnPrevisualizar";
-            this.btnPrevisualizar.Size = new System.Drawing.Size(209, 33);
-            this.btnPrevisualizar.TabIndex = 184;
-            this.btnPrevisualizar.Text = "PREVISUALIZAR";
-            this.btnPrevisualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnPrevisualizar.Click += new System.EventHandler(this.btnPrevisualizar_Click);
-            // 
             // label26
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -627,7 +599,7 @@
             this.label26.Location = new System.Drawing.Point(27, 17);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(1175, 58);
+            this.label26.Size = new System.Drawing.Size(1158, 58);
             this.label26.TabIndex = 185;
             this.label26.Text = "RESUMEN EJECUTIVO DEL PLAN ESTRATÉGICO";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -963,7 +935,7 @@
             this.btnImprimir1.Name = "btnImprimir1";
             this.btnImprimir1.Size = new System.Drawing.Size(208, 48);
             this.btnImprimir1.TabIndex = 211;
-            this.btnImprimir1.Text = "IMPRIMIR";
+            this.btnImprimir1.Text = "DESCARGAR";
             this.btnImprimir1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnImprimir1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnImprimir1.UseVisualStyleBackColor = false;
@@ -1003,7 +975,7 @@
             this.label19.BackColor = System.Drawing.Color.LightGray;
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(22, 1402);
+            this.label19.Location = new System.Drawing.Point(14, 2027);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(140, 201);
@@ -1017,7 +989,7 @@
             this.label14.BackColor = System.Drawing.Color.LightGray;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(22, 1609);
+            this.label14.Location = new System.Drawing.Point(14, 2234);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(140, 209);
@@ -1031,7 +1003,7 @@
             this.label15.BackColor = System.Drawing.Color.LightGray;
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(23, 1823);
+            this.label15.Location = new System.Drawing.Point(15, 2448);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(140, 209);
@@ -1045,7 +1017,7 @@
             this.label16.BackColor = System.Drawing.Color.LightGray;
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(22, 2040);
+            this.label16.Location = new System.Drawing.Point(14, 2665);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(140, 209);
@@ -1112,8 +1084,6 @@
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.btnPrevisualizar);
-            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.txtO4);
             this.Controls.Add(this.txtO3);
             this.Controls.Add(this.txtO2);
@@ -1231,8 +1201,6 @@
         private System.Windows.Forms.TextBox txtt15;
         private System.Windows.Forms.TextBox txtt14;
         private System.Windows.Forms.TextBox txtt13;
-        private System.Windows.Forms.Label btnImprimir;
-        private System.Windows.Forms.Label btnPrevisualizar;
         private System.Windows.Forms.Label label26;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
