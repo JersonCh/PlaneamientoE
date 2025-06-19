@@ -2501,6 +2501,7 @@
             this.Name = "FrmAutoCadenaValor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAutoCadenaValor";
+            this.Load += new System.EventHandler(this.FrmAutoCadenaValor_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.p25.ResumeLayout(false);

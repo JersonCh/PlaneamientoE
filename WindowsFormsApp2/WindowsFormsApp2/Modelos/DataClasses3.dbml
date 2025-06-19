@@ -344,4 +344,35 @@
       <Column Name="descripcion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.SP_ObtenerAutoCadenaValor" Method="SP_ObtenerAutoCadenaValor">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ObtenerAutoCadenaValorResult">
+      <Column Name="p1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p3" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p4" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p5" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p6" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p7" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p8" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p9" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p10" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p11" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p12" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p13" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p14" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p15" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p16" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p17" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p18" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p19" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p20" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p21" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p22" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p23" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p24" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p25" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="total" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>

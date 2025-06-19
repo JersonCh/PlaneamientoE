@@ -17,6 +17,7 @@ namespace WindowsFormsApp2
         public FrmAutoCadenaValor()
         {
             InitializeComponent();
+            CargarAutoCadenaValorExistente();
         }
         string f1;
         string f2;
@@ -26,6 +27,85 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void CargarAutoCadenaValorExistente()
+        {
+            try
+            {
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    var resultado = dc.SP_ObtenerAutoCadenaValor(Sesion.EmpresaId);
+
+                    foreach (var autoCadena in resultado)
+                    {
+                        // Array con los valores de las 25 preguntas
+                        int[] valores = {
+                            autoCadena.p1, autoCadena.p2, autoCadena.p3, autoCadena.p4, autoCadena.p5,
+                            autoCadena.p6, autoCadena.p7, autoCadena.p8, autoCadena.p9, autoCadena.p10,
+                            autoCadena.p11, autoCadena.p12, autoCadena.p13, autoCadena.p14, autoCadena.p15,
+                            autoCadena.p16, autoCadena.p17, autoCadena.p18, autoCadena.p19, autoCadena.p20,
+                            autoCadena.p21, autoCadena.p22, autoCadena.p23, autoCadena.p24, autoCadena.p25
+                        };
+
+                        // Marcar los RadioButtons correspondientes
+                        for (int i = 1; i <= 25; i++)
+                        {
+                            int valorPregunta = valores[i - 1];
+
+                            // Buscar el panel de la pregunta i
+                            Panel panel = this.Controls.Find($"p{i}", true).FirstOrDefault() as Panel;
+                            if (panel != null)
+                            {
+                                // Buscar el RadioButton con el valor correspondiente
+                                string nombreRadioButton = $"p{i}_{valorPregunta}";
+                                RadioButton rb = panel.Controls.Find(nombreRadioButton, false).FirstOrDefault() as RadioButton;
+                                if (rb != null)
+                                {
+                                    rb.Checked = true;
+                                }
+                            }
+                        }
+
+                        // Mostrar el total
+                        txtTotal.Text = autoCadena.total.ToString() + "%";
+
+                        return; // Solo tomar el primer resultado
+                    }
+
+                    // Si no hay datos, limpiar todo
+                    LimpiarFormulario();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar AutoCadenaValor: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LimpiarFormulario()
+        {
+            // Desmarcar todos los RadioButtons
+            for (int i = 1; i <= 25; i++)
+            {
+                Panel panel = this.Controls.Find($"p{i}", true).FirstOrDefault() as Panel;
+                if (panel != null)
+                {
+                    foreach (RadioButton rb in panel.Controls.OfType<RadioButton>())
+                    {
+                        rb.Checked = false;
+                    }
+                }
+            }
+
+            // Limpiar el total
+            txtTotal.Text = "";
+        }
+
+
+
+
+
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
@@ -184,6 +264,11 @@ namespace WindowsFormsApp2
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmAutoCadenaValor_Load(object sender, EventArgs e)
         {
 
         }
