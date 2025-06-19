@@ -54,6 +54,9 @@ namespace WindowsFormsApp2.Modelos
     partial void InsertMatrizCAME(MatrizCAME instance);
     partial void UpdateMatrizCAME(MatrizCAME instance);
     partial void DeleteMatrizCAME(MatrizCAME instance);
+    partial void InsertBCG(BCG instance);
+    partial void UpdateBCG(BCG instance);
+    partial void DeleteBCG(BCG instance);
     #endregion
 		
 		public DataClasses3DataContext() : 
@@ -147,6 +150,14 @@ namespace WindowsFormsApp2.Modelos
 			get
 			{
 				return this.GetTable<MatrizCAME>();
+			}
+		}
+		
+		public System.Data.Linq.Table<BCG> BCG
+		{
+			get
+			{
+				return this.GetTable<BCG>();
 			}
 		}
 		
@@ -432,6 +443,20 @@ namespace WindowsFormsApp2.Modelos
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
 			return ((ISingleResult<SP_ObtenerAutoCadenaValorResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_InsertarActualizarBCG")]
+		public int SP_InsertarActualizarBCG([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(200)")] string producto, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(5,2)")] System.Nullable<decimal> participacion_mercado, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(5,2)")] System.Nullable<decimal> tasa_crecimiento, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(20)")] string cuadrante, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), producto, participacion_mercado, tasa_crecimiento, cuadrante, empresa_id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ObtenerProductosBCG")]
+		public ISingleResult<SP_ObtenerProductosBCGResult> SP_ObtenerProductosBCG([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> empresa_id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), empresa_id);
+			return ((ISingleResult<SP_ObtenerProductosBCGResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.USUARIO")]
@@ -642,6 +667,8 @@ namespace WindowsFormsApp2.Modelos
 		
 		private EntitySet<ObjetivoG> _ObjetivoG;
 		
+		private EntitySet<BCG> _BCG;
+		
 		private EntityRef<USUARIO> _USUARIO;
 		
     #region Definiciones de métodos de extensibilidad
@@ -664,6 +691,7 @@ namespace WindowsFormsApp2.Modelos
 			this._Vision = new EntitySet<Vision>(new Action<Vision>(this.attach_Vision), new Action<Vision>(this.detach_Vision));
 			this._Valores = new EntitySet<Valores>(new Action<Valores>(this.attach_Valores), new Action<Valores>(this.detach_Valores));
 			this._ObjetivoG = new EntitySet<ObjetivoG>(new Action<ObjetivoG>(this.attach_ObjetivoG), new Action<ObjetivoG>(this.detach_ObjetivoG));
+			this._BCG = new EntitySet<BCG>(new Action<BCG>(this.attach_BCG), new Action<BCG>(this.detach_BCG));
 			this._USUARIO = default(EntityRef<USUARIO>);
 			OnCreated();
 		}
@@ -804,6 +832,19 @@ namespace WindowsFormsApp2.Modelos
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_BCG", Storage="_BCG", ThisKey="id", OtherKey="empresa_id")]
+		public EntitySet<BCG> BCG
+		{
+			get
+			{
+				return this._BCG;
+			}
+			set
+			{
+				this._BCG.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="USUARIO_Empresa", Storage="_USUARIO", ThisKey="usuario_id", OtherKey="id", IsForeignKey=true)]
 		public USUARIO USUARIO
 		{
@@ -901,6 +942,18 @@ namespace WindowsFormsApp2.Modelos
 		}
 		
 		private void detach_ObjetivoG(ObjetivoG entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = null;
+		}
+		
+		private void attach_BCG(BCG entity)
+		{
+			this.SendPropertyChanging();
+			entity.Empresa = this;
+		}
+		
+		private void detach_BCG(BCG entity)
 		{
 			this.SendPropertyChanging();
 			entity.Empresa = null;
@@ -1919,6 +1972,229 @@ namespace WindowsFormsApp2.Modelos
 					this._empresa_id = value;
 					this.SendPropertyChanged("empresa_id");
 					this.Onempresa_idChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.BCG")]
+	public partial class BCG : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private int _empresa_id;
+		
+		private string _producto;
+		
+		private decimal _participacion_mercado;
+		
+		private decimal _tasa_crecimiento;
+		
+		private string _cuadrante;
+		
+		private EntityRef<Empresa> _Empresa;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void Onempresa_idChanging(int value);
+    partial void Onempresa_idChanged();
+    partial void OnproductoChanging(string value);
+    partial void OnproductoChanged();
+    partial void Onparticipacion_mercadoChanging(decimal value);
+    partial void Onparticipacion_mercadoChanged();
+    partial void Ontasa_crecimientoChanging(decimal value);
+    partial void Ontasa_crecimientoChanged();
+    partial void OncuadranteChanging(string value);
+    partial void OncuadranteChanged();
+    #endregion
+		
+		public BCG()
+		{
+			this._Empresa = default(EntityRef<Empresa>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empresa_id", DbType="Int NOT NULL")]
+		public int empresa_id
+		{
+			get
+			{
+				return this._empresa_id;
+			}
+			set
+			{
+				if ((this._empresa_id != value))
+				{
+					if (this._Empresa.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onempresa_idChanging(value);
+					this.SendPropertyChanging();
+					this._empresa_id = value;
+					this.SendPropertyChanged("empresa_id");
+					this.Onempresa_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_producto", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string producto
+		{
+			get
+			{
+				return this._producto;
+			}
+			set
+			{
+				if ((this._producto != value))
+				{
+					this.OnproductoChanging(value);
+					this.SendPropertyChanging();
+					this._producto = value;
+					this.SendPropertyChanged("producto");
+					this.OnproductoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_participacion_mercado", DbType="Decimal(5,2) NOT NULL")]
+		public decimal participacion_mercado
+		{
+			get
+			{
+				return this._participacion_mercado;
+			}
+			set
+			{
+				if ((this._participacion_mercado != value))
+				{
+					this.Onparticipacion_mercadoChanging(value);
+					this.SendPropertyChanging();
+					this._participacion_mercado = value;
+					this.SendPropertyChanged("participacion_mercado");
+					this.Onparticipacion_mercadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tasa_crecimiento", DbType="Decimal(5,2) NOT NULL")]
+		public decimal tasa_crecimiento
+		{
+			get
+			{
+				return this._tasa_crecimiento;
+			}
+			set
+			{
+				if ((this._tasa_crecimiento != value))
+				{
+					this.Ontasa_crecimientoChanging(value);
+					this.SendPropertyChanging();
+					this._tasa_crecimiento = value;
+					this.SendPropertyChanged("tasa_crecimiento");
+					this.Ontasa_crecimientoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cuadrante", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string cuadrante
+		{
+			get
+			{
+				return this._cuadrante;
+			}
+			set
+			{
+				if ((this._cuadrante != value))
+				{
+					this.OncuadranteChanging(value);
+					this.SendPropertyChanging();
+					this._cuadrante = value;
+					this.SendPropertyChanged("cuadrante");
+					this.OncuadranteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Empresa_BCG", Storage="_Empresa", ThisKey="empresa_id", OtherKey="id", IsForeignKey=true)]
+		public Empresa Empresa
+		{
+			get
+			{
+				return this._Empresa.Entity;
+			}
+			set
+			{
+				Empresa previousValue = this._Empresa.Entity;
+				if (((previousValue != value) 
+							|| (this._Empresa.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Empresa.Entity = null;
+						previousValue.BCG.Remove(this);
+					}
+					this._Empresa.Entity = value;
+					if ((value != null))
+					{
+						value.BCG.Add(this);
+						this._empresa_id = value.id;
+					}
+					else
+					{
+						this._empresa_id = default(int);
+					}
+					this.SendPropertyChanged("Empresa");
 				}
 			}
 		}
@@ -3341,6 +3617,104 @@ namespace WindowsFormsApp2.Modelos
 				if ((this._total != value))
 				{
 					this._total = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ObtenerProductosBCGResult
+	{
+		
+		private int _id;
+		
+		private string _producto;
+		
+		private decimal _participacion_mercado;
+		
+		private decimal _tasa_crecimiento;
+		
+		private string _cuadrante;
+		
+		public SP_ObtenerProductosBCGResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this._id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_producto", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
+		public string producto
+		{
+			get
+			{
+				return this._producto;
+			}
+			set
+			{
+				if ((this._producto != value))
+				{
+					this._producto = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_participacion_mercado", DbType="Decimal(5,2) NOT NULL")]
+		public decimal participacion_mercado
+		{
+			get
+			{
+				return this._participacion_mercado;
+			}
+			set
+			{
+				if ((this._participacion_mercado != value))
+				{
+					this._participacion_mercado = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tasa_crecimiento", DbType="Decimal(5,2) NOT NULL")]
+		public decimal tasa_crecimiento
+		{
+			get
+			{
+				return this._tasa_crecimiento;
+			}
+			set
+			{
+				if ((this._tasa_crecimiento != value))
+				{
+					this._tasa_crecimiento = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cuadrante", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string cuadrante
+		{
+			get
+			{
+				return this._cuadrante;
+			}
+			set
+			{
+				if ((this._cuadrante != value))
+				{
+					this._cuadrante = value;
 				}
 			}
 		}

@@ -69,12 +69,6 @@
     <Compile Include="FormMessageBox.Designer.cs">
       <DependentUpon>FormMessageBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBCG2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmBCG2.Designer.cs">
-      <DependentUpon>FrmBCG2.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmBCG3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +80,12 @@
     </Compile>
     <Compile Include="FrmBCGgenerado.Designer.cs">
       <DependentUpon>FrmBCGgenerado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBCGinicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCGinicio.Designer.cs">
+      <DependentUpon>FrmBCGinicio.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCambioPassword.cs">
       <SubType>Form</SubType>
@@ -128,12 +128,6 @@
     </Compile>
     <Compile Include="FrmAutoCadenaValor.Designer.cs">
       <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmAutodiagnosticoBCG_2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAutodiagnosticoBCG_2.Designer.cs">
-      <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAutodiagosticoPorter.cs">
       <SubType>Form</SubType>
@@ -261,14 +255,14 @@
     <EmbeddedResource Include="FormMessageBox.resx">
       <DependentUpon>FormMessageBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBCG2.resx">
-      <DependentUpon>FrmBCG2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmBCG3.resx">
       <DependentUpon>FrmBCG3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBCGgenerado.resx">
       <DependentUpon>FrmBCGgenerado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBCGinicio.resx">
+      <DependentUpon>FrmBCGinicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCambioPassword.resx">
       <DependentUpon>FrmCambioPassword.cs</DependentUpon>
@@ -290,9 +284,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutoCadenaValor.resx">
       <DependentUpon>FrmAutoCadenaValor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmAutodiagnosticoBCG_2.resx">
-      <DependentUpon>FrmAutodiagnosticoBCG_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutodiagosticoPorter.resx">
       <DependentUpon>FrmAutodiagosticoPorter.cs</DependentUpon>

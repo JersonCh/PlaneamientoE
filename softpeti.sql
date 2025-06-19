@@ -234,8 +234,70 @@ GO
 		R4 VARCHAR(250) NOT NULL,
 		FOREIGN KEY (empresa_id) REFERENCES Empresa(id) 
 	);
+	
+	-- Crear la tabla BCG si no existe
+	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'BCG')
+	BEGIN
+		CREATE TABLE BCG (
+			id INT PRIMARY KEY IDENTITY(1,1),
+			empresa_id INT NOT NULL,
+			producto NVARCHAR(200) NOT NULL,
+			participacion_mercado DECIMAL(5,2) NOT NULL,
+			tasa_crecimiento DECIMAL(5,2) NOT NULL,
+			cuadrante NVARCHAR(20) NOT NULL,
+			FOREIGN KEY (empresa_id) REFERENCES Empresa(id)
+		);
+	END
+	GO
+
 
 ----------------------------P R O C E D I M I E N T O S   -- A L M A C E N A D O S   ------------------------------------
+
+-- SP Listar mis BCG
+CREATE PROCEDURE SP_ObtenerProductosBCG
+    @empresa_id INT
+AS
+BEGIN
+    SELECT 
+        id,
+        producto,
+        participacion_mercado,
+        tasa_crecimiento,
+        cuadrante
+    FROM BCG 
+    WHERE empresa_id = @empresa_id
+    ORDER BY producto;
+END
+GO
+
+-- SP Registrar BCG
+CREATE PROCEDURE SP_InsertarActualizarBCG
+    @producto NVARCHAR(200),
+    @participacion_mercado DECIMAL(5,2),
+    @tasa_crecimiento DECIMAL(5,2),
+    @cuadrante NVARCHAR(20),
+    @empresa_id INT
+AS
+BEGIN
+    -- Verificar si el producto ya existe para esta empresa
+    IF EXISTS (SELECT 1 FROM BCG WHERE empresa_id = @empresa_id AND producto = @producto)
+    BEGIN
+        -- Actualizar producto existente
+        UPDATE BCG 
+        SET participacion_mercado = @participacion_mercado,
+            tasa_crecimiento = @tasa_crecimiento,
+            cuadrante = @cuadrante
+        WHERE empresa_id = @empresa_id AND producto = @producto;
+    END
+    ELSE
+    BEGIN
+        -- Insertar nuevo producto
+        INSERT INTO BCG (empresa_id, producto, participacion_mercado, tasa_crecimiento, cuadrante)
+        VALUES (@empresa_id, @producto, @participacion_mercado, @tasa_crecimiento, @cuadrante);
+    END
+END
+GO
+
 
 -- SP: Registrar Empresa
 IF OBJECT_ID('SP_RegistrarEmpresa') IS NOT NULL

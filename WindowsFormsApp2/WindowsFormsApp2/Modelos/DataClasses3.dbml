@@ -20,6 +20,7 @@
       <Association Name="Empresa_Vision" Member="Vision" ThisKey="id" OtherKey="empresa_id" Type="Vision" />
       <Association Name="Empresa_Valores" Member="Valores" ThisKey="id" OtherKey="empresa_id" Type="Valores" />
       <Association Name="Empresa_ObjetivoG" Member="ObjetivoG" ThisKey="id" OtherKey="empresa_id" Type="ObjetivoG" />
+      <Association Name="Empresa_BCG" Member="BCG" ThisKey="id" OtherKey="empresa_id" Type="BCG" />
       <Association Name="USUARIO_Empresa" Member="USUARIO" ThisKey="usuario_id" OtherKey="id" Type="USUARIO" IsForeignKey="true" />
     </Type>
   </Table>
@@ -75,6 +76,17 @@
       <Column Name="codigo_accion" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
       <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
       <Column Name="empresa_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BCG" Member="BCG">
+    <Type Name="BCG">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="empresa_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="producto" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="participacion_mercado" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="tasa_crecimiento" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="cuadrante" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Empresa_BCG" Member="Empresa" ThisKey="empresa_id" OtherKey="id" Type="Empresa" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.SP_Autenticar" Method="SP_Autenticar">
@@ -373,6 +385,24 @@
       <Column Name="p24" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="p25" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="total" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_InsertarActualizarBCG" Method="SP_InsertarActualizarBCG">
+    <Parameter Name="producto" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="participacion_mercado" Type="System.Decimal" DbType="Decimal(5,2)" />
+    <Parameter Name="tasa_crecimiento" Type="System.Decimal" DbType="Decimal(5,2)" />
+    <Parameter Name="cuadrante" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ObtenerProductosBCG" Method="SP_ObtenerProductosBCG">
+    <Parameter Name="empresa_id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_ObtenerProductosBCGResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="producto" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="participacion_mercado" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="tasa_crecimiento" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="cuadrante" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>

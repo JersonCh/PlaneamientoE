@@ -284,7 +284,6 @@ D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\W
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.AssemblyReference.cache
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAnalisis.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutoCadenaValor.resources
-D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmAutodiagnosticoBCG_2.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCadenaValor.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmEmpresas.resources
@@ -293,11 +292,9 @@ D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\W
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizCame.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizDePorter.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMatrizParticipacion.resources
-D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmMision.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmObjetivos.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmResumen.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmValores.resources
-D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmVision.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmLogin.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
 D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.GenerateResource.cache
@@ -595,7 +592,6 @@ C:\Users\andre\Desktop\HOY EXPO\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\
 C:\Users\andre\Desktop\HOY EXPO\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Estrategico.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\HOY EXPO\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\andre\Desktop\HOY EXPO\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCG2.resources
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
 C:\Users\HP\3D Objects\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
@@ -1159,3 +1155,13 @@ C:\Users\andre\Desktop\a\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Deb
 C:\Users\andre\Desktop\a\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Est.A4323EC3.Up2Date
 C:\Users\andre\Desktop\a\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\andre\Desktop\a\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\FontAwesome.Sharp.dll
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\CustomMessageBox.Private.FormMessageBox.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmBCGinicio.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmCambioPassword.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDAFO.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmDashBoard2.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FrmIdentif_Estrategia.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Mision.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Vision.resources
+D:\Biblioteca\Musica\PlaneamientoE\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\Plan Est.A4323EC3.Up2Date

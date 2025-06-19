@@ -76,6 +76,8 @@ namespace WindowsFormsApp2
             // Suscribimos eventos
             dtPrevision.RowChanged += DtPrevision_RowChanged;
             dtPrevision.TableNewRow += DtPrevision_TableNewRow;
+
+            CargarDatosBCGEnListar();
         }
         private void ConfigurarTablaPrevision()
         {
@@ -410,19 +412,47 @@ namespace WindowsFormsApp2
         }
         private void SincronizarProductosVSA()
         {
-            dtVSA.Rows.Clear();
-            for (int i = 0; i < dtPrevision.Rows.Count - 1; i++)
+            // Verificar que dtVSA esté inicializada
+            if (dtVSA == null)
             {
-                DataRow nuevaFila = dtVSA.NewRow();
-                nuevaFila[COL_PRODUCTOS] = dtPrevision.Rows[i][COL_PRODUCTOS];
+                ConfigurarTablaVSA(); // Reinicializar la tabla si es null
+                return; // Salir después de configurar
+            }
 
-                // Inicializar valores numéricos en 0
-                for (int j = 1; j < dtVSA.Columns.Count; j++)
+            // Verificar que dtPrevision esté inicializada y tenga datos
+            if (dtPrevision == null || dtPrevision.Rows.Count == 0)
+            {
+                return; // No hay datos para sincronizar
+            }
+
+            try
+            {
+                dtVSA.Rows.Clear();
+
+                for (int i = 0; i < dtPrevision.Rows.Count - 1; i++)
                 {
-                    nuevaFila[j] = 0.00m;
-                }
+                    DataRow nuevaFila = dtVSA.NewRow();
 
-                dtVSA.Rows.Add(nuevaFila);
+                    // Verificar que la fila de dtPrevision no sea null
+                    if (dtPrevision.Rows[i] == null) continue;
+
+                    // Asignar el nombre del producto con validación
+                    var valorProducto = dtPrevision.Rows[i][COL_PRODUCTOS];
+                    nuevaFila[COL_PRODUCTOS] = valorProducto ?? $"Producto {i + 1}";
+
+                    // Inicializar valores numéricos en 0
+                    for (int j = 1; j < dtVSA.Columns.Count; j++)
+                    {
+                        nuevaFila[j] = 0.00m;
+                    }
+
+                    dtVSA.Rows.Add(nuevaFila);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al sincronizar productos VSA: {ex.Message}",
+                               "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void ActualizarColumnasVSA()
@@ -891,5 +921,143 @@ namespace WindowsFormsApp2
             }
         }
 
+        private void CargarDatosBCGEnListar()
+        {
+            try
+            {
+                // Obtener la información de la sesión
+                int empresaId = Sesion.EmpresaId;
+
+                // Validar que tengamos información de sesión
+                if (empresaId <= 0)
+                {
+                    MessageBox.Show("Error: No se ha identificado la empresa. Por favor, inicie sesión nuevamente.",
+                                  "Error de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    // Obtener productos BCG desde la base de datos
+                    var productosBCG = dc.SP_ObtenerProductosBCG(empresaId).ToList();
+
+                    if (productosBCG.Count > 0)
+                    {
+                        // Convertir a DataTable para el DataGridView
+                        DataTable dtBCG = new DataTable();
+                        dtBCG.Columns.Add("ID", typeof(int));
+                        dtBCG.Columns.Add("Producto", typeof(string));
+                        dtBCG.Columns.Add("Participación de Mercado", typeof(decimal));
+                        dtBCG.Columns.Add("Tasa de Crecimiento", typeof(decimal));
+                        dtBCG.Columns.Add("Cuadrante", typeof(string));
+
+                        // Llenar el DataTable con los datos
+                        foreach (var producto in productosBCG)
+                        {
+                            dtBCG.Rows.Add(
+                                producto.id,
+                                producto.producto,
+                                producto.participacion_mercado,
+                                producto.tasa_crecimiento,
+                                producto.cuadrante
+                            );
+                        }
+
+                        // Asignar al DataGridView
+                        dgvListar.DataSource = dtBCG;
+
+                    }
+                    else
+                    {
+                        // Si no hay datos, crear tabla vacía
+                        dgvListar.DataSource = null;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos BCG: {ex.Message}",
+                               "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGuardarResultado_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Obtener la información de la sesión
+                int usuarioId = Sesion.UsuarioId;
+                int empresaId = Sesion.EmpresaId;
+
+                // Validar que tengamos información de sesión
+                if (empresaId <= 0)
+                {
+                    MessageBox.Show("Error: No se ha identificado la empresa. Por favor, inicie sesión nuevamente.",
+                                  "Error de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                int productosGuardados = 0;
+
+                using (DataClasses3DataContext dc = new DataClasses3DataContext())
+                {
+                    // Extraer datos de dgvResultados excluyendo valores en 0
+                    foreach (DataGridViewRow fila in dgvResultados.Rows)
+                    {
+                        if (fila.IsNewRow) continue;
+
+                        string nombreProducto = fila.Cells[COL_PRODUCTOS].Value?.ToString()?.Trim();
+
+                        // Validar que el nombre del producto no esté vacío
+                        if (string.IsNullOrWhiteSpace(nombreProducto)) continue;
+
+                        // Obtener valores numéricos
+                        decimal participacionMercado = 0;
+                        decimal tasaCrecimiento = 0;
+
+                        if (fila.Cells[COL_PARTICIPACION].Value != null)
+                            decimal.TryParse(fila.Cells[COL_PARTICIPACION].Value.ToString(), out participacionMercado);
+
+                        if (fila.Cells[COL_TASA_CRECIMIENTO].Value != null)
+                            decimal.TryParse(fila.Cells[COL_TASA_CRECIMIENTO].Value.ToString(), out tasaCrecimiento);
+
+                        string cuadrante = fila.Cells[COL_CUADRANTE].Value?.ToString()?.Trim() ?? "";
+
+                        // Solo procesar productos con valores diferentes de 0
+                        if (participacionMercado != 0 || tasaCrecimiento != 0)
+                        {
+                            // Llamar al procedimiento almacenado
+                            dc.SP_InsertarActualizarBCG(
+                                nombreProducto,
+                                participacionMercado,
+                                tasaCrecimiento,
+                                cuadrante,
+                                empresaId
+                            );
+
+                            productosGuardados++;
+                        }
+                    }
+                }
+
+                // Validar que se hayan guardado productos
+                if (productosGuardados == 0)
+                {
+                    MessageBox.Show("No hay productos con resultados válidos para guardar.",
+                                  "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                MessageBox.Show($"Resultados BCG guardados correctamente.\n" +
+                               $"Productos procesados: {productosGuardados}\n" +
+                               $"Empresa ID: {empresaId}",
+                               "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar los resultados BCG: {ex.Message}",
+                               "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

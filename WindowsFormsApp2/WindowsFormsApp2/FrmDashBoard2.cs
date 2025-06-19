@@ -260,7 +260,8 @@ namespace WindowsFormsApp2
         private void btnMatriz_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FrmBCG3());
+            //OpenChildForm(new FrmBCG3());
+            OpenChildForm(new FrmBCGinicio());
         }
 
         private void btn5fuerzas_Click(object sender, EventArgs e)
@@ -327,5 +328,15 @@ namespace WindowsFormsApp2
         {
 
         }
+        //Implementacion Elvicito
+        public void AbrirFormularioBCG3()
+        {
+            // Activar el botón matriz para mantener consistencia visual (opcional)
+            ActivateButton(btnMatriz, RGBColors.color6);
+
+            // Abrir FrmBCG3 usando el método existente del dashboard
+            OpenChildForm(new FrmBCG3());
+        }
+
     }
 }
