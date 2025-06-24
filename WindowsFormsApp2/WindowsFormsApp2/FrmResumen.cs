@@ -136,6 +136,45 @@ namespace WindowsFormsApp2
             AjustarTamañoYPosiciones();
         }
 
+        // ---- INICIO: AGREGADO PARA ENVOLVER LINEAS LARGAS ----
+
+        /// <summary>
+        /// Envuelve el texto para que no se pase de los márgenes de impresión.
+        /// </summary>
+        private List<string> WrapText(string text, Font font, int maxWidth, Graphics g)
+        {
+            List<string> wrappedLines = new List<string>();
+            string[] originalLines = text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
+
+            foreach (string originalLine in originalLines)
+            {
+                string line = originalLine;
+                while (!string.IsNullOrEmpty(line))
+                {
+                    int length = line.Length;
+                    // Encuentra cuántos caracteres caben en el ancho dado
+                    while (length > 0 && g.MeasureString(line.Substring(0, length), font).Width > maxWidth)
+                        length--;
+
+                    if (length == 0) // Si ni un solo caracter cabe
+                        length = 1;
+
+                    // Si el corte no es al final ni al principio, busca un espacio para partir la línea
+                    if (length < line.Length)
+                    {
+                        int lastSpace = line.LastIndexOf(' ', length - 1, length);
+                        if (lastSpace > 0)
+                            length = lastSpace;
+                    }
+
+                    wrappedLines.Add(line.Substring(0, length).Trim());
+                    line = line.Substring(length).TrimStart();
+                }
+            }
+            return wrappedLines;
+        }
+
+        // ---- FIN: AGREGADO PARA ENVOLVER LINEAS LARGAS ----
 
         private PrintDocument CrearPrintDocument()
         {
@@ -364,28 +403,38 @@ namespace WindowsFormsApp2
         {
             int y = e.MarginBounds.Top;
             int spacing = 2;
+            int maxWidth = e.MarginBounds.Width;
+
             while (currentLine < linesToPrint.Count)
             {
                 var font = lineFonts[currentLine];
                 var brush = lineBrushes[currentLine];
-                int lineHeight = (int)e.Graphics.MeasureString(linesToPrint[currentLine], font).Height + spacing;
+                string text = linesToPrint[currentLine];
 
-                if (currentLine > 0 && (font.Style & FontStyle.Bold) != 0 &&
-                    (lineFonts[currentLine - 1].Style & FontStyle.Bold) == 0)
+                // Usar la función de envoltura para cada línea
+                var wrappedLines = WrapText(text, font, maxWidth, e.Graphics);
+
+                foreach (var wrappedLine in wrappedLines)
                 {
-                    y += spacing;
-                    e.Graphics.DrawLine(Pens.Gray, e.MarginBounds.Left, y, e.MarginBounds.Right, y);
-                    y += 4;
-                }
+                    int lineHeight = (int)e.Graphics.MeasureString(wrappedLine, font).Height + spacing;
 
-                e.Graphics.DrawString(linesToPrint[currentLine], font, brush, e.MarginBounds.Left, y);
-                y += lineHeight;
+                    if (currentLine > 0 && (font.Style & FontStyle.Bold) != 0 &&
+                        (lineFonts[currentLine - 1].Style & FontStyle.Bold) == 0)
+                    {
+                        y += spacing;
+                        e.Graphics.DrawLine(Pens.Gray, e.MarginBounds.Left, y, e.MarginBounds.Right, y);
+                        y += 4;
+                    }
+
+                    e.Graphics.DrawString(wrappedLine, font, brush, e.MarginBounds.Left, y);
+                    y += lineHeight;
+                    if (y + lineHeight > e.MarginBounds.Bottom)
+                    {
+                        e.HasMorePages = true;
+                        return;
+                    }
+                }
                 currentLine++;
-                if (y + lineHeight > e.MarginBounds.Bottom)
-                {
-                    e.HasMorePages = true;
-                    return;
-                }
             }
             e.HasMorePages = false;
         }
